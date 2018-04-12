@@ -14,9 +14,7 @@
         <strong>We're sorry but sortable-component doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <div id="app">
-        <sortable :todos="todos"></sortable>
-        
-        
+        <pikaday :todos="todos"></pikaday>
     </div>
     <!-- built fileddds will be auto injected -->
     

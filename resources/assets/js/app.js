@@ -16,6 +16,7 @@ window.Vue = require('vue');
  */
 
 Vue.component('sortable', require('./components/Sortable.vue'));
+Vue.component("pikaday", require("./components/Pikaday.vue"));
 
 
 
