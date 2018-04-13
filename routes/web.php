@@ -28,3 +28,10 @@ Route::get('/sortable-without', function () {
     return view('withoutVue');
 });
 
+Route::get('/flickity-without', function () {
+    return view('withoutVueFlickity');
+});
+Route::get('/flickity-with', function () {
+    return view('withVueFlickity');
+});
+

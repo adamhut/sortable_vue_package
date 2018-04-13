@@ -1,7 +1,7 @@
 
 <script>
     import Pikaday from 'Pikaday'
-    //import Pikaday from 'Pikaday'
+    import 'pikaday/css/pikaday.css'
     export default {
          props:{
             minDate: {},
@@ -54,12 +54,7 @@
                 format: this.format,
                 firstDay:this.firstDay,
                 onSelect: (date)=>{
-                   // console.log(date),
                     this.currentDate = this.picker.getMoment().toDate();
-                    //console.log(picker.getMoment().format('YYYY-MM-DD'));
-                    // /this.$emit('input');
-                    // /field.value = picker.getMoment().toString();
-                    //this.item =;
                     this.$emit('input',  this.picker.getMoment().format('YYYY-MM-DD'));
                 },
             })
@@ -72,7 +67,7 @@
         },
     
         render(){        
-            return this.$slots.default[0]   //
+            return this.$slots.default[0];   //
             /*
             return this.$scopedSlots.default({
                 items:this.value,
@@ -84,7 +79,7 @@
     }
 </script>
 
-<style src="pikaday/css/pikaday.css"></style>
+
 <style scoped>
 input.date-picker.calendar-icon {
   background-image: url(/static/calendar.png);
