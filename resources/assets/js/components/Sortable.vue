@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen text-black bg-grey-lighter p-8">
+  <div class="text-black bg-grey-lighter p-8">
     <div class="bg-white rounded shadow-lg max-w-md mx-auto py-8 px-4">
         <sortable-list v-model="todoItems" item-class="todo-item" handle-class="todo-handle">
             <ul class="list-reset" slot-scope="{ items }">
@@ -22,6 +22,7 @@
         </sortable-list>
     </div>
   </div>
+  
 </template>
 
 <script>
