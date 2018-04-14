@@ -15,6 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('date-picker-pikaday',function(){
+    return view('pikaday');
+});
 
 
 Route::get('/sortable', function () {
@@ -24,3 +27,11 @@ Route::get('/sortable', function () {
 Route::get('/sortable-without', function () {
     return view('withoutVue');
 });
+
+Route::get('/flickity-without', function () {
+    return view('withoutVueFlickity');
+});
+Route::get('/flickity-with', function () {
+    return view('withVueFlickity');
+});
+
