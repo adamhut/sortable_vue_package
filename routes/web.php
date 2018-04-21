@@ -35,3 +35,7 @@ Route::get('/flickity-with', function () {
     return view('withVueFlickity');
 });
 
+Route::get('testmonials',function(){
+    return view('testmonials');
+});
+
