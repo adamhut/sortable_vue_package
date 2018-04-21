@@ -31,7 +31,13 @@ Route::get('/sortable-without', function () {
 Route::get('/flickity-without', function () {
     return view('withoutVueFlickity');
 });
+
 Route::get('/flickity-with', function () {
     return view('withVueFlickity');
+});
+
+
+Route::get('/modal',function(){
+    return view('modal.index');
 });
 
