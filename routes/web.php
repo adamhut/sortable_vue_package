@@ -39,7 +39,8 @@ Route::get('/flickity-with', function () {
 
 Route::get('/modal',function(){
     return view('modal.index');
+});
+
 Route::get('testmonials',function(){
     return view('testmonials');
 });
-
