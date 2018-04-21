@@ -25,6 +25,8 @@ Vue.component("carousel", require("./components/Carousel.vue"));
 
 
 
+Vue.component("testimonials", require("./components/Testimonials.vue"));
+
 Vue.component("example", require("./components/ExampleComponent.vue"));
 
 
