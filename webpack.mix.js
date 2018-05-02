@@ -11,10 +11,31 @@ let mix = require('laravel-mix');
  |
  */
    var tailwindcss = require("tailwindcss");
-
+/*
 mix.js('resources/assets/js/app.js', 'public/js');
 
 mix.sass("resources/assets/sass/app.scss", "public/css").options({
   processCssUrls: false,
   postCss: [tailwindcss("./tailwind.js")]
 });
+*/
+/*
+* section 1 
+*/
+/*
+mix
+  .sass("resources/assets/sass/design/app.scss", "public/css/design")
+  .options({
+    processCssUrls: false,
+    postCss: [tailwindcss("./tailwind.js")]
+  })
+  .browserSync("http://laravuepackage.test/css-for-backend-01");
+*/
+
+mix
+  .sass("resources/assets/sass/design/card.scss", "public/css/design/card.css")
+  .options({
+    processCssUrls: false,
+    postCss: [tailwindcss("./tailwind.js")]
+  })
+  .browserSync("http://laravuepackage.test/css-for-backend-02-card");
