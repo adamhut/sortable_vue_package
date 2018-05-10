@@ -31,7 +31,10 @@ mix
   })
   .browserSync("http://laravuepackage.test/css-for-backend-01");
 */
-
+/*
+* section 2 card 
+*/
+/*
 mix
   .sass("resources/assets/sass/design/card.scss", "public/css/design/card.css")
   .options({
@@ -39,3 +42,8 @@ mix
     postCss: [tailwindcss("./tailwind.js")]
   })
   .browserSync("http://laravuepackage.test/css-for-backend-02-card");
+
+*/
+mix.browserSync(
+  "http://laravuepackage.test/css-for-backend-02-card-plain-tailwinds"
+);

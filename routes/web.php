@@ -54,3 +54,7 @@ Route::get('css-for-backend-01', function () {
 Route::get('css-for-backend-02-card' ,function(){
     return view('design.card');
 });
+
+Route::get('css-for-backend-02-card-plain-tailwinds', function () {
+    return view('design.card-plain-tailwinds');
+});
