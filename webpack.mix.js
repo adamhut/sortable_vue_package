@@ -45,7 +45,15 @@ mix
   })
   .browserSync("http://laravuepackage.test/css-for-backend-02-card");
 
-*/
+
 mix.browserSync(
   "http://laravuepackage.test/css-for-backend-02-card-plain-tailwinds"
 );
+*/
+
+mix.js('resources/assets/js/controlled-component.js', 'public/js/controlled-component.js')
+  .sass("resources/assets/sass/app.scss", "public/css")
+    .options({
+      processCssUrls: false,
+      postCss: [tailwindcss("./tailwind.js")]
+    });
