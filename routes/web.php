@@ -44,3 +44,12 @@ Route::get('/modal',function(){
 Route::get('testmonials',function(){
     return view('testmonials');
 });
+
+Route::group(['prefix' => 'advanced-vue'], function () {
+
+    Route::get('controlled-component',function(){
+        return view('advanced-vue.controlled-component');
+    });
+});
+
+ 	
