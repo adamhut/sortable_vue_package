@@ -1,0 +1,131 @@
+/**
+ * This injects Tailwind's base styles, which is a combination of
+ * Normalize.css and some additional base styles.
+ *
+ * You can see the styles here:
+ * https://github.com/tailwindcss/tailwindcss/blob/master/css/preflight.css
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/preflight";
+ */
+
+@tailwind preflight;
+/**
+ * This injects any component classes registered by plugins.
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/components";
+ */
+
+@tailwind components;
+/**
+ * Here you would add any of your custom component classes; stuff that you'd
+ * want loaded *before* the utilities so that the utilities could still
+ * override them.
+ *
+ * Example:
+ *
+ * .btn { ... }
+ * .form-input { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "components/buttons";
+ * @import "components/forms"ix;
+ */
+html,body{
+    @apply .h-full;
+    font-family: "Open Sans", sans-serif;
+}
+
+body{
+    @apply .flex .justify-center .items-center .h-full;
+}
+.card{
+     @apply .shadow-md .flex .rounded;
+     width:475px;
+     height:268px;
+
+}
+
+.card-skill-button{
+    @apply .bg-grey-dark .no-underline .w-full .text-center .py-1 .px-8 .rounded-lg .text-sm ;
+    color:inherit;
+}
+
+.card-left{
+    @apply .flex .flex-col .items-center .justify-between .p-4 .rounded-bl .rounded-tl .text-white;
+    background: linear-gradient(to bottom, #21c8f6, #637bff);
+}
+
+
+.card-difficulty{
+    @apply .text-white .text-sm .text-center;
+}
+
+
+.card-right{
+    @apply .flex .flex-col .p-4;
+}
+
+.card-excerpt{
+    @apply .flex-1;
+
+}
+
+.card-right{
+    @apply .text-grey-dark ;
+}
+
+.card-title {
+    @apply .text-green-darkest .mb-3;
+}
+
+.card-title > a{
+    @apply .no-underline .text-2xl;
+    color:inherit;
+} 
+
+
+.card-meta > div:first-child{
+    @apply .mr-6;
+}
+
+.card-meta{
+    @apply .flex .text-sm
+}
+.card-meta > div {
+    @apply .flex .items-center;
+
+}
+
+.card-meta > div >img {
+    @apply .mr-1
+}
+
+/**
+ * This injects all of Tailwind's utility classes, generated based on your
+ * config file.
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/utilities";
+ */
+
+@tailwind utilities;
+/**
+ * Here you would add any custom utilities you need that don't come out of the
+ * box with Tailwind.
+ *
+ * Example :
+ *
+ * .bg-pattern-graph-paper { ... }
+ * .skew-45 { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "utilities/background-patterns";
+ * @import "utilities/skew-transforms";
+ */

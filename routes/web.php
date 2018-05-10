@@ -41,7 +41,8 @@ Route::get('/modal',function(){
     return view('modal.index');
 });
 
-Route::get('testmonials',function(){
+
+Route::get('testmonials', function () {
     return view('testmonials');
 });
 
@@ -53,3 +54,11 @@ Route::group(['prefix' => 'advanced-vue'], function () {
 });
 
  	
+Route::get('css-for-backend-01', function () {
+    return view('design.01');
+});
+
+
+Route::get('css-for-backend-02-card' ,function(){
+    return view('design.card');
+});
