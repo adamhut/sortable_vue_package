@@ -46,6 +46,14 @@ Route::get('testmonials', function () {
     return view('testmonials');
 });
 
+Route::group(['prefix' => 'advanced-vue'], function () {
+
+    Route::get('controlled-component',function(){
+        return view('advanced-vue.controlled-component');
+    });
+});
+
+ 	
 Route::get('css-for-backend-01', function () {
     return view('design.01');
 });
