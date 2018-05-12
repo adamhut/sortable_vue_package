@@ -58,7 +58,16 @@ mix.js('resources/assets/js/controlled-component.js', 'public/js/controlled-comp
       postCss: [tailwindcss("./tailwind.js")]
     });
 */
+/* //Advanced Vue Wrapping Pikaday 
 mix.js('resources/assets/js/wrapping-pikaday.js', 'public/js/wrapping-pikaday.js')
+  .sass("resources/assets/sass/app.scss", "public/css")
+  .options({
+    processCssUrls: false,
+    postCss: [tailwindcss("./tailwind.js")]
+  });
+*/
+
+mix.js('resources/assets/js/encapsulating-external-behavior.js', 'public/js/encapsulating-external-behavior.js')
   .sass("resources/assets/sass/app.scss", "public/css")
   .options({
     processCssUrls: false,
