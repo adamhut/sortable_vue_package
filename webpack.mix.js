@@ -50,10 +50,17 @@ mix.browserSync(
   "http://laravuepackage.test/css-for-backend-02-card-plain-tailwinds"
 );
 */
-
+/* //Advanced Vue Controlled component
 mix.js('resources/assets/js/controlled-component.js', 'public/js/controlled-component.js')
   .sass("resources/assets/sass/app.scss", "public/css")
     .options({
       processCssUrls: false,
       postCss: [tailwindcss("./tailwind.js")]
     });
+*/
+mix.js('resources/assets/js/wrapping-pikaday.js', 'public/js/wrapping-pikaday.js')
+  .sass("resources/assets/sass/app.scss", "public/css")
+  .options({
+    processCssUrls: false,
+    postCss: [tailwindcss("./tailwind.js")]
+  });

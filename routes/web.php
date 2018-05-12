@@ -66,4 +66,15 @@ Route::group(['prefix' => 'advanced-vue'], function () {
     Route::get('controlled-component', function () {
         return view('advanced-vue.controlled-component');
     });
+
+    Route::get('wrapping-pikaday', function () {
+        return view('advanced-vue.wrapping-pikaday');
+    });
+
+    Route::get('encapsulating-external-behavior',function(){
+        return view('advanced-vue.encapsulating-external-behavior');
+    });
+
 });
+
+
