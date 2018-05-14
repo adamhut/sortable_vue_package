@@ -60,6 +60,10 @@ Route::get('css-for-backend-02-card-plain-tailwinds', function () {
     return view('design.card-plain-tailwinds');
 });
 
+Route::get('rebuild-resolute', function () {
+    return view('design.rebuild-resolute');
+});
+
 
 Route::group(['prefix' => 'advanced-vue'], function () {
 
@@ -73,6 +77,9 @@ Route::group(['prefix' => 'advanced-vue'], function () {
 
     Route::get('encapsulating-external-behavior',function(){
         return view('advanced-vue.encapsulating-external-behavior');
+    });
+    Route::get('encapsulating-external-behavior-backgroud-scroll', function () {
+        return view('advanced-vue.encapsulating-external-behavior-background-scroll');
     });
 
 });
