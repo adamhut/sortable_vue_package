@@ -82,9 +82,19 @@ mix.js('resources/assets/js/encapsulating-external-behavior.js', 'public/js/enca
     postCss: [tailwindcss("./tailwind.js")]
 });
 */
+//Advanced Vue Encapsulating External Portal
+mix.js('resources/assets/js/encapsulating-external-behavior-portal.js', 'public/js/encapsulating-external-behavior-portal.js')
+  .sass("resources/assets/sass/app.scss", "public/css")
+  .options({
+    processCssUrls: false,
+    postCss: [tailwindcss("./tailwind.js")]
+});
 
+//**Rebute Resolute */
+/*
 mix.sass("resources/assets/sass/resolute.scss", "public/css/resolute.css")
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.js")]
   }).browserSync("http://laravue.test/rebuild-resolute");
+*/

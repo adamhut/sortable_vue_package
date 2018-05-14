@@ -82,6 +82,10 @@ Route::group(['prefix' => 'advanced-vue'], function () {
         return view('advanced-vue.encapsulating-external-behavior-background-scroll');
     });
 
+    Route::get('encapsulating-external-behavior-portal', function () {
+        return view('advanced-vue.encapsulating-external-behavior-portal');
+    });
+
 });
 
 
