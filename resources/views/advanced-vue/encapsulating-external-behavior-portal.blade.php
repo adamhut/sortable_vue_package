@@ -22,13 +22,16 @@
             </div>
         </div>
 
-        <portal name="modals" v-if="showAccouncement">
+     
+
+        <portal to="modals" v-if="showAnnouncement">
             <announcement-modal
-                :show="showAccouncement"
+                :show="showAnnouncement"
                 @close="showAnnouncement = false"
             >
             </announcement-modal>
-        </portal>
+        </portal> 
+
         <portal-target name="modals"></portal-target>      
        
     </div>

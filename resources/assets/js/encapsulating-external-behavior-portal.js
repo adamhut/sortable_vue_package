@@ -22,13 +22,13 @@ Vue.use(PortalVue);
 //Vue.component("AnnouncementModal", require("./components/advanced-vue/AnnouncementModal.vue"));
 Vue.component("UserSettingsForm", require("./components/advanced-vue/UserSettingForm.vue"));
 Vue.component("ConfirmDeleteModal", require("./components/advanced-vue/ConfirmDeleteModal.vue"));
-vue.component("AnnouncementModal", require("./components/advanced-vue/AnnouncementModal.vue"));
+Vue.component("AnnouncementModal", require("./components/advanced-vue/AnnouncementModal.vue"));
 
 const app = new Vue({
     el: '#app',
     data: {
         accountId: 7,
-       
+        showAnnouncement: true,
     },
     methods: {
 
