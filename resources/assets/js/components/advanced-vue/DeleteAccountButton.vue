@@ -1,16 +1,17 @@
 <template>
-  <button type="button" class="text-red-dark hover:underline"
+  <button type="button"
     @click="confirmDeleteModalOpen = true"
   >
-    Delete Account
-    <portal to="modals">
+    
+    <slot> Delete Account </slot>
+   
       <confirm-delete-modal
         :show="confirmDeleteModalOpen"
         @close="confirmDeleteModalOpen = false"
         :account-id="accountId"
         v-if="confirmDeleteModalOpen"
       />
-    </portal>
+   
   </button>
 </template>
 

@@ -86,6 +86,30 @@ Route::group(['prefix' => 'advanced-vue'], function () {
         return view('advanced-vue.encapsulating-external-behavior-portal');
     });
 
+    Route::get('inject-content-using-slot', function () {
+        return view('advanced-vue.inject-content-using-slot');
+    });
+
+    Route::get('extending-components-using-composition', function () {
+        return view('advanced-vue.extending-components-using-composition');
+    });
+
+    Route::get('passing-data-up-using-scoped-slot', function () {
+        return view('advanced-vue.passing-data-up-using-scoped-slot');
+    });
+
+    Route::get('render-function-101', function () {
+        return view('advanced-vue.render-function-101');
+    });
+
+    Route::get('render-function-and-components', function () {
+        return view('advanced-vue.render-function-and-components');
+    });
+
+    Route::get('encapsulating-external-behavior-portal-loading-content', function () {
+        return view('advanced-vue.encapsulating-external-behavior-portal-loading-content');
+    });
+
 });
 
 

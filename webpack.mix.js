@@ -83,12 +83,62 @@ mix.js('resources/assets/js/encapsulating-external-behavior.js', 'public/js/enca
 });
 */
 //Advanced Vue Encapsulating External Portal
-mix.js('resources/assets/js/encapsulating-external-behavior-portal.js', 'public/js/encapsulating-external-behavior-portal.js')
+/*mix.js('resources/assets/js/encapsulating-external-behavior-portal.js', 'public/js/encapsulating-external-behavior-portal.js')
   .sass("resources/assets/sass/app.scss", "public/css")
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.js")]
 });
+*/
+//Advanced Vue Inject Content Using Slot
+/*
+mix.js('resources/assets/js/inject-content-using-slot.js', 'public/js/inject-content-using-slot.js')
+  .sass("resources/assets/sass/app.scss", "public/css")
+  .options({
+    processCssUrls: false,
+    postCss: [tailwindcss("./tailwind.js")]
+  });
+*/
+//Advanced Vue Extending Components Using Composition
+/*mix.js('resources/assets/js/extending-components-using-composition.js', 'public/js/extending-components-using-composition.js')
+  .sass("resources/assets/sass/app.scss", "public/css")
+  .options({
+    processCssUrls: false,
+    postCss: [tailwindcss("./tailwind.js")]
+  });
+  */
+//Advanced Vue passing-data-up-using-scoped-slot.blade
+/*mix.js('resources/assets/js/passing-data-up-using-scoped-slot.js', 'public/js/passing-data-up-using-scoped-slot.js')
+  .sass("resources/assets/sass/app.scss", "public/css")
+  .options({
+    processCssUrls: false,
+    postCss: [tailwindcss("./tailwind.js")]
+  });
+*/
+//Advanced Vue render funciton 101
+/*mix.js('resources/assets/js/render-function-101.js', 'public/js/render-function-101.js')
+  .sass("resources/assets/sass/app.scss", "public/css")
+  .options({
+    processCssUrls: false,
+    postCss: [tailwindcss("./tailwind.js")]
+  });
+*/
+//Advanced Vue render funciton and components
+/*mix.js('resources/assets/js/render-function-and-components.js', 'public/js/render-function-and-components.js')
+  .sass("resources/assets/sass/app.scss", "public/css")
+  .options({
+    processCssUrls: false,
+    postCss: [tailwindcss("./tailwind.js")]
+  });
+*/
+//Advanced Vue render funciton and components
+mix.js('resources/assets/js/encapsulating-external-behavior-portal-loading-content.js',
+ 'public/js/encapsulating-external-behavior-portal-loading-content.js')
+  .sass("resources/assets/sass/app.scss", "public/css")
+  .options({
+    processCssUrls: false,
+    postCss: [tailwindcss("./tailwind.js")]
+  });
 
 //**Rebute Resolute */
 /*

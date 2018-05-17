@@ -14,12 +14,12 @@
         </div>
         
         <div class="flex justify-between">
-          <delete-account-button 
+          <load-external-content-button 
             class="text-red-dark hover:underline"
             :account-id="accountId"
           >
-          Delete Account
-          </delete-account-button>
+          Load Content Modal Button 
+          </load-external-content-button >
 
          
           <button type="button" class="btn btn-blue">Update Settings</button>
@@ -29,13 +29,13 @@
 
 <script>
 import ToggleInput from "../ToggleInput.vue"
-import DeleteAccountButton from "./DeleteAccountButton.vue"
+import LoadExternalContentButton from "./LoadExternalContentButton.vue"
 
 
 export default {
   props: ["accountId"],
   components: {
-     DeleteAccountButton,
+     LoadExternalContentButton,
     ToggleInput,
 
   },

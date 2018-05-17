@@ -43,13 +43,11 @@ export default {
     },
     
     created(){
-
         const escapeHandler = (e)=>{
             if(e.key === 'Escape' && this.show && e.keyCode ===27 ){
                 this.dismiss();
             }
         }
-
         document.addEventListener('keydown',escapeHandler);
 
         this.$once('hook:destroyed',()=>{
