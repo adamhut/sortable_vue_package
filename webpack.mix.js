@@ -124,22 +124,22 @@ mix.js('resources/assets/js/inject-content-using-slot.js', 'public/js/inject-con
   });
 */
 //Advanced Vue render funciton and components
-/*mix.js('resources/assets/js/render-function-and-components.js', 'public/js/render-function-and-components.js')
-  .sass("resources/assets/sass/app.scss", "public/css")
-  .options({
-    processCssUrls: false,
-    postCss: [tailwindcss("./tailwind.js")]
-  });
-*/
-//Advanced Vue render funciton and components
-mix.js('resources/assets/js/encapsulating-external-behavior-portal-loading-content.js',
- 'public/js/encapsulating-external-behavior-portal-loading-content.js')
+mix.js('resources/assets/js/render-function-and-components.js', 'public/js/render-function-and-components.js')
   .sass("resources/assets/sass/app.scss", "public/css")
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.js")]
   });
 
+//Advanced Vue render funciton and components
+/*mix.js('resources/assets/js/encapsulating-external-behavior-portal-loading-content.js',
+ 'public/js/encapsulating-external-behavior-portal-loading-content.js')
+  .sass("resources/assets/sass/app.scss", "public/css")
+  .options({
+    processCssUrls: false,
+    postCss: [tailwindcss("./tailwind.js")]
+  });
+*/
 //**Rebute Resolute */
 /*
 mix.sass("resources/assets/sass/resolute.scss", "public/css/resolute.css")

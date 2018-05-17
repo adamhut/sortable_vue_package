@@ -16,7 +16,7 @@ export default {
         }
     },'Hello world2');
      */
-    return createElement(ToggleInput,{
+    return createElement(PrimaryButton,{
         props:{
             value:this.toggled,
         },
