@@ -163,8 +163,82 @@
         </div><!--end left-sidebar-->
         
         <div class="middle-column w-3/5 flex-1">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore expedita magnam error inventore repudiandae libero laudantium
-            quod fugit saepe odio itaque sed maiores possimus nobis nemo rem a, quaerat non!
+            <div class="breadcrumb text-sm px-2 py-4 border-b-2 border-grey-light mb-8">
+                <span class="px-2"><a href="#">Contacts</a></span>
+                <span>
+                    <svg class="fill-current" width="6px" height="10px" viewBox="0 0 6 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g transform="translate(-311.000000, -90.000000)" fill="#82909E" fill-rule="nonzero">
+                                <path d="M317.292893,92.2928932 C317.683418,91.9023689 318.316582,91.9023689 318.707107,92.2928932 C319.097631,92.6834175 319.097631,93.3165825 318.707107,93.7071068 L314.707107,97.7071068 C314.316582,98.0976311 313.683418,98.0976311 313.292893,97.7071068 L309.292893,93.7071068 C308.902369,93.3165825 308.902369,92.6834175 309.292893,92.2928932 C309.683418,91.9023689 310.316582,91.9023689 310.707107,92.2928932 L314,95.5857864 L317.292893,92.2928932 Z" transform="translate(314.000000, 95.000000) rotate(-90.000000) translate(-314.000000, -95.000000) "></path>
+                            </g>
+                        </g>
+                    </svg>
+                    
+                </span>
+                <span class="px-2"><a href="#">Bart Simpson</a></span>
+                <span>
+                    <svg class="fill-current" width="6px" height="10px" viewBox="0 0 6 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g transform="translate(-311.000000, -90.000000)" fill="#82909E" fill-rule="nonzero">
+                                <path d="M317.292893,92.2928932 C317.683418,91.9023689 318.316582,91.9023689 318.707107,92.2928932 C319.097631,92.6834175 319.097631,93.3165825 318.707107,93.7071068 L314.707107,97.7071068 C314.316582,98.0976311 313.683418,98.0976311 313.292893,97.7071068 L309.292893,93.7071068 C308.902369,93.3165825 308.902369,92.6834175 309.292893,92.2928932 C309.683418,91.9023689 310.316582,91.9023689 310.707107,92.2928932 L314,95.5857864 L317.292893,92.2928932 Z" transform="translate(314.000000, 95.000000) rotate(-90.000000) translate(-314.000000, -95.000000) "></path>
+                            </g>
+                        </g>
+                    </svg>
+                </span>
+                <span class="px-2">Properties</span>
+            </div><!-- end breadcrumb-column-->
+            
+            <div class="px-8 container-resolute mx-auto">
+                <div class="heading-section flex items-center mb-1">
+                    <div class="pr-2 text-blue-resolute">
+                        <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path class="heroicon-ui" d="M13 20v-5h-2v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-7.59l-.3.3a1 1 0 1 1-1.4-1.42l9-9a1 1 0 0 1 1.4 0l9 9a1 1 0 0 1-1.4 1.42l-.3-.3V20a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2zm5 0v-9.59l-6-6-6 6V20h3v-5c0-1.1.9-2 2-2h2a2 2 0 0 1 2 2v5h3z"/></svg>
+                    </div>
+                    <h1 class="font-normal text-3xl mr-2">
+                        HIODHOJ233
+                    </h1>
+                    <div>
+                        <div class="rounded-full font-bold bg-blue-resolute-dark text-white px-3 py-1 text-xs uppercase tracking-wide">
+                            Active
+                        </div>
+                    </div>
+                </div><!-- end heading-section-->
+                
+                <div class="heading-address-section mb-4">
+                    <div class="text-xs text-grey-darker">618 W Main St Suite C ,Alhambra California 91801</div>
+                </div><!-- end heading-address-section-->
+                
+                <div class="card-details bg-white border-grey-light border-t-4 rounded px-4 py-6 mb-8 border-t-blue-resolute">
+                    <div class="flex">
+                        <div class="w-1/3 pr-4">
+                            <h2 class="text-lg font-semibold mb-4">
+                                Details
+                            </h2>
+                            <p class="text-black text-sm leading-normal mb-4">
+                                Information about this property only. Owner Name, Protest Address, and CAD Mailing 
+                                Address must match the county's records.
+                            </p>
+                            <p class="text-black text-sm leading-normal mb-4">
+                                If you need to update the contact, you may do so on the contact page for <a href="#">Bart Simpson</a>.
+                            </p>
+                        </div>
+                        
+                        <div class="w-2/3 pl-4">
+                            <div class="flex flex-wrap">
+                                <div class="w-1/2 pr-4 mb-6">
+                                    <label for="pid" class="block text-grey-darkest text-base mb-2">PID</label>
+                                    <input id="pid" type="text" value="GALDZO2R4I5ZK" class="w-full text-base bg-grey-lightest border border-grey-light text-grey-darkest outline-0 rounded px-3 py-3">                   
+                                </div>
+                                <div class="w-1/2 pr-4 mb-6">
+                                    <label for="cad_owner_name" class="block text-grey-darkest text-base mb-2">CAD Owner Name</label>
+                                    <input id="cad_ownder_name" type="text" value="Bart Simpson" class="w-full text-base bg-grey-lightest border border-grey-light text-grey-darkest outline-0 rounded px-3 py-3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--End Card section-->
+                
+                
+            </div><!-- end container-resolute-->
         </div><!-- end middle-column-->
         
         <div class="right-sidebar w-right bg-white shadow">

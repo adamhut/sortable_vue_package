@@ -141,13 +141,14 @@ mix.js('resources/assets/js/render-function-and-children.js', 'public/js/render-
   });
 */
 //Advanced Vue render funciton and slot
+/*
 mix.js('resources/assets/js/render-function-and-slot.js', 'public/js/render-function-and-slot.js')
   .sass("resources/assets/sass/app.scss", "public/css")
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.js")]
   });
-
+*/
 
 //Advanced Vue render funciton and components
 /*mix.js('resources/assets/js/encapsulating-external-behavior-portal-loading-content.js',
@@ -159,10 +160,10 @@ mix.js('resources/assets/js/render-function-and-slot.js', 'public/js/render-func
   });
 */
 //**Rebute Resolute */
-/*
+
 mix.sass("resources/assets/sass/resolute.scss", "public/css/resolute.css")
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.js")]
-  }).browserSync("http://laravue.test/rebuild-resolute");
-*/
+  }).browserSync("http://laravuepackage.test/rebuild-resolute");
+
