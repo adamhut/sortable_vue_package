@@ -110,6 +110,15 @@ Route::group(['prefix' => 'advanced-vue'], function () {
         return view('advanced-vue.encapsulating-external-behavior-portal-loading-content');
     });
 
+
+    Route::get('render-function-and-children', function () {
+        return view('advanced-vue.render-function-and-children');
+    });
+
+    Route::get('render-function-and-slot', function () {
+        return view('advanced-vue.render-function-and-slot');
+    });
+
 });
 
 

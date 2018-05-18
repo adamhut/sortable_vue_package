@@ -124,12 +124,30 @@ mix.js('resources/assets/js/inject-content-using-slot.js', 'public/js/inject-con
   });
 */
 //Advanced Vue render funciton and components
-mix.js('resources/assets/js/render-function-and-components.js', 'public/js/render-function-and-components.js')
+/*mix.js('resources/assets/js/render-function-and-components.js', 'public/js/render-function-and-components.js')
   .sass("resources/assets/sass/app.scss", "public/css")
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.js")]
   });
+*/
+//Advanced Vue render funciton and children
+/*
+mix.js('resources/assets/js/render-function-and-children.js', 'public/js/render-function-and-children.js')
+  .sass("resources/assets/sass/app.scss", "public/css")
+  .options({
+    processCssUrls: false,
+    postCss: [tailwindcss("./tailwind.js")]
+  });
+*/
+//Advanced Vue render funciton and slot
+mix.js('resources/assets/js/render-function-and-slot.js', 'public/js/render-function-and-slot.js')
+  .sass("resources/assets/sass/app.scss", "public/css")
+  .options({
+    processCssUrls: false,
+    postCss: [tailwindcss("./tailwind.js")]
+  });
+
 
 //Advanced Vue render funciton and components
 /*mix.js('resources/assets/js/encapsulating-external-behavior-portal-loading-content.js',
