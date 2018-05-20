@@ -119,6 +119,11 @@ Route::group(['prefix' => 'advanced-vue'], function () {
         return view('advanced-vue.render-function-and-slot');
     });
 
+    Route::get('data-provider-components', function () {
+        return view('advanced-vue.data-provider-components');
+    });
+    
+
 });
 
 

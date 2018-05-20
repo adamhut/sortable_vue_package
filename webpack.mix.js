@@ -159,11 +159,22 @@ mix.js('resources/assets/js/render-function-and-slot.js', 'public/js/render-func
     postCss: [tailwindcss("./tailwind.js")]
   });
 */
-//**Rebute Resolute */
+//Advanced Vue render funciton and components
+mix.js('resources/assets/js/data-provider-components.js',
+ 'public/js/data-provider-components.js')
+  .sass("resources/assets/sass/app.scss", "public/css")
+  .options({
+    processCssUrls: false,
+    postCss: [tailwindcss("./tailwind.js")]
+  });
 
+
+
+//**Rebute Resolute */
+/*
 mix.sass("resources/assets/sass/resolute.scss", "public/css/resolute.css")
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.js")]
   }).browserSync("http://laravuepackage.test/rebuild-resolute");
-
+*/
