@@ -122,6 +122,9 @@ Route::group(['prefix' => 'advanced-vue'], function () {
     Route::get('data-provider-components', function () {
         return view('advanced-vue.data-provider-components');
     });
+    Route::get('getting-started-with-renderless-ui-components', function () {
+        return view('advanced-vue.getting-started-with-renderless-ui-components');
+    });
     
 
 });
