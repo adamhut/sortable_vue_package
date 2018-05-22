@@ -12042,7 +12042,7 @@ module.exports = function normalizeComponent (
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(12);
-module.exports = __webpack_require__(43);
+module.exports = __webpack_require__(44);
 
 
 /***/ }),
@@ -33782,7 +33782,7 @@ if (false) {
 var disposed = false
 var normalizeComponent = __webpack_require__(10)
 /* script */
-var __vue_script__ = __webpack_require__(52)
+var __vue_script__ = __webpack_require__(43)
 /* template */
 var __vue_template__ = null
 /* template functional */
@@ -33824,27 +33824,11 @@ module.exports = Component.exports
 
 /***/ }),
 /* 43 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 44 */,
-/* 45 */,
-/* 46 */,
-/* 47 */,
-/* 48 */,
-/* 49 */,
-/* 50 */,
-/* 51 */,
-/* 52 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 //
 
@@ -33853,7 +33837,15 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         prop: 'tags',
         event: 'update'
     },
-    props: ['tags'],
+    props: {
+        tags: {
+            required: true
+
+        },
+        removeOnBackspace: {
+            default: true
+        }
+    },
     data: function data() {
         return {
             input: ''
@@ -33866,31 +33858,38 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         }
     },
     render: function render() {
-        var _this = this,
-            _$scopedSlots$default;
+        var _this = this;
 
-        return this.$scopedSlots.default((_$scopedSlots$default = {
+        return this.$scopedSlots.default({
             tags: this.tags,
             removeTag: this.removeTag,
+            addTag: this.addTag,
+            removeButtonEvents: function removeButtonEvents(tag) {
+                return {
+                    click: function click() {
+                        console.log(tag);
+                        _this.removeTag(tag);
+                    }
+                };
+            },
             inputProps: {
                 value: this.input
-            }
-        }, _defineProperty(_$scopedSlots$default, 'inputProps', {
-            value: this.input
-        }), _defineProperty(_$scopedSlots$default, 'inputEvents', {
-            input: function input(e) {
-                return _this.input = e.target.value;
             },
-            keydown: function keydown(e) {
-                if (e.key === "Backspace") {
-                    _this.handleBackspace();
-                }
-                if (e.key === "Enter") {
-                    e.preventDefault();
-                    _this.addTag();
+            inputEvents: {
+                input: function input(e) {
+                    return _this.input = e.target.value;
+                },
+                keydown: function keydown(e) {
+                    if (e.key === "Backspace" && _this.removeOnBackspace) {
+                        _this.handleBackspace();
+                    }
+                    if (e.key === "Enter") {
+                        e.preventDefault();
+                        _this.addTag();
+                    }
                 }
             }
-        }), _$scopedSlots$default));
+        });
     },
 
     methods: {
@@ -33916,6 +33915,12 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         }
     }
 });
+
+/***/ }),
+/* 44 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

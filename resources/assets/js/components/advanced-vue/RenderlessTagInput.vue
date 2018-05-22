@@ -5,7 +5,15 @@
             prop:'tags',
             event:'update',
         },
-        props:['tags'],
+        props:{
+            tags:{
+                required:true,
+                
+            },
+            removeOnBackspace:{
+                default:true
+            },
+        },
         data() {
             return {
                 input: '',
@@ -20,16 +28,20 @@
             return this.$scopedSlots.default({
                 tags:this.tags,
                 removeTag :this.removeTag,
-                inputProps:{ 
-                    value:this.input
-                },
-               inputProps: {
+                addTag:this.addTag,
+                removeButtonEvents:(tag)=>({
+                    click:()=>{
+                        console.log(tag)
+                        this.removeTag(tag)
+                    },
+                }),
+                inputProps: {
                     value: this.input
                 },
-                inputEvents: {
+                inputEvents: { 
                     input: e => (this.input = e.target.value),
                     keydown: e => {
-                        if (e.key === "Backspace") {
+                        if (e.key === "Backspace" && this.removeOnBackspace) {
                             this.handleBackspace()
                         }
                         if (e.key === "Enter") {

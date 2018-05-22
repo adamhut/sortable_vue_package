@@ -126,7 +126,9 @@ Route::group(['prefix' => 'advanced-vue'], function () {
         return view('advanced-vue.getting-started-with-renderless-ui-components');
     });
     
-
+    Route::get('implementing-alternate-layouts-with-renderless-components', function () {
+        return view('advanced-vue.implementing-alternate-layouts-with-renderless-components');
+    });
 });
 
 
