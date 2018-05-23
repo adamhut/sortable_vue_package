@@ -187,5 +187,5 @@ mix.sass("resources/assets/sass/resolute.scss", "public/css/resolute.css")
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.js")]
-  }).browserSync("http://laravue.test/rebuild-resolute");
+  }).browserSync("http://laravuepackage.test/rebuild-resolute");
 

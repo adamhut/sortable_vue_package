@@ -907,6 +907,13 @@ module.exports = {
       // center: true,
       // padding: '1rem',
     }),
+    // Other plugins...
+    require('tailwindcss-tables')({
+        cellPadding: '1rem', // default: .75rem
+        //tableBorderColor: '#dee2e6', // default: #dee2e6
+        //tableStripedBackgroundColor: 'rgba(0,0,0,.05)', // default: rgba(0,0,0,.05)
+       // tableHoverBackgroundColor: 'rgba(0,0,0,.075)', // default: rgba(0,0,0,.075)
+    }),
   ],
 
 

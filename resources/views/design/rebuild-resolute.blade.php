@@ -268,27 +268,235 @@
                                 Flage
                             </h2>
                             <p class="text-black text-sm leading-normal mb-4">
-                              Flags are just like tags. We have "flags" for many common situations where a property might require extra attention.
+                                Flags are just like tags. We have "flags" for many common situations where a property might require extra attention.
                             </p>
-                           
+                            
                         </div>
                         <div class="w-2/3 pl-4">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis modi in eum accusamus sapiente consectetur! Illum numquam neque doloribus quidem animi totam vero dignissimos enim eius, ab placeat repellat nobis!
-                            Natus animi minus iure sed sint, dolorem ab aut asperiores omnis nemo, dolorum unde repellendus architecto praesentium a excepturi. Quo, non saepe! Sint quos ea aliquam tempora aspernatur ipsam placeat?
-                            Dolorem consequatur quo obcaecati! Distinctio beatae quaerat ducimus sit tempora fugiat enim laudantium, nisi voluptatibus corrupti, sed a, cumque error. Quam vitae dignissimos placeat, laborum in ab suscipit eos qui.
-                            Doloremque inventore ratione assumenda sunt deserunt dolorem recusandae hic sed aliquid, corrupti sequi voluptates. Quasi deleniti iusto recusandae corrupti eum ipsam, temporibus ullam voluptatibus delectus, odit praesentium necessitatibus? Quia, praesentium?
-                            Tempore rem neque suscipit natus, ratione aut distinctio molestiae odit amet doloremque quia esse, aliquid hic numquam vel atque accusamus laboriosam quisquam incidunt. Obcaecati at amet nihil praesentium vitae totam?
+                            <table class="table mb-0">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">Year</th>
+                                        <th scope="col">Flag</th>
+                                        <th scope="col">Notes</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="checkit"/>
+                                        </td>
+                                        <td>Onging</td>
+                                        <td>
+                                            <div class="flex">
+                                                <div class="mr-2">
+                                                    <svg class="fill-current" width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                            <g transform="translate(-760.000000, -734.000000)" fill="#D15959">
+                                                                <g transform="translate(760.000000, 734.000000)">
+                                                                    <circle opacity="0.300000012" cx="6" cy="6" r="6"></circle>
+                                                                    <circle cx="6" cy="6" r="3"></circle>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                                <div class="text-red font-bold text-sm">
+                                                    Litigation
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="text-sm mb-2">Fence fell over in Hurricane Harvey</div>
+                                            <div class="text-xs text-grey-dark">Applied by Aaron on April 15, 2018 10:37 AM</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="checkit"/>
+                                        </th>
+                                        <td>2017</td>
+                                        <td>
+                                            <div class="flex">
+                                                <div class="mr-2">
+                                                    <svg class="fill-current" width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                            <g transform="translate(-760.000000, -734.000000)" fill="#D15959">
+                                                                <g transform="translate(760.000000, 734.000000)">
+                                                                    <circle opacity="0.300000012" cx="6" cy="6" r="6"></circle>
+                                                                    <circle cx="6" cy="6" r="3"></circle>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                                <div class="text-red font-bold text-sm">
+                                                    Harvey
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="text-sm mb-2">N / A</div>
+                                            <div class="text-xs text-grey-dark">Applied by System on April 4, 2018 8:13 AM</div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                
+                            </table><!--End table section-->
+                            <div class="p-2 bg-grey-lighter mb-4">
+                                <a href="#" class="text-xs font-bold text-grey">Show 2 older flags</a>
+                            </div>
+                            <div class="">
+                                <a href="#" class="uppercase tracking-wide font-bold text-xs text-black">+ Apply New Flag</a>
+                            </div>
                         </div>
                     </div>
                 </div><!--End Card section-->
                 
+                <div class="card-details bg-white border-grey-light border-t-4 rounded px-4 py-6 mb-8 border-t-blue-resolute">
+                    <div class="flex">
+                        <div class="w-1/3 pr-4">
+                            <h2 class="text-lg font-semibold mb-4">
+                                AOAs
+                            </h2>
+                            <p class="text-black text-sm leading-normal mb-4">
+                                Here you'll see all the AOAs we've ever had for this property. The active one is at the top, the rest are just there for auditing purposes.
+                            </p>                            
+                        </div>
+                        <div class="w-2/3 pl-4">
+                            <table class="table mb-0">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="text-base font-semibold text-grey-darkest">Name</th>
+                                        <th scope="col" class="text-base font-semibold text-grey-darkest">Status</th>
+                                        <th scope="col" class="text-base font-semibold text-grey-darkest">Notes</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="text-blue mb-1">AOA 22228</div>
+                                            <div class="text-xs text-grey-dark">Signed</div>
+                                        </td>
+                                        <td>
+                                            <div class="flex">
+                                                <div class="mr-2">
+                                                    <svg class="fill-current" width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                            <g transform="translate(-760.000000, -734.000000)" fill="#0A7B3F">
+                                                                <g transform="translate(760.000000, 734.000000)">
+                                                                    <circle opacity="0.300000012" cx="6" cy="6" r="6"></circle>
+                                                                    <circle cx="6" cy="6" r="3"></circle>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                                
+                                                <div class="text-green-dark font-bold">No issues</div>
+                                                
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="text-sm mb-2 leading-normal">If there’s a problem with this AOA, you can <a href="#">make an AOA issue</a>.</div>
+                                            <div class="text-xs text-grey-dark">Applied by System on April 15, 2018 10:37 AM</div>
+                                        </td>
+                                        
+                                    </tr>
+                                </tbody>
+                                
+                            </table><!--End table section-->
+                            <div class="">
+                                <a href="#" class="uppercase tracking-wide font-bold text-xs text-black">+ Create New AOA</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--End Card section-->
+                <div class="card-cancel bg-white border border-grey-light border-t-4 border-t-red rounded px-4 py-6 mb-6">
+                    <div class="flex">
+                        <div class="w-1/3 pr-4">
+                            <h2 class="text-lg font-semibold mb-4">Cancel</h2>
+                        </div>
+                        <div class="w-2/3 pl-8">
+                            <div class="card-alert bg-yellow-lightest border border-grey-light border-t-4 border-t-yellow-resolute rounded px-4 py-4 mb-6 flex">
+                                <div class="mr-2">
+                                    <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path class="heroicon-ui" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm0 9a1 1 0 0 1-1-1V8a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1zm0 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/></svg>
+                                </div>
+                                <div class="text-xs">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod totam aspernatur nostrum ducimus molestiae culpa aliquam vero. Eligendi ad, unde id at consequuntur nobis voluptatibus. Voluptas illum perspiciatis nulla obcaecati.
+                                </div>
+                            </div>
+                            <form action="">
+                                <div class="w-full mb-6">
+                                    <label for="pid" class="block text-grey-darkest text-base mb-2">Reason</label>
+                                    <input id="pid" type="text" value="618 W  Main St Alhambra " class="w-full text-base bg-grey-lightest border border-grey-light text-grey-darkest outline-0 rounded px-3 py-3">
+                                </div>
+                                <div class="w-full mb-6">
+                                    <label for="pid" class="block text-grey-darkest text-base mb-2">CAD Mailing Address</label>
+                                    <input id="pid" type="text" value="618 W  Main St Alhambra " class="w-full text-base bg-grey-lightest border border-grey-light text-grey-darkest outline-0 rounded px-3 py-3">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="flex text-sm leading-normal">
+                                        <input type="checkbox" name="remember" class=" text-grey-dark mr-2 mt-1">I want to cancel this property, which has a situs of 123 Main St., Galveston, TX 77555
+                                    </label>
+                                </div>
+                                
+                                <div class="mb-4 pb-4 border-b-2 border-grey-light">
+                                    <label class="flex text-sm leading-normal">
+                                        <input type="checkbox" name="remember" class=" text-grey-dark mr-2 mt-1">Mark this client as “Do Not Contact”. If we are still on good terms with this person, don’t check this box.
+                                    </label>
+                                </div>
+                                
+                                <div class="text-right">
+                                    <button type="submit" class="bg-red text-white text-sm rounded font-bold px-4 py-3 hover:bg-red-dark">Cancel This Property</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>                
             </div><!-- end container-resolute-->
         </div><!-- end middle-column-->
         
         <div class="right-sidebar w-right bg-white shadow">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ipsum dolor, aut earum ducimus officia in tempore blanditiis ratione nesciunt, quas inventore eos quisquam. Officiis at error dicta laboriosam corporis.
+            <div class="flex items-center justify-between p-4 mb-2">
+                <div class="font-semibold text-lg text-grey-darkest">
+                    Notes
+                </div>
+                <button class="bg-white uppercase text-grey-darkest text-xs font-bold tracking-wide rounded border border-grey-light px-3 py-2 hover:text-white hover:bg-grey-darkest">+ New Note</button>
+            </div>  
+            <div class="flex items-center justify-between text-sm font-semibold border-b border-grey-light px-4 mb-4">
+                <div class="text-grey-darkest border-b-4 border-blue pb-4 ">
+                    Notes Only
+                </div>
+                <div class="text-grey-darkest border-b-4 border-white pb-4 ">
+                    Audits Only
+                </div>
+                <div class="text-grey-darkest border-b-4 border-white pb-4 ">
+                    Everything
+                </div>
+            </div>
+            <div class="flex px-4 mb-4">
+                <div class="text-blue-resolute-icon mr-2">
+                    <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path class="heroicon-ui" d="M6.3 12.3l10-10a1 1 0 0 1 1.4 0l4 4a1 1 0 0 1 0 1.4l-10 10a1 1 0 0 1-.7.3H7a1 1 0 0 1-1-1v-4a1 1 0 0 1 .3-.7zM8 16h2.59l9-9L17 4.41l-9 9V16zm10-2a1 1 0 0 1 2 0v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2h6a1 1 0 0 1 0 2H4v14h14v-6z"/></svg>
+                </div>
+                <div class="mb-2">
+                    <div class="text-sm text-grey-darkest leading-normal mb-2">The client called and said their fence fell over.</div>
+                    <div class="text-xs text-grey-dark">Aaron &middot; April 15, 2018 9:36am </div>
+                </div>
+            </div>
+            <div class="flex px-4 mb-4">
+                <div class="text-blue-resolute-icon mr-2">
+                    <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path class="heroicon-ui" d="M6.3 12.3l10-10a1 1 0 0 1 1.4 0l4 4a1 1 0 0 1 0 1.4l-10 10a1 1 0 0 1-.7.3H7a1 1 0 0 1-1-1v-4a1 1 0 0 1 .3-.7zM8 16h2.59l9-9L17 4.41l-9 9V16zm10-2a1 1 0 0 1 2 0v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2h6a1 1 0 0 1 0 2H4v14h14v-6z"/></svg>
+                </div>
+                <div class="mb-2">
+                    <div class="text-sm text-grey-darkest leading-normal mb-2">AOA 22228 was made the current AOA for PID GALDZO2R4I5ZK.</div>
+                    <div class="text-xs text-grey-dark">System &middot; April 7, 2018 11:42am </div>
+                </div>
+                
+            </div>
             
-        </div>
+        </div><!-- end right-sidebar-->
     </div>
     
     

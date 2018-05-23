@@ -71,6 +71,14 @@ a{
     border-top-color: #f2d024 !important;
 }
 
+.table th{
+    border-top:0;
+}
+
+.table   td{
+    border-bottom:1px solid #dee2e6;
+}
+
  /**
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.
