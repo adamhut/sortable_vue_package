@@ -170,22 +170,41 @@ mix.js('resources/assets/js/render-function-and-slot.js', 'public/js/render-func
 */
 
 // Advanced Vue Getting Started with Renderless UI Components
-
-/* mix.js('resources/assets/js/getting-started-with-renderless-ui-components.js',
+/* 
+mix.js('resources/assets/js/getting-started-with-renderless-ui-components.js',
   'public/js/getting-started-with-renderless-ui-components.js')
   .sass("resources/assets/sass/app.scss", "public/css")
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.js")]
-  });
+});
  */
 
-
-//**Rebute Resolute */
- 
-mix.sass("resources/assets/sass/resolute.scss", "public/css/resolute.css")
+// Advanced Vue Wrapping Renderless Components
+/* mix.js('resources/assets/js/wrapping-renderless-components.js',
+  'public/js/wrapping-renderless-components.js')
+  .sass("resources/assets/sass/app.scss", "public/css")
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.js")]
-  }).browserSync("http://laravuepackage.test/rebuild-resolute");
+}); */
 
+// Advanced Vue Elements Queryies as a Data Provider Component
+ mix.js('resources/assets/js/element-queries-as-adata-provider-component.js',
+  'public/js/element-queries-as-adata-provider-component.js')
+  .sass("resources/assets/sass/app.scss", "public/css")
+  .options({
+    processCssUrls: false,
+    postCss: [tailwindcss("./tailwind.js")]
+}); 
+ 
+
+
+//**Rebute Resolute */
+/*  
+mix.sass("resources/assets/sass/resolute.scss", "public/css/resolute.css")
+.options({
+  processCssUrls: false,
+    postCss: [tailwindcss("./tailwind.js")]
+  }).browserSync("http://laravuepackage.test/rebuild-resolute");
+ */

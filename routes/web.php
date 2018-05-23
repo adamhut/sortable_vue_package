@@ -129,6 +129,14 @@ Route::group(['prefix' => 'advanced-vue'], function () {
     Route::get('implementing-alternate-layouts-with-renderless-components', function () {
         return view('advanced-vue.implementing-alternate-layouts-with-renderless-components');
     });
+
+    Route::get('wrapping-renderless-components', function () {
+        return view('advanced-vue.wrapping-renderless-components');
+    });
+    Route::get('element-queries-as-adata-provider-component', function () {
+        return view('advanced-vue.element-queries-as-adata-provider-component');
+    });
+    
 });
 
 
