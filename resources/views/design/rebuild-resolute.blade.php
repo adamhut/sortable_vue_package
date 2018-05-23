@@ -221,7 +221,6 @@
                                 If you need to update the contact, you may do so on the contact page for <a href="#">Bart Simpson</a>.
                             </p>
                         </div>
-                        
                         <div class="w-2/3 pl-4">
                             <div class="flex flex-wrap">
                                 <div class="w-1/2 pr-4 mb-6">
@@ -233,10 +232,55 @@
                                     <input id="cad_ownder_name" type="text" value="Bart Simpson" class="w-full text-base bg-grey-lightest border border-grey-light text-grey-darkest outline-0 rounded px-3 py-3">
                                 </div>
                             </div>
+                            <div class="flex flex-wrap">
+                                <div class="w-full pr-4 mb-6">
+                                    <label for="pid" class="block text-grey-darkest text-base mb-2">ProtestAddress</label>
+                                    <input id="pid" type="text" value="618 W  Main St Alhambra " class="w-full text-base bg-grey-lightest border border-grey-light text-grey-darkest outline-0 rounded px-3 py-3">
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap">
+                                <div class="w-full pr-4 mb-6">
+                                    <label for="pid" class="block text-grey-darkest text-base mb-2">CAD Mailing Address</label>
+                                    <input id="pid" type="text" value="618 W  Main St Alhambra " class="w-full text-base bg-grey-lightest border border-grey-light text-grey-darkest outline-0 rounded px-3 py-3">
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap">
+                                <div class="w-1/3 pr-4 mb-6">
+                                    <label for="pid" class="block text-grey-darkest text-base mb-2">Fee Rate</label>
+                                    <input id="pid" type="text" value="40" class="w-full text-base bg-grey-lightest border border-grey-light text-grey-darkest outline-0 rounded px-3 py-3">
+                                </div>
+                                <div class="w-1/3 pr-4 mb-6">
+                                    <label for="pid" class="block text-grey-darkest text-base mb-2">Start Year</label>
+                                    <input id="pid" type="text" value="2018" class="w-full text-base bg-grey-lightest border border-grey-light text-grey-darkest outline-0 rounded px-3 py-3">
+                                </div>
+                                <div class="w-1/3 pr-4 mb-6">
+                                    <label for="cad_owner_name" class="block text-grey-darkest text-base mb-2">Agency End Date</label>
+                                    <input id="cad_ownder_name" type="text" value="Bart Simpson" class="w-full text-base bg-grey-lightest border border-grey-light text-grey-darkest outline-0 rounded px-3 py-3">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div><!--End Card section-->
-                
+                <div class="card-details bg-white border-grey-light border-t-4 rounded px-4 py-6 mb-8 border-t-blue-resolute">
+                    <div class="flex">
+                        <div class="w-1/3 pr-4">
+                            <h2 class="text-lg font-semibold mb-4">
+                                Flage
+                            </h2>
+                            <p class="text-black text-sm leading-normal mb-4">
+                              Flags are just like tags. We have "flags" for many common situations where a property might require extra attention.
+                            </p>
+                           
+                        </div>
+                        <div class="w-2/3 pl-4">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis modi in eum accusamus sapiente consectetur! Illum numquam neque doloribus quidem animi totam vero dignissimos enim eius, ab placeat repellat nobis!
+                            Natus animi minus iure sed sint, dolorem ab aut asperiores omnis nemo, dolorum unde repellendus architecto praesentium a excepturi. Quo, non saepe! Sint quos ea aliquam tempora aspernatur ipsam placeat?
+                            Dolorem consequatur quo obcaecati! Distinctio beatae quaerat ducimus sit tempora fugiat enim laudantium, nisi voluptatibus corrupti, sed a, cumque error. Quam vitae dignissimos placeat, laborum in ab suscipit eos qui.
+                            Doloremque inventore ratione assumenda sunt deserunt dolorem recusandae hic sed aliquid, corrupti sequi voluptates. Quasi deleniti iusto recusandae corrupti eum ipsam, temporibus ullam voluptatibus delectus, odit praesentium necessitatibus? Quia, praesentium?
+                            Tempore rem neque suscipit natus, ratione aut distinctio molestiae odit amet doloremque quia esse, aliquid hic numquam vel atque accusamus laboriosam quisquam incidunt. Obcaecati at amet nihil praesentium vitae totam?
+                        </div>
+                    </div>
+                </div><!--End Card section-->
                 
             </div><!-- end container-resolute-->
         </div><!-- end middle-column-->

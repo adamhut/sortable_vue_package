@@ -171,21 +171,21 @@ mix.js('resources/assets/js/render-function-and-slot.js', 'public/js/render-func
 
 // Advanced Vue Getting Started with Renderless UI Components
 
-mix.js('resources/assets/js/getting-started-with-renderless-ui-components.js',
+/* mix.js('resources/assets/js/getting-started-with-renderless-ui-components.js',
   'public/js/getting-started-with-renderless-ui-components.js')
   .sass("resources/assets/sass/app.scss", "public/css")
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.js")]
   });
-
+ */
 
 
 //**Rebute Resolute */
-/*
+ 
 mix.sass("resources/assets/sass/resolute.scss", "public/css/resolute.css")
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.js")]
-  }).browserSync("http://laravuepackage.test/rebuild-resolute");
-*/
+  }).browserSync("http://laravue.test/rebuild-resolute");
+
