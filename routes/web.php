@@ -140,7 +140,9 @@ Route::group(['prefix' => 'advanced-vue'], function () {
     Route::get('building-compound-components-with-provide-inject',function(){
         return view('advanced-vue.building-compound-components-with-provide-inject');
     });
-    
+    Route::get('building-a-compound-sortable-list-component', function () {
+        return view('advanced-vue.building-a-compound-sortable-list-component');
+    });
 });
 
 
