@@ -136,6 +136,10 @@ Route::group(['prefix' => 'advanced-vue'], function () {
     Route::get('element-queries-as-adata-provider-component', function () {
         return view('advanced-vue.element-queries-as-adata-provider-component');
     });
+
+    Route::get('building-compound-components-with-provide-inject',function(){
+        return view('advanced-vue.building-compound-components-with-provide-inject');
+    });
     
 });
 

@@ -190,15 +190,25 @@ mix.js('resources/assets/js/getting-started-with-renderless-ui-components.js',
 }); */
 
 // Advanced Vue Elements Queryies as a Data Provider Component
- mix.js('resources/assets/js/element-queries-as-adata-provider-component.js',
+/*  mix.js('resources/assets/js/element-queries-as-adata-provider-component.js',
   'public/js/element-queries-as-adata-provider-component.js')
   .sass("resources/assets/sass/app.scss", "public/css")
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.js")]
 }); 
- 
+  */
 
+ 
+ // Advanced Vue Elements Queryies as a Data Provider Component
+ mix.js('resources/assets/js/building-compound-components-with-provide-inject.js',
+   'public/js/building-compound-components-with-provide-inject.js')
+   .sass("resources/assets/sass/app.scss", "public/css")
+   .options({
+     processCssUrls: false,
+     postCss: [tailwindcss("./tailwind.js")]
+ }); 
+  
 
 //**Rebute Resolute */
 /*  
