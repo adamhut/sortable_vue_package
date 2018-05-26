@@ -200,14 +200,23 @@ mix.js('resources/assets/js/getting-started-with-renderless-ui-components.js',
   */
 
  
- // Advanced Vue Elements Queryies as a Data Provider Component
- mix.js('resources/assets/js/building-compound-components-with-provide-inject.js',
+ // Advanced Vue Elements Compound Components  With Provide Inject
+/*  mix.js('resources/assets/js/building-compound-components-with-provide-inject.js',
    'public/js/building-compound-components-with-provide-inject.js')
    .sass("resources/assets/sass/app.scss", "public/css")
    .options({
      processCssUrls: false,
      postCss: [tailwindcss("./tailwind.js")]
- }); 
+ });  */
+
+ // Advanced Vue Elements Building a Compound Sortable List Component
+ mix.js('resources/assets/js/building-a-compound-sortable-list-component.js',
+    'public/js/building-a-compound-sortable-list-component.js')
+    .sass("resources/assets/sass/app.scss", "public/css")
+    .options({
+      processCssUrls: false,
+      postCss: [tailwindcss("./tailwind.js")]
+  });  
   
 
 //**Rebute Resolute */
