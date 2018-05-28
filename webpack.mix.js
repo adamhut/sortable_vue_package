@@ -210,14 +210,22 @@ mix.js('resources/assets/js/getting-started-with-renderless-ui-components.js',
  });  */
 
  // Advanced Vue Elements Building a Compound Sortable List Component
- mix.js('resources/assets/js/building-a-compound-sortable-list-component.js',
+ /* mix.js('resources/assets/js/building-a-compound-sortable-list-component.js',
     'public/js/building-a-compound-sortable-list-component.js')
     .sass("resources/assets/sass/app.scss", "public/css")
     .options({
       processCssUrls: false,
       postCss: [tailwindcss("./tailwind.js")]
-  });  
-  
+  }); */  
+// Advanced Vue Elements Building a Select
+mix.js('resources/assets/js/building-a-search-select.js',
+      'public/js/building-a-search-select.js')
+      .sass("resources/assets/sass/app.scss", "public/css")
+      .options({
+        processCssUrls: false,
+        postCss: [tailwindcss("./tailwind.js")]
+    }); 
+
 
 //**Rebute Resolute */
 /*  

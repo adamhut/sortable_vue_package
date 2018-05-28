@@ -144,6 +144,10 @@ Route::group(['prefix' => 'advanced-vue'], function () {
     Route::get('building-a-compound-sortable-list-component', function () {
         return view('advanced-vue.building-a-compound-sortable-list-component');
     });
+
+    Route::get('building-a-search-select',function(){
+        return view('advanced-vue.building-a-search-select');
+    });
 });
 
 
