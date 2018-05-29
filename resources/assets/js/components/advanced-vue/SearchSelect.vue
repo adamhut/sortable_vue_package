@@ -1,11 +1,11 @@
-
 <template>
+    <on-click-outside :do="close">
     <div class="search-select" :class="{ 'is-active': isOpen }">
         <button @click="open" type="button" class="search-select-input" ref="button">
             <span v-if="value !== null">{{ value }}</span>
             <span v-else class="search-select-placeholder">Select a band...</span>
         </button>
-        <div v-show="isOpen" class="search-select-dropdown">
+        <div v-show="isOpen" class="search-select-dropdown" ref="dropdown">
             <input class="search-select-search" 
                 v-model="search" 
                 ref="search"
@@ -29,11 +29,20 @@
             </div>
         </div>
     </div>
+    </on-click-outside>
 </template>
 
 <script>
+    import OnClickOutside from './OnClickOutside';
+    import Popper from 'popper.js';
+
+   
+
     export default {
         props: ['value','options','filterFunction'],
+        components:{
+            OnClickOutside,
+        },
         data() {
             return {    
                 isOpen:false,
@@ -49,6 +58,9 @@
                 }); */
             }
         },
+        beforeDestroy(){
+            this.popper.destroy();
+        },
         methods: {
             open() {
                 if(this.isOpen)
@@ -57,13 +69,31 @@
                 }
                 this.isOpen = true;
                 this.$nextTick(()=>{
+                    this.setupPopper();
+
+
                     this.$refs.search.focus();
                     this.scrollToHighlighted();
                 });
             },
+            setupPopper(){
+                if(this.popper==undefined)
+                {
+                    this.popper = new Popper(this.$refs.button, this.$refs.dropdown,{
+                        placement:'bottom'
+                    });
+                }else{
+                    this.popper.scheduleUpdate();
+                }
+                 
+            },
             close(){
+                if(!this.isOpen)
+                {
+                    return;
+                }
+
                 this.isOpen = false;
-                
                 this.$refs.button.focus();
                 
             },
