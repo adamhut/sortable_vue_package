@@ -150,6 +150,7 @@ return [
         /*
          * Package Service Providers...
          */
+        Laracasts\LaracastsServiceProvider::class,
 
         /*
          * Application Service Providers...

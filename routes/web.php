@@ -1,5 +1,9 @@
 <?php
 
+use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Traits\Macroable;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -63,7 +67,6 @@ Route::get('css-for-backend-02-card-plain-tailwinds', function () {
 Route::get('rebuild-resolute', function () {
     return view('design.rebuild-resolute');
 });
-
 
 Route::group(['prefix' => 'advanced-vue'], function () {
 
@@ -151,3 +154,21 @@ Route::group(['prefix' => 'advanced-vue'], function () {
 });
 
 
+
+Route::group(['prefix' => 'laracasts'], function () {
+    Route::get('create-marco',function(){
+        collect(['first','second','Three'])->firstNth(2);
+
+        //a macro created in AppServiceProvider
+        File::make(__DIR__.'/new.php');
+    });
+});
+
+class Anything{
+    use Macroable;
+
+    public function one()
+    {       
+        return 'one';
+    }
+}

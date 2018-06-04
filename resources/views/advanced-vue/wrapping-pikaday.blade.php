@@ -21,7 +21,7 @@
                     <date-picker 
                         v-model="date" 
                         format="YYYY-MM-DD" 
-                        :options="{firstDay:1}"
+                        :options="{firstDay:0}"
                         ></date-picker>
                 </label>
             </div>

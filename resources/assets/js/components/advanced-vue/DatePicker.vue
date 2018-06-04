@@ -1,5 +1,10 @@
 <template>
-     <input :value="value" type="text" class="form-input" ref="input"  placeholder="input a date" />
+     <input :value="value" 
+        type="text" 
+        ref="input"  
+        class="form-input" 
+        placeholder="input a date" 
+    />
 </template>
 
 <script>
@@ -23,7 +28,7 @@
         },
        
         mounted(){
-            this.picker = new Pikaday({
+            const picker = new Pikaday({
                 //field: this.$el,
                 field:this.$refs.input,
                 format: this.format,

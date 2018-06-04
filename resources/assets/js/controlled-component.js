@@ -19,7 +19,8 @@ Vue.use(PortalVue);
  */
 
 
-Vue.component("UserSettingsForm", require("./components/UserSettingsForm.vue"));
+//Vue.component("UserSettingsForm", require("./components/UserSettingsForm.vue"));
+Vue.component("UserSettingsForm", require("./components/advacned-vue/UserSettingsForm.vue"));
 
 
 const app = new Vue({

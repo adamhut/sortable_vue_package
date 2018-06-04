@@ -50,22 +50,22 @@ mix.browserSync(
   "http://laravuepackage.test/css-for-backend-02-card-plain-tailwinds"
 );
 */
-/* //Advanced Vue Controlled component
-mix.js('resources/assets/js/controlled-component.js', 'public/js/controlled-component.js')
+//Advanced Vue Controlled component
+/* mix.js('resources/assets/js/controlled-component.js', 'public/js/controlled-component.js')
   .sass("resources/assets/sass/app.scss", "public/css")
     .options({
       processCssUrls: false,
       postCss: [tailwindcss("./tailwind.js")]
     });
-*/
-/* //Advanced Vue Wrapping Pikaday 
+ */
+//Advanced Vue Wrapping Pikaday 
 mix.js('resources/assets/js/wrapping-pikaday.js', 'public/js/wrapping-pikaday.js')
   .sass("resources/assets/sass/app.scss", "public/css")
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.js")]
   });
-*/
+
 /* //Advanced Vue Encapsulating External behavior
 mix.js('resources/assets/js/encapsulating-external-behavior.js', 'public/js/encapsulating-external-behavior.js')
   .sass("resources/assets/sass/app.scss", "public/css")
@@ -218,13 +218,13 @@ mix.js('resources/assets/js/getting-started-with-renderless-ui-components.js',
       postCss: [tailwindcss("./tailwind.js")]
   }); */  
 // Advanced Vue Elements Building a Select
-mix.js('resources/assets/js/building-a-search-select.js',
+/* mix.js('resources/assets/js/building-a-search-select.js',
       'public/js/building-a-search-select.js')
       .sass("resources/assets/sass/app.scss", "public/css")
       .options({
         processCssUrls: false,
         postCss: [tailwindcss("./tailwind.js")]
-    }); 
+    });  */
 
 
 //**Rebute Resolute */
