@@ -59,21 +59,22 @@ mix.browserSync(
     });
  */
 //Advanced Vue Wrapping Pikaday 
-mix.js('resources/assets/js/wrapping-pikaday.js', 'public/js/wrapping-pikaday.js')
+/* mix.js('resources/assets/js/wrapping-pikaday.js', 'public/js/wrapping-pikaday.js')
   .sass("resources/assets/sass/app.scss", "public/css")
+  .options({
+    processCssUrls: false,
+    postCss: [tailwindcss("./tailwind.js")]
+  }); 
+*/
+
+//Advanced Vue Encapsulating External behavior
+mix.js('resources/assets/js/encapsulating-external-behavior.js', 'public/js/encapsulating-external-behavior.js')
+.sass("resources/assets/sass/app.scss", "public/css")
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.js")]
   });
 
-/* //Advanced Vue Encapsulating External behavior
-mix.js('resources/assets/js/encapsulating-external-behavior.js', 'public/js/encapsulating-external-behavior.js')
-  .sass("resources/assets/sass/app.scss", "public/css")
-  .options({
-    processCssUrls: false,
-    postCss: [tailwindcss("./tailwind.js")]
-  });
-*/
 //Advanced Vue Encapsulating External behavior Background scrolling
 /*mix.js('resources/assets/js/encapsulating-external-behavior-background-scroll.js', 'public/js/encapsulating-external-behavior-background-scroll.js')
   .sass("resources/assets/sass/app.scss", "public/css")
