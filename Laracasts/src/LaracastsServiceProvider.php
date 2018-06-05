@@ -18,6 +18,7 @@ class LaracastsServiceProvider extends ServiceProvider
         PresetCommand::macro('tailwinds',function($command){
             //$command->info('it is workding');
             Preset::install();
+            $command->info('All finished! Please compile your assets, and you are all set to go');
         });
     }
 

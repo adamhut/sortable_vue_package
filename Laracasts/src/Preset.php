@@ -15,6 +15,8 @@ class Preset extends LaravelPreset
         static::updatePackages();
         static::updateMix();
         static::udpateScripts();
+        static::udpateStyle();
+        
     }    
 
     public static function cleanSassDirectory()
@@ -40,8 +42,14 @@ class Preset extends LaravelPreset
 
     public static function udpateScripts()
     {
-        copy(__DIR__ . '/stubs/app.js', resource_path('app.js'));
-        copy(__DIR__ . '/stubs/bootstrap.js', resource_path('bootstrap.js'));
+        copy(__DIR__ . '/stubs/app.js', resource_path('assets/js/app.js'));
+        copy(__DIR__ . '/stubs/bootstrap.js', resource_path('assets/js/bootstrap.js'));
+    }
+
+    public static function udpateStyle()
+    {
+        //File::put(resource_path('assets/sass/app.scss'),'');
+        copy(__DIR__ . '/stubs/app.scss', resource_path('assets/sass/app.scss'));   
     }
   
 }
