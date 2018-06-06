@@ -155,6 +155,7 @@ Route::group(['prefix' => 'advanced-vue'], function () {
 
 
 
+
 Route::group(['prefix' => 'laracasts'], function () {
     Route::get('create-marco',function(){
         collect(['first','second','Three'])->firstNth(2);
@@ -162,6 +163,16 @@ Route::group(['prefix' => 'laracasts'], function () {
         //a macro created in AppServiceProvider
         File::make(__DIR__.'/new.php');
     });
+
+
+    Route::get('contact-support-modal', function () {
+        return view('laracasts.contact-support-modal');
+    });
+
+    Route::get('faq', function () {
+        return view('laracasts.faq');
+    });
+
 });
 
 class Anything{

@@ -75,14 +75,14 @@ mix.js('resources/assets/js/encapsulating-external-behavior.js', 'public/js/enca
     postCss: [tailwindcss("./tailwind.js")]
   });
  */
-//Advanced Vue Encapsulating External behavior Background scrolling
+/* //Advanced Vue Encapsulating External behavior Background scrolling
 mix.js('resources/assets/js/encapsulating-external-behavior-background-scroll.js', 'public/js/encapsulating-external-behavior-background-scroll.js')
   .sass("resources/assets/sass/app.scss", "public/css")
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.js")]
 });
-
+ */
 //Advanced Vue Encapsulating External Portal
 /*mix.js('resources/assets/js/encapsulating-external-behavior-portal.js', 'public/js/encapsulating-external-behavior-portal.js')
   .sass("resources/assets/sass/app.scss", "public/css")
@@ -226,6 +226,28 @@ mix.js('resources/assets/js/getting-started-with-renderless-ui-components.js',
         processCssUrls: false,
         postCss: [tailwindcss("./tailwind.js")]
     });  */
+
+
+
+
+/***Laracasts  */
+/* mix.js('resources/assets/js/laracasts-contact-support-modal.js',
+'public/js/laracasts-contact-support-modal.js')
+      .sass("resources/assets/sass/app.scss", "public/css")
+      .options({
+        processCssUrls: false,
+        postCss: [tailwindcss("./tailwind.js")]
+    }); 
+ */
+
+ mix.js('resources/assets/js/laracasts-faqs.js',
+ 'public/js/laracasts-faqs.js')
+       .sass("resources/assets/sass/laracasts.scss", "public/css/laracasts.css")
+       .options({
+         processCssUrls: false,
+         postCss: [tailwindcss("./tailwind.js")]
+     }); 
+ ``
 
 
 //**Rebute Resolute */
