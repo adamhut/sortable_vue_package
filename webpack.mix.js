@@ -239,7 +239,7 @@ mix.js('resources/assets/js/getting-started-with-renderless-ui-components.js',
         postCss: [tailwindcss("./tailwind.js")]
     }); 
  */
-
+/* 
  mix.js('resources/assets/js/laracasts-faqs.js',
  'public/js/laracasts-faqs.js')
        .sass("resources/assets/sass/laracasts.scss", "public/css/laracasts.css")
@@ -247,8 +247,13 @@ mix.js('resources/assets/js/getting-started-with-renderless-ui-components.js',
          processCssUrls: false,
          postCss: [tailwindcss("./tailwind.js")]
      }); 
- ``
+*/
 
+mix.sass("resources/assets/sass/price-selection.scss", "public/css/price-selection.css")
+  .options({
+    processCssUrls: false,
+    postCss: [tailwindcss("./tailwind.js")]
+  }).browserSync("http://laravuepackage.test/laracasts/price-selection");
 
 //**Rebute Resolute */
 /*  
@@ -257,4 +262,4 @@ mix.sass("resources/assets/sass/resolute.scss", "public/css/resolute.css")
   processCssUrls: false,
     postCss: [tailwindcss("./tailwind.js")]
   }).browserSync("http://laravuepackage.test/rebuild-resolute");
- */
+*/

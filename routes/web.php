@@ -173,6 +173,10 @@ Route::group(['prefix' => 'laracasts'], function () {
         return view('laracasts.faq');
     });
 
+    Route::get('price-selection', function () {
+        return view('laracasts.price-selection');
+    });
+
 });
 
 class Anything{
