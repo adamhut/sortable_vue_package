@@ -15,7 +15,8 @@
                 </header>
 
                 @foreach($questions as $question)
-                    <question :question="{{json_encode($question)}}"></question>
+                    <accordion :items="{{$question}}"></accordion>
+                    
                 @endforeach
                 
             </div>

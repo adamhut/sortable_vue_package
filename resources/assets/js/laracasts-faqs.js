@@ -22,7 +22,7 @@ Vue.use(PortalVue);
 
 
 
-Vue.component("ContactList", require("./components/advanced-vue/ContactList.vue"));
+Vue.component("Accordion", require("./components/advanced-vue/Accordion.vue"));
 
 const app = new Vue({
     el: '#app',
