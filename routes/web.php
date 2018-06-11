@@ -177,6 +177,17 @@ Route::group(['prefix' => 'laracasts'], function () {
         return view('laracasts.price-selection');
     });
 
+    Route::get('fix-on-top', function () {
+        return view('laracasts.fix-on-top');
+    });
+
+    Route::get('call-to-action-banner', function () {
+        return view('laracasts.call-to-action-banner');
+    });
+
+    Route::get('responsive-demo', function () {
+        return view('laracasts.responsive-demo');
+    });
 });
 
 class Anything{

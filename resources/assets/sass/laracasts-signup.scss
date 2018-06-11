@@ -1,0 +1,77 @@
+/**
+ * This injects Tailwind's base styles, which is a combination of
+ * Normalize.css and some additional base styles.
+ *
+ * You can see the styles here:
+ * https://github.com/tailwindcss/tailwindcss/blob/master/css/preflight.css
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/preflight";
+ */
+
+@tailwind preflight;
+/**
+ * This injects any component classes registered by plugins.
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/components";
+ */
+
+@tailwind components;
+/**
+ * Here you would add any of your custom component classes; stuff that you'd
+ * want loaded *before* the utilities so that the utilities could still
+ * override them.
+ *
+ * Example:
+ *
+ * .btn { ... }
+ * .form-input { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "components/buttons";
+ * @import "components/forms"ix;
+ */
+
+/* CHECKBOX TOGGLE SWITCH */
+
+.signup-banner{
+    background-image: radial-gradient(circle at 0 100%, #6585b0, #2e4469);
+ 
+}
+
+.signup-container{
+    height: 600px;
+    background-image: url('/images/call-to-action/robot.svg'),    url('/images/call-to-action/left-upper.svg'),    url('/images/call-to-action/right-bottom.svg');
+    background-repeat: no-repeat,no-repeat,no-repeat;
+    background-position:  0 100%, 0 0 , 100% 100%;
+}
+
+
+/**
+ * This injects all of Tailwind's utility classes, generated based on your
+ * config file.
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/utilities";
+ */
+
+@tailwind utilities;
+/**
+ * Here you would add any custom utilities you need that don't come out of the
+ * box with Tailwind.
+ *
+ * Example :
+ *
+ * .bg-pattern-graph-paper { ... }
+ * .skew-45 { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "utilities/background-patterns";
+ * @import "utilities/skew-transforms";
+ */

@@ -248,13 +248,36 @@ mix.js('resources/assets/js/getting-started-with-renderless-ui-components.js',
          postCss: [tailwindcss("./tailwind.js")]
      }); 
 */
+    
+/*    mix.js('resources/assets/js/laracasts-fix-on-top.js',
+    'public/js/laracasts-fix-on-top.js')
+          .sass("resources/assets/sass/laracasts.scss", "public/css/laracasts.css")
+          .options({
+            processCssUrls: false,
+            postCss: [tailwindcss("./tailwind.js")]
+        });  */
+   
+/* mix.js('resources/assets/js/signup-banner.js',
+  'public/js/laracasts-signup-banner.js')
+  .sass("resources/assets/sass/laracasts-signup.scss", "public/css/laracasts-signup.css")
+  .options({
+      processCssUrls: false,
+      postCss: [tailwindcss("./tailwind.js")]
+  });
+ */
+mix.sass("resources/assets/sass/responsive-demo.scss", "public/css/responsive-demo.css")
+  .options({
+    processCssUrls: false,
+    postCss: [tailwindcss("./tailwind.js")]
+  }).browserSync("http://laravue.test/laracasts/responsive-demo");
+ 
 
-mix.sass("resources/assets/sass/price-selection.scss", "public/css/price-selection.css")
+/* mix.sass("resources/assets/sass/price-selection.scss", "public/css/price-selection.css")
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.js")]
   }).browserSync("http://laravuepackage.test/laracasts/price-selection");
-
+ */
 //**Rebute Resolute */
 /*  
 mix.sass("resources/assets/sass/resolute.scss", "public/css/resolute.css")
