@@ -265,12 +265,12 @@ mix.js('resources/assets/js/getting-started-with-renderless-ui-components.js',
       postCss: [tailwindcss("./tailwind.js")]
   });
  */
-mix.sass("resources/assets/sass/responsive-demo.scss", "public/css/responsive-demo.css")
+/* mix.sass("resources/assets/sass/responsive-demo.scss", "public/css/responsive-demo.css")
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.js")]
   }).browserSync("http://laravue.test/laracasts/responsive-demo");
- 
+  */
 
 /* mix.sass("resources/assets/sass/price-selection.scss", "public/css/price-selection.css")
   .options({
