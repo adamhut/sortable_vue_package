@@ -264,20 +264,30 @@ mix.js('resources/assets/js/getting-started-with-renderless-ui-components.js',
       processCssUrls: false,
       postCss: [tailwindcss("./tailwind.js")]
   });
- */
+*/
+
 /* mix.sass("resources/assets/sass/responsive-demo.scss", "public/css/responsive-demo.css")
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.js")]
-  }).browserSync("http://laravue.test/laracasts/responsive-demo");
-  */
+  }).browserSync("http://laravuepackage.test/laracasts/responsive-demo");
+*/
 
-/* mix.sass("resources/assets/sass/price-selection.scss", "public/css/price-selection.css")
+mix.sass("resources/assets/sass/responsive-demo-2.scss", "public/css/responsive-demo-2.css")
+  .options({
+    processCssUrls: false,
+    postCss: [tailwindcss("./tailwind.js")]
+  }).browserSync("http://laravuepackage.test/laracasts/responsive-demo-2");
+
+
+
+/* 
+mix.sass("resources/assets/sass/price-selection.scss", "public/css/price-selection.css")
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.js")]
   }).browserSync("http://laravuepackage.test/laracasts/price-selection");
- */
+*/
 //**Rebute Resolute */
 /*  
 mix.sass("resources/assets/sass/resolute.scss", "public/css/resolute.css")

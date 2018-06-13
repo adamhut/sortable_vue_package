@@ -159,7 +159,6 @@ Route::group(['prefix' => 'advanced-vue'], function () {
 Route::group(['prefix' => 'laracasts'], function () {
     Route::get('create-marco',function(){
         collect(['first','second','Three'])->firstNth(2);
-
         //a macro created in AppServiceProvider
         File::make(__DIR__.'/new.php');
     });
@@ -187,6 +186,16 @@ Route::group(['prefix' => 'laracasts'], function () {
 
     Route::get('responsive-demo', function () {
         return view('laracasts.responsive-demo');
+    });
+
+    Route::get('responsive-demo-2', function () {
+        md5(vsprintf('%s.%s.%s.%s',[
+            auth()->user()->id,
+            $days,
+            $domain,
+            $customer
+        ]));
+        return view('laracasts.responsive-demo-part2');
     });
 });
 
