@@ -273,12 +273,20 @@ mix.js('resources/assets/js/getting-started-with-renderless-ui-components.js',
   }).browserSync("http://laravuepackage.test/laracasts/responsive-demo");
 */
 
-mix.sass("resources/assets/sass/responsive-demo-2.scss", "public/css/responsive-demo-2.css")
+/* mix.sass("resources/assets/sass/responsive-demo-2.scss", "public/css/responsive-demo-2.css")
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.js")]
   }).browserSync("http://laravuepackage.test/laracasts/responsive-demo-2");
+ */
 
+/*   mix.js('resources/assets/js/tooltips.js','public/js/laracasts-tooltips.js')
+    .sass("resources/assets/sass/tooltips.scss", "public/css/tooltips.css")
+    .options({
+      processCssUrls: false,
+      postCss: [tailwindcss("./tailwind.js")]
+    });//.browserSync("http://laravuepackage.test/laracasts/tooltips");
+  */
 
 
 /* 
@@ -288,7 +296,8 @@ mix.sass("resources/assets/sass/price-selection.scss", "public/css/price-selecti
     postCss: [tailwindcss("./tailwind.js")]
   }).browserSync("http://laravuepackage.test/laracasts/price-selection");
 */
-//**Rebute Resolute */
+
+//**Rebuild Resolute */
 /*  
 mix.sass("resources/assets/sass/resolute.scss", "public/css/resolute.css")
 .options({
@@ -296,3 +305,8 @@ mix.sass("resources/assets/sass/resolute.scss", "public/css/resolute.css")
     postCss: [tailwindcss("./tailwind.js")]
   }).browserSync("http://laravuepackage.test/rebuild-resolute");
 */
+mix.sass("resources/assets/sass/pusher-checkout.scss", "public/css/pusher-checkout.css")
+  .options({
+    processCssUrls: false,
+    postCss: [tailwindcss("./tailwind.js")]
+  }).browserSync("http://laravue.test/rebuild-pusher-checkout");

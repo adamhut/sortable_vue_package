@@ -68,6 +68,10 @@ Route::get('rebuild-resolute', function () {
     return view('design.rebuild-resolute');
 });
 
+Route::get('rebuild-pusher-checkout', function () {
+    return view('design.rebuild-pusher-checkout');
+});
+
 Route::group(['prefix' => 'advanced-vue'], function () {
 
     Route::get('controlled-component', function () {
@@ -186,6 +190,10 @@ Route::group(['prefix' => 'laracasts'], function () {
 
     Route::get('responsive-demo', function () {
         return view('laracasts.responsive-demo');
+    });
+
+    Route::get('tooltips', function () {
+        return view('laracasts.tooltips');
     });
 
     Route::get('responsive-demo-2', function () {

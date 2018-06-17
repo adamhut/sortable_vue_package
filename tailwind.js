@@ -197,6 +197,12 @@ module.exports = {
   */
 
   fonts: {
+    'wp-pusher': [
+      'Lato',
+      'system-ui',      
+      'Helvetica Neue',
+      'sans-serif',
+    ],
     'sans': [
       'system-ui',
       'BlinkMacSystemFont',
@@ -600,6 +606,7 @@ module.exports = {
     'sm': '30rem',
     'md': '40rem',
     'lg': '50rem',
+    'wp-pusher': '56rem',
     'xl': '60rem',
     '2xl': '70rem',
     '3xl': '80rem',
@@ -653,6 +660,7 @@ module.exports = {
     '4': '1rem',
     '6': '1.5rem',
     '8': '2rem',
+    '10': '2.5rem',
   },
 
 
@@ -681,6 +689,9 @@ module.exports = {
     '4': '1rem',
     '6': '1.5rem',
     '8': '2rem',
+    '10': '2.5rem',
+    '16': '4rem',
+    '24': '6rem',
   },
 
 
