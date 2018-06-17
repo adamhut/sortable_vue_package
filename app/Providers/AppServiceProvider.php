@@ -2,9 +2,12 @@
 
 namespace App\Providers;
 
+use App\Analytics\Views;
+use App\Analytics\Pageviews;
 use Illuminate\Support\Collection;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\ServiceProvider;
+use App\Analytics\PageviewsCache;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -36,7 +39,15 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         //
-        //$this->app->singleton($abstract, function($app){});
+        $this->app->singleton(Views::class, function($app){
+            
+            //return new Pageviews(auth()->user());
+            
+            return new PageviewsCache(
+                new Pageviews(auth()->user())
+            );
+            
+        });
 
     }
 }
