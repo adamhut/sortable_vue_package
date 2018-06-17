@@ -33,7 +33,7 @@ class Pageviews implements Views{
 
             if ($customer) $query->where('customer_id', $customer);
 
-            return $query->get()->pluck('id');
+            return $query->get();
 
             //return Db::table('user')->get();
         
