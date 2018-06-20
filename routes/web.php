@@ -196,6 +196,11 @@ Route::group(['prefix' => 'laracasts'], function () {
         return view('laracasts.tooltips');
     });
 
+
+    Route::get('render-function', function () {
+        return view('laracasts.render-function');
+    });
+
     Route::get('responsive-demo-2', function () {
         md5(vsprintf('%s.%s.%s.%s',[
             auth()->user()->id,
