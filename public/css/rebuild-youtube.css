@@ -1092,6 +1092,10 @@ a {
   background-color: #22292f;
 }
 
+.bg-grey-custome {
+  background-color: #e4eaef;
+}
+
 .bg-grey-darkest {
   background-color: #3d4852;
 }
@@ -1394,6 +1398,10 @@ a {
 
 .hover\:bg-black:hover {
   background-color: #22292f;
+}
+
+.hover\:bg-grey-custome:hover {
+  background-color: #e4eaef;
 }
 
 .hover\:bg-grey-darkest:hover {
@@ -1764,6 +1772,10 @@ a {
   border-color: #22292f;
 }
 
+.border-grey-custome {
+  border-color: #e4eaef;
+}
+
 .border-grey-darkest {
   border-color: #3d4852;
 }
@@ -2066,6 +2078,10 @@ a {
 
 .hover\:border-black:hover {
   border-color: #22292f;
+}
+
+.hover\:border-grey-custome:hover {
+  border-color: #e4eaef;
 }
 
 .hover\:border-grey-darkest:hover {
@@ -3824,6 +3840,26 @@ a {
   opacity: 1;
 }
 
+.hover\:opacity-0:hover {
+  opacity: 0;
+}
+
+.hover\:opacity-25:hover {
+  opacity: .25;
+}
+
+.hover\:opacity-50:hover {
+  opacity: .5;
+}
+
+.hover\:opacity-75:hover {
+  opacity: .75;
+}
+
+.hover\:opacity-100:hover {
+  opacity: 1;
+}
+
 .overflow-auto {
   overflow: auto;
 }
@@ -4276,6 +4312,10 @@ a {
   color: #22292f;
 }
 
+.text-grey-custome {
+  color: #e4eaef;
+}
+
 .text-grey-darkest {
   color: #3d4852;
 }
@@ -4578,6 +4618,10 @@ a {
 
 .hover\:text-black:hover {
   color: #22292f;
+}
+
+.hover\:text-grey-custome:hover {
+  color: #e4eaef;
 }
 
 .hover\:text-grey-darkest:hover {
@@ -5440,6 +5484,123 @@ a {
   grid-column-end: 13;
 }
 
+.transition {
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
+}
+
+.transition-slower {
+  -webkit-transition-duration: .75s;
+          transition-duration: .75s;
+}
+
+.transition-slow {
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
+.transition-fast {
+  -webkit-transition-duration: .15s;
+          transition-duration: .15s;
+}
+
+.transition-faster {
+  -webkit-transition-duration: .075s;
+          transition-duration: .075s;
+}
+
+.transition {
+  -webkit-transition-property: all;
+  transition-property: all;
+}
+
+.transition-property-all {
+  -webkit-transition-property: all;
+  transition-property: all;
+}
+
+.transition-property-none {
+  -webkit-transition-property: none;
+  transition-property: none;
+}
+
+.transition-property-bg {
+  -webkit-transition-property: background;
+  transition-property: background;
+}
+
+.transition-property-opacity {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+
+.transition-property-color {
+  -webkit-transition-property: color;
+  transition-property: color;
+}
+
+.transition-property-shadow {
+  -webkit-transition-property: -webkit-box-shadow;
+  transition-property: -webkit-box-shadow;
+  transition-property: box-shadow;
+  transition-property: box-shadow, -webkit-box-shadow;
+}
+
+.transition {
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+.transition-timing-linear {
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+
+.transition-timing-ease {
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+.transition-timing-ease-in {
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+}
+
+.transition-timing-ease-out {
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+}
+
+.transition-timing-ease-in-out {
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+.transition {
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s;
+}
+
+.transition-delay-long {
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
+}
+
+.transition-delay-longer {
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+}
+
+.transition-delay-longest {
+  -webkit-transition-delay: .4s;
+          transition-delay: .4s;
+}
+
+.transition-delay-none {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
 /**
  * Here you would add any custom utilities you need that don't come out of the
  * box with Tailwind.
@@ -5485,6 +5646,10 @@ a {
 
   .sm\:bg-black {
     background-color: #22292f;
+  }
+
+  .sm\:bg-grey-custome {
+    background-color: #e4eaef;
   }
 
   .sm\:bg-grey-darkest {
@@ -5789,6 +5954,10 @@ a {
 
   .sm\:hover\:bg-black:hover {
     background-color: #22292f;
+  }
+
+  .sm\:hover\:bg-grey-custome:hover {
+    background-color: #e4eaef;
   }
 
   .sm\:hover\:bg-grey-darkest:hover {
@@ -6159,6 +6328,10 @@ a {
     border-color: #22292f;
   }
 
+  .sm\:border-grey-custome {
+    border-color: #e4eaef;
+  }
+
   .sm\:border-grey-darkest {
     border-color: #3d4852;
   }
@@ -6461,6 +6634,10 @@ a {
 
   .sm\:hover\:border-black:hover {
     border-color: #22292f;
+  }
+
+  .sm\:hover\:border-grey-custome:hover {
+    border-color: #e4eaef;
   }
 
   .sm\:hover\:border-grey-darkest:hover {
@@ -8219,6 +8396,26 @@ a {
     opacity: 1;
   }
 
+  .sm\:hover\:opacity-0:hover {
+    opacity: 0;
+  }
+
+  .sm\:hover\:opacity-25:hover {
+    opacity: .25;
+  }
+
+  .sm\:hover\:opacity-50:hover {
+    opacity: .5;
+  }
+
+  .sm\:hover\:opacity-75:hover {
+    opacity: .75;
+  }
+
+  .sm\:hover\:opacity-100:hover {
+    opacity: 1;
+  }
+
   .sm\:overflow-auto {
     overflow: auto;
   }
@@ -8663,6 +8860,10 @@ a {
     color: #22292f;
   }
 
+  .sm\:text-grey-custome {
+    color: #e4eaef;
+  }
+
   .sm\:text-grey-darkest {
     color: #3d4852;
   }
@@ -8965,6 +9166,10 @@ a {
 
   .sm\:hover\:text-black:hover {
     color: #22292f;
+  }
+
+  .sm\:hover\:text-grey-custome:hover {
+    color: #e4eaef;
   }
 
   .sm\:hover\:text-grey-darkest:hover {
@@ -9860,6 +10065,10 @@ a {
     background-color: #22292f;
   }
 
+  .md\:bg-grey-custome {
+    background-color: #e4eaef;
+  }
+
   .md\:bg-grey-darkest {
     background-color: #3d4852;
   }
@@ -10162,6 +10371,10 @@ a {
 
   .md\:hover\:bg-black:hover {
     background-color: #22292f;
+  }
+
+  .md\:hover\:bg-grey-custome:hover {
+    background-color: #e4eaef;
   }
 
   .md\:hover\:bg-grey-darkest:hover {
@@ -10532,6 +10745,10 @@ a {
     border-color: #22292f;
   }
 
+  .md\:border-grey-custome {
+    border-color: #e4eaef;
+  }
+
   .md\:border-grey-darkest {
     border-color: #3d4852;
   }
@@ -10834,6 +11051,10 @@ a {
 
   .md\:hover\:border-black:hover {
     border-color: #22292f;
+  }
+
+  .md\:hover\:border-grey-custome:hover {
+    border-color: #e4eaef;
   }
 
   .md\:hover\:border-grey-darkest:hover {
@@ -12592,6 +12813,26 @@ a {
     opacity: 1;
   }
 
+  .md\:hover\:opacity-0:hover {
+    opacity: 0;
+  }
+
+  .md\:hover\:opacity-25:hover {
+    opacity: .25;
+  }
+
+  .md\:hover\:opacity-50:hover {
+    opacity: .5;
+  }
+
+  .md\:hover\:opacity-75:hover {
+    opacity: .75;
+  }
+
+  .md\:hover\:opacity-100:hover {
+    opacity: 1;
+  }
+
   .md\:overflow-auto {
     overflow: auto;
   }
@@ -13036,6 +13277,10 @@ a {
     color: #22292f;
   }
 
+  .md\:text-grey-custome {
+    color: #e4eaef;
+  }
+
   .md\:text-grey-darkest {
     color: #3d4852;
   }
@@ -13338,6 +13583,10 @@ a {
 
   .md\:hover\:text-black:hover {
     color: #22292f;
+  }
+
+  .md\:hover\:text-grey-custome:hover {
+    color: #e4eaef;
   }
 
   .md\:hover\:text-grey-darkest:hover {
@@ -14233,6 +14482,10 @@ a {
     background-color: #22292f;
   }
 
+  .lg\:bg-grey-custome {
+    background-color: #e4eaef;
+  }
+
   .lg\:bg-grey-darkest {
     background-color: #3d4852;
   }
@@ -14535,6 +14788,10 @@ a {
 
   .lg\:hover\:bg-black:hover {
     background-color: #22292f;
+  }
+
+  .lg\:hover\:bg-grey-custome:hover {
+    background-color: #e4eaef;
   }
 
   .lg\:hover\:bg-grey-darkest:hover {
@@ -14905,6 +15162,10 @@ a {
     border-color: #22292f;
   }
 
+  .lg\:border-grey-custome {
+    border-color: #e4eaef;
+  }
+
   .lg\:border-grey-darkest {
     border-color: #3d4852;
   }
@@ -15207,6 +15468,10 @@ a {
 
   .lg\:hover\:border-black:hover {
     border-color: #22292f;
+  }
+
+  .lg\:hover\:border-grey-custome:hover {
+    border-color: #e4eaef;
   }
 
   .lg\:hover\:border-grey-darkest:hover {
@@ -16965,6 +17230,26 @@ a {
     opacity: 1;
   }
 
+  .lg\:hover\:opacity-0:hover {
+    opacity: 0;
+  }
+
+  .lg\:hover\:opacity-25:hover {
+    opacity: .25;
+  }
+
+  .lg\:hover\:opacity-50:hover {
+    opacity: .5;
+  }
+
+  .lg\:hover\:opacity-75:hover {
+    opacity: .75;
+  }
+
+  .lg\:hover\:opacity-100:hover {
+    opacity: 1;
+  }
+
   .lg\:overflow-auto {
     overflow: auto;
   }
@@ -17409,6 +17694,10 @@ a {
     color: #22292f;
   }
 
+  .lg\:text-grey-custome {
+    color: #e4eaef;
+  }
+
   .lg\:text-grey-darkest {
     color: #3d4852;
   }
@@ -17711,6 +18000,10 @@ a {
 
   .lg\:hover\:text-black:hover {
     color: #22292f;
+  }
+
+  .lg\:hover\:text-grey-custome:hover {
+    color: #e4eaef;
   }
 
   .lg\:hover\:text-grey-darkest:hover {
@@ -18606,6 +18899,10 @@ a {
     background-color: #22292f;
   }
 
+  .xl\:bg-grey-custome {
+    background-color: #e4eaef;
+  }
+
   .xl\:bg-grey-darkest {
     background-color: #3d4852;
   }
@@ -18908,6 +19205,10 @@ a {
 
   .xl\:hover\:bg-black:hover {
     background-color: #22292f;
+  }
+
+  .xl\:hover\:bg-grey-custome:hover {
+    background-color: #e4eaef;
   }
 
   .xl\:hover\:bg-grey-darkest:hover {
@@ -19278,6 +19579,10 @@ a {
     border-color: #22292f;
   }
 
+  .xl\:border-grey-custome {
+    border-color: #e4eaef;
+  }
+
   .xl\:border-grey-darkest {
     border-color: #3d4852;
   }
@@ -19580,6 +19885,10 @@ a {
 
   .xl\:hover\:border-black:hover {
     border-color: #22292f;
+  }
+
+  .xl\:hover\:border-grey-custome:hover {
+    border-color: #e4eaef;
   }
 
   .xl\:hover\:border-grey-darkest:hover {
@@ -21338,6 +21647,26 @@ a {
     opacity: 1;
   }
 
+  .xl\:hover\:opacity-0:hover {
+    opacity: 0;
+  }
+
+  .xl\:hover\:opacity-25:hover {
+    opacity: .25;
+  }
+
+  .xl\:hover\:opacity-50:hover {
+    opacity: .5;
+  }
+
+  .xl\:hover\:opacity-75:hover {
+    opacity: .75;
+  }
+
+  .xl\:hover\:opacity-100:hover {
+    opacity: 1;
+  }
+
   .xl\:overflow-auto {
     overflow: auto;
   }
@@ -21782,6 +22111,10 @@ a {
     color: #22292f;
   }
 
+  .xl\:text-grey-custome {
+    color: #e4eaef;
+  }
+
   .xl\:text-grey-darkest {
     color: #3d4852;
   }
@@ -22084,6 +22417,10 @@ a {
 
   .xl\:hover\:text-black:hover {
     color: #22292f;
+  }
+
+  .xl\:hover\:text-grey-custome:hover {
+    color: #e4eaef;
   }
 
   .xl\:hover\:text-grey-darkest:hover {

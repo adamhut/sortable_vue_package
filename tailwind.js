@@ -47,6 +47,7 @@ let colors = {
   'transparent': 'transparent',
 
   'black': '#22292f',
+  'grey-custome': '#e4eaef',
   'grey-darkest': '#3d4852',
   'grey-darker': '#606f7b',
   'grey-dark': '#8795a1',
@@ -877,7 +878,7 @@ module.exports = {
     minHeight: ['responsive'],
     minWidth: ['responsive'],
     negativeMargin: ['responsive'],
-    opacity: ['responsive'],
+    opacity: ['responsive','hover'],
     overflow: ['responsive'],
     padding: ['responsive'],
     pointerEvents: ['responsive'],
@@ -935,6 +936,7 @@ module.exports = {
        },
        variants: ['responsive'],
      }),
+      require('glhd-tailwindcss-transitions').default(),
   ],
 
 

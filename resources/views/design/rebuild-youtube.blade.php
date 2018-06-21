@@ -81,7 +81,154 @@
               <a href="#"><img src="/images/youtube/avatar.jpg" class="w-8 rounded-full" alt="avatar"></a>
             </div>
         </div>
-    </div><!--end top bar-->
-    
+    </div><!--end top-bar-->
+    <div class="youtube-body grid grid-columns-12">
+        <div class="left-sidebar col-span-2 py-6 bg-grey-custom min-h-screen">
+            <div class="mb-6">
+                <a href="#" class="flex items-center py-3 px-6 mb-2 text-black hover:bg-grey transition-slow">
+                  <i class="fa fa-home fa-lg fa-fw text-red mr-4"></i>
+                  <span class="font-semibold text-sm">Home</span>
+                </a>
+                <a href="#" class="flex items-center py-3 px-6 mb-2 text-black hover:bg-grey transition-slow">
+                  <i class="fa fa-fire fa-lg fa-fw text-dark mr-4"></i>
+                  <span class="font-semibold text-sm">Trending</span>
+                </a>
+                <a href="#" class="flex items-center py-3 px-6 mb-2 text-black hover:bg-grey transition-slow">
+                  <i class="fa fa-list fa-lg fa-fw text-dark mr-4"></i>
+                  <span class="font-semibold text-sm">Subscriptions</span>
+                </a>
+            </div>
+            <div class="mb-6">
+                <div class="uppercase px-6 text-grey-dark text-sm mb-6">Library</div>
+                    <a href="#" class="flex items-center py-3 px-6 mb-2 text-black transition-slow hover:bg-grey">
+                        <i class="fa fa-clock-o fa-lg fa-fw text-grey-dark mr-4"></i>
+                    </a>
+
+                <a href="#" class="flex items-center py-3 px-6 mb-2 text-black transition-slow hover:bg-grey">
+                  <i class="fa fa-hourglass-o fa-lg fa-fw text-grey-dark mr-4"></i>
+                  <div class="font-semibold text-sm">Watch Later</div>
+                </a>
+
+                <a href="#" class="flex items-center py-3 px-6 mb-2 text-black transition-slow hover:bg-grey">
+                  <i class="fa fa-tag fa-lg fa-fw text-grey-dark mr-4"></i>
+                  <div class="font-semibold text-sm">Purchases</div>
+                </a>
+
+                <a href="#" class="flex items-center py-3 px-6 mb-2 text-black transition-slow hover:bg-grey">
+                  <i class="fa fa-list-ul fa-lg fa-fw text-grey-dark mr-4"></i>
+                  <div class="font-semibold text-sm">Laravel Ecommerce</div>
+                </a>
+
+                <a href="#" class="flex items-center py-3 px-6 mb-2 text-black transition-slow hover:bg-grey">
+                  <i class="fa fa-thumbs-up fa-lg fa-fw text-grey-dark mr-4"></i>
+                  <div class="font-semibold text-sm">Liked Videos</div>
+                </a>
+            </div>
+            <div class="mb-6">
+                <div class="uppercase px-6 text-grey-darkest text-sm mb-4">Subscriptions</div>
+
+                <a href="#" class="flex items-center py-3 px-6 text-black transition-slow hover:bg-grey">
+                  <img src="/images/youtube/avatar1.jpg" alt="avatar" class="rounded-full w-6 mr-2">
+                  <div class="font-semibold text-sm">freeCodeCamp</div>
+                </a>
+
+                <a href="#" class="flex items-center py-3 px-6 text-black transition-slow hover:bg-grey">
+                  <img src="/images/youtube/avatar2.jpg" alt="avatar" class="rounded-full w-6 mr-2">
+                  <div class="font-semibold text-sm">John Doe</div>
+                </a>
+
+                <a href="#" class="flex items-center py-3 px-6 text-black transition-slow hover:bg-grey">
+                  <img src="/images/youtube/avatar3.jpg" alt="avatar" class="rounded-full w-6 mr-2">
+                  <div class="font-semibold text-sm">Jeffrey Way</div>
+                </a>
+
+                <a href="#" class="flex items-center py-3 px-6 text-black transition-slow hover:bg-grey">
+                  <img src="/images/youtube/avatar4.jpg" alt="avatar" class="rounded-full w-6 mr-2">
+                  <div class="font-semibold text-sm">Adam Wathan</div>
+                </a>
+
+                <a href="#" class="flex items-center py-3 px-6 text-black transition-slow hover:bg-grey">
+                  <img src="/images/youtube/avatar5.jpg" alt="avatar" class="rounded-full w-6 mr-2">
+                  <div class="font-semibold text-sm">Barack Obama</div>
+                </a>
+
+                <a href="#" class="flex items-center py-3 px-6 text-black transition-slow hover:bg-grey">
+                  <img src="/images/youtube/avatar6.jpg" alt="avatar" class="rounded-full w-6 mr-2">
+                  <div class="font-semibold text-sm">Aubrey Graham</div>
+                </a>
+
+                <a href="#" class="flex items-center py-3 px-6 text-black transition-slow hover:bg-grey">
+                  <img src="/images/youtube/avatar7.jpg" alt="avatar" class="rounded-full w-6 mr-2">
+                  <div class="font-semibold text-sm">Demar DeRozan</div>
+                </a>
+
+                <a href="#" class="flex items-center py-3 px-6 text-black transition-slow hover:bg-grey">
+                  <img src="/images/youtube/avatar8.jpg" alt="avatar" class="rounded-full w-6 mr-2">
+                  <div class="font-semibold text-sm">Lebron James</div>
+                </a>
+
+                <a href="#" class="flex items-center py-3 px-6 text-black transition-slow hover:bg-grey">
+                  <img src="/images/youtube/avatar9.jpg" alt="avatar" class="rounded-full w-6 mr-2">
+                  <div class="font-semibold text-sm">Casey Neistat</div>
+                </a>
+
+                <a href="#" class="flex items-center py-3 px-6 mb-2 text-black transition-slow hover:bg-grey">
+                  <i class="fa fa-chevron-down fa-fw text-grey-dark mr-2"></i>
+                  <div class="font-semibold text-sm">Show 140 more</div>
+                </a>
+              </div>
+
+              <div class="mb-6">
+                <div class="uppercase px-6 text-grey-darkest text-sm mb-4">More From YouTube</div>
+
+                <a href="#" class="flex items-center py-3 px-6 mb-6 text-black transition-slow hover:bg-grey">
+                  <i class="fa fa-film fa-lg fa-fw text-grey-dark mr-4"></i>
+                  <div class="font-semibold text-sm">YouTube Movies</div>
+                </a>
+
+                <a href="#" class="flex items-center py-3 px-6 mb-2 text-black transition-slow hover:bg-grey">
+                  <i class="fa fa-cog fa-lg fa-fw text-grey-dark mr-4"></i>
+                  <div class="font-semibold text-sm">Settings</div>
+                </a>
+
+                <a href="#" class="flex items-center py-3 px-6 mb-2 text-black transition-slow hover:bg-grey">
+                  <i class="fa fa-question-circle fa-lg fa-fw text-grey-dark mr-4"></i>
+                  <div class="font-semibold text-sm">Help</div>
+                </a>
+
+                <a href="#" class="flex items-center py-3 px-6 mb-2 text-black transition-slow hover:bg-grey">
+                  <i class="fa fa-exclamation-triangle fa-lg fa-fw text-grey-dark mr-4"></i>
+                  <div class="font-semibold text-sm">Send Feedback</div>
+                </a>
+
+              </div>
+
+              <div class="px-6 text-sm text-grey-darker">&copy; 2018 YouTube, LLC</div>
+        </div><!--end left-sidebar-->
+
+        <div class="youtube-videos col-span-10 container mx-auto py-6">
+            <div class="font-semibold mb-6">
+              Recommanded
+            </div>
+            <div class="grid grid-columns-5 grid-gap-2 mb-6">
+                <div>
+                    <a href="#">
+                      <img src="/images/youtube/thumbnail01.jpg" alt="thumb" class="mb-1 hover:opacity-75 transition-slow">
+                      <div class="title text-sm mb-2">
+                        <a href="#" class="text-black">PIGGY PIGGY DUDE ON NIGHTMARE MORE!!</a>
+                      </div>
+                      <div class="text-sm">
+                          <a href="#" class="text-grey-dark hover:text-black">DashieGames <i class="fa fa-check-circle"></i></a>
+                      </div>
+                      <div class="text-sm text-grey-dark"> 618K views &middot; 2 days ago</div>
+                    </a>
+                </div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+            </div>
+        </div><!--end youtube-videos-->
+    </div><!--end youtube-body-->
 </body>
 </html>
