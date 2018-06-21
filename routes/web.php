@@ -71,6 +71,9 @@ Route::get('rebuild-resolute', function () {
 Route::get('rebuild-pusher-checkout', function () {
     return view('design.rebuild-pusher-checkout');
 });
+Route::get('rebuild-youtube', function () {
+    return view('design.rebuild-youtube');
+});
 
 Route::group(['prefix' => 'advanced-vue'], function () {
 

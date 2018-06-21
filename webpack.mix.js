@@ -290,7 +290,7 @@ mix.js('resources/assets/js/tooltips.js','public/js/laracasts-tooltips.js')
 */
 
 
-mix.js('resources/assets/js/render-function.js', 'public/js/render-function.js');
+/* mix.js('resources/assets/js/render-function.js', 'public/js/render-function.js'); */
 //.browserSync("http://laravuepackage.test/laracasts/tooltips");
 
 
@@ -316,3 +316,9 @@ mix.sass("resources/assets/sass/resolute.scss", "public/css/resolute.css")
     postCss: [tailwindcss("./tailwind.js")]
   }).browserSync("http://laravue.test/rebuild-pusher-checkout");
  */
+ mix.sass("resources/assets/sass/rebuild-youtube.scss", "public/css/rebuild-youtube.css")
+  .options({
+    processCssUrls: false,
+    postCss: [tailwindcss("./tailwind.js")]
+  }).browserSync("http://laravue.test/rebuild-youtube");
+ 
