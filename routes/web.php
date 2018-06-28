@@ -223,3 +223,7 @@ class Anything{
         return 'one';
     }
 }
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
