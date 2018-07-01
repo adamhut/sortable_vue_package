@@ -316,9 +316,15 @@ mix.sass("resources/assets/sass/resolute.scss", "public/css/resolute.css")
     postCss: [tailwindcss("./tailwind.js")]
   }).browserSync("http://laravue.test/rebuild-pusher-checkout");
  */
- mix.sass("resources/assets/sass/rebuild-youtube.scss", "public/css/rebuild-youtube.css")
+//  mix.sass("resources/assets/sass/rebuild-youtube.scss", "public/css/rebuild-youtube.css")
+//   .options({
+//     processCssUrls: false,
+//     postCss: [tailwindcss("./tailwind.js")]
+//    }).browserSync("http://laravue.test/rebuild-youtube");
+
+mix.sass("resources/assets/sass/rebuild-twitter.scss", "public/css/rebuild-twitter.css")
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.js")]
-   }).browserSync("http://laravue.test/rebuild-youtube");
+   }).browserSync("http://laravue.test/rebuild-twitter");
  

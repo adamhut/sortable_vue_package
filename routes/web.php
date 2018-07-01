@@ -75,6 +75,10 @@ Route::get('rebuild-youtube', function () {
     return view('design.rebuild-youtube');
 });
 
+Route::get('rebuild-twitter', function () {
+    return view('design.rebuild-twitter');
+});
+
 Route::group(['prefix' => 'advanced-vue'], function () {
 
     Route::get('controlled-component', function () {
