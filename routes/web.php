@@ -79,6 +79,10 @@ Route::get('rebuild-twitter', function () {
     return view('design.rebuild-twitter');
 });
 
+Route::get('rebuild-netlify', function () {
+    return view('design.rebuild-netlify');
+});
+
 Route::group(['prefix' => 'advanced-vue'], function () {
 
     Route::get('controlled-component', function () {

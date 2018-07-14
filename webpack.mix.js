@@ -322,9 +322,15 @@ mix.sass("resources/assets/sass/resolute.scss", "public/css/resolute.css")
 //     postCss: [tailwindcss("./tailwind.js")]
 //    }).browserSync("http://laravue.test/rebuild-youtube");
 
-mix.sass("resources/assets/sass/rebuild-twitter.scss", "public/css/rebuild-twitter.css")
+// mix.sass("resources/assets/sass/rebuild-twitter.scss", "public/css/rebuild-twitter.css")
+//   .options({
+//     processCssUrls: false,
+//     postCss: [tailwindcss("./tailwind.js")]
+//    }).browserSync("http://laravue.test/rebuild-twitter");
+ 
+
+mix.sass("resources/assets/sass/rebuild-netlify.scss", "public/css/rebuild-netlify.css")
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.js")]
-   }).browserSync("http://laravue.test/rebuild-twitter");
- 
+  }).browserSync("http://laravue.test/rebuild-netlify");

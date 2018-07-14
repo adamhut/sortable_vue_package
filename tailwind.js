@@ -48,7 +48,7 @@ let colors = {
 
   'black': '#22292f',
   'grey-custome': '#e4eaef',
-  'grey-darkest': '#3d4852',
+  'grey-darkest': '#0e1e25',
   'grey-darker': '#606f7b',
   'grey-dark': '#8795a1',
   'grey': '#b8c2cc',
@@ -205,11 +205,11 @@ module.exports = {
       'sans-serif',
     ],
     'sans': [
+      'Roboto',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
       'Segoe UI',
-      'Roboto',
       'Oxygen',
       'Ubuntu',
       'Cantarell',
