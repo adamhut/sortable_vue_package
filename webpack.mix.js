@@ -333,4 +333,4 @@ mix.sass("resources/assets/sass/rebuild-netlify.scss", "public/css/rebuild-netli
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.js")]
-  }).browserSync("http://laravue.test/rebuild-netlify");
+  }).browserSync("http://laravuepackage.test/rebuild-netlify");
