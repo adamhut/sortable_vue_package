@@ -1042,6 +1042,10 @@ th {
   background-color: transparent;
 }
 
+.bg-black-20 {
+  background-color: rgb(0, 0, 0, .2);
+}
+
 .bg-black {
   background-color: #22292f;
 }
@@ -1051,7 +1055,7 @@ th {
 }
 
 .bg-grey-darkest {
-  background-color: #3d4852;
+  background-color: #0e1e25;
 }
 
 .bg-grey-darker {
@@ -1350,6 +1354,10 @@ th {
   background-color: transparent;
 }
 
+.hover\:bg-black-20:hover {
+  background-color: rgb(0, 0, 0, .2);
+}
+
 .hover\:bg-black:hover {
   background-color: #22292f;
 }
@@ -1359,7 +1367,7 @@ th {
 }
 
 .hover\:bg-grey-darkest:hover {
-  background-color: #3d4852;
+  background-color: #0e1e25;
 }
 
 .hover\:bg-grey-darker:hover {
@@ -1722,6 +1730,10 @@ th {
   border-color: transparent;
 }
 
+.border-black-20 {
+  border-color: rgb(0, 0, 0, .2);
+}
+
 .border-black {
   border-color: #22292f;
 }
@@ -1731,7 +1743,7 @@ th {
 }
 
 .border-grey-darkest {
-  border-color: #3d4852;
+  border-color: #0e1e25;
 }
 
 .border-grey-darker {
@@ -2030,6 +2042,10 @@ th {
   border-color: transparent;
 }
 
+.hover\:border-black-20:hover {
+  border-color: rgb(0, 0, 0, .2);
+}
+
 .hover\:border-black:hover {
   border-color: #22292f;
 }
@@ -2039,7 +2055,7 @@ th {
 }
 
 .hover\:border-grey-darkest:hover {
-  border-color: #3d4852;
+  border-color: #0e1e25;
 }
 
 .hover\:border-grey-darker:hover {
@@ -2935,7 +2951,7 @@ th {
 }
 
 .font-sans {
-  font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Roboto, system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 .font-serif {
@@ -4326,6 +4342,10 @@ th {
   color: transparent;
 }
 
+.text-black-20 {
+  color: rgb(0, 0, 0, .2);
+}
+
 .text-black {
   color: #22292f;
 }
@@ -4335,7 +4355,7 @@ th {
 }
 
 .text-grey-darkest {
-  color: #3d4852;
+  color: #0e1e25;
 }
 
 .text-grey-darker {
@@ -4634,6 +4654,10 @@ th {
   color: transparent;
 }
 
+.hover\:text-black-20:hover {
+  color: rgb(0, 0, 0, .2);
+}
+
 .hover\:text-black:hover {
   color: #22292f;
 }
@@ -4643,7 +4667,7 @@ th {
 }
 
 .hover\:text-grey-darkest:hover {
-  color: #3d4852;
+  color: #0e1e25;
 }
 
 .hover\:text-grey-darker:hover {
@@ -5670,6 +5694,10 @@ th {
     background-color: transparent;
   }
 
+  .sm\:bg-black-20 {
+    background-color: rgb(0, 0, 0, .2);
+  }
+
   .sm\:bg-black {
     background-color: #22292f;
   }
@@ -5679,7 +5707,7 @@ th {
   }
 
   .sm\:bg-grey-darkest {
-    background-color: #3d4852;
+    background-color: #0e1e25;
   }
 
   .sm\:bg-grey-darker {
@@ -5978,6 +6006,10 @@ th {
     background-color: transparent;
   }
 
+  .sm\:hover\:bg-black-20:hover {
+    background-color: rgb(0, 0, 0, .2);
+  }
+
   .sm\:hover\:bg-black:hover {
     background-color: #22292f;
   }
@@ -5987,7 +6019,7 @@ th {
   }
 
   .sm\:hover\:bg-grey-darkest:hover {
-    background-color: #3d4852;
+    background-color: #0e1e25;
   }
 
   .sm\:hover\:bg-grey-darker:hover {
@@ -6350,6 +6382,10 @@ th {
     border-color: transparent;
   }
 
+  .sm\:border-black-20 {
+    border-color: rgb(0, 0, 0, .2);
+  }
+
   .sm\:border-black {
     border-color: #22292f;
   }
@@ -6359,7 +6395,7 @@ th {
   }
 
   .sm\:border-grey-darkest {
-    border-color: #3d4852;
+    border-color: #0e1e25;
   }
 
   .sm\:border-grey-darker {
@@ -6658,6 +6694,10 @@ th {
     border-color: transparent;
   }
 
+  .sm\:hover\:border-black-20:hover {
+    border-color: rgb(0, 0, 0, .2);
+  }
+
   .sm\:hover\:border-black:hover {
     border-color: #22292f;
   }
@@ -6667,7 +6707,7 @@ th {
   }
 
   .sm\:hover\:border-grey-darkest:hover {
-    border-color: #3d4852;
+    border-color: #0e1e25;
   }
 
   .sm\:hover\:border-grey-darker:hover {
@@ -7563,7 +7603,7 @@ th {
   }
 
   .sm\:font-sans {
-    font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: Roboto, system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
   .sm\:font-serif {
@@ -8946,6 +8986,10 @@ th {
     color: transparent;
   }
 
+  .sm\:text-black-20 {
+    color: rgb(0, 0, 0, .2);
+  }
+
   .sm\:text-black {
     color: #22292f;
   }
@@ -8955,7 +8999,7 @@ th {
   }
 
   .sm\:text-grey-darkest {
-    color: #3d4852;
+    color: #0e1e25;
   }
 
   .sm\:text-grey-darker {
@@ -9254,6 +9298,10 @@ th {
     color: transparent;
   }
 
+  .sm\:hover\:text-black-20:hover {
+    color: rgb(0, 0, 0, .2);
+  }
+
   .sm\:hover\:text-black:hover {
     color: #22292f;
   }
@@ -9263,7 +9311,7 @@ th {
   }
 
   .sm\:hover\:text-grey-darkest:hover {
-    color: #3d4852;
+    color: #0e1e25;
   }
 
   .sm\:hover\:text-grey-darker:hover {
@@ -10159,6 +10207,10 @@ th {
     background-color: transparent;
   }
 
+  .md\:bg-black-20 {
+    background-color: rgb(0, 0, 0, .2);
+  }
+
   .md\:bg-black {
     background-color: #22292f;
   }
@@ -10168,7 +10220,7 @@ th {
   }
 
   .md\:bg-grey-darkest {
-    background-color: #3d4852;
+    background-color: #0e1e25;
   }
 
   .md\:bg-grey-darker {
@@ -10467,6 +10519,10 @@ th {
     background-color: transparent;
   }
 
+  .md\:hover\:bg-black-20:hover {
+    background-color: rgb(0, 0, 0, .2);
+  }
+
   .md\:hover\:bg-black:hover {
     background-color: #22292f;
   }
@@ -10476,7 +10532,7 @@ th {
   }
 
   .md\:hover\:bg-grey-darkest:hover {
-    background-color: #3d4852;
+    background-color: #0e1e25;
   }
 
   .md\:hover\:bg-grey-darker:hover {
@@ -10839,6 +10895,10 @@ th {
     border-color: transparent;
   }
 
+  .md\:border-black-20 {
+    border-color: rgb(0, 0, 0, .2);
+  }
+
   .md\:border-black {
     border-color: #22292f;
   }
@@ -10848,7 +10908,7 @@ th {
   }
 
   .md\:border-grey-darkest {
-    border-color: #3d4852;
+    border-color: #0e1e25;
   }
 
   .md\:border-grey-darker {
@@ -11147,6 +11207,10 @@ th {
     border-color: transparent;
   }
 
+  .md\:hover\:border-black-20:hover {
+    border-color: rgb(0, 0, 0, .2);
+  }
+
   .md\:hover\:border-black:hover {
     border-color: #22292f;
   }
@@ -11156,7 +11220,7 @@ th {
   }
 
   .md\:hover\:border-grey-darkest:hover {
-    border-color: #3d4852;
+    border-color: #0e1e25;
   }
 
   .md\:hover\:border-grey-darker:hover {
@@ -12052,7 +12116,7 @@ th {
   }
 
   .md\:font-sans {
-    font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: Roboto, system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
   .md\:font-serif {
@@ -13435,6 +13499,10 @@ th {
     color: transparent;
   }
 
+  .md\:text-black-20 {
+    color: rgb(0, 0, 0, .2);
+  }
+
   .md\:text-black {
     color: #22292f;
   }
@@ -13444,7 +13512,7 @@ th {
   }
 
   .md\:text-grey-darkest {
-    color: #3d4852;
+    color: #0e1e25;
   }
 
   .md\:text-grey-darker {
@@ -13743,6 +13811,10 @@ th {
     color: transparent;
   }
 
+  .md\:hover\:text-black-20:hover {
+    color: rgb(0, 0, 0, .2);
+  }
+
   .md\:hover\:text-black:hover {
     color: #22292f;
   }
@@ -13752,7 +13824,7 @@ th {
   }
 
   .md\:hover\:text-grey-darkest:hover {
-    color: #3d4852;
+    color: #0e1e25;
   }
 
   .md\:hover\:text-grey-darker:hover {
@@ -14648,6 +14720,10 @@ th {
     background-color: transparent;
   }
 
+  .lg\:bg-black-20 {
+    background-color: rgb(0, 0, 0, .2);
+  }
+
   .lg\:bg-black {
     background-color: #22292f;
   }
@@ -14657,7 +14733,7 @@ th {
   }
 
   .lg\:bg-grey-darkest {
-    background-color: #3d4852;
+    background-color: #0e1e25;
   }
 
   .lg\:bg-grey-darker {
@@ -14956,6 +15032,10 @@ th {
     background-color: transparent;
   }
 
+  .lg\:hover\:bg-black-20:hover {
+    background-color: rgb(0, 0, 0, .2);
+  }
+
   .lg\:hover\:bg-black:hover {
     background-color: #22292f;
   }
@@ -14965,7 +15045,7 @@ th {
   }
 
   .lg\:hover\:bg-grey-darkest:hover {
-    background-color: #3d4852;
+    background-color: #0e1e25;
   }
 
   .lg\:hover\:bg-grey-darker:hover {
@@ -15328,6 +15408,10 @@ th {
     border-color: transparent;
   }
 
+  .lg\:border-black-20 {
+    border-color: rgb(0, 0, 0, .2);
+  }
+
   .lg\:border-black {
     border-color: #22292f;
   }
@@ -15337,7 +15421,7 @@ th {
   }
 
   .lg\:border-grey-darkest {
-    border-color: #3d4852;
+    border-color: #0e1e25;
   }
 
   .lg\:border-grey-darker {
@@ -15636,6 +15720,10 @@ th {
     border-color: transparent;
   }
 
+  .lg\:hover\:border-black-20:hover {
+    border-color: rgb(0, 0, 0, .2);
+  }
+
   .lg\:hover\:border-black:hover {
     border-color: #22292f;
   }
@@ -15645,7 +15733,7 @@ th {
   }
 
   .lg\:hover\:border-grey-darkest:hover {
-    border-color: #3d4852;
+    border-color: #0e1e25;
   }
 
   .lg\:hover\:border-grey-darker:hover {
@@ -16541,7 +16629,7 @@ th {
   }
 
   .lg\:font-sans {
-    font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: Roboto, system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
   .lg\:font-serif {
@@ -17924,6 +18012,10 @@ th {
     color: transparent;
   }
 
+  .lg\:text-black-20 {
+    color: rgb(0, 0, 0, .2);
+  }
+
   .lg\:text-black {
     color: #22292f;
   }
@@ -17933,7 +18025,7 @@ th {
   }
 
   .lg\:text-grey-darkest {
-    color: #3d4852;
+    color: #0e1e25;
   }
 
   .lg\:text-grey-darker {
@@ -18232,6 +18324,10 @@ th {
     color: transparent;
   }
 
+  .lg\:hover\:text-black-20:hover {
+    color: rgb(0, 0, 0, .2);
+  }
+
   .lg\:hover\:text-black:hover {
     color: #22292f;
   }
@@ -18241,7 +18337,7 @@ th {
   }
 
   .lg\:hover\:text-grey-darkest:hover {
-    color: #3d4852;
+    color: #0e1e25;
   }
 
   .lg\:hover\:text-grey-darker:hover {
@@ -19137,6 +19233,10 @@ th {
     background-color: transparent;
   }
 
+  .xl\:bg-black-20 {
+    background-color: rgb(0, 0, 0, .2);
+  }
+
   .xl\:bg-black {
     background-color: #22292f;
   }
@@ -19146,7 +19246,7 @@ th {
   }
 
   .xl\:bg-grey-darkest {
-    background-color: #3d4852;
+    background-color: #0e1e25;
   }
 
   .xl\:bg-grey-darker {
@@ -19445,6 +19545,10 @@ th {
     background-color: transparent;
   }
 
+  .xl\:hover\:bg-black-20:hover {
+    background-color: rgb(0, 0, 0, .2);
+  }
+
   .xl\:hover\:bg-black:hover {
     background-color: #22292f;
   }
@@ -19454,7 +19558,7 @@ th {
   }
 
   .xl\:hover\:bg-grey-darkest:hover {
-    background-color: #3d4852;
+    background-color: #0e1e25;
   }
 
   .xl\:hover\:bg-grey-darker:hover {
@@ -19817,6 +19921,10 @@ th {
     border-color: transparent;
   }
 
+  .xl\:border-black-20 {
+    border-color: rgb(0, 0, 0, .2);
+  }
+
   .xl\:border-black {
     border-color: #22292f;
   }
@@ -19826,7 +19934,7 @@ th {
   }
 
   .xl\:border-grey-darkest {
-    border-color: #3d4852;
+    border-color: #0e1e25;
   }
 
   .xl\:border-grey-darker {
@@ -20125,6 +20233,10 @@ th {
     border-color: transparent;
   }
 
+  .xl\:hover\:border-black-20:hover {
+    border-color: rgb(0, 0, 0, .2);
+  }
+
   .xl\:hover\:border-black:hover {
     border-color: #22292f;
   }
@@ -20134,7 +20246,7 @@ th {
   }
 
   .xl\:hover\:border-grey-darkest:hover {
-    border-color: #3d4852;
+    border-color: #0e1e25;
   }
 
   .xl\:hover\:border-grey-darker:hover {
@@ -21030,7 +21142,7 @@ th {
   }
 
   .xl\:font-sans {
-    font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: Roboto, system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
   .xl\:font-serif {
@@ -22413,6 +22525,10 @@ th {
     color: transparent;
   }
 
+  .xl\:text-black-20 {
+    color: rgb(0, 0, 0, .2);
+  }
+
   .xl\:text-black {
     color: #22292f;
   }
@@ -22422,7 +22538,7 @@ th {
   }
 
   .xl\:text-grey-darkest {
-    color: #3d4852;
+    color: #0e1e25;
   }
 
   .xl\:text-grey-darker {
@@ -22721,6 +22837,10 @@ th {
     color: transparent;
   }
 
+  .xl\:hover\:text-black-20:hover {
+    color: rgb(0, 0, 0, .2);
+  }
+
   .xl\:hover\:text-black:hover {
     color: #22292f;
   }
@@ -22730,7 +22850,7 @@ th {
   }
 
   .xl\:hover\:text-grey-darkest:hover {
-    color: #3d4852;
+    color: #0e1e25;
   }
 
   .xl\:hover\:text-grey-darker:hover {
