@@ -20,7 +20,7 @@ Vue.use(PortalVue);
 
 
 //Vue.component("UserSettingsForm", require("./components/UserSettingsForm.vue"));
-//Vue.component("UserSettingsForm", require("./components/advacned-vue/UserSettingsForm.vue"));
+Vue.component("SelectablePlan", require("./components/SelectablePlan.vue"));
 
 
 const app = new Vue({

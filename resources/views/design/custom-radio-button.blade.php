@@ -26,7 +26,8 @@
 
             </div>
         </div>
-
+        <selectable-plan></selectable-plan>
     </div>
+    <script type="text/javascript" src="/js/custom-radio-button.js"></script>
 </body>
 </html>
