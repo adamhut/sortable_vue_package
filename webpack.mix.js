@@ -329,8 +329,15 @@ mix.sass("resources/assets/sass/resolute.scss", "public/css/resolute.css")
 //    }).browserSync("http://laravue.test/rebuild-twitter");
  
 
-mix.sass("resources/assets/sass/rebuild-netlify.scss", "public/css/rebuild-netlify.css")
+// mix.sass("resources/assets/sass/rebuild-netlify.scss", "public/css/rebuild-netlify.css")
+//   .options({
+//     processCssUrls: false,
+//     postCss: [tailwindcss("./tailwind.js")]
+//   }).browserSync("http://laravuepackage.test/rebuild-netlify");
+
+mix.js('resources/assets/js/custom-radio-button.js', 'public/js/custom-radio-button.js')
+  .sass("resources/assets/sass/custom-radio-button.scss", "public/css/custom-radio-button.css")
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.js")]
-  }).browserSync("http://laravuepackage.test/rebuild-netlify");
+  }).browserSync("http://laravuepackage.test/custom-radio-button");

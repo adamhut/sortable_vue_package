@@ -83,6 +83,10 @@ Route::get('rebuild-netlify', function () {
     return view('design.rebuild-netlify');
 });
 
+Route::get('custom-radio-button', function () {
+    return view('design.custom-radio-button');
+});
+
 Route::group(['prefix' => 'advanced-vue'], function () {
 
     Route::get('controlled-component', function () {

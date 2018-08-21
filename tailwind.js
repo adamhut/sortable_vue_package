@@ -481,6 +481,7 @@ module.exports = {
   */
 
   width: {
+    'custom' : '56rem',
     'auto': 'auto',
     'px': '1px',
     '1': '0.25rem',
