@@ -14,9 +14,9 @@
 </head>
 <body>
     <div class="min-h-screen bg-grey-light font-sans" id="app">
-        <div class="mx-auto container w-custom">
-            <div class="flex justify-between  pb-6 pt-8 items-end border-b-2 border-grey">
-                <div class="text-2xl text-blue-darker">
+        <div class="mx-auto container md:w-custom">
+            <div class="md:flex md:justify-between  pb-6 pt-8 items-end border-b-2 border-grey">
+                <div class="text-2xl text-blue-darker md:mb-0 mb-4">
                     Change Plan
                 </div>
 
@@ -26,7 +26,7 @@
 
             </div>
         </div>
-        <selectable-plan></selectable-plan>
+        <selectable-plans></selectable-plans>
     </div>
     <script type="text/javascript" src="/js/custom-radio-button.js"></script>
 </body>

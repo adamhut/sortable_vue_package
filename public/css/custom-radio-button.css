@@ -537,16 +537,6 @@ ul {
 }
 
 /**
- * Suppress the focus outline on elements that cannot be accessed via keyboard.
- * This prevents an unwanted focus outline from appearing around elements that
- * might still respond to pointer events.
- */
-
-[tabindex="-1"]:focus {
-  outline: none !important;
-}
-
-/**
  * Tailwind custom reset styles
  */
 
@@ -607,6 +597,7 @@ textarea {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 button,
@@ -644,6 +635,10 @@ textarea::placeholder {
 button,
 [role=button] {
   cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
 }
 
 /**
@@ -1226,6 +1221,10 @@ th {
   background-color: #e8fffe;
 }
 
+.bg-blue-alternate {
+  background-color: #366a8f;
+}
+
 .bg-blue-resolute {
   background-color: #149ed4;
 }
@@ -1538,6 +1537,10 @@ th {
   background-color: #e8fffe;
 }
 
+.hover\:bg-blue-alternate:hover {
+  background-color: #366a8f;
+}
+
 .hover\:bg-blue-resolute:hover {
   background-color: #149ed4;
 }
@@ -1726,6 +1729,14 @@ th {
   background-size: contain;
 }
 
+.border-collapse {
+  border-collapse: collapse;
+}
+
+.border-separate {
+  border-collapse: separate;
+}
+
 .border-transparent {
   border-color: transparent;
 }
@@ -1912,6 +1923,10 @@ th {
 
 .border-teal-lightest {
   border-color: #e8fffe;
+}
+
+.border-blue-alternate {
+  border-color: #366a8f;
 }
 
 .border-blue-resolute {
@@ -2224,6 +2239,10 @@ th {
 
 .hover\:border-teal-lightest:hover {
   border-color: #e8fffe;
+}
+
+.hover\:border-blue-alternate:hover {
+  border-color: #366a8f;
 }
 
 .hover\:border-blue-resolute:hover {
@@ -4038,6 +4057,14 @@ th {
   opacity: 1;
 }
 
+.outline-none {
+  outline: 0;
+}
+
+.focus\:outline-none:focus {
+  outline: 0;
+}
+
 .overflow-auto {
   overflow: auto;
 }
@@ -4060,6 +4087,22 @@ th {
 
 .overflow-y-auto {
   overflow-y: auto;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+.overflow-x-visible {
+  overflow-x: visible;
+}
+
+.overflow-y-visible {
+  overflow-y: visible;
 }
 
 .overflow-x-scroll {
@@ -4518,12 +4561,25 @@ th {
           box-shadow: none;
 }
 
+.shadow-outline-green {
+  -webkit-box-shadow: 0 0 0 3px rgba(5, 202, 160, .8);
+          box-shadow: 0 0 0 3px rgba(5, 202, 160, .8);
+}
+
 .fill-current {
   fill: currentColor;
 }
 
 .stroke-current {
   stroke: currentColor;
+}
+
+.table-auto {
+  table-layout: auto;
+}
+
+.table-fixed {
+  table-layout: fixed;
 }
 
 .text-left {
@@ -4728,6 +4784,10 @@ th {
 
 .text-teal-lightest {
   color: #e8fffe;
+}
+
+.text-blue-alternate {
+  color: #366a8f;
 }
 
 .text-blue-resolute {
@@ -5040,6 +5100,10 @@ th {
 
 .hover\:text-teal-lightest:hover {
   color: #e8fffe;
+}
+
+.hover\:text-blue-alternate:hover {
+  color: #366a8f;
 }
 
 .hover\:text-blue-resolute:hover {
@@ -5590,15 +5654,15 @@ th {
   grid-auto-flow: dense;
 }
 
-.grid-gap-0 {
+.grid-gap-30 {
   grid-gap: 0;
 }
 
-.grid-gap-4 {
+.grid-gap-34 {
   grid-gap: 1rem;
 }
 
-.grid-gap-8 {
+.grid-gap-38 {
   grid-gap: 2rem;
 }
 
@@ -6126,6 +6190,10 @@ th {
     background-color: #e8fffe;
   }
 
+  .sm\:bg-blue-alternate {
+    background-color: #366a8f;
+  }
+
   .sm\:bg-blue-resolute {
     background-color: #149ed4;
   }
@@ -6436,6 +6504,10 @@ th {
 
   .sm\:hover\:bg-teal-lightest:hover {
     background-color: #e8fffe;
+  }
+
+  .sm\:hover\:bg-blue-alternate:hover {
+    background-color: #366a8f;
   }
 
   .sm\:hover\:bg-blue-resolute:hover {
@@ -6814,6 +6886,10 @@ th {
     border-color: #e8fffe;
   }
 
+  .sm\:border-blue-alternate {
+    border-color: #366a8f;
+  }
+
   .sm\:border-blue-resolute {
     border-color: #149ed4;
   }
@@ -7124,6 +7200,10 @@ th {
 
   .sm\:hover\:border-teal-lightest:hover {
     border-color: #e8fffe;
+  }
+
+  .sm\:hover\:border-blue-alternate:hover {
+    border-color: #366a8f;
   }
 
   .sm\:hover\:border-blue-resolute:hover {
@@ -8962,6 +9042,22 @@ th {
     overflow-y: auto;
   }
 
+  .sm\:overflow-x-hidden {
+    overflow-x: hidden;
+  }
+
+  .sm\:overflow-y-hidden {
+    overflow-y: hidden;
+  }
+
+  .sm\:overflow-x-visible {
+    overflow-x: visible;
+  }
+
+  .sm\:overflow-y-visible {
+    overflow-y: visible;
+  }
+
   .sm\:overflow-x-scroll {
     overflow-x: scroll;
   }
@@ -9418,6 +9514,19 @@ th {
             box-shadow: none;
   }
 
+  .sm\:shadow-outline-green {
+    -webkit-box-shadow: 0 0 0 3px rgba(5, 202, 160, .8);
+            box-shadow: 0 0 0 3px rgba(5, 202, 160, .8);
+  }
+
+  .sm\:table-auto {
+    table-layout: auto;
+  }
+
+  .sm\:table-fixed {
+    table-layout: fixed;
+  }
+
   .sm\:text-left {
     text-align: left;
   }
@@ -9620,6 +9729,10 @@ th {
 
   .sm\:text-teal-lightest {
     color: #e8fffe;
+  }
+
+  .sm\:text-blue-alternate {
+    color: #366a8f;
   }
 
   .sm\:text-blue-resolute {
@@ -9932,6 +10045,10 @@ th {
 
   .sm\:hover\:text-teal-lightest:hover {
     color: #e8fffe;
+  }
+
+  .sm\:hover\:text-blue-alternate:hover {
+    color: #366a8f;
   }
 
   .sm\:hover\:text-blue-resolute:hover {
@@ -10482,15 +10599,15 @@ th {
     grid-auto-flow: dense;
   }
 
-  .sm\:grid-gap-0 {
+  .sm\:grid-gap-30 {
     grid-gap: 0;
   }
 
-  .sm\:grid-gap-4 {
+  .sm\:grid-gap-34 {
     grid-gap: 1rem;
   }
 
-  .sm\:grid-gap-8 {
+  .sm\:grid-gap-38 {
     grid-gap: 2rem;
   }
 
@@ -10887,6 +11004,10 @@ th {
     background-color: #e8fffe;
   }
 
+  .md\:bg-blue-alternate {
+    background-color: #366a8f;
+  }
+
   .md\:bg-blue-resolute {
     background-color: #149ed4;
   }
@@ -11197,6 +11318,10 @@ th {
 
   .md\:hover\:bg-teal-lightest:hover {
     background-color: #e8fffe;
+  }
+
+  .md\:hover\:bg-blue-alternate:hover {
+    background-color: #366a8f;
   }
 
   .md\:hover\:bg-blue-resolute:hover {
@@ -11575,6 +11700,10 @@ th {
     border-color: #e8fffe;
   }
 
+  .md\:border-blue-alternate {
+    border-color: #366a8f;
+  }
+
   .md\:border-blue-resolute {
     border-color: #149ed4;
   }
@@ -11885,6 +12014,10 @@ th {
 
   .md\:hover\:border-teal-lightest:hover {
     border-color: #e8fffe;
+  }
+
+  .md\:hover\:border-blue-alternate:hover {
+    border-color: #366a8f;
   }
 
   .md\:hover\:border-blue-resolute:hover {
@@ -13723,6 +13856,22 @@ th {
     overflow-y: auto;
   }
 
+  .md\:overflow-x-hidden {
+    overflow-x: hidden;
+  }
+
+  .md\:overflow-y-hidden {
+    overflow-y: hidden;
+  }
+
+  .md\:overflow-x-visible {
+    overflow-x: visible;
+  }
+
+  .md\:overflow-y-visible {
+    overflow-y: visible;
+  }
+
   .md\:overflow-x-scroll {
     overflow-x: scroll;
   }
@@ -14179,6 +14328,19 @@ th {
             box-shadow: none;
   }
 
+  .md\:shadow-outline-green {
+    -webkit-box-shadow: 0 0 0 3px rgba(5, 202, 160, .8);
+            box-shadow: 0 0 0 3px rgba(5, 202, 160, .8);
+  }
+
+  .md\:table-auto {
+    table-layout: auto;
+  }
+
+  .md\:table-fixed {
+    table-layout: fixed;
+  }
+
   .md\:text-left {
     text-align: left;
   }
@@ -14381,6 +14543,10 @@ th {
 
   .md\:text-teal-lightest {
     color: #e8fffe;
+  }
+
+  .md\:text-blue-alternate {
+    color: #366a8f;
   }
 
   .md\:text-blue-resolute {
@@ -14693,6 +14859,10 @@ th {
 
   .md\:hover\:text-teal-lightest:hover {
     color: #e8fffe;
+  }
+
+  .md\:hover\:text-blue-alternate:hover {
+    color: #366a8f;
   }
 
   .md\:hover\:text-blue-resolute:hover {
@@ -15243,15 +15413,15 @@ th {
     grid-auto-flow: dense;
   }
 
-  .md\:grid-gap-0 {
+  .md\:grid-gap-30 {
     grid-gap: 0;
   }
 
-  .md\:grid-gap-4 {
+  .md\:grid-gap-34 {
     grid-gap: 1rem;
   }
 
-  .md\:grid-gap-8 {
+  .md\:grid-gap-38 {
     grid-gap: 2rem;
   }
 
@@ -15648,6 +15818,10 @@ th {
     background-color: #e8fffe;
   }
 
+  .lg\:bg-blue-alternate {
+    background-color: #366a8f;
+  }
+
   .lg\:bg-blue-resolute {
     background-color: #149ed4;
   }
@@ -15958,6 +16132,10 @@ th {
 
   .lg\:hover\:bg-teal-lightest:hover {
     background-color: #e8fffe;
+  }
+
+  .lg\:hover\:bg-blue-alternate:hover {
+    background-color: #366a8f;
   }
 
   .lg\:hover\:bg-blue-resolute:hover {
@@ -16336,6 +16514,10 @@ th {
     border-color: #e8fffe;
   }
 
+  .lg\:border-blue-alternate {
+    border-color: #366a8f;
+  }
+
   .lg\:border-blue-resolute {
     border-color: #149ed4;
   }
@@ -16646,6 +16828,10 @@ th {
 
   .lg\:hover\:border-teal-lightest:hover {
     border-color: #e8fffe;
+  }
+
+  .lg\:hover\:border-blue-alternate:hover {
+    border-color: #366a8f;
   }
 
   .lg\:hover\:border-blue-resolute:hover {
@@ -18484,6 +18670,22 @@ th {
     overflow-y: auto;
   }
 
+  .lg\:overflow-x-hidden {
+    overflow-x: hidden;
+  }
+
+  .lg\:overflow-y-hidden {
+    overflow-y: hidden;
+  }
+
+  .lg\:overflow-x-visible {
+    overflow-x: visible;
+  }
+
+  .lg\:overflow-y-visible {
+    overflow-y: visible;
+  }
+
   .lg\:overflow-x-scroll {
     overflow-x: scroll;
   }
@@ -18940,6 +19142,19 @@ th {
             box-shadow: none;
   }
 
+  .lg\:shadow-outline-green {
+    -webkit-box-shadow: 0 0 0 3px rgba(5, 202, 160, .8);
+            box-shadow: 0 0 0 3px rgba(5, 202, 160, .8);
+  }
+
+  .lg\:table-auto {
+    table-layout: auto;
+  }
+
+  .lg\:table-fixed {
+    table-layout: fixed;
+  }
+
   .lg\:text-left {
     text-align: left;
   }
@@ -19142,6 +19357,10 @@ th {
 
   .lg\:text-teal-lightest {
     color: #e8fffe;
+  }
+
+  .lg\:text-blue-alternate {
+    color: #366a8f;
   }
 
   .lg\:text-blue-resolute {
@@ -19454,6 +19673,10 @@ th {
 
   .lg\:hover\:text-teal-lightest:hover {
     color: #e8fffe;
+  }
+
+  .lg\:hover\:text-blue-alternate:hover {
+    color: #366a8f;
   }
 
   .lg\:hover\:text-blue-resolute:hover {
@@ -20004,15 +20227,15 @@ th {
     grid-auto-flow: dense;
   }
 
-  .lg\:grid-gap-0 {
+  .lg\:grid-gap-30 {
     grid-gap: 0;
   }
 
-  .lg\:grid-gap-4 {
+  .lg\:grid-gap-34 {
     grid-gap: 1rem;
   }
 
-  .lg\:grid-gap-8 {
+  .lg\:grid-gap-38 {
     grid-gap: 2rem;
   }
 
@@ -20409,6 +20632,10 @@ th {
     background-color: #e8fffe;
   }
 
+  .xl\:bg-blue-alternate {
+    background-color: #366a8f;
+  }
+
   .xl\:bg-blue-resolute {
     background-color: #149ed4;
   }
@@ -20719,6 +20946,10 @@ th {
 
   .xl\:hover\:bg-teal-lightest:hover {
     background-color: #e8fffe;
+  }
+
+  .xl\:hover\:bg-blue-alternate:hover {
+    background-color: #366a8f;
   }
 
   .xl\:hover\:bg-blue-resolute:hover {
@@ -21097,6 +21328,10 @@ th {
     border-color: #e8fffe;
   }
 
+  .xl\:border-blue-alternate {
+    border-color: #366a8f;
+  }
+
   .xl\:border-blue-resolute {
     border-color: #149ed4;
   }
@@ -21407,6 +21642,10 @@ th {
 
   .xl\:hover\:border-teal-lightest:hover {
     border-color: #e8fffe;
+  }
+
+  .xl\:hover\:border-blue-alternate:hover {
+    border-color: #366a8f;
   }
 
   .xl\:hover\:border-blue-resolute:hover {
@@ -23245,6 +23484,22 @@ th {
     overflow-y: auto;
   }
 
+  .xl\:overflow-x-hidden {
+    overflow-x: hidden;
+  }
+
+  .xl\:overflow-y-hidden {
+    overflow-y: hidden;
+  }
+
+  .xl\:overflow-x-visible {
+    overflow-x: visible;
+  }
+
+  .xl\:overflow-y-visible {
+    overflow-y: visible;
+  }
+
   .xl\:overflow-x-scroll {
     overflow-x: scroll;
   }
@@ -23701,6 +23956,19 @@ th {
             box-shadow: none;
   }
 
+  .xl\:shadow-outline-green {
+    -webkit-box-shadow: 0 0 0 3px rgba(5, 202, 160, .8);
+            box-shadow: 0 0 0 3px rgba(5, 202, 160, .8);
+  }
+
+  .xl\:table-auto {
+    table-layout: auto;
+  }
+
+  .xl\:table-fixed {
+    table-layout: fixed;
+  }
+
   .xl\:text-left {
     text-align: left;
   }
@@ -23903,6 +24171,10 @@ th {
 
   .xl\:text-teal-lightest {
     color: #e8fffe;
+  }
+
+  .xl\:text-blue-alternate {
+    color: #366a8f;
   }
 
   .xl\:text-blue-resolute {
@@ -24215,6 +24487,10 @@ th {
 
   .xl\:hover\:text-teal-lightest:hover {
     color: #e8fffe;
+  }
+
+  .xl\:hover\:text-blue-alternate:hover {
+    color: #366a8f;
   }
 
   .xl\:hover\:text-blue-resolute:hover {
@@ -24765,15 +25041,15 @@ th {
     grid-auto-flow: dense;
   }
 
-  .xl\:grid-gap-0 {
+  .xl\:grid-gap-30 {
     grid-gap: 0;
   }
 
-  .xl\:grid-gap-4 {
+  .xl\:grid-gap-34 {
     grid-gap: 1rem;
   }
 
-  .xl\:grid-gap-8 {
+  .xl\:grid-gap-38 {
     grid-gap: 2rem;
   }
 

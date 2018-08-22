@@ -98,7 +98,8 @@ let colors = {
   'teal-light': '#64d5ca',
   'teal-lighter': '#a0f0ed',
   'teal-lightest': '#e8fffe',
-
+  
+  'blue-alternate': '#366A8F',
   'blue-resolute': '#149ED4',
   'blue-resolute-dark': '#0B799E',
   'blue-resolute-icon': '#A7B7C7',
@@ -770,6 +771,7 @@ module.exports = {
     'lg': '0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08)',
     'inner': 'inset 0 2px 4px 0 rgba(0,0,0,0.06)',
     'none': 'none',
+    'outline-green': '0 0 0 3px rgba(5,202,160,0.8)',
   },
 
 
