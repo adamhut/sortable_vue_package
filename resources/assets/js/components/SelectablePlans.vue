@@ -10,7 +10,6 @@
             </selectable-plan>
         </div>
         <input type="radio" id="one" value="One" v-model="picked">
-      
         <input type="radio" id="two" value="Two" v-model="picked">
         <label for="two">Two</label>
         <br>
