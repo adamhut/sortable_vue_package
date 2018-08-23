@@ -1,9 +1,16 @@
 <template>
     <div>
-        <selectable-plan></selectable-plan>
+        <div class="md:w-custom mx-auto py-8 md:flex md:justify-between md:flex-wrap"> 
+            <selectable-plan
+                v-for="(plan,index) in plans"
+                :key="index" 
+                :plan="plan"
+                v-model="activePlan"
+            >
+            </selectable-plan>
+        </div>
         <input type="radio" id="one" value="One" v-model="picked">
-        <label for="one">One</label>
-        <br>
+      
         <input type="radio" id="two" value="Two" v-model="picked">
         <label for="two">Two</label>
         <br>
@@ -13,18 +20,46 @@
 </template>
 
 <script>
-    import SelectablePlan from './SelectablePlan';
+import SelectablePlan from './SelectablePlan';
 
     export default {
         data(){
             return{
+                plans:[
+                    {
+                        name:'Hobby',
+                        gigs:'5',
+                        dollars:'10',
+                    },
+                    {
+                        name:'Stater',
+                        gigs:'10',
+                        dollars:'15',
+                    },
+                    {
+                        name:'Silver',
+                        gigs:'15',
+                        dollars:'20',
+                    },
+                    {
+                        name:'Pro',
+                        gigs:'30',
+                        dollars:'40',
+                    },
+                ],
                 picked:'',
-            }
+                activePlan:'',
+            };
             
         },
         components:{
             SelectablePlan,
         },
+        // methods: {
+        //     udpateActivePlan(plan) {
+        //         this.activePlan= plan;
+        //     }
+        // },
     }
 </script>
 
