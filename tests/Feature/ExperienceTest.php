@@ -10,10 +10,25 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class ExperienceTest extends TestCase
 {
+
+    /** @test */
+    public function a_user_earns_experience_when_they_complete_a_lesson()
+    {
+        //given we have a user
+        $this->signIn();
+
+        //when they complete a lesson
+        $this->user->complete($this->makeLesson());
+
+        //Then experience should be awarded to their accont
+        $this->assertEquals(100,$this->userExperience());
+
+    }
+
     /** @test */
     public function an_announcement_is_made_when_experience_is_earned()
     {
-        Event::fake();
+        Event::fake(UserEarnedExperience::class);
 
         //put things in the montion
         $this->signIn();
@@ -53,7 +68,7 @@ class ExperienceTest extends TestCase
     
     protected function userExperience()
     {
-        
+        return $this->user->getExperience->points;
     }
 
 }

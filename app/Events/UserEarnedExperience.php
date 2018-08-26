@@ -29,7 +29,7 @@ class UserEarnedExperience
     {
         //        
         $this->user = $user;
-        $this->experiences = $points;
+        $this->points = $points;
         $this->totalPoints = $totalPoints;
     }
 

@@ -33,4 +33,10 @@ class User extends Authenticatable
     {
         return $this->hasOne(Experience::class);
     }
+
+
+    public function achievements()
+    {
+        //return $this->belongsToMany($)
+    }
 }

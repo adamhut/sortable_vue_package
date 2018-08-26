@@ -18,7 +18,7 @@ class AchievementsTest extends TestCase
         //when 
         $user->getExperience()->awardExperience(1001);
 
-        //then..the user cna unlock a new achievement.
+        //then..the user can unlock a new achievement.
         
         $this->assertCount(1,$user->achievements);
 

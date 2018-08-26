@@ -9,6 +9,7 @@ class Experience extends Model
 {
     //
 
+
     public function user()
     {
         return $this->belongsTo(User::class);
@@ -26,8 +27,13 @@ class Experience extends Model
 
     public function stripExperience($point)
     {
-        $this->experience -= $point;
+        $this->points -= $point;
         
+        if($this->points <=0)
+        {
+            $this->points = 0;
+        }
+
         $this->save();
 
         return $this;

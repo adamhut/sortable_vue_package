@@ -25,13 +25,17 @@
         ],
         "psr-4": {
             "App\\": "app/",
-            "Laracasts\\":"Laracasts/src"
+            "Laracasts\\":"Laracasts/src",
+            "Adamhut\\": "Adamhut/"
         }
     },
     "autoload-dev": {
         "psr-4": {
             "Tests\\": "tests/"
-        }
+        },
+        "files": [
+            "tests/utilities/functions.php"
+        ]
     },
     "extra": {
         "laravel": {
