@@ -27,22 +27,22 @@ import SelectablePlan from './SelectablePlan';
                 plans:[
                     {
                         name:'Hobby',
-                        gigs:'5',
+                        gigs:'10',
                         dollars:'10',
                     },
                     {
                         name:'Stater',
-                        gigs:'10',
+                        gigs:'15',
                         dollars:'15',
                     },
                     {
                         name:'Silver',
-                        gigs:'15',
+                        gigs:'20',
                         dollars:'20',
                     },
                     {
                         name:'Pro',
-                        gigs:'30',
+                        gigs:'40',
                         dollars:'40',
                     },
                 ],
