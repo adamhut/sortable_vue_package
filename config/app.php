@@ -152,6 +152,8 @@ return [
          */
         Laracasts\LaracastsServiceProvider::class,
 
+        App\Providers\AchievementsServiceProvider::class,
+
         /*
          * Application Service Providers...
          */

@@ -5,6 +5,7 @@ namespace App;
 use App\Experience;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Adamhut\Achievement;
 
 class User extends Authenticatable
 {
@@ -34,9 +35,26 @@ class User extends Authenticatable
         return $this->hasOne(Experience::class);
     }
 
+    /**
+     * Confirm the user account
+     *
+     * @return void
+     */
+    public function confirm()
+    {
+        $this->trusted = true;
+        $this->confirmation_token = null;
+
+        $this->save();
+    }
+
 
     public function achievements()
     {
-        //return $this->belongsToMany($)
+        // $achievements = resolve(Achievements::class)->filter(function($achievement){
+        //     return call_user_func($achievement->handler,$this);
+        // });
+        // return $achievements;
+        return $this->belongsToMany(Achievement::class, 'user_achivements');
     }
 }
