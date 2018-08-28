@@ -152,7 +152,8 @@ return [
          */
         Laracasts\LaracastsServiceProvider::class,
 
-        App\Providers\AchievementsServiceProvider::class,
+        'Adamhut\Providers\AchievementsServiceProvider',
+        // App\Providers\AchievementsServiceProvider::class,
 
         /*
          * Application Service Providers...

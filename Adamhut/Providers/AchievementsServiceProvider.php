@@ -1,12 +1,22 @@
 <?php
 
-namespace App\Providers;
+namespace Adamhut\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Adamhut\Achievements\Achievements;
+use Adamhut\app\Achievemnts\AdamhutMastery;
+use Adamhut\app\Achievemnts\FirstThousandPoints;
+
 
 class AchievementsServiceProvider extends ServiceProvider
 {
+
+    protected $achievements =[
+        FirstThousandPoints::class,
+        AdamhutMastery::class,
+        
+    ];
+
+    
     /**
      * Bootstrap services.
      *
@@ -26,7 +36,13 @@ class AchievementsServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        
+        //resolve('achievement')
+        $this->app->singleton('achievements',function(){
+            return colelct($this->achievements)->map(function($achievement){
+                return new $achievement;
+            });
+        });
+
         // $this->app->singleton(Achievements::class,function(){
             
         //     $achievements = new Achievements;

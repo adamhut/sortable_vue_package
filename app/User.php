@@ -55,6 +55,6 @@ class User extends Authenticatable
         //     return call_user_func($achievement->handler,$this);
         // });
         // return $achievements;
-        return $this->belongsToMany(Achievement::class, 'user_achivements');
+        return $this->belongsToMany(Achievement::class, 'user_achivements')->withTimestamps();
     }
 }

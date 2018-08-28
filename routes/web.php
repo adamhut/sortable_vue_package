@@ -15,6 +15,18 @@ use Illuminate\Support\Traits\Macroable;
 |
 */
 
+Event::listen(\App\Events\UserEarnedExperience::class,function($event){
+    
+    $achievementIdsToAwardTheUser=app('achievements')->filter(function($achievement) use($event){
+        return $achievement->qualifier($event->user);
+    })->map(function($achievement){
+        return $achievement->modelKey();
+    });
+
+    $event->user->achievements()->sync($achievementIdsToAwardTheUser);
+});
+
+
 Route::get('/', function () {
     return view('welcome');
 });
