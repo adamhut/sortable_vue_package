@@ -5,7 +5,7 @@ namespace App;
 use App\Experience;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Adamhut\Achievement;
+use Adamhut\Achievements\Achievement;
 
 class User extends Authenticatable
 {

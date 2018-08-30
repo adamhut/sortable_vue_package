@@ -1,7 +1,7 @@
 <?php
 
 use Faker\Generator as Faker;
-use Adamhut\Achievement;
+use Adamhut\Achievements\Achievement;
 
 $factory->define(Achievement::class, function (Faker $faker) {
     return [

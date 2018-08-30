@@ -1,9 +1,5 @@
 <?php 
-namespace Adamhut\app\Achievemnts;
-
-use Adamhut\Achievement;
-
-
+namespace Adamhut\Achievemnts\Types;
 
 
 class FirstThousandPoints extends AchievementType{

@@ -3,7 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use App\Events\UserEarnedExperience;
+use Adamhut\Achievements\Events\UserEarnedExperience;
 
 class Experience extends Model
 {

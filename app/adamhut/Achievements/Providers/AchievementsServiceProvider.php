@@ -1,10 +1,11 @@
 <?php
 
-namespace Adamhut\Providers;
+namespace Adamhut\Achievements\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Adamhut\app\Achievemnts\AdamhutMastery;
-use Adamhut\app\Achievemnts\FirstThousandPoints;
+use Adamhut\Achievemnts\Types\AdamhutMastery;
+use Adamhut\Achievemnts\Types\FirstThousandPoints;
+use Adamhut\Achievements\Console\GenerateAchievementCommand;
 
 
 class AchievementsServiceProvider extends ServiceProvider
@@ -24,8 +25,7 @@ class AchievementsServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-       
-
+        \Event::listen(\Adamhut\Achievements\Events\UserEarnedExperience::class, \Adamhut\Achievements\Listeners\AwardAchievements::class); 
     }
 
 
@@ -43,6 +43,7 @@ class AchievementsServiceProvider extends ServiceProvider
             });
         });
 
+        $this->commands(GenerateAchievementCommand::class);
         // $this->app->singleton(Achievements::class,function(){
             
         //     $achievements = new Achievements;

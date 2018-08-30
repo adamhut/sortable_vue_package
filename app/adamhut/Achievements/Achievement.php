@@ -1,6 +1,7 @@
 <?php
-namespace Adamhut;
+namespace Adamhut\Achievements;
 
+use App\User;
 use Illuminate\Database\Eloquent\Model;
 
 
