@@ -1,7 +1,6 @@
 <?php 
 namespace Adamhut\Achievemnts\Types;
 
-use Adamhut\Achievement;
 
 class AdamhutMastery extends AchievementType
 {
