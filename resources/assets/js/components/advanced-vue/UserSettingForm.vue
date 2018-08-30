@@ -36,8 +36,7 @@ export default {
   props: ["accountId"],
   components: {
      DeleteAccountButton,
-    ToggleInput,
-
+     ToggleInput,
   },
   data() {
     return { 
