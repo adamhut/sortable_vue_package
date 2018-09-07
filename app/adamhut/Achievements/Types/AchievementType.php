@@ -35,7 +35,6 @@ abstract class AchievementType{
         if(property_exists($this,'name')) {
             return $this->name;
         }
-
         return  trim(preg_replace('/[A-Z]/',' $0', class_basename($this)));
     }
 }

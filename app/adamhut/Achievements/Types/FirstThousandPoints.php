@@ -8,7 +8,7 @@ class FirstThousandPoints extends AchievementType{
 
     public $description ='Great job! Your ara on your way.';
     
-    public $icon ='first-thousand.svg';
+    public $icon ='first-thousand-points.svg';
     
     
     public function qualifier($user)

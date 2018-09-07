@@ -57,4 +57,26 @@ class AchievementsTest extends TestCase
     }
 
 
+    /** @test */
+    public function achievement_can_be_seeded_for_all_users_as_a_console_command()
+    {
+        //given we have two users
+        $users = factory(User::class,2)->create();
+
+        //and those users qualify for one achievement
+        $user[0]->getExperience->update(['points'=>1001]);
+        $user[1]->getExperience->update(['points' => 1001]);
+
+        $this->assertCount(0, $user[0]->achievements);
+        $this->assertCount(0, $user[1]->achievements);
+        
+        //when we seed the achievements through the console command
+        $this->artisan('adamhut:sync-user-achievements');
+
+        //then those two users should have one achievement each in the pivot table
+        $this->assertCount(1, $user[0]->achievements);
+        $this->assertCount(1, $user[1]->achievements);
+
+    }
+
 }
