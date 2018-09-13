@@ -242,3 +242,6 @@ class Anything{
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/count-up', function(){
+    return view('count-up.index');
+});

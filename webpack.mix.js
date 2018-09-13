@@ -335,9 +335,17 @@ mix.sass("resources/assets/sass/resolute.scss", "public/css/resolute.css")
 //     postCss: [tailwindcss("./tailwind.js")]
 //   }).browserSync("http://laravuepackage.test/rebuild-netlify");
 
-mix.js('resources/assets/js/custom-radio-button.js', 'public/js/custom-radio-button.js')
-  .sass("resources/assets/sass/custom-radio-button.scss", "public/css/custom-radio-button.css")
+// mix.js('resources/assets/js/custom-radio-button.js', 'public/js/custom-radio-button.js')
+//   .sass("resources/assets/sass/custom-radio-button.scss", "public/css/custom-radio-button.css")
+//   .options({
+//     processCssUrls: false,
+//     postCss: [tailwindcss("./tailwind.js")]
+//   }).browserSync("http://laravuepackage.test/custom-radio-button");
+
+mix.js('resources/assets/js/count-up.js', 'public/js/count-up.js')
+  .sass("resources/assets/sass/count-up.scss", "public/css/count-up.css")
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.js")]
-  }).browserSync("http://laravuepackage.test/custom-radio-button");
+  })
+  .browserSync("http://laravuepackage.test/count-up");

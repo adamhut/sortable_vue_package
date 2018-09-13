@@ -28,6 +28,7 @@ Vue.component("carousel", require("./components/Carousel.vue"));
 Vue.component("testimonials", require("./components/Testimonials.vue"));
 
 Vue.component("example", require("./components/ExampleComponent.vue"));
+Vue.component("count-up", require("./components/CountUp.vue"));
 
 
 const app = new Vue({
