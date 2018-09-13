@@ -11,5 +11,10 @@ class TopTenUser extends AchievementType
     public function qualifier()
     {
 
-    }    
+    }
+
+    public function dscription()
+    {
+        return 'Great job! Your ara Top 10.';
+    }
 }

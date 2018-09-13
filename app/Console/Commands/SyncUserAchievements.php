@@ -38,7 +38,7 @@ class SyncUserAchievements extends Command
     public function handle()
     {
         //get all user in the db
-
+        //chunck them to save memory
         User::chunk(100,function($users,$index){
 
             $this->reportProgress($index);
@@ -55,7 +55,7 @@ class SyncUserAchievements extends Command
             });
         });
         $this->info("Finished");
-        //chunck them to save memory
+       
 
         //foreach user. 
     }

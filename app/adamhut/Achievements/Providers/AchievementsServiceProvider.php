@@ -37,10 +37,13 @@ class AchievementsServiceProvider extends ServiceProvider
     public function register()
     {
         //resolve('achievement')
+
         $this->app->singleton('achievements',function(){
-            return colelct($this->achievements)->map(function($achievement){
-                return new $achievement;
-            });
+            return cache()->rememebrForever('achievements',function(){
+                return colelct($this->achievements)->map(function ($achievement) {
+                    return new $achievement;
+                });
+            });            
         });
 
         $this->commands(GenerateAchievementCommand::class);

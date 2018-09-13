@@ -23,6 +23,13 @@ abstract class AchievementType{
     }
 
     abstract public function qualifier($user);
+
+    /**
+     * fetch the descption
+     *
+     * @return void
+     */
+    abstract public function description();
     
     public function modelKey()
     {
@@ -37,4 +44,20 @@ abstract class AchievementType{
         }
         return  trim(preg_replace('/[A-Z]/',' $0', class_basename($this)));
     }
+
+    /**
+     * Fetch the icon file name of the achievement 
+     *
+     * @return string
+     */
+    public function icon()
+    {
+        if (property_exists($this, 'icon')) {
+            return $this->icon;
+        }
+        return  kebab_case(class_basename($this)).'.svg';
+    }
+
+
+    
 }

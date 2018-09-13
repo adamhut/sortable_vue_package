@@ -18,6 +18,16 @@ class AchievementTypeTest extends TestCase
 
         $this->assertEquals('Fake Achievement Type' ,$type->name());
     }
+
+    /** @test */
+    public function it_sets_a_default_icon()
+    {
+        $type = new FakeAchievementType();
+        
+        $this->assertEquals('fake-achievement-type.svg', $type->icon());
+
+
+    }
 }
 
 
@@ -25,7 +35,12 @@ class FakeAchievementType extends AchievementType
 {
     public $description = 'dummy description';
 
-    public $icon = 'dummy.svg';
+    //public $icon = 'dummy.svg';
+
+    public function description()
+    {
+        return 'Some Fake Description';
+    }
 
     public function qualifier($user)
     {
