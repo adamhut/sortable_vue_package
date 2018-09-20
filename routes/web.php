@@ -227,14 +227,14 @@ Route::group(['prefix' => 'laracasts'], function () {
     });
 });
 
-class Anything{
-    use Macroable;
+// class Anything{
+//     use Macroable;
 
-    public function one()
-    {       
-        return 'one';
-    }
-}
+//     public function one()
+//     {       
+//         return 'one';
+//     }
+// }
 
 Auth::routes();
 
