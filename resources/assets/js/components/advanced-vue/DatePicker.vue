@@ -28,6 +28,7 @@
         },
        
         mounted(){
+           
             const picker = new Pikaday({
                 //field: this.$el,
                 field:this.$refs.input,
@@ -37,7 +38,7 @@
                    // this.currentDate = this.picker.getMoment().toDate();
                    // this.$emit('input',  this.picker.getMoment().format('YYYY-MM-DD'));
                    this.$emit('input',picker.toString());
-                  
+                   console.log(picker.toString());
                 },
                 ...this.options,
             })

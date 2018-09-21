@@ -13,14 +13,15 @@ let mix = require('laravel-mix');
    var tailwindcss = require("tailwindcss");
 /*
 mix.js('resources/assets/js/app.js', 'public/js');
-
-mix.js('resources/assets/js/controlled-component.js', 'public/js/controlled-component.js');
-
-mix.sass("resources/assets/sass/app.scss", "public/css").options({
-  processCssUrls: false,
-  postCss: [tailwindcss("./tailwind.js")]
-});
 */
+
+// mix.js('resources/assets/js/controlled-component.js', 'public/js/controlled-component.js');
+
+// mix.sass("resources/assets/sass/app.scss", "public/css").options({
+//   processCssUrls: false,
+//   postCss: [tailwindcss("./tailwind.js")]
+// });
+
 /*
 * section 1 
 */
@@ -58,14 +59,15 @@ mix.browserSync(
       postCss: [tailwindcss("./tailwind.js")]
     });
  */
+
 //Advanced Vue Wrapping Pikaday 
-/* mix.js('resources/assets/js/wrapping-pikaday.js', 'public/js/wrapping-pikaday.js')
+mix.js('resources/assets/js/wrapping-pikaday.js', 'public/js/wrapping-pikaday.js')
   .sass("resources/assets/sass/app.scss", "public/css")
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.js")]
   }); 
-*/
+
 
 /* //Advanced Vue Encapsulating External behavior
 mix.js('resources/assets/js/encapsulating-external-behavior.js', 'public/js/encapsulating-external-behavior.js')
@@ -334,10 +336,11 @@ mix.sass("resources/assets/sass/resolute.scss", "public/css/resolute.css")
 //     processCssUrls: false,
 //     postCss: [tailwindcss("./tailwind.js")]
 //   }).browserSync("http://laravuepackage.test/rebuild-netlify");
-
+/* 
 mix.js('resources/assets/js/custom-radio-button.js', 'public/js/custom-radio-button.js')
   .sass("resources/assets/sass/custom-radio-button.scss", "public/css/custom-radio-button.css")
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.js")]
-  }).browserSync("http://laravuepackage.test/custom-radio-button");
+  }).browserSync("http://laravuepackage.test/custom-radio-button"); 
+*/
