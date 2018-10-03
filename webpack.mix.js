@@ -61,12 +61,12 @@ mix.browserSync(
  */
 
 //Advanced Vue Wrapping Pikaday 
-mix.js('resources/assets/js/wrapping-pikaday.js', 'public/js/wrapping-pikaday.js')
-  .sass("resources/assets/sass/app.scss", "public/css")
-  .options({
-    processCssUrls: false,
-    postCss: [tailwindcss("./tailwind.js")]
-  }); 
+// mix.js('resources/assets/js/wrapping-pikaday.js', 'public/js/wrapping-pikaday.js')
+//   .sass("resources/assets/sass/app.scss", "public/css")
+//   .options({
+//     processCssUrls: false,
+//     postCss: [tailwindcss("./tailwind.js")]
+//   }); 
 
 
 /* //Advanced Vue Encapsulating External behavior
@@ -344,3 +344,10 @@ mix.js('resources/assets/js/custom-radio-button.js', 'public/js/custom-radio-but
     postCss: [tailwindcss("./tailwind.js")]
   }).browserSync("http://laravuepackage.test/custom-radio-button"); 
 */
+
+mix.sass("resources/assets/sass/rebuild-lyften.scss", "public/css/rebuild-lyften.css")
+  .options({
+    processCssUrls: false,
+    postCss: [tailwindcss("./tailwind.js")]
+  }).browserSync("http://laravuepackage.test/rebuild-lyften");
+

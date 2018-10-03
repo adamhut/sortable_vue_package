@@ -87,6 +87,10 @@ Route::get('custom-radio-button', function () {
     return view('design.custom-radio-button');
 });
 
+Route::get('rebuild-lyften', function () {
+    return view('design.rebuild-lyften');
+});
+
 Route::group(['prefix' => 'advanced-vue'], function () {
 
     Route::get('controlled-component', function () {
