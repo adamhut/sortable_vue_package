@@ -78,37 +78,37 @@
                 <div class="sticky pin-t ">
                     <div class="border-b">
                         <a href="#" 
-                            class="no-underline font-semibold text-green-darkest px-4 py-3 block">
+                            class="no-underline font-semibold text-green-dark px-4 py-3 block">
                             General
                         </a>
                     </div>
                     <div class="border-b">
                         <a href="#" 
-                            class="no-underline font-semibold text-green-light px-4 py-3 block hover:text-green-darker">
+                            class="no-underline font-semibold text-green-light px-4 py-3 block hover:text-green-dark">
                             Basic Usage
                         </a>
                     </div>
                     <div class="border-b">
                         <a href="#" 
-                            class="no-underline font-semibold text-green-light px-4 py-3 block hover:text-green-darker">
+                            class="no-underline font-semibold text-green-light px-4 py-3 block hover:text-green-dark">
                             Artisan Commands
                         </a>
                     </div>
                     <div class="border-b">
                         <a href="#" 
-                            class="no-underline font-semibold text-green-light px-4 py-3 block hover:text-green-darker">
+                            class="no-underline font-semibold text-green-light px-4 py-3 block hover:text-green-dark">
                             Methods
                         </a>
                     </div>
                     <div class="border-b">
                         <a href="#" 
-                            class="no-underline font-semibold text-green-light px-4 py-3 block hover:text-green-darker">
+                            class="no-underline font-semibold text-green-light px-4 py-3 block hover:text-green-dark">
                             Services
                         </a>
                     </div>
                     <div class="border-b">
                         <a href="#" 
-                            class="no-underline font-semibold text-green-light px-4 py-3 block hover:text-green-darker">
+                            class="no-underline font-semibold text-green-light px-4 py-3 block hover:text-green-dark">
                             Updgrade
                         </a>
                     </div>
@@ -205,13 +205,103 @@
                     <p>
                         From the command line run:
                     </p>
-                    <br/>
-                    <div class="w-full bg-grey-light p-4 text-grey-darkest text-sm rounded-sm">
+                    <div class="w-full bg-grey-light p-4 text-grey-darkest text-sm rounded-sm mt-4">
                         $ composer require torann/geoip
                     </div>
+
+                    <div class="text-2xl mt-4">
+                        Laravel
+                    </div>
+                    <p>
+                        Once installed you need to register the service provider with the application. Open up 
+                        <span class="bg-grey-light rounded py-1 px-1">config/app.php</span> and find the <span class="bg-grey-light rounded py-1 px-1">providers</span> key.
+                    </p>
+                    <div class="w-full bg-grey-light p-4 text-grey-darkest text-sm rounded-sm mt-4">
+                        <span class="text-blue-dark"> 'providers'</span> <span class="text-red">=></span>  [ <br><br>
+
+                            <div class="pl-4 mb-4">
+                                \<span class="text-blue">Torann</span>
+                                \<span class="text-blue">GeoIP</span>
+                                \<span class="text-blue">GeoIPServiceProvider::class,</span>
+                            </div>
+
+                        ]   
+                    </div>
+                    <p>
+                        This package also comes with an optional facade, which provides an easy way to call the the class. Open up 
+                        <span class="bg-grey-light rounded py-1 px-1">config/app.php</span>
+                        and find the aliases key.
+                    </p>
+
+                    <div class="w-full bg-grey-light p-4 text-grey-darkest text-sm rounded-sm mt-4">
+                        <span class="text-blue-dark"> 'aliases'</span> <span class="text-red">=></span> [ <br><br>
+                    
+                        <div class="pl-4 mb-4">
+                            <span class="text-blue-dark"> 'GeoIP'</span> <span class="text-red">=></span>
+                            \<span class="text-blue">Torann</span> \
+                            <span class="text-blue">GeoIP</span> \
+                            <span class="text-blue">Facades</span> \
+                            <span class="text-blue">GeoIP::class,</span>
+                        </div>
+                        ]
+                    </div>
+
+                    <div class="text-2xl mt-4">
+                        Publish the configurations
+                    </div>
+                    <p>
+                        Run this on the command line from the root of your project:
+                    </p>
+
+                    <div class="w-full bg-grey-light p-4 text-grey-darkest text-sm rounded-sm mt-4">
+                        php artisan vendor:publish --provider <span class="text-red-dark"> = </span>
+                        <span class="text-blue-dark">"Torann\GeoIP\GeoIPServiceProvider"</span> --tag<span class="text-red-dark"> = </span>config
+                    </div>
+                    <div class="text-3xl mt-4">
+                        Configuration
+                    </div>
+                    <p class="">
+                        Quick breakdown of the two main options in the configuration file. To find out more simple open the <span class="bg-grey-light rounded py-1 px-1">config/geoip.php</span> file.
+                    </p>
+                    <div class="text-2xl mt-4">
+                        Service Configuration
+                    </div>
+                    <p class="mt-2">
+                        To simplify and keep things clean, all third party composer packages, that are needed for a service, are installed separately.
+                    </p>
+                    <p class="mt-2">
+                        For further configuration options checkout the <a href="#" class="text-green no-underline hover:underline">services</a> page.
+                    </p>
+
+                    <div class="text-2xl mt-4">
+                      Caching Configuration
+                    </div>
+                    <p class="mt-2">
+                        GeoIP uses Laravel's default caching to store queried IP locations. This is done to reduce the number of calls made to the
+                        selected service, as some of them are rate limited.
+                    </p>
+                    
+                    <div class="text-xl">
+                        Options:
+                    </div>
+                    <ul>
+                        <li class="mt-2"><span class="bg-grey-light rounded py-1 px-1 text-sm">all</span> all location are cached</li>
+                        <li class="mt-2"><span class="bg-grey-light rounded py-1 px-1 text-sm">some</span> cache only the requesting user</li>
+                        <li class="mt-2"><span class="bg-grey-light rounded py-1 px-1 text-sm">none</span> caching is completely disable</li>
+                    </ul>
+                    
                 </div> <!-- End of Content-->
             </div>
+           
         </div>
+        <div class="mt-8 border-t border-grey-light w-full py-4 text-center"><!--footer-->
+            
+            <a class="mx-auto text-grey-darker">
+                Copyright © 2008-2017 Lyften. Built using <a href="#" class="text-green no-underline hover:underline">Skosh</a>.
+            </span>
+            
+        </div>
+        <!-- end of footer-->
     </div>
 </body>
 </html>

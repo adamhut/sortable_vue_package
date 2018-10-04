@@ -349,5 +349,5 @@ mix.sass("resources/assets/sass/rebuild-lyften.scss", "public/css/rebuild-lyften
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.js")]
-  }).browserSync("http://laravuepackage.test/rebuild-lyften");
+  }).browserSync("http://laravue.test/rebuild-lyften");
 
