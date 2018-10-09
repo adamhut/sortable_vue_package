@@ -345,9 +345,16 @@ mix.js('resources/assets/js/custom-radio-button.js', 'public/js/custom-radio-but
   }).browserSync("http://laravuepackage.test/custom-radio-button"); 
 */
 
-mix.sass("resources/assets/sass/rebuild-lyften.scss", "public/css/rebuild-lyften.css")
+// mix.sass("resources/assets/sass/rebuild-lyften.scss", "public/css/rebuild-lyften.css")
+//   .options({
+//     processCssUrls: false,
+//     postCss: [tailwindcss("./tailwind.js")]
+//   }).browserSync("http://laravue.test/rebuild-lyften");
+
+mix.js('resources/assets/js/rebuild-transistor.js', 'public/js/rebuild-transistor.js')
+  .sass("resources/assets/sass/rebuild-transistor.scss", "public/css/rebuild-transistor.css")
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.js")]
-  }).browserSync("http://laravue.test/rebuild-lyften");
+  }).browserSync("http://laravue.test/rebuild-transistor");
 

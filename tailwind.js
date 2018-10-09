@@ -48,6 +48,18 @@ let colors = {
 
   'black-20' :'rgb(0,0,0,.2)',
 
+  'transistor-black': 'hsl(0,0%,0%)',
+  'transistor-navy-darker': 'hsl(210,50%,9%)',
+  'transistor-navy-dark': 'hsl(210,49%,15%)',
+  'transistor-navy': 'hsl(210,47%,19%)',
+  'transistor-navy-light': 'hsl(210,22%,48%)',
+  'transistor-navy-lighter': 'hsl(210,%,15%)',
+  'transistor-white': 'hsl(0,0%,100%)',
+
+  'transistor-yellow-dark': 'hsl(42,100%,36%)',
+  'transistor-yellow': 'hsl(42,97%,66%)',
+
+
   'black': '#22292f',
   'grey-custome': '#e4eaef',
   'grey-darkest': '#0e1e25',

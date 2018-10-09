@@ -91,6 +91,10 @@ Route::get('rebuild-lyften', function () {
     return view('design.rebuild-lyften');
 });
 
+Route::get('rebuild-transistor', function () {
+    return view('design.rebuild-transistor');
+});
+
 Route::group(['prefix' => 'advanced-vue'], function () {
 
     Route::get('controlled-component', function () {
