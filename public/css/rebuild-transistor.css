@@ -537,16 +537,6 @@ ul {
 }
 
 /**
- * Suppress the focus outline on elements that cannot be accessed via keyboard.
- * This prevents an unwanted focus outline from appearing around elements that
- * might still respond to pointer events.
- */
-
-[tabindex="-1"]:focus {
-  outline: none !important;
-}
-
-/**
  * Tailwind custom reset styles
  */
 
@@ -607,6 +597,7 @@ textarea {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 button,
@@ -644,6 +635,10 @@ textarea::placeholder {
 button,
 [role=button] {
   cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
 }
 
 /**
@@ -1071,7 +1066,7 @@ p {
 }
 
 .bg-transistor-navy-lighter {
-  background-color: hsl(210, %, 15%);
+  background-color: hsl(210, 22%, 77%);
 }
 
 .bg-transistor-white {
@@ -1423,7 +1418,7 @@ p {
 }
 
 .hover\:bg-transistor-navy-lighter:hover {
-  background-color: hsl(210, %, 15%);
+  background-color: hsl(210, 22%, 77%);
 }
 
 .hover\:bg-transistor-white:hover {
@@ -1810,6 +1805,14 @@ p {
   background-size: contain;
 }
 
+.border-collapse {
+  border-collapse: collapse;
+}
+
+.border-separate {
+  border-collapse: separate;
+}
+
 .border-transparent {
   border-color: transparent;
 }
@@ -1839,7 +1842,7 @@ p {
 }
 
 .border-transistor-navy-lighter {
-  border-color: hsl(210, %, 15%);
+  border-color: hsl(210, 22%, 77%);
 }
 
 .border-transistor-white {
@@ -2191,7 +2194,7 @@ p {
 }
 
 .hover\:border-transistor-navy-lighter:hover {
-  border-color: hsl(210, %, 15%);
+  border-color: hsl(210, 22%, 77%);
 }
 
 .hover\:border-transistor-white:hover {
@@ -4202,6 +4205,14 @@ p {
   opacity: 1;
 }
 
+.outline-none {
+  outline: 0;
+}
+
+.focus\:outline-none:focus {
+  outline: 0;
+}
+
 .overflow-auto {
   overflow: auto;
 }
@@ -4224,6 +4235,22 @@ p {
 
 .overflow-y-auto {
   overflow-y: auto;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+.overflow-x-visible {
+  overflow-x: visible;
+}
+
+.overflow-y-visible {
+  overflow-y: visible;
 }
 
 .overflow-x-scroll {
@@ -4695,6 +4722,14 @@ p {
   stroke: currentColor;
 }
 
+.table-auto {
+  table-layout: auto;
+}
+
+.table-fixed {
+  table-layout: fixed;
+}
+
 .text-left {
   text-align: left;
 }
@@ -4740,7 +4775,7 @@ p {
 }
 
 .text-transistor-navy-lighter {
-  color: hsl(210, %, 15%);
+  color: hsl(210, 22%, 77%);
 }
 
 .text-transistor-white {
@@ -5092,7 +5127,7 @@ p {
 }
 
 .hover\:text-transistor-navy-lighter:hover {
-  color: hsl(210, %, 15%);
+  color: hsl(210, 22%, 77%);
 }
 
 .hover\:text-transistor-white:hover {
@@ -5679,6 +5714,10 @@ p {
   width: 8rem;
 }
 
+.w-40 {
+  width: 10rem;
+}
+
 .w-48 {
   width: 12rem;
 }
@@ -5839,15 +5878,15 @@ p {
   grid-auto-flow: dense;
 }
 
-.grid-gap-0 {
+.grid-gap-30 {
   grid-gap: 0;
 }
 
-.grid-gap-4 {
+.grid-gap-34 {
   grid-gap: 1rem;
 }
 
-.grid-gap-8 {
+.grid-gap-38 {
   grid-gap: 2rem;
 }
 
@@ -6216,7 +6255,7 @@ p {
   }
 
   .sm\:bg-transistor-navy-lighter {
-    background-color: hsl(210, %, 15%);
+    background-color: hsl(210, 22%, 77%);
   }
 
   .sm\:bg-transistor-white {
@@ -6568,7 +6607,7 @@ p {
   }
 
   .sm\:hover\:bg-transistor-navy-lighter:hover {
-    background-color: hsl(210, %, 15%);
+    background-color: hsl(210, 22%, 77%);
   }
 
   .sm\:hover\:bg-transistor-white:hover {
@@ -6984,7 +7023,7 @@ p {
   }
 
   .sm\:border-transistor-navy-lighter {
-    border-color: hsl(210, %, 15%);
+    border-color: hsl(210, 22%, 77%);
   }
 
   .sm\:border-transistor-white {
@@ -7336,7 +7375,7 @@ p {
   }
 
   .sm\:hover\:border-transistor-navy-lighter:hover {
-    border-color: hsl(210, %, 15%);
+    border-color: hsl(210, 22%, 77%);
   }
 
   .sm\:hover\:border-transistor-white:hover {
@@ -9371,6 +9410,22 @@ p {
     overflow-y: auto;
   }
 
+  .sm\:overflow-x-hidden {
+    overflow-x: hidden;
+  }
+
+  .sm\:overflow-y-hidden {
+    overflow-y: hidden;
+  }
+
+  .sm\:overflow-x-visible {
+    overflow-x: visible;
+  }
+
+  .sm\:overflow-y-visible {
+    overflow-y: visible;
+  }
+
   .sm\:overflow-x-scroll {
     overflow-x: scroll;
   }
@@ -9832,6 +9887,14 @@ p {
             box-shadow: 0 0 0 3px rgba(5, 202, 160, .8);
   }
 
+  .sm\:table-auto {
+    table-layout: auto;
+  }
+
+  .sm\:table-fixed {
+    table-layout: fixed;
+  }
+
   .sm\:text-left {
     text-align: left;
   }
@@ -9877,7 +9940,7 @@ p {
   }
 
   .sm\:text-transistor-navy-lighter {
-    color: hsl(210, %, 15%);
+    color: hsl(210, 22%, 77%);
   }
 
   .sm\:text-transistor-white {
@@ -10229,7 +10292,7 @@ p {
   }
 
   .sm\:hover\:text-transistor-navy-lighter:hover {
-    color: hsl(210, %, 15%);
+    color: hsl(210, 22%, 77%);
   }
 
   .sm\:hover\:text-transistor-white:hover {
@@ -10816,6 +10879,10 @@ p {
     width: 8rem;
   }
 
+  .sm\:w-40 {
+    width: 10rem;
+  }
+
   .sm\:w-48 {
     width: 12rem;
   }
@@ -10976,15 +11043,15 @@ p {
     grid-auto-flow: dense;
   }
 
-  .sm\:grid-gap-0 {
+  .sm\:grid-gap-30 {
     grid-gap: 0;
   }
 
-  .sm\:grid-gap-4 {
+  .sm\:grid-gap-34 {
     grid-gap: 1rem;
   }
 
-  .sm\:grid-gap-8 {
+  .sm\:grid-gap-38 {
     grid-gap: 2rem;
   }
 
@@ -11222,7 +11289,7 @@ p {
   }
 
   .md\:bg-transistor-navy-lighter {
-    background-color: hsl(210, %, 15%);
+    background-color: hsl(210, 22%, 77%);
   }
 
   .md\:bg-transistor-white {
@@ -11574,7 +11641,7 @@ p {
   }
 
   .md\:hover\:bg-transistor-navy-lighter:hover {
-    background-color: hsl(210, %, 15%);
+    background-color: hsl(210, 22%, 77%);
   }
 
   .md\:hover\:bg-transistor-white:hover {
@@ -11990,7 +12057,7 @@ p {
   }
 
   .md\:border-transistor-navy-lighter {
-    border-color: hsl(210, %, 15%);
+    border-color: hsl(210, 22%, 77%);
   }
 
   .md\:border-transistor-white {
@@ -12342,7 +12409,7 @@ p {
   }
 
   .md\:hover\:border-transistor-navy-lighter:hover {
-    border-color: hsl(210, %, 15%);
+    border-color: hsl(210, 22%, 77%);
   }
 
   .md\:hover\:border-transistor-white:hover {
@@ -14377,6 +14444,22 @@ p {
     overflow-y: auto;
   }
 
+  .md\:overflow-x-hidden {
+    overflow-x: hidden;
+  }
+
+  .md\:overflow-y-hidden {
+    overflow-y: hidden;
+  }
+
+  .md\:overflow-x-visible {
+    overflow-x: visible;
+  }
+
+  .md\:overflow-y-visible {
+    overflow-y: visible;
+  }
+
   .md\:overflow-x-scroll {
     overflow-x: scroll;
   }
@@ -14838,6 +14921,14 @@ p {
             box-shadow: 0 0 0 3px rgba(5, 202, 160, .8);
   }
 
+  .md\:table-auto {
+    table-layout: auto;
+  }
+
+  .md\:table-fixed {
+    table-layout: fixed;
+  }
+
   .md\:text-left {
     text-align: left;
   }
@@ -14883,7 +14974,7 @@ p {
   }
 
   .md\:text-transistor-navy-lighter {
-    color: hsl(210, %, 15%);
+    color: hsl(210, 22%, 77%);
   }
 
   .md\:text-transistor-white {
@@ -15235,7 +15326,7 @@ p {
   }
 
   .md\:hover\:text-transistor-navy-lighter:hover {
-    color: hsl(210, %, 15%);
+    color: hsl(210, 22%, 77%);
   }
 
   .md\:hover\:text-transistor-white:hover {
@@ -15822,6 +15913,10 @@ p {
     width: 8rem;
   }
 
+  .md\:w-40 {
+    width: 10rem;
+  }
+
   .md\:w-48 {
     width: 12rem;
   }
@@ -15982,15 +16077,15 @@ p {
     grid-auto-flow: dense;
   }
 
-  .md\:grid-gap-0 {
+  .md\:grid-gap-30 {
     grid-gap: 0;
   }
 
-  .md\:grid-gap-4 {
+  .md\:grid-gap-34 {
     grid-gap: 1rem;
   }
 
-  .md\:grid-gap-8 {
+  .md\:grid-gap-38 {
     grid-gap: 2rem;
   }
 
@@ -16228,7 +16323,7 @@ p {
   }
 
   .lg\:bg-transistor-navy-lighter {
-    background-color: hsl(210, %, 15%);
+    background-color: hsl(210, 22%, 77%);
   }
 
   .lg\:bg-transistor-white {
@@ -16580,7 +16675,7 @@ p {
   }
 
   .lg\:hover\:bg-transistor-navy-lighter:hover {
-    background-color: hsl(210, %, 15%);
+    background-color: hsl(210, 22%, 77%);
   }
 
   .lg\:hover\:bg-transistor-white:hover {
@@ -16996,7 +17091,7 @@ p {
   }
 
   .lg\:border-transistor-navy-lighter {
-    border-color: hsl(210, %, 15%);
+    border-color: hsl(210, 22%, 77%);
   }
 
   .lg\:border-transistor-white {
@@ -17348,7 +17443,7 @@ p {
   }
 
   .lg\:hover\:border-transistor-navy-lighter:hover {
-    border-color: hsl(210, %, 15%);
+    border-color: hsl(210, 22%, 77%);
   }
 
   .lg\:hover\:border-transistor-white:hover {
@@ -19383,6 +19478,22 @@ p {
     overflow-y: auto;
   }
 
+  .lg\:overflow-x-hidden {
+    overflow-x: hidden;
+  }
+
+  .lg\:overflow-y-hidden {
+    overflow-y: hidden;
+  }
+
+  .lg\:overflow-x-visible {
+    overflow-x: visible;
+  }
+
+  .lg\:overflow-y-visible {
+    overflow-y: visible;
+  }
+
   .lg\:overflow-x-scroll {
     overflow-x: scroll;
   }
@@ -19844,6 +19955,14 @@ p {
             box-shadow: 0 0 0 3px rgba(5, 202, 160, .8);
   }
 
+  .lg\:table-auto {
+    table-layout: auto;
+  }
+
+  .lg\:table-fixed {
+    table-layout: fixed;
+  }
+
   .lg\:text-left {
     text-align: left;
   }
@@ -19889,7 +20008,7 @@ p {
   }
 
   .lg\:text-transistor-navy-lighter {
-    color: hsl(210, %, 15%);
+    color: hsl(210, 22%, 77%);
   }
 
   .lg\:text-transistor-white {
@@ -20241,7 +20360,7 @@ p {
   }
 
   .lg\:hover\:text-transistor-navy-lighter:hover {
-    color: hsl(210, %, 15%);
+    color: hsl(210, 22%, 77%);
   }
 
   .lg\:hover\:text-transistor-white:hover {
@@ -20828,6 +20947,10 @@ p {
     width: 8rem;
   }
 
+  .lg\:w-40 {
+    width: 10rem;
+  }
+
   .lg\:w-48 {
     width: 12rem;
   }
@@ -20988,15 +21111,15 @@ p {
     grid-auto-flow: dense;
   }
 
-  .lg\:grid-gap-0 {
+  .lg\:grid-gap-30 {
     grid-gap: 0;
   }
 
-  .lg\:grid-gap-4 {
+  .lg\:grid-gap-34 {
     grid-gap: 1rem;
   }
 
-  .lg\:grid-gap-8 {
+  .lg\:grid-gap-38 {
     grid-gap: 2rem;
   }
 
@@ -21234,7 +21357,7 @@ p {
   }
 
   .xl\:bg-transistor-navy-lighter {
-    background-color: hsl(210, %, 15%);
+    background-color: hsl(210, 22%, 77%);
   }
 
   .xl\:bg-transistor-white {
@@ -21586,7 +21709,7 @@ p {
   }
 
   .xl\:hover\:bg-transistor-navy-lighter:hover {
-    background-color: hsl(210, %, 15%);
+    background-color: hsl(210, 22%, 77%);
   }
 
   .xl\:hover\:bg-transistor-white:hover {
@@ -22002,7 +22125,7 @@ p {
   }
 
   .xl\:border-transistor-navy-lighter {
-    border-color: hsl(210, %, 15%);
+    border-color: hsl(210, 22%, 77%);
   }
 
   .xl\:border-transistor-white {
@@ -22354,7 +22477,7 @@ p {
   }
 
   .xl\:hover\:border-transistor-navy-lighter:hover {
-    border-color: hsl(210, %, 15%);
+    border-color: hsl(210, 22%, 77%);
   }
 
   .xl\:hover\:border-transistor-white:hover {
@@ -24389,6 +24512,22 @@ p {
     overflow-y: auto;
   }
 
+  .xl\:overflow-x-hidden {
+    overflow-x: hidden;
+  }
+
+  .xl\:overflow-y-hidden {
+    overflow-y: hidden;
+  }
+
+  .xl\:overflow-x-visible {
+    overflow-x: visible;
+  }
+
+  .xl\:overflow-y-visible {
+    overflow-y: visible;
+  }
+
   .xl\:overflow-x-scroll {
     overflow-x: scroll;
   }
@@ -24850,6 +24989,14 @@ p {
             box-shadow: 0 0 0 3px rgba(5, 202, 160, .8);
   }
 
+  .xl\:table-auto {
+    table-layout: auto;
+  }
+
+  .xl\:table-fixed {
+    table-layout: fixed;
+  }
+
   .xl\:text-left {
     text-align: left;
   }
@@ -24895,7 +25042,7 @@ p {
   }
 
   .xl\:text-transistor-navy-lighter {
-    color: hsl(210, %, 15%);
+    color: hsl(210, 22%, 77%);
   }
 
   .xl\:text-transistor-white {
@@ -25247,7 +25394,7 @@ p {
   }
 
   .xl\:hover\:text-transistor-navy-lighter:hover {
-    color: hsl(210, %, 15%);
+    color: hsl(210, 22%, 77%);
   }
 
   .xl\:hover\:text-transistor-white:hover {
@@ -25834,6 +25981,10 @@ p {
     width: 8rem;
   }
 
+  .xl\:w-40 {
+    width: 10rem;
+  }
+
   .xl\:w-48 {
     width: 12rem;
   }
@@ -25994,15 +26145,15 @@ p {
     grid-auto-flow: dense;
   }
 
-  .xl\:grid-gap-0 {
+  .xl\:grid-gap-30 {
     grid-gap: 0;
   }
 
-  .xl\:grid-gap-4 {
+  .xl\:grid-gap-34 {
     grid-gap: 1rem;
   }
 
-  .xl\:grid-gap-8 {
+  .xl\:grid-gap-38 {
     grid-gap: 2rem;
   }
 

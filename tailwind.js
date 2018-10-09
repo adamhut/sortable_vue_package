@@ -53,7 +53,7 @@ let colors = {
   'transistor-navy-dark': 'hsl(210,49%,15%)',
   'transistor-navy': 'hsl(210,47%,19%)',
   'transistor-navy-light': 'hsl(210,22%,48%)',
-  'transistor-navy-lighter': 'hsl(210,%,15%)',
+  'transistor-navy-lighter': 'hsl(210,22%,77%)',
   'transistor-white': 'hsl(0,0%,100%)',
 
   'transistor-yellow-dark': 'hsl(42,100%,36%)',
@@ -508,6 +508,7 @@ module.exports = {
     '16': '4rem',
     '24': '6rem',
     '32': '8rem',
+    '40': '10rem',
     '48': '12rem',
     '64': '16rem',
     '128': '32rem',
