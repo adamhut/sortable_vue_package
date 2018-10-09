@@ -28,11 +28,13 @@
                 <h1 class=" text-white font-normal text-center pt-12 pb-16">Start your podcast today:</h1>
 
                 <div class="-mx-4  flex flex-wrap">
-                    <div class="px-4 w-1/2">
-                        <div class="w-40 bg-transistor-navy-dark text-transistor-navy-light mx-auto flex rounded overflow-hidden mb-4">
-                            <span class="rounded py-1 text-transistor-navy-darker bg-white uppercase text-center w-1/2 text-xs tracking-wide font-bold">Monthly</span>
-                            <span class="rounded py-1 uppercase text-center w-1/2 text-xs tracking-wide font-bold hover:bg-transistor-navy hover:text-white">Yearly</span>
-                        </div>   
+                    <div class="px-4 w-1/2 pt-10 relative">
+                        <div class="absolute pin-x pin-t">
+                            <div class="w-40 bg-transistor-navy-dark text-transistor-navy-light mx-auto flex rounded overflow-hidden mb-4">
+                                <span class="rounded py-1 text-transistor-navy-darker bg-white uppercase text-center w-1/2 text-xs tracking-wide font-bold">Monthly</span>
+                                <span class="rounded py-1 uppercase text-center w-1/2 text-xs tracking-wide font-bold hover:bg-transistor-navy hover:text-white">Yearly</span>
+                            </div>   
+                        </div>
                         
                         <div class="border border-transistor-navy-dark bg-transistor-navy-dark rounded mb-4 px-6 py-4">
                             <div class="flex items-center -mx-4">
@@ -95,9 +97,13 @@
                         </div>
 
                     </div>
-                    <div class="px-4 w-1/2">
-                        <form action="#" class="">
 
+                    <div class="px-4 w-1/2 pt-10">
+                        <form action="#" class="">
+                            <input type="text" placeholder="Your Name" class="bg-transistor-navy-dark px-4 py-4 rounded block w-full">
+                            <input type="text" placeholder="Your Email">
+                            <input type="text" placeholder="Your Phone">
+                            
 
                         </form>
                     </div>
