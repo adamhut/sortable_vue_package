@@ -29,22 +29,14 @@
 
                 <div class="-mx-4  flex flex-wrap">
                     <div class="w-1/2">
-                    
-                    <div class="px-4 pt-10 relative">
-                        <div class="absolute pin-x pin-t">
-                            <div class="w-40 bg-transistor-navy-dark text-transistor-navy-light mx-auto flex rounded overflow-hidden mb-4">
-                                <span class="rounded py-1 text-transistor-navy-darker bg-white uppercase text-center w-1/2 text-xs tracking-wide font-bold">Monthly</span>
-                                <span class="rounded py-1 uppercase text-center w-1/2 text-xs tracking-wide font-bold hover:bg-transistor-navy hover:text-white">Yearly</span>
+                        <div class="px-4 pt-10 relative">
+                            <div class="absolute pin-x pin-t">
+                                <schedule-toggle v-model="schedule"></schedule-toggle>
                             </div>
+                            <plan-selector :schedule="schedule" :selectedPlan="selectedPlan"></plan-selector>
                         </div>
-                        <plan-selector></plan-selector>
-                    </div>
-                    
-                    
                     </div>
                 
-                    
-
                     <div class="px-4 w-1/2 pt-10">
                         <form action="#" class="">
                             <input type="text" placeholder="Your Name" class="bg-transistor-navy-dark px-4 py-4 rounded block w-full text-white font-medium text-xl text-center focus:bc-transistor-navy focus:outline-none mb-4">

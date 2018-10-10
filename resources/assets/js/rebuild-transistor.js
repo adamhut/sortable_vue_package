@@ -17,10 +17,13 @@ window.Vue = require('vue');
 
 
 Vue.component("PlanSelector", require("./components/rebuild/PlanSelector.vue"));
+Vue.component("ScheduleToggle", require("./components/rebuild/ScheduleToggle.vue"));
 
 const app = new Vue({
     el: '#app',
     data: {
+        schedule:'monthly',
+        selectedPlan: 'Starter',
     },
     methods: {
 
