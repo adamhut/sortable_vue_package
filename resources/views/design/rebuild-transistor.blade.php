@@ -28,84 +28,45 @@
                 <h1 class=" text-white font-normal text-center pt-12 pb-16">Start your podcast today:</h1>
 
                 <div class="-mx-4  flex flex-wrap">
-                    <div class="px-4 w-1/2 pt-10 relative">
+                    <div class="w-1/2">
+                    
+                    <div class="px-4 pt-10 relative">
                         <div class="absolute pin-x pin-t">
                             <div class="w-40 bg-transistor-navy-dark text-transistor-navy-light mx-auto flex rounded overflow-hidden mb-4">
                                 <span class="rounded py-1 text-transistor-navy-darker bg-white uppercase text-center w-1/2 text-xs tracking-wide font-bold">Monthly</span>
                                 <span class="rounded py-1 uppercase text-center w-1/2 text-xs tracking-wide font-bold hover:bg-transistor-navy hover:text-white">Yearly</span>
-                            </div>   
-                        </div>
-                        
-                        <div class="border border-transistor-navy-dark bg-transistor-navy-dark rounded mb-4 px-6 py-4">
-                            <div class="flex items-center -mx-4">
-                                <div class="px-4 w-2/5 text-white">
-                                    <h2 class="text-lg font-medium mb-2">Starter</h2>
-                                    <div class="font-medium">
-                                        <span class="text-3xl font-bold">$19</span>
-                                        <span class="mx-1">/</span>
-                                        <span>month</span>
-                                    </div>
-                                </div>
-                                <div class="px-4 w-3/5">
-                                    <ul class="list-reset text-sm font-medium  text-transistor-navy-lighter  ">
-                                        <li class="mb-1">5,000 downloads / month</li>
-                                        <li class="mb-1">Unlimited shows and episodes</li>
-                                        <li>Analytics, teams, and more…</li>
-                                    </ul>
-                                </div>
                             </div>
                         </div>
-
-                        <div class="border border-transistor-navy-dark rounded mb-4 px-6 py-4 opacity-50 hover:opacity-100 hover:bg-transistor-navy-dark hover:pointer">
-                            <div class="flex items-center -mx-4">
-                                <div class="px-4 w-2/5 text-white">
-                                    <h2 class="text-lg font-medium mb-2">Perfessional</h2>
-                                    <div class="font-medium">
-                                        <span class="text-3xl font-bold">$49</span>
-                                        <span class="mx-1">/</span>
-                                        <span>month</span>
-                                    </div>
-                                </div>
-                                <div class="px-4 w-3/5">
-                                    <ul class="list-reset text-sm font-medium  text-transistor-navy-lighter  ">
-                                        <li class="mb-1">15,000 downloads / month</li>
-                                        <li class="mb-1">Unlimited shows and episodes</li>
-                                        <li>Analytics, teams, and more…</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="border border-transistor-navy-dark rounded px-6 py-4 opacity-50 hover:opacity-100 hover:bg-transistor-navy-dark hover:pointer">
-                            <div class="flex items-center -mx-4">
-                                <div class="px-4 w-2/5 text-white">
-                                    <h2 class="text-lg font-medium mb-2">Small Business</h2>
-                                    <div class="font-medium">
-                                        <span class="text-3xl font-bold">$99</span>
-                                        <span class="mx-1">/</span>
-                                        <span>month</span>
-                                    </div>
-                                </div>
-                                <div class="px-4 w-3/5">
-                                    <ul class="list-reset text-sm font-medium  text-transistor-navy-lighter  ">
-                                        <li class="mb-1">45,000 downloads / month</li>
-                                        <li class="mb-1">Unlimited shows and episodes</li>
-                                        <li>Analytics, teams, and more…</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
+                        <plan-selector></plan-selector>
                     </div>
+                    
+                    
+                    </div>
+                
+                    
 
                     <div class="px-4 w-1/2 pt-10">
                         <form action="#" class="">
-                            <input type="text" placeholder="Your Name" class="bg-transistor-navy-dark px-4 py-4 rounded block w-full">
-                            <input type="text" placeholder="Your Email">
-                            <input type="text" placeholder="Your Phone">
-                            
+                            <input type="text" placeholder="Your Name" class="bg-transistor-navy-dark px-4 py-4 rounded block w-full text-white font-medium text-xl text-center focus:bc-transistor-navy focus:outline-none mb-4">
+                           <input type="email" 
+                                 placeholder="Your Eamil" 
+                                class="bg-transistor-navy-dark px-4 py-4 rounded block w-full text-white font-medium text-xl text-center focus:bc-transistor-navy focus:outline-none mb-4"
+                            >
+                           <input type="password" 
+                                placeholder="Setup Your Password" 
+                                class="bg-transistor-navy-dark px-4 py-4 rounded block w-full text-white font-medium
+                        text-xl text-center focus:bc-transistor-navy focus:outline-none mb-4"
+                            >                            
+                            <input type="password" 
+                                placeholder="Card Number" 
+                                class="bg-transistor-navy-dark px-4 py-4 rounded block w-full text-white font-medium
+                                                    text-xl text-center focus:bc-transistor-navy focus:outline-none mb-4"
+                            >
 
+                            <button disabled="disabled" class="w-full bg-transistor-yellow rounded block uppercase px-4 py-4 font-black text-transistor-yellow-dark border-b-2 border-transistor-yellow-dark mb-4">Create My Account</button>
+                            <p class="text-white font-bold text-center text-sm"> Includes a 14 day trial before billing begins </p>
                         </form>
+
                     </div>
 
 

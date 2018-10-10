@@ -16,7 +16,7 @@ window.Vue = require('vue');
 
 
 
-// Vue.component("HelloWorld", require("./components/advanced-vue/HelloWorld.vue"));
+Vue.component("PlanSelector", require("./components/rebuild/PlanSelector.vue"));
 
 const app = new Vue({
     el: '#app',
