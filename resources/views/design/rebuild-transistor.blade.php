@@ -23,12 +23,13 @@
                     <a href="#" class="font-medimum no-underline text-white hover:underline">Sign in</a>
                 </div>
             </header>
-            <div class="">
+            <div class="pb-12">
 
-                <h1 class=" text-white font-normal text-center pt-12 pb-16">Start your podcast today:</h1>
+                
+                <h1 class="text-2xl sm:text-3xl text-white font-normal text-center pt-12 pb-16 ">Start your podcast today:</h1>
 
-                <div class="-mx-4  flex flex-wrap">
-                    <div class="w-1/2">
+                <div class=" -mx-4  md:flex md:flex-wrap">
+                    <div class="md:w-1/2 md:flex-1 mb-6 md:mb-0">
                         <plan-selector :schedule="schedule" 
                             @change-schedule="schedule = $event" 
                             :selected-plan="selectedPlan" 
@@ -37,7 +38,8 @@
                         </plan-selector>
                     </div>
                 
-                    <div class="px-4 w-1/2 pt-10">
+                    <div class="md:w-1/2 md:flex-1 px-4 pt-10">
+                        <h2 class="md:hidden text-white font-medimum text-xl text-center mb-4">Your Information:</h2>
                         <form action="#" class="">
                             <input type="text" placeholder="Your Name" class="bg-transistor-navy-dark px-4 py-4 rounded block w-full text-white font-medium text-xl text-center focus:bc-transistor-navy focus:outline-none mb-4">
                            <input type="email" 
@@ -48,14 +50,14 @@
                                 placeholder="Setup Your Password" 
                                 class="bg-transistor-navy-dark px-4 py-4 rounded block w-full text-white font-medium
                         text-xl text-center focus:bc-transistor-navy focus:outline-none mb-4"
-                            >                            
+                            >                              
                             <input type="password" 
                                 placeholder="Card Number" 
                                 class="bg-transistor-navy-dark px-4 py-4 rounded block w-full text-white font-medium
                                                     text-xl text-center focus:bc-transistor-navy focus:outline-none mb-4"
                             >
 
-                            <button disabled="disabled" class="w-full bg-transistor-yellow rounded block uppercase px-4 py-4 font-black text-transistor-yellow-dark border-b-2 border-transistor-yellow-dark mb-4">Create My Account</button>
+                            <button disabled="disabled" class="focus:outline-none focus:shadow-outline w-full bg-transistor-yellow rounded block uppercase px-4 py-4 font-black text-transistor-yellow-dark border-b-2 border-transistor-yellow-dark mb-4">Create My Account</button>
                             <p class="text-white font-bold text-center text-sm"> Includes a 14 day trial before billing begins </p>
                         </form>
 

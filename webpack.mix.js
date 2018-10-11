@@ -355,6 +355,6 @@ mix.js('resources/assets/js/rebuild-transistor.js', 'public/js/rebuild-transisto
   .sass("resources/assets/sass/rebuild-transistor.scss", "public/css/rebuild-transistor.css")
   .options({
     processCssUrls: false,
-    postCss: [tailwindcss("./tailwind.js")]
-  }).browserSync("http://laravue.test/rebuild-transistor");
+    postCss: [tailwindcss("./tailwind.js")] 
+  }).browserSync("http://laravuepackage.test/rebuild-transistor");
 

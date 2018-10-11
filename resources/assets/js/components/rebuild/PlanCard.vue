@@ -1,5 +1,5 @@
 <template>
-   <button @click="$emit('select')"  class="border border-transistor-navy-dark rounded mb-4 px-6 py-4 relative w-full block text-left focus:outline-none focus:shadow-outline" 
+   <button @click="$emit('select')"  class="border leading-tight border-transistor-navy-dark rounded mb-4 px-6 py-4 relative w-full block text-left focus:outline-none focus:shadow-outline" 
         :class="[selected ? 'bg-transistor-navy-dark':'opacity-50 havor:opacity-100 hover:bg-transistor-navy-dark' ]"
     >
         <div class="absolute pin-l pin-y flex items-center" v-show="selected">
