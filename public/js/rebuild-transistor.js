@@ -33436,24 +33436,21 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    props: [
-    // 'schedule',
-    'selectedPlan'],
+    props: ['schedule', 'selectedPlan'],
     components: {
         PlanCard: __WEBPACK_IMPORTED_MODULE_0__PlanCard___default.a,
         ScheduleToggle: __WEBPACK_IMPORTED_MODULE_1__ScheduleToggle___default.a
     },
-    data: function data() {
-        return {
-            //selectedPlan: 'Starter',
-            schedule: ''
-        };
-    },
-
+    // data() {
+    //     return {
+    //         //selectedPlan: 'Starter',
+    //         schedule:'monthly',
+    //     }
+    // },
     methods: {
         selectPlan: function selectPlan(plan) {
-            this.selectedPlan = plan;
-            this.$emit('select', plan);
+            // /this.selectedPlan = plan
+            this.$emit('selected', plan);
         }
     }
 
@@ -33476,7 +33473,7 @@ var render = function() {
           attrs: { value: _vm.schedule },
           on: {
             input: function($event) {
-              _vm.$emit("changeSchedule", $event)
+              _vm.$emit("change-schedule", $event)
             }
           }
         })

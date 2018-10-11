@@ -1,7 +1,7 @@
 <template>
     <div class="px-4 pt-10 relative">
         <div class="absolute pin-x pin-t">
-            <schedule-toggle :value="schedule" @input="$emit('changeSchedule',$event)"></schedule-toggle>
+            <schedule-toggle :value="schedule" @input="$emit('change-schedule',$event)"></schedule-toggle>
         </div>    
         <div>
             <plan-card @select="selectPlan('Starter')" :schedule="schedule" name="Starter" monthly="19" yearly="190" :selected="selectedPlan === 'Starter'" :features="[
@@ -33,23 +33,23 @@
     import ScheduleToggle from './ScheduleToggle'
     export default {
         props: [
-           // 'schedule',
+            'schedule',
             'selectedPlan'
         ],
         components:{
             PlanCard,
             ScheduleToggle,
         },
-        data() {
-            return {
-                //selectedPlan: 'Starter',
-                schedule:'',
-            }
-        },
+        // data() {
+        //     return {
+        //         //selectedPlan: 'Starter',
+        //         schedule:'monthly',
+        //     }
+        // },
         methods: {
             selectPlan(plan){
-                this.selectedPlan = plan
-                this.$emit('select',plan);
+                // /this.selectedPlan = plan
+                this.$emit('selected',plan);
             }
         },
         

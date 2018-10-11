@@ -29,7 +29,12 @@
 
                 <div class="-mx-4  flex flex-wrap">
                     <div class="w-1/2">
-                        <plan-selector :schedule="schedule" @change-schedule="schedule = $event" :selectedPlan="selectedPlan" @select="selectedPlan= $event"></plan-selector>
+                        <plan-selector :schedule="schedule" 
+                            @change-schedule="schedule = $event" 
+                            :selected-plan="selectedPlan" 
+                            @selected="selectedPlan = $event"
+                        >
+                        </plan-selector>
                     </div>
                 
                     <div class="px-4 w-1/2 pt-10">
