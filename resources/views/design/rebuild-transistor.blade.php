@@ -29,12 +29,7 @@
 
                 <div class="-mx-4  flex flex-wrap">
                     <div class="w-1/2">
-                        <div class="px-4 pt-10 relative">
-                            <div class="absolute pin-x pin-t">
-                                <schedule-toggle v-model="schedule"></schedule-toggle>
-                            </div>
-                            <plan-selector :schedule="schedule" :selectedPlan="selectedPlan"></plan-selector>
-                        </div>
+                        <plan-selector :schedule="schedule" @change-schedule="schedule = $event" :selectedPlan="selectedPlan" @select="selectedPlan= $event"></plan-selector>
                     </div>
                 
                     <div class="px-4 w-1/2 pt-10">
