@@ -351,10 +351,16 @@ mix.js('resources/assets/js/custom-radio-button.js', 'public/js/custom-radio-but
 //     postCss: [tailwindcss("./tailwind.js")]
 //   }).browserSync("http://laravue.test/rebuild-lyften");
 
-mix.js('resources/assets/js/rebuild-transistor.js', 'public/js/rebuild-transistor.js')
-  .sass("resources/assets/sass/rebuild-transistor.scss", "public/css/rebuild-transistor.css")
+// mix.js('resources/assets/js/rebuild-transistor.js', 'public/js/rebuild-transistor.js')
+//   .sass("resources/assets/sass/rebuild-transistor.scss", "public/css/rebuild-transistor.css")
+//   .options({
+//     processCssUrls: false,
+//     postCss: [tailwindcss("./tailwind.js")] 
+//   }).browserSync("http://laravuepackage.test/rebuild-transistor");
+
+mix.sass("resources/assets/sass/rebuild-course-landing.scss", "public/css/rebuild-course-landing.css")
   .options({
     processCssUrls: false,
-    postCss: [tailwindcss("./tailwind.js")] 
-  }).browserSync("http://laravuepackage.test/rebuild-transistor");
+    postCss: [tailwindcss("./tailwind.js")]
+  }).browserSync("http://laravuepackage.test/rebuild-course-landing");
 

@@ -95,6 +95,10 @@ Route::get('rebuild-transistor', function () {
     return view('design.rebuild-transistor');
 });
 
+Route::get('rebuild-course-landing', function () {
+    return view('design.rebuild-course-landing');
+});
+
 Route::group(['prefix' => 'advanced-vue'], function () {
 
     Route::get('controlled-component', function () {

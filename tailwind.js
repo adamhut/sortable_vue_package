@@ -59,6 +59,7 @@ let colors = {
   'transistor-yellow-dark': 'hsl(42,100%,36%)',
   'transistor-yellow': 'hsl(42,97%,66%)',
 
+  'pink-laravel': '#FB503B',
 
   'black': '#22292f',
   'grey-custome': '#e4eaef',
@@ -221,6 +222,7 @@ module.exports = {
     ],
     'sans': [
       'Roboto',
+      'Open Sans',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
@@ -424,6 +426,7 @@ module.exports = {
     '0': '0',
     '2': '2px',
     '4': '4px',
+    '6': '6px',
     '8': '8px',
   },
 
@@ -693,6 +696,7 @@ module.exports = {
     '6': '1.5rem',
     '8': '2rem',
     '10': '2.5rem',
+    '12': '3rem',
     '16': '4rem',
     '32': '8rem',
   },
@@ -898,9 +902,9 @@ module.exports = {
     backgroundPosition: ['responsive'],
     backgroundRepeat: ['responsive'],
     backgroundSize: ['responsive'],
-    borderColors: ['responsive', 'hover'],
+    borderColors: ['responsive', 'hover','focus'],
     borderRadius: ['responsive'],
-    borderStyle: ['responsive'],
+    borderStyle: ['responsive','focus'],
     borderWidths: ['responsive'],
     cursor: ['responsive', 'hover'],
     display: ['responsive'],
