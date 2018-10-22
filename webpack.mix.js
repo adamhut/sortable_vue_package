@@ -362,5 +362,5 @@ mix.sass("resources/assets/sass/rebuild-course-landing.scss", "public/css/rebuil
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.js")]
-  }).browserSync("http://laravuepackage.test/rebuild-course-landing");
+  }).browserSync("http://laravue.test/rebuild-course-landing");
 

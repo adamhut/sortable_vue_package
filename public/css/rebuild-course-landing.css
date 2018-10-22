@@ -537,6 +537,16 @@ ul {
 }
 
 /**
+ * Suppress the focus outline on elements that cannot be accessed via keyboard.
+ * This prevents an unwanted focus outline from appearing around elements that
+ * might still respond to pointer events.
+ */
+
+[tabindex="-1"]:focus {
+  outline: none !important;
+}
+
+/**
  * Tailwind custom reset styles
  */
 
@@ -597,7 +607,6 @@ textarea {
 
 img {
   max-width: 100%;
-  height: auto;
 }
 
 button,
@@ -635,10 +644,6 @@ textarea::placeholder {
 button,
 [role=button] {
   cursor: pointer;
-}
-
-table {
-  border-collapse: collapse;
 }
 
 /**
@@ -1003,6 +1008,29 @@ th {
 
 p {
   line-height: 2;
+}
+
+.heading-font {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container-inner {
+  max-width: 800px;
+  padding-left: .25rem;
+  padding-right: .25rem;
+}
+
+.checklist {
+  padding-left: 2rem;
+  padding-bottom: 1.5rem;
+  background-repeat: no-repeat;
+  background-image: url(/images/course-landing/checkmark.svg);
+  background-size: 1.25rem;
+  background-position: left .3125rem;
+}
+
+.the-problem {
+  background-image: url(/images/course-landing/pattern.jpg);
 }
 
 /**
@@ -1811,14 +1839,6 @@ p {
 
 .bg-contain {
   background-size: contain;
-}
-
-.border-collapse {
-  border-collapse: collapse;
-}
-
-.border-separate {
-  border-collapse: separate;
 }
 
 .border-transparent {
@@ -4613,14 +4633,6 @@ p {
   opacity: 1;
 }
 
-.outline-none {
-  outline: 0;
-}
-
-.focus\:outline-none:focus {
-  outline: 0;
-}
-
 .overflow-auto {
   overflow: auto;
 }
@@ -4643,22 +4655,6 @@ p {
 
 .overflow-y-auto {
   overflow-y: auto;
-}
-
-.overflow-x-hidden {
-  overflow-x: hidden;
-}
-
-.overflow-y-hidden {
-  overflow-y: hidden;
-}
-
-.overflow-x-visible {
-  overflow-x: visible;
-}
-
-.overflow-y-visible {
-  overflow-y: visible;
 }
 
 .overflow-x-scroll {
@@ -5158,14 +5154,6 @@ p {
 
 .stroke-current {
   stroke: currentColor;
-}
-
-.table-auto {
-  table-layout: auto;
-}
-
-.table-fixed {
-  table-layout: fixed;
 }
 
 .text-left {
@@ -6324,15 +6312,15 @@ p {
   grid-auto-flow: dense;
 }
 
-.grid-gap-30 {
+.grid-gap-0 {
   grid-gap: 0;
 }
 
-.grid-gap-34 {
+.grid-gap-4 {
   grid-gap: 1rem;
 }
 
-.grid-gap-38 {
+.grid-gap-8 {
   grid-gap: 2rem;
 }
 
@@ -10264,22 +10252,6 @@ p {
     overflow-y: auto;
   }
 
-  .sm\:overflow-x-hidden {
-    overflow-x: hidden;
-  }
-
-  .sm\:overflow-y-hidden {
-    overflow-y: hidden;
-  }
-
-  .sm\:overflow-x-visible {
-    overflow-x: visible;
-  }
-
-  .sm\:overflow-y-visible {
-    overflow-y: visible;
-  }
-
   .sm\:overflow-x-scroll {
     overflow-x: scroll;
   }
@@ -10769,14 +10741,6 @@ p {
   .sm\:shadow-outline-green {
     -webkit-box-shadow: 0 0 0 3px rgba(5, 202, 160, .8);
             box-shadow: 0 0 0 3px rgba(5, 202, 160, .8);
-  }
-
-  .sm\:table-auto {
-    table-layout: auto;
-  }
-
-  .sm\:table-fixed {
-    table-layout: fixed;
   }
 
   .sm\:text-left {
@@ -11935,15 +11899,15 @@ p {
     grid-auto-flow: dense;
   }
 
-  .sm\:grid-gap-30 {
+  .sm\:grid-gap-0 {
     grid-gap: 0;
   }
 
-  .sm\:grid-gap-34 {
+  .sm\:grid-gap-4 {
     grid-gap: 1rem;
   }
 
-  .sm\:grid-gap-38 {
+  .sm\:grid-gap-8 {
     grid-gap: 2rem;
   }
 
@@ -15744,22 +15708,6 @@ p {
     overflow-y: auto;
   }
 
-  .md\:overflow-x-hidden {
-    overflow-x: hidden;
-  }
-
-  .md\:overflow-y-hidden {
-    overflow-y: hidden;
-  }
-
-  .md\:overflow-x-visible {
-    overflow-x: visible;
-  }
-
-  .md\:overflow-y-visible {
-    overflow-y: visible;
-  }
-
   .md\:overflow-x-scroll {
     overflow-x: scroll;
   }
@@ -16249,14 +16197,6 @@ p {
   .md\:shadow-outline-green {
     -webkit-box-shadow: 0 0 0 3px rgba(5, 202, 160, .8);
             box-shadow: 0 0 0 3px rgba(5, 202, 160, .8);
-  }
-
-  .md\:table-auto {
-    table-layout: auto;
-  }
-
-  .md\:table-fixed {
-    table-layout: fixed;
   }
 
   .md\:text-left {
@@ -17415,15 +17355,15 @@ p {
     grid-auto-flow: dense;
   }
 
-  .md\:grid-gap-30 {
+  .md\:grid-gap-0 {
     grid-gap: 0;
   }
 
-  .md\:grid-gap-34 {
+  .md\:grid-gap-4 {
     grid-gap: 1rem;
   }
 
-  .md\:grid-gap-38 {
+  .md\:grid-gap-8 {
     grid-gap: 2rem;
   }
 
@@ -21224,22 +21164,6 @@ p {
     overflow-y: auto;
   }
 
-  .lg\:overflow-x-hidden {
-    overflow-x: hidden;
-  }
-
-  .lg\:overflow-y-hidden {
-    overflow-y: hidden;
-  }
-
-  .lg\:overflow-x-visible {
-    overflow-x: visible;
-  }
-
-  .lg\:overflow-y-visible {
-    overflow-y: visible;
-  }
-
   .lg\:overflow-x-scroll {
     overflow-x: scroll;
   }
@@ -21729,14 +21653,6 @@ p {
   .lg\:shadow-outline-green {
     -webkit-box-shadow: 0 0 0 3px rgba(5, 202, 160, .8);
             box-shadow: 0 0 0 3px rgba(5, 202, 160, .8);
-  }
-
-  .lg\:table-auto {
-    table-layout: auto;
-  }
-
-  .lg\:table-fixed {
-    table-layout: fixed;
   }
 
   .lg\:text-left {
@@ -22895,15 +22811,15 @@ p {
     grid-auto-flow: dense;
   }
 
-  .lg\:grid-gap-30 {
+  .lg\:grid-gap-0 {
     grid-gap: 0;
   }
 
-  .lg\:grid-gap-34 {
+  .lg\:grid-gap-4 {
     grid-gap: 1rem;
   }
 
-  .lg\:grid-gap-38 {
+  .lg\:grid-gap-8 {
     grid-gap: 2rem;
   }
 
@@ -26704,22 +26620,6 @@ p {
     overflow-y: auto;
   }
 
-  .xl\:overflow-x-hidden {
-    overflow-x: hidden;
-  }
-
-  .xl\:overflow-y-hidden {
-    overflow-y: hidden;
-  }
-
-  .xl\:overflow-x-visible {
-    overflow-x: visible;
-  }
-
-  .xl\:overflow-y-visible {
-    overflow-y: visible;
-  }
-
   .xl\:overflow-x-scroll {
     overflow-x: scroll;
   }
@@ -27209,14 +27109,6 @@ p {
   .xl\:shadow-outline-green {
     -webkit-box-shadow: 0 0 0 3px rgba(5, 202, 160, .8);
             box-shadow: 0 0 0 3px rgba(5, 202, 160, .8);
-  }
-
-  .xl\:table-auto {
-    table-layout: auto;
-  }
-
-  .xl\:table-fixed {
-    table-layout: fixed;
   }
 
   .xl\:text-left {
@@ -28375,15 +28267,15 @@ p {
     grid-auto-flow: dense;
   }
 
-  .xl\:grid-gap-30 {
+  .xl\:grid-gap-0 {
     grid-gap: 0;
   }
 
-  .xl\:grid-gap-34 {
+  .xl\:grid-gap-4 {
     grid-gap: 1rem;
   }
 
-  .xl\:grid-gap-38 {
+  .xl\:grid-gap-8 {
     grid-gap: 2rem;
   }
 

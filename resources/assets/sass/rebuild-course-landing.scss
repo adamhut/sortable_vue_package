@@ -40,6 +40,26 @@ p {
     @apply .leading-loose;
 }
 
+.heading-font{
+    font-family: 'Montserrat',sans-serif;
+}
+
+.container-inner{
+    max-width: 800px;
+    @apply .px-1;
+}
+
+.checklist{
+    @apply .pl-8 .pb-6 ;
+    background-repeat:no-repeat;
+    background-image:url(/images/course-landing/checkmark.svg);
+    background-size:1.25rem;
+    background-position:left 0.3125rem;
+}
+
+.the-problem{
+    background-image:url(/images/course-landing/pattern.jpg)
+}
 
 /**
  * This injects all of Tailwind's utility classes, generated based on your

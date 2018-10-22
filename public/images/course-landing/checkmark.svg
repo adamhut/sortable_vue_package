@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>checkmark-outline</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Pre-Launch" transform="translate(-235.000000, -1153.000000)" fill-rule="nonzero">
+            <g id="basic-example" transform="translate(235.000000, 692.000000)">
+                <g id="checkmark-outline" transform="translate(0.000000, 461.000000)">
+                    <path d="M5.80087432,32.6665383 C0.861760991,27.896183 -1.11907848,20.8320064 0.619693148,14.1891303 C2.35846477,7.54625413 7.54625413,2.35846477 14.1891303,0.619693148 C20.8320064,-1.11907848 27.896183,0.861760991 32.6665383,5.80087432 C39.8669202,13.2559799 39.7639446,25.1062436 32.4350941,32.4350941 C25.1062436,39.7639446 13.2559799,39.8669202 5.80087432,32.6665383 Z" id="Shape" fill="#97EBDC"></path>
+                    <polygon id="Path" fill="#00836D" points="12.6808511 16.9239437 17.0851064 21.4788732 25.3191489 13 28 15.8 17.0851064 27 10 19.7042254 12.6808511 16.9042254"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
