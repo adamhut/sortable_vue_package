@@ -251,3 +251,6 @@ Route::group(['prefix' => 'laracasts'], function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/paypal', 'PayPalController@index')->name('home');
+
