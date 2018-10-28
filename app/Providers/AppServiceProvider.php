@@ -11,6 +11,7 @@ use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\ServiceProvider;
 use App\Services\Location\IpLocationLocator;
 use App\Services\Location\IpDatabaseLocator;
+use App\Factory\LocatorFactory;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -33,21 +34,23 @@ class AppServiceProvider extends ServiceProvider
 
 
         $this->app->singleton(Locator::class , function($app){
-            switch ($app->make('config')->get('services.ip-locator')) {
-                case 'api':
-                    return new IpLocationLocator;
-                    # code...
-                    break;
-                case 'database':
+            // switch ($app->make('config')->get('services.ip-locator')) {
+            //     case 'api':
+            //         return new IpLocationLocator;
+            //         # code...
+            //         break;
+            //     case 'database':
 
-                    return new IpDatabaseLocator;
-                    break;
+            //         return new IpDatabaseLocator;
+            //         break;
                 
-                default:
-                    # code...
-                    throw new \RuntimeException("Unknown IP Locator Service");
-                    break;
-            }
+            //     default:
+            //         # code...
+            //         throw new \RuntimeException("Unknown IP Locator Service");
+            //         break;
+            // }
+            $fatory = new LocatorFactory;
+            return $fatory->make($app->make('config')->get('services.ip-locator'));
         });
 
     }

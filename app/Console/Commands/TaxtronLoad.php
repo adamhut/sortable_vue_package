@@ -35,10 +35,15 @@ class TaxtronLoad extends Command
      *
      * @return mixed
      */
-    public function handle(//LedgerReader $reader)
+    public function handle()//LedgerReader $reader)
     {
+
+
         //$filePath = $this->argument('filePath');
-        $reader  = new LedgerReader($this->option('format'));
+        // $reader = $this->makeReader($this->option('format'));
+        $reader = $factory->make($this->option('format'));
+
+       
         $transactions  = $reader->parse($this->argument('filePath'));
 
         foreach($transactions as $transaction){
@@ -50,5 +55,12 @@ class TaxtronLoad extends Command
 
 
 
+    }
+
+    private function markEeader($format)
+    {
+        $factory = new ParserFactory;
+
+        return new LedgerReader($factory->make($format));
     }
 }

@@ -74,6 +74,10 @@ class LedgerReader{
     public function markParser($format)
     {
 
+        $factory = new ParserFactory;
+        return $factory->make($format);
+
+
         switch($format){
             case SELF::RAW_FORMAT:
                 return new RawParser;
