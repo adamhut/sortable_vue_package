@@ -1,6 +1,7 @@
 <?php
 
 use Faker\Generator as Faker;
+use App\Affiliation;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,5 +21,8 @@ $factory->define(App\User::class, function (Faker $faker) {
         'password' => '$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm', // secret
         'experiences' => 0,
         'remember_token' => str_random(10),
+        'affiliation_id'=>function(){
+            return factory(Affiliation::class)->create()->id;
+        }
     ];
 });
