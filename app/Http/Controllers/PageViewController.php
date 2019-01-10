@@ -13,13 +13,14 @@ class PageViewController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(View $pageViews)
     {
         $daysBack = (int)request()->get('timeline',7);
         $domain = request()->get('domain', null);
         $customer = request()->get('customer', 7);
 
-        $pageViews = new Pageviews(auth()->user());
+        //pageview repository
+        //$pageViews = new Pageviews(auth()->user());
 
         return view('home',[
             'pageview'  => $pageViews->daysBack($daysBack,$domain,$customer),
