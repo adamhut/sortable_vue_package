@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Braintree\Gateway;
 use Illuminate\Http\Request;
 
-class BraintreeController extends Controller
+class BraintreeHostedController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -21,8 +21,8 @@ class BraintreeController extends Controller
             'privateKey' => config('services.braintree.privateKey')
         ]);
         $braintreeToken = $gateway->ClientToken()->generate();
-
-        return view('braintree.index',compact( 'braintreeToken'));
+        
+        return view('braintree.hosted',compact( 'braintreeToken'));
     }
 
     /**
@@ -43,7 +43,7 @@ class BraintreeController extends Controller
      */
     public function store(Request $request)
     {
-        $amount = $request->get('amount');
+       $amount = $request->get('amount');
         $nonce = $request->get('payment_method_nonce');
 
 
@@ -79,8 +79,6 @@ class BraintreeController extends Controller
             foreach($result->errors->deepAll() as $error) {
                 $errorString .= 'Error: ' . $error->code . ": " . $error->message . "\n";
             }
-
-            $_SESSION["errors"] =$errorString;
            
             return back()->withErrors('An error occurred with the messages'.  $result->message);
             

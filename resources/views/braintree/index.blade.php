@@ -66,23 +66,24 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
-            @if (session('success_message'))
-                <div class="alert alert-success">
-                    {{ session('success_message') }}
-                </div>
-            @endif
+            <div class="content">
+                @if (session('success_message'))
+                    <div class="alert alert-success">
+                        {{ session('success_message') }}
+                    </div>
+                @endif
 
-            @if(count($errors) >0)
-               <div class="alert alert-danger">
-                   <ul>
-                       @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                           
-                       @endforeach
-                   </ul>
-                </div>
-            @endif
-
+                @if(count($errors) >0)
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            
+                        @endforeach
+                    </ul>
+                    </div>
+                @endif
+            </div>
             <div class="content">
                 <div class="title m-b-md">
                     

@@ -256,5 +256,9 @@ Route::get('/paypal', 'PayPalController@index')->name('paypal.index');
 
 Route::get('/braintree', 'BraintreeController@index')->name('braintree.index');
 
+
 Route::post('/braintree/checkout', 'BraintreeController@store')->name('braintree.store');
 
+Route::get('/braintree/hosted', 'BraintreeHostedController@index')->name('braintree-hosted.index');
+
+Route::post('/braintree/hosted/checkout', 'BraintreeHostedController@store')->name('braintree-hosted.store');
