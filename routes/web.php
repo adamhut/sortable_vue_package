@@ -254,3 +254,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/paypal', 'PayPalController@index')->name('paypal.index');
 
+Route::get('/braintree', 'BraintreeController@index')->name('braintree.index');
+
+Route::post('/braintree/checkout', 'BraintreeController@store')->name('braintree.store');
+
