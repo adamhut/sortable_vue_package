@@ -16,6 +16,9 @@ use Illuminate\Support\Traits\Macroable;
 */
 
 Route::get('/', function () {
+  
+    return view('loading');
+
     return view('welcome');
 });
 
