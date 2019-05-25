@@ -55,7 +55,6 @@ let colors = {
   'transistor-navy-light': 'hsl(210,22%,48%)',
   'transistor-navy-lighter': 'hsl(210,22%,77%)',
   'transistor-white': 'hsl(0,0%,100%)',
-
   'transistor-yellow-dark': 'hsl(42,100%,36%)',
   'transistor-yellow': 'hsl(42,97%,66%)',
 
