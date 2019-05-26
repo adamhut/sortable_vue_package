@@ -361,6 +361,6 @@ mix.js('resources/js/custom-radio-button.js', 'public/js/custom-radio-button.js'
 mix.sass("resources/sass/rebuild-course-landing.scss", "public/css/rebuild-course-landing.css")
   .options({
     processCssUrls: false,
-    postCss: [tailwindcss("./tailwind.js")]
+    postCss: [tailwindcss("./tailwind.config.js")]
   }).browserSync("http://laravue.test/rebuild-course-landing");
 
