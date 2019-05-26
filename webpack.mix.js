@@ -1,4 +1,4 @@
-clet mix = require('laravel-mix');
+let mix = require('laravel-mix');
 
 /*
  |--------------------------------------------------------------------------
@@ -358,11 +358,11 @@ mix.js('resources/js/custom-radio-button.js', 'public/js/custom-radio-button.js'
 //     postCss: [tailwindcss("./tailwind.js")] 
 //   }).browserSync("http://laravuepackage.test/rebuild-transistor");
 
-mix.sass("resources/sass/rebuild-course-landing.scss", "public/css/rebuild-course-landing.css")
-  .options({
-    processCssUrls: false,
-    postCss: [tailwindcss("./tailwind.config.js")]
-  }).browserSync("http://laravuepackage.test/rebuild-course-landing");
+// mix.sass("resources/sass/rebuild-course-landing.scss", "public/css/rebuild-course-landing.css")
+//   .options({
+//     processCssUrls: false,
+//     postCss: [tailwindcss("./tailwind.config.js")]
+//   }).browserSync("http://laravuepackage.test/rebuild-course-landing");
 
 
 mix.js('resources/js/context-menu.js', 'public/js/context-menu.js')

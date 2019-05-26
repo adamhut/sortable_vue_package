@@ -16,7 +16,19 @@
 
         <div>
             <div class="bg-gray-400 w-64 h-64 flex items-center justify-center">
-                <!-- Example 1 -->
+                <div>
+                    <div class="bg-gray-400 w-64 h-64 flex items-center justify-center"> 
+                        <dropdown>
+                            <template v-slot:trigger>
+                                <button>...</button>
+                            </template>
+                            <li class="dropdown-menu-item"><a href="#"  class="text-xs leading-loose pl-2 pr-6 block hover:bg-gray-900">Edit</a></li>
+                            <li class="dropdown-menu-item"><a href="#"  class="text-xs leading-loose pl-2 pr-6 block hover:bg-gray-900">Delete</a></li>
+                            <li class="dropdown-menu-item"><a href="#"  class="text-xs leading-loose pl-2 pr-6 block hover:bg-gray-900">Report</a></li>
+                        </dropdown>
+                    </div>
+                </div>
+                {{-- <!-- Example 1 -->
                 <dropdown>
                     <template v-slot:trigger>
                         <button class="hover:text-blue-500">...</button>
@@ -25,7 +37,7 @@
                     <li><a href="#" class="pl-2 pr-8 leading-loose text-xs block hover:bg-gray-900">Edit</a></li>
                     <li><a href="#" class="pl-2 pr-8 leading-loose text-xs block hover:bg-gray-900">Delete</a></li>
                     <li><a href="#" class="pl-2 pr-8 leading-loose text-xs block hover:bg-gray-900">Report</a></li>
-                </dropdown>
+                </dropdown> --}}
             </div>
         </div>
 

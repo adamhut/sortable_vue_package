@@ -9,19 +9,19 @@ require('./bootstrap');
 window.Vue = require('vue');
 
 
-Vue.use(PortalVue);
+// Vue.use(PortalVue);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-
+import Dropdown from './components/Dropdown';
 
 //Vue.component("UserSettingsForm", require("./components/UserSettingsForm.vue"));
 // ue.component("UserSettingsForm", require("./components/advacned-vue/UserSettingsForm.vue"));
-Vue.component('dropdown', require('./components/Dropdown.vue').default);
 
+Vue.component('dropdown', Dropdown);
 
 const app = new Vue({
     el: '#app',
