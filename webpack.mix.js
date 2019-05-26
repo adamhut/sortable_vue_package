@@ -361,6 +361,13 @@ mix.js('resources/js/custom-radio-button.js', 'public/js/custom-radio-button.js'
 mix.sass("resources/sass/rebuild-course-landing.scss", "public/css/rebuild-course-landing.css")
   .options({
     processCssUrls: false,
-    postCss: [tailwindcss("./tailwind.js")]
-  }).browserSync("http://laravue.test/rebuild-course-landing");
+    postCss: [tailwindcss("./tailwind.config.js")]
+  }).browserSync("http://laravuepackage.test/rebuild-course-landing");
 
+
+mix.js('resources/js/context-menu.js', 'public/js/context-menu.js')
+   .sass("resources/sass/context-menu.scss", "public/css/context-menu.css")
+  .options({
+    processCssUrls: false,
+    postCss: [tailwindcss("./tailwind.config.js")]
+  }).browserSync("http://laravuepackage.test/laracasts/context-menu");

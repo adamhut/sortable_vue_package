@@ -12,16 +12,16 @@
     <link href="{{ asset('css/rebuild-course-landing.css') }}" rel="stylesheet">
 </head>
 <body class="font-sans antialiased border-t-6 border-pink-laravel">
-    <div class="bg-grey-lighter text-black">
+    <div class="bg-gray-200 text-black pb-12">
         <div class="container mx-auto flex px-2 flex-col lg:flex-row">
-            <div class="flex-1 pt-12 lg:mr-12 ">
+            <div class="flex-1 pt-12  lg:mr-12 ">
                 <h1 class="text-4xl pb-10 heading-font">Useful Laravel Packages</h1>
                 <p class="pb-10 leading-loose tracking-wide">
                     A comprehensive video course teaching you how to use the most popular Laravel packages to jump-start your web applications.
                 </p>
                 <div class="font-bold leading-normal mb-4">Coming Soon! Subscribe for updates and free previews.</div>
                 <div class="flex flex-col sm:flex-row">
-                    <input type="email" class="flex-1 rounded rounded-r-none py-4 px-4 outline-none shadow border md:border-r-0 focus:border-pink-laravel" placeholder="Enter Email address"/>
+                    <input type="email" class="flex-1 rounded rounded-r-none py-4 px-4 outline-none shadow border border-gray-500 md:border-r-0  focus:border-pink-laravel " placeholder="Enter Email address"/>
                     <button type="button" 
                         class="flex-2 uppercase bg-pink-laravel text-white rounded rounded-l-none py-3 px-8 font-semibold tracking-wide shadow">Subscribe
                     </button>
@@ -53,7 +53,7 @@
 
         </div>
     </div><!--end the the-problem-->
-    <div class="faq bg-grey-lighter">
+    <div class="faq bg-gray-200">
         <div class="container-inner mx-auto py-12 px-4 lg:px-0">
             <h2 class="font-bold heading-font mb-12 text-3xl text-center">Frequently Asked Questions:</h2>
             <dl class="leading-loose text-lg">

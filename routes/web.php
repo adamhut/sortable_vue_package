@@ -237,6 +237,11 @@ Route::group(['prefix' => 'laracasts'], function () {
         ]));
         return view('laracasts.responsive-demo-part2');
     });
+
+
+    Route::get('context-menu',function(){
+        return view('laracasts.context-menu');
+    });
 });
 
 // class Anything{

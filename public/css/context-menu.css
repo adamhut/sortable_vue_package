@@ -663,33 +663,6 @@ video {
  * @import "components/forms"ix;
  */
 
-p {
-  line-height: 2;
-}
-
-.heading-font {
-  font-family: "Montserrat", sans-serif;
-}
-
-.container-inner {
-  max-width: 800px;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-
-.checklist {
-  padding-left: 2rem;
-  padding-bottom: 1.5rem;
-  background-repeat: no-repeat;
-  background-image: url(/images/course-landing/checkmark.svg);
-  background-size: 1.25rem;
-  background-position: left 0.3125rem;
-}
-
-.the-problem {
-  background-image: url(/images/course-landing/pattern.jpg);
-}
-
 /**
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.
