@@ -365,9 +365,17 @@ mix.js('resources/js/custom-radio-button.js', 'public/js/custom-radio-button.js'
 //   }).browserSync("http://laravuepackage.test/rebuild-course-landing");
 
 
-mix.js('resources/js/context-menu.js', 'public/js/context-menu.js')
-   .sass("resources/sass/context-menu.scss", "public/css/context-menu.css")
+// mix.js('resources/js/context-menu.js', 'public/js/context-menu.js')
+//    .sass("resources/sass/context-menu.scss", "public/css/context-menu.css")
+//   .options({
+//     processCssUrls: false,
+//     postCss: [tailwindcss("./tailwind.config.js")]
+//   }).browserSync("http://laravuepackage.test/laracasts/context-menu");
+
+
+mix.js('resources/js/smooth-scroll.js', 'public/js/smooth-scroll.js')
+   .sass("resources/sass/smooth-scroll.scss", "public/css/smooth-scroll.css")
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.config.js")]
-  }).browserSync("http://laravuepackage.test/laracasts/context-menu");
+  }).browserSync("http://laravue.test/laracasts/smooth-scroll");

@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{mix('/css/context-menu.css')}}">
 
-    <title>Smooth Scrolling</title>
+    <title>Context Menu</title>
 </head>
 
 <body>

@@ -242,6 +242,10 @@ Route::group(['prefix' => 'laracasts'], function () {
     Route::get('context-menu',function(){
         return view('laracasts.context-menu');
     });
+
+    Route::get('smooth-scroll', function () {
+        return view('laracasts.smooth-scroll');
+    });
 });
 
 // class Anything{
