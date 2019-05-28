@@ -99,6 +99,10 @@ Route::get('rebuild-course-landing', function () {
     return view('design.rebuild-course-landing');
 });
 
+Route::get('rebuild-meetup', function () {
+    return view('design.rebuild-meetup');
+});
+
 Route::group(['prefix' => 'advanced-vue'], function () {
 
     Route::get('controlled-component', function () {

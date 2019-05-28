@@ -7,6 +7,7 @@ module.exports = {
     theme: {
         extend: {
             colors: {
+                'meetup-blue':'#00455D',
                 'bcr-blue': {
                     600: '#1e232d',
                     500: '#383d49',
@@ -63,7 +64,10 @@ module.exports = {
                 '152': '41rem',
                 '160': '44rem',
                 '1/4': '25%',
+                '3/10': '30%',
+                '7/10': '70%',
             },
+            
             minWidth: {
                 '20': '5rem',
                 '64': '16rem',
@@ -76,6 +80,7 @@ module.exports = {
                 '1/4': '25%',
                 '1/5': '20%',
                 '2/5': '40%',
+               
             },
             width: {
                 '1/8': '12.5%',
@@ -114,6 +119,46 @@ module.exports = {
                 red: '4px 7px 9px 0px rgba(255,75,75,0.07)',
                 green: '4px 7px 9px 0px rgba(64,201,82,0.07)',
             }
+        },
+        fontFamily: {
+            sans: [
+                '-apple-system',
+                'BlinkMacSystemFont',
+                '"Segoe UI"',
+                'Roboto',
+                '"Helvetica Neue"',
+                'Arial',
+                '"Noto Sans"',
+                'sans-serif',
+                '"Apple Color Emoji"',
+                '"Segoe UI Emoji"',
+                '"Segoe UI Symbol"',
+                '"Noto Color Emoji"',
+            ],
+            'source-sans-pro': [
+                'Source Sans Pro',
+                'Roboto',
+                '-apple-system',
+                'BlinkMacSystemFont',
+                '"Segoe UI"',
+                '"Helvetica Neue"',
+                'Arial',
+                '"Noto Sans"',
+                'sans-serif',
+                '"Apple Color Emoji"',
+                '"Segoe UI Emoji"',
+                '"Segoe UI Symbol"',
+                '"Noto Color Emoji"',
+            ],
+            serif: ['Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
+            mono: [
+                'Menlo',
+                'Monaco',
+                'Consolas',
+                '"Liberation Mono"',
+                '"Courier New"',
+                'monospace',
+            ],
         },
         backgroundColor: theme => theme('colors'),
         textColor: theme => theme('colors'),
