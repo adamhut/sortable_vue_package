@@ -62,9 +62,9 @@
 
         <div class="container mx-auto px-8 xl:px-40 mb-6">
             <div class="bg-gray-900 text-white flex flex-col lg:flex-row items-center justify-between p-3 -mt-8">
-                <div class="flex flex-col lg:flex-row  items-center ">
+                <div class="flex flex-col lg:flex-row items-center mb-2 lg:mb-0 w-full ">
                     <span class="relative">
-                        <input type="text" placeholder="Search" class="text-gray-400 rounded px-2 py-3 w-72">
+                        <input type="text" placeholder="Search" class="text-gray-400 rounded px-2 py-3 lg:w-72  ">
                         <span class="absolute right-0 top-0 mr-3" style="top:10px">
                             <svg class="text-gray-600" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 24 24" width="24" height="24">
@@ -80,14 +80,14 @@
                     </span>
                 </div>
                 <div class="flex items-center">
-                    <button class="border-l border-t border-b border-gray-700 px-6 py-2">Groups</button>
+                    <button class="border-l border-t border-b border-gray-700  rounded-bl rounded-tl px-6 py-2">Groups</button>
                     <button
                         class="border-r border-t border-b border-gray-700 bg-gray-700 text-white px-6 py-2">Calendar</button>
                 </div>
             </div>
         </div><!-- End of Container-->
         <div class="container mx-auto xl:px-40 flex flex-col flex-col-reverse lg:flex-row">
-            <div class="w-full lg:w-7/10">
+            <div class="w-full lg:w-7/10 px-8 lg:px-0">
                 <div class="pl-3 upppercase font-bold text-sm py-2 pb-4">
                     Saturday, May 25
                 </div>
@@ -249,7 +249,7 @@
             </div>
             <!--End of Content Left-->
 
-            <div class="w-full lg:w-3/10 ml-6">
+            <div class="w-full lg:w-3/10 lg:ml-6 px-6 lg:px-0">
                 <div class="pt-2 pb-4"> &nbsp;</div>
                 <div class="border border-gray-400 bg-white text-sm mb-4">
                     <div class="border-b border-gray-400 flex">

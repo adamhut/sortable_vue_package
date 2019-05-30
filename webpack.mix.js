@@ -385,4 +385,4 @@ mix.js('resources/js/meetup.js', 'public/js/meetup.js')
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.config.js")]
-  }).browserSync("http://laravuepackage.test/rebuild-meetup");
+  }).browserSync("http://laravue.test/rebuild-meetup");
