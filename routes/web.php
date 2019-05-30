@@ -250,6 +250,10 @@ Route::group(['prefix' => 'laracasts'], function () {
     Route::get('smooth-scroll', function () {
         return view('laracasts.smooth-scroll');
     });
+
+    Route::get('modal-no-js', function () {
+        return view('laracasts.modal-no-js');
+    });
 });
 
 // class Anything{
