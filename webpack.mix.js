@@ -380,9 +380,16 @@ mix.js('resources/js/custom-radio-button.js', 'public/js/custom-radio-button.js'
 //     postCss: [tailwindcss("./tailwind.config.js")]
 //   }).browserSync("http://laravue.test/laracasts/smooth-scroll");
 
-mix.js('resources/js/meetup.js', 'public/js/meetup.js')
-.sass("resources/sass/design/rebuild-meetup.scss", "public/css/rebuild-meetup.css")
+// mix.js('resources/js/meetup.js', 'public/js/meetup.js')
+// .sass("resources/sass/design/rebuild-meetup.scss", "public/css/rebuild-meetup.css")
+//   .options({
+//     processCssUrls: false,
+//     postCss: [tailwindcss("./tailwind.config.js")]
+//   }).browserSync("http://laravue.test/rebuild-meetup");
+
+mix.js('resources/js/conditional-visibility.js', 'public/js/conditional-visibility.js')
+.sass("resources/sass/conditional-visibility.scss", "public/css/conditional-visibility.css")
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.config.js")]
-  }).browserSync("http://laravue.test/rebuild-meetup");
+  }).browserSync("http://laravuepackage.test/laracasts/conditional-visibility");

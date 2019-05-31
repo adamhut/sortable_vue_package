@@ -31,6 +31,7 @@
         "element-resize-detector": "^1.1.15",
         "flickity": "^2.2.0",
         "glhd-tailwindcss-transitions": "^0.3.0",
+        "in-viewport": "^3.6.0",
         "node-sass": "^4.12.0",
         "pikaday": "^1.8.0",
         "portal-vue": "^1.5.1",

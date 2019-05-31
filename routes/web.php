@@ -254,6 +254,11 @@ Route::group(['prefix' => 'laracasts'], function () {
     Route::get('modal-no-js', function () {
         return view('laracasts.modal-no-js');
     });
+
+
+    Route::get('conditional-visibility',function(){
+        return view('laracasts.conditional-visibility');
+    });
 });
 
 // class Anything{
