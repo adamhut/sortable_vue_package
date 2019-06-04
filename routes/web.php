@@ -256,8 +256,14 @@ Route::group(['prefix' => 'laracasts'], function () {
     });
 
 
+
     Route::get('conditional-visibility',function(){
         return view('laracasts.conditional-visibility');
+    });
+
+
+    Route::get('modal-no-js-to-vue', function () {
+        return view( 'laracasts.modal-no-js-to-vue');
     });
 });
 
