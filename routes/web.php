@@ -265,6 +265,10 @@ Route::group(['prefix' => 'laracasts'], function () {
     Route::get('modal-no-js-to-vue', function () {
         return view( 'laracasts.modal-no-js-to-vue');
     });
+
+    Route::get('confirmation-dialogs', function () {
+        return view('laracasts.confirmation-dialogs');
+    });
 });
 
 // class Anything{

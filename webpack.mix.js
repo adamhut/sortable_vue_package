@@ -394,9 +394,16 @@ mix.js('resources/js/custom-radio-button.js', 'public/js/custom-radio-button.js'
 //     postCss: [tailwindcss("./tailwind.config.js")]
 //   }).browserSync("http://laravuepackage.test/laracasts/conditional-visibility");
 
-mix.js('resources/js/laracasts-modal.js', 'public/js/laracasts-modal.js')
-  .sass("resources/sass/laracasts-modal.scss", "public/css/laracasts-modal.css")
-  .options({
-    processCssUrls: false,
-    postCss: [tailwindcss("./tailwind.config.js")]
-  }).browserSync("http://laravue.test/laracasts/modal-no-js-to-vue");
+// mix.js('resources/js/laracasts-modal.js', 'public/js/laracasts-modal.js')
+//   .sass("resources/sass/laracasts-modal.scss", "public/css/laracasts-modal.css")
+//   .options({
+//     processCssUrls: false,
+//     postCss: [tailwindcss("./tailwind.config.js")]
+//   }).browserSync("http://laravue.test/laracasts/modal-no-js-to-vue");
+
+mix.js('resources/js/confirmation-dialogs.js', 'public/js/confirmation-dialogs.js')
+   .sass("resources/sass/confirmation-dialogs.scss", "public/css/confirmation-dialogs.css")
+   .options({
+     processCssUrls: false,
+     postCss: [tailwindcss("./tailwind.config.js")]
+   }).browserSync("http://laravue.test/laracasts/confirmation-dialogs");
