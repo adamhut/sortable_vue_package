@@ -271,6 +271,9 @@ Route::group(['prefix' => 'laracasts'], function () {
     });
 });
 
+
+Route::get('vue-dropdown','VueDropdownController@index');
+
 // class Anything{
 //     use Macroable;
 
