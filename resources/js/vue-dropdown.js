@@ -20,7 +20,9 @@ Vue.use(VueFuse)
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 import SearchComponent from './components/SearchComponent';
+import DropdownMenu from './components/DropdownMenu';
 Vue.component('SearchComponent', SearchComponent);
+Vue.component('DropdownMenu', DropdownMenu);
 // Vue.component("DatePicker", require("./components/advanced-vue/DatePicker.vue"));
 
 
