@@ -31,27 +31,29 @@
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo adipisci nesciunt ut cum officia corrupti doloremque sapiente. Temporibus neque porro a est! Iusto, rem distinctio tempore nam, voluptatem accusantium, nostrum consectetur rerum perspiciatis placeat laudantium repellendus dolor minus consequatur aut.
             </div>
         -->
-        <div class="absolute normal-case bg-white border border-gray-400 left-0 right-0 w-128 text-left mb-4 mt-2 rounded-lg shadow overflow-hidden z-10 overflow-y-auto"
-            style="max-height:32rem"
-            v-if="query.length > 0 && searchResultVisable">
-            <div class="flex flex-col" ref="results">
-                <a 
-                    v-for="(post,index) in searchResults"
-                    :key="index"
-                    :href="post.item.path" 
-                    @mousedown.prevent="searchResultVisable=true "
-                    class="border-b border-gray-400 text-xl cursor-pointer p-4 hover:bg-blue-100"
-                    :class="{'bg-blue-100': index === highlightIndex}"
-                    @keydown.enter="gotoLink()"
-                >
-                    {{post.item.title}}
-                    <span class="block font-normal text-sm my-1" v-text="post.item.summary"></span>
-                </a>
-                <div v-if="searchResults.lenght===0" class="font-normal w-full border-b border-gray-400 cursor-pointer p-4">
-                    <p class="my-0">No results for '<strong>{{query}}</strong>'</p>
+        <transition name="search-fade">
+            <div class="absolute normal-case bg-white border border-gray-400 left-0 right-0 w-128 text-left mb-4 mt-2 rounded-lg shadow overflow-hidden z-10 overflow-y-auto"
+                style="max-height:32rem"
+                v-if="query.length > 0 && searchResultVisable">
+                <div class="flex flex-col" ref="results">
+                    <a 
+                        v-for="(post,index) in searchResults"
+                        :key="index"
+                        :href="post.item.path" 
+                        @mousedown.prevent="searchResultVisable=true "
+                        class="border-b border-gray-400 text-xl cursor-pointer p-4 hover:bg-blue-100"
+                        :class="{'bg-blue-100': index === highlightIndex}"
+                        @keydown.enter="gotoLink()"
+                    >
+                        {{post.item.title}}
+                        <span class="block font-normal text-sm my-1" v-text="post.item.summary"></span>
+                    </a>
+                    <div v-if="searchResults.lenght===0" class="font-normal w-full border-b border-gray-400 cursor-pointer p-4">
+                        <p class="my-0">No results for '<strong>{{query}}</strong>'</p>
+                    </div>
                 </div>
             </div>
-        </div>
+         </transition>
     </div>
 </template>
 
@@ -143,10 +145,10 @@
 </script>
 
 <style scoped>
-  .fade-enter-active, .fade-leave-active {
-    transition: opacity .2s;
+  .search-fade-enter-active, .search-fade-leave-active {
+    transition: opacity .5s;
   }
-  .fade-enter, .fade-leave-to {
+  .search-fade-enter, .search-fade-leave-to {
     opacity: 0;
   }
 </style>

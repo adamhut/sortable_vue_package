@@ -1949,6 +1949,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2093,7 +2095,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".fade-enter-active[data-v-89b0c3cc], .fade-leave-active[data-v-89b0c3cc] {\n  transition: opacity .2s;\n}\n.fade-enter[data-v-89b0c3cc], .fade-leave-to[data-v-89b0c3cc] {\n  opacity: 0;\n}\n", ""]);
+exports.push([module.i, ".search-fade-enter-active[data-v-89b0c3cc], .search-fade-leave-active[data-v-89b0c3cc] {\n  transition: opacity .5s;\n}\n.search-fade-enter[data-v-89b0c3cc], .search-fade-leave-to[data-v-89b0c3cc] {\n  opacity: 0;\n}\n", ""]);
 
 // exports
 
@@ -24929,86 +24931,90 @@ var render = function() {
           : _vm._e()
       ]),
       _vm._v(" "),
-      _vm.query.length > 0 && _vm.searchResultVisable
-        ? _c(
-            "div",
-            {
-              staticClass:
-                "absolute normal-case bg-white border border-gray-400 left-0 right-0 w-128 text-left mb-4 mt-2 rounded-lg shadow overflow-hidden z-10 overflow-y-auto",
-              staticStyle: { "max-height": "32rem" }
-            },
-            [
-              _c(
-                "div",
-                { ref: "results", staticClass: "flex flex-col" },
-                [
-                  _vm._l(_vm.searchResults, function(post, index) {
-                    return _c(
-                      "a",
-                      {
-                        key: index,
-                        staticClass:
-                          "border-b border-gray-400 text-xl cursor-pointer p-4 hover:bg-blue-100",
-                        class: { "bg-blue-100": index === _vm.highlightIndex },
-                        attrs: { href: post.item.path },
-                        on: {
-                          mousedown: function($event) {
-                            $event.preventDefault()
-                            _vm.searchResultVisable = true
-                          },
-                          keydown: function($event) {
-                            if (
-                              !$event.type.indexOf("key") &&
-                              _vm._k(
-                                $event.keyCode,
-                                "enter",
-                                13,
-                                $event.key,
-                                "Enter"
-                              )
-                            ) {
-                              return null
-                            }
-                            return _vm.gotoLink()
-                          }
-                        }
-                      },
-                      [
-                        _vm._v(
-                          "\n                " +
-                            _vm._s(post.item.title) +
-                            "\n                "
-                        ),
-                        _c("span", {
-                          staticClass: "block font-normal text-sm my-1",
-                          domProps: { textContent: _vm._s(post.item.summary) }
-                        })
-                      ]
-                    )
-                  }),
-                  _vm._v(" "),
-                  _vm.searchResults.lenght === 0
-                    ? _c(
-                        "div",
+      _c("transition", { attrs: { name: "search-fade" } }, [
+        _vm.query.length > 0 && _vm.searchResultVisable
+          ? _c(
+              "div",
+              {
+                staticClass:
+                  "absolute normal-case bg-white border border-gray-400 left-0 right-0 w-128 text-left mb-4 mt-2 rounded-lg shadow overflow-hidden z-10 overflow-y-auto",
+                staticStyle: { "max-height": "32rem" }
+              },
+              [
+                _c(
+                  "div",
+                  { ref: "results", staticClass: "flex flex-col" },
+                  [
+                    _vm._l(_vm.searchResults, function(post, index) {
+                      return _c(
+                        "a",
                         {
+                          key: index,
                           staticClass:
-                            "font-normal w-full border-b border-gray-400 cursor-pointer p-4"
+                            "border-b border-gray-400 text-xl cursor-pointer p-4 hover:bg-blue-100",
+                          class: {
+                            "bg-blue-100": index === _vm.highlightIndex
+                          },
+                          attrs: { href: post.item.path },
+                          on: {
+                            mousedown: function($event) {
+                              $event.preventDefault()
+                              _vm.searchResultVisable = true
+                            },
+                            keydown: function($event) {
+                              if (
+                                !$event.type.indexOf("key") &&
+                                _vm._k(
+                                  $event.keyCode,
+                                  "enter",
+                                  13,
+                                  $event.key,
+                                  "Enter"
+                                )
+                              ) {
+                                return null
+                              }
+                              return _vm.gotoLink()
+                            }
+                          }
                         },
                         [
-                          _c("p", { staticClass: "my-0" }, [
-                            _vm._v("No results for '"),
-                            _c("strong", [_vm._v(_vm._s(_vm.query))]),
-                            _vm._v("'")
-                          ])
+                          _vm._v(
+                            "\n                    " +
+                              _vm._s(post.item.title) +
+                              "\n                    "
+                          ),
+                          _c("span", {
+                            staticClass: "block font-normal text-sm my-1",
+                            domProps: { textContent: _vm._s(post.item.summary) }
+                          })
                         ]
                       )
-                    : _vm._e()
-                ],
-                2
-              )
-            ]
-          )
-        : _vm._e()
+                    }),
+                    _vm._v(" "),
+                    _vm.searchResults.lenght === 0
+                      ? _c(
+                          "div",
+                          {
+                            staticClass:
+                              "font-normal w-full border-b border-gray-400 cursor-pointer p-4"
+                          },
+                          [
+                            _c("p", { staticClass: "my-0" }, [
+                              _vm._v("No results for '"),
+                              _c("strong", [_vm._v(_vm._s(_vm.query))]),
+                              _vm._v("'")
+                            ])
+                          ]
+                        )
+                      : _vm._e()
+                  ],
+                  2
+                )
+              ]
+            )
+          : _vm._e()
+      ])
     ],
     1
   )

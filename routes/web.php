@@ -275,6 +275,11 @@ Route::group(['prefix' => 'laracasts'], function () {
 Route::get('/vue-dropdown','VueDropdownController@index');
 Route::get('/vue-serach-data', 'VueDropdownController@show');
 
+
+Route::get('/workcation', function(){
+    return view('workcation.index');
+});
+
 // class Anything{
 //     use Macroable;
 
