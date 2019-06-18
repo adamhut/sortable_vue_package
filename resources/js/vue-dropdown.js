@@ -21,10 +21,11 @@ Vue.use(VueFuse)
  */
 import SearchComponent from './components/SearchComponent';
 import DropdownMenu from './components/DropdownMenu';
+import MegaMenu from './components/MegaMenu';
 Vue.component('SearchComponent', SearchComponent);
 Vue.component('DropdownMenu', DropdownMenu);
+Vue.component('MegaMenu', MegaMenu);
 // Vue.component("DatePicker", require("./components/advanced-vue/DatePicker.vue"));
-
 
 const app = new Vue({
     el: '#app',

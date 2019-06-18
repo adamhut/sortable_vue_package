@@ -169,6 +169,7 @@ module.exports = {
     },
     variants: {
         // Some useful comment
+        textColor:['group-hover','responsive','hover','focus'],
     },
     plugins: [
         // Some useful comment

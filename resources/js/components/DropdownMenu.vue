@@ -143,15 +143,16 @@ export default {
         },
         focusPrevious(isArrowKey){
             this.focusIndex = this.focusIndex -1;
-            if(this.isArrowKey)
+            
+            if(isArrowKey)
             {
                 this.focusItem();
             }
         },
         focusNext(isArrowKey){
-
             this.focusIndex = this.focusIndex +1;
-            if(this.isArrowKey)
+            
+            if(isArrowKey)
             {
                 this.focusItem();
             }
