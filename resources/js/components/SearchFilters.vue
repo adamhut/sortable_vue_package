@@ -23,49 +23,48 @@
         </div>
         <div>
             <form action="">
-                <fieldset>
-                    <div>
-                        <label for="">
-                            <span class="text-gray-600">Bedrooms</span>
-                            <select name="" id="" class="form-select">
+                <fieldset class="px-4 py-4 border-t border-gray-900">
+                    <div class="flex -mx-2">
+                        <label for="" class="block w-1/2 px-2">
+                            <span class=" text-sm font-semibold text-gray-500">Bedrooms</span>
+                            <select name="" id="" class="mt-1 form-select block w-full ">
+                                <option value="1">4</option>
+                            </select>
+                        </label>
+                    
+                        <label for="" class="block w-1/2  px-2">
+                            <span  class=" text-sm font-semibold text-gray-500">>Bathrooms</span>
+                            <select name="" id=""  class="mt-1 form-select block w-full">
                                 <option value="1">4</option>
                             </select>
                         </label>
                     </div>
-                    <div>
-                        <label for="">
-                            <span>Bathrooms</span>
-                            <select name="" id=""  class="form-select">
-                                <option value="1">4</option>
-                            </select>
-                        </label>
-                    </div>
-                    <div>
-                        <label for="">
-                            <span>Price Range</span>
-                            <select name="" id="" class="form-select">
+                    <div class="mt-4">
+                        <label for="" class="block w-full">
+                            <span class=" text-sm font-semibold text-gray-500">Price Range</span>
+                            <select name="" id="" class="mt-1 form-select block w-full">
                                 <option value="1">Up to $2,000/wk</option>
                             </select>
                         </label>
                     </div>
                 </fieldset>
-                <fieldset>   
-                    <legend>Property Type</legend>  
-                    <label for="">
-                        <input   class="form-radio" type="radio" name="propertyType" value="house">
-                        House
+                <fieldset class="px-4 py-4 border-t border-gray-900">   
+                    <span class=" block text-sm font-semibold text-gray-500">Property Type</span>  
+                    <label class="flex items-center mt-2 " for="">
+                        <input class="form-radio" type="radio" name="propertyType" value="house">
+                        <span class="ml-2 text-white">House</span>
                     </label> 
-                    <label for="">
-                        <input   class="form-radio" type="radio" name="propertyType" value="apartment">
-                        Apartment
+                    <label class="flex items-center mt-2 " for="">
+                        <input class="form-radio" type="radio" name="propertyType" value="apartment">
+                        <span class="ml-2 text-white">Apartment</span>
                     </label> 
-                    <label for="">
-                        <input   class="form-radio" type="radio" name="propertyType" value="loft">
-                        Loft
+                    <label class="flex items-center mt-2" for="">
+                        <input class="form-radio" type="radio" name="propertyType" value="loft">
+                        <span class="ml-2 text-white">Loft</span>
                     </label> 
-                    <label for="">
-                        <input   class="form-radio" type="radio" name="propertyType" value="townhouse">
-                        Townhouse
+                    <label class="flex items-center mt-2" for="">
+                        <input class="form-radio" type="radio" name="propertyType" value="townhouse">
+                        <span class="ml-2 text-white">Townhouse</span>
                     </label>         
                 </fieldset>
                 <fieldset>   
