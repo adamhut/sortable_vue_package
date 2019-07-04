@@ -408,16 +408,16 @@ mix.js('resources/js/custom-radio-button.js', 'public/js/custom-radio-button.js'
 //      postCss: [tailwindcss("./tailwind.config.js")]
 //    }).browserSync("http://laravue.test/laracasts/confirmation-dialogs");
 
-// mix.js('resources/js/vue-dropdown.js', 'public/js/vue-dropdown.js')
-//   .sass("resources/sass/vue-dropdown.scss", "public/css/vue-dropdown.css")
-//   .options({
-//     processCssUrls: false,
-//     postCss: [tailwindcss("./tailwind.config.js")]
-//   }).browserSync("http://laravuepackage.test/vue-dropdown");
-
-mix.js('resources/js/workcation.js', 'public/js/workcation.js')
-  .sass("resources/sass/workcation.scss", "public/css/workcation.css")
+mix.js('resources/js/vue-dropdown.js', 'public/js/vue-dropdown.js')
+  .sass("resources/sass/vue-dropdown.scss", "public/css/vue-dropdown.css")
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.config.js")]
-  }).browserSync("http://laravuepackage.test/workcation");
+  }).browserSync("http://laravuepackage.test/vue-dropdown");
+
+// mix.js('resources/js/workcation.js', 'public/js/workcation.js')
+//   .sass("resources/sass/workcation.scss", "public/css/workcation.css")
+//   .options({
+//     processCssUrls: false,
+//     postCss: [tailwindcss("./tailwind.config.js")]
+//   }).browserSync("http://laravuepackage.test/workcation");

@@ -54,11 +54,12 @@
                         <a href="/#about" class="text-copy-primary hover:text-gray-600">Another</a>
                     </li>
                     <li class="mr-8 mb-6 lg:mb-0">
-                        <a href="/#about" class="text-copy-primary hover:text-gray-600">Company</a>
+                       
+                        <modal-login></modal-login>
                     </li>
                     
                     <li class="mr-8 mb-6 lg:mb-0">
-                        <a href="/#contact" class="text-copy-primary hover:text-gray-600">Contact</a>
+                        <modal-register></modal-register>
                     </li>
                     <li>
                         <dropdown-menu></dropdown-menu>

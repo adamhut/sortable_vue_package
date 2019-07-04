@@ -647,6 +647,149 @@ video {
   }
 }
 
+.form-checkbox {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  box-shadow: none;
+  display: inline-block;
+  height: 1.5em;
+  width: 1.5em;
+  vertical-align: middle;
+  border-color: transparent;
+  border-width: 1px;
+  border-radius: 0.5rem;
+  background-color: #4a5568;
+  background-origin: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.form-checkbox:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.form-checkbox:focus:not(:checked) {
+  border-color: transparent;
+}
+
+.form-checkbox:checked {
+  background-color: #667eea;
+  border-color: #667eea;
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M5.707 7.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4a1 1 0 0 0-1.414-1.414L7 8.586 5.707 7.293z'/%3e%3c/svg%3e");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form-checkbox::-ms-check {
+  color: transparent;
+  background: inherit;
+  border-color: inherit;
+  border-radius: inherit;
+  border-width: 1px;
+}
+
+.form-radio {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  box-shadow: none;
+  display: inline-block;
+  height: 1.5em;
+  width: 1.5em;
+  vertical-align: middle;
+  border-color: transparent;
+  border-width: 1px;
+  border-radius: 50%;
+  background-color: #4a5568;
+  background-origin: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.form-radio:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.form-radio:focus:not(:checked) {
+  border-color: transparent;
+}
+
+.form-radio:checked {
+  background-color: #667eea;
+  border-color: #667eea;
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='3'/%3e%3c/svg%3e");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form-radio::-ms-check {
+  color: transparent;
+  background: inherit;
+  border-color: inherit;
+  border-radius: inherit;
+  border-width: 1px;
+}
+
+.form-input, .form-textarea, .form-multiselect {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #4a5568;
+  border-color: transparent;
+  border-width: 1px;
+  border-radius: 0.5rem;
+  box-shadow: none;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.375;
+}
+
+.form-input:focus, .form-textarea:focus, .form-multiselect:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.form-select {
+  background-color: #4a5568;
+  border-color: transparent;
+  border-width: 1px;
+  border-radius: 0.5rem;
+  box-shadow: none;
+  padding-top: 0.5rem;
+  padding-right: calc(0.5rem * 2 + 1.5em);
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.375;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3e%3cpath d='M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z'/%3e%3c/svg%3e");
+  background-position: right 0.5rem center;
+  background-repeat: no-repeat;
+  background-size: 1.5em 1.5em;
+}
+
+.form-select::-ms-expand {
+  display: none;
+}
+
+.form-select:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+
 /**
  * Here you would add any of your custom component classes; stuff that you'd
  * want loaded *before* the utilities so that the utilities could still
@@ -10283,11 +10426,11 @@ video {
 }
 
 .w-1\/3 {
-  width: 33.33333%;
+  width: 33.333333%;
 }
 
 .w-2\/3 {
-  width: 66.66667%;
+  width: 66.666667%;
 }
 
 .w-2\/4 {
@@ -10315,11 +10458,11 @@ video {
 }
 
 .w-1\/6 {
-  width: 16.66667%;
+  width: 16.666667%;
 }
 
 .w-2\/6 {
-  width: 33.33333%;
+  width: 33.333333%;
 }
 
 .w-3\/6 {
@@ -10327,19 +10470,19 @@ video {
 }
 
 .w-4\/6 {
-  width: 66.66667%;
+  width: 66.666667%;
 }
 
 .w-5\/6 {
-  width: 83.33333%;
+  width: 83.333333%;
 }
 
 .w-1\/12 {
-  width: 8.33333%;
+  width: 8.333333%;
 }
 
 .w-2\/12 {
-  width: 16.66667%;
+  width: 16.666667%;
 }
 
 .w-3\/12 {
@@ -10347,11 +10490,11 @@ video {
 }
 
 .w-4\/12 {
-  width: 33.33333%;
+  width: 33.333333%;
 }
 
 .w-5\/12 {
-  width: 41.66667%;
+  width: 41.666667%;
 }
 
 .w-6\/12 {
@@ -10359,11 +10502,11 @@ video {
 }
 
 .w-7\/12 {
-  width: 58.33333%;
+  width: 58.333333%;
 }
 
 .w-8\/12 {
-  width: 66.66667%;
+  width: 66.666667%;
 }
 
 .w-9\/12 {
@@ -10371,11 +10514,11 @@ video {
 }
 
 .w-10\/12 {
-  width: 83.33333%;
+  width: 83.333333%;
 }
 
 .w-11\/12 {
-  width: 91.66667%;
+  width: 91.666667%;
 }
 
 .w-full {
@@ -10448,6 +10591,10 @@ video {
  * @import "utilities/background-patterns";
  * @import "utilities/skew-transforms";
  */
+
+.v--modal {
+  overflow-y: auto !important;
+}
 
 @media (min-width: 640px) {
   .sm\:appearance-none {
@@ -20061,11 +20208,11 @@ video {
   }
 
   .sm\:w-1\/3 {
-    width: 33.33333%;
+    width: 33.333333%;
   }
 
   .sm\:w-2\/3 {
-    width: 66.66667%;
+    width: 66.666667%;
   }
 
   .sm\:w-2\/4 {
@@ -20093,11 +20240,11 @@ video {
   }
 
   .sm\:w-1\/6 {
-    width: 16.66667%;
+    width: 16.666667%;
   }
 
   .sm\:w-2\/6 {
-    width: 33.33333%;
+    width: 33.333333%;
   }
 
   .sm\:w-3\/6 {
@@ -20105,19 +20252,19 @@ video {
   }
 
   .sm\:w-4\/6 {
-    width: 66.66667%;
+    width: 66.666667%;
   }
 
   .sm\:w-5\/6 {
-    width: 83.33333%;
+    width: 83.333333%;
   }
 
   .sm\:w-1\/12 {
-    width: 8.33333%;
+    width: 8.333333%;
   }
 
   .sm\:w-2\/12 {
-    width: 16.66667%;
+    width: 16.666667%;
   }
 
   .sm\:w-3\/12 {
@@ -20125,11 +20272,11 @@ video {
   }
 
   .sm\:w-4\/12 {
-    width: 33.33333%;
+    width: 33.333333%;
   }
 
   .sm\:w-5\/12 {
-    width: 41.66667%;
+    width: 41.666667%;
   }
 
   .sm\:w-6\/12 {
@@ -20137,11 +20284,11 @@ video {
   }
 
   .sm\:w-7\/12 {
-    width: 58.33333%;
+    width: 58.333333%;
   }
 
   .sm\:w-8\/12 {
-    width: 66.66667%;
+    width: 66.666667%;
   }
 
   .sm\:w-9\/12 {
@@ -20149,11 +20296,11 @@ video {
   }
 
   .sm\:w-10\/12 {
-    width: 83.33333%;
+    width: 83.333333%;
   }
 
   .sm\:w-11\/12 {
-    width: 91.66667%;
+    width: 91.666667%;
   }
 
   .sm\:w-full {
@@ -29825,11 +29972,11 @@ video {
   }
 
   .md\:w-1\/3 {
-    width: 33.33333%;
+    width: 33.333333%;
   }
 
   .md\:w-2\/3 {
-    width: 66.66667%;
+    width: 66.666667%;
   }
 
   .md\:w-2\/4 {
@@ -29857,11 +30004,11 @@ video {
   }
 
   .md\:w-1\/6 {
-    width: 16.66667%;
+    width: 16.666667%;
   }
 
   .md\:w-2\/6 {
-    width: 33.33333%;
+    width: 33.333333%;
   }
 
   .md\:w-3\/6 {
@@ -29869,19 +30016,19 @@ video {
   }
 
   .md\:w-4\/6 {
-    width: 66.66667%;
+    width: 66.666667%;
   }
 
   .md\:w-5\/6 {
-    width: 83.33333%;
+    width: 83.333333%;
   }
 
   .md\:w-1\/12 {
-    width: 8.33333%;
+    width: 8.333333%;
   }
 
   .md\:w-2\/12 {
-    width: 16.66667%;
+    width: 16.666667%;
   }
 
   .md\:w-3\/12 {
@@ -29889,11 +30036,11 @@ video {
   }
 
   .md\:w-4\/12 {
-    width: 33.33333%;
+    width: 33.333333%;
   }
 
   .md\:w-5\/12 {
-    width: 41.66667%;
+    width: 41.666667%;
   }
 
   .md\:w-6\/12 {
@@ -29901,11 +30048,11 @@ video {
   }
 
   .md\:w-7\/12 {
-    width: 58.33333%;
+    width: 58.333333%;
   }
 
   .md\:w-8\/12 {
-    width: 66.66667%;
+    width: 66.666667%;
   }
 
   .md\:w-9\/12 {
@@ -29913,11 +30060,11 @@ video {
   }
 
   .md\:w-10\/12 {
-    width: 83.33333%;
+    width: 83.333333%;
   }
 
   .md\:w-11\/12 {
-    width: 91.66667%;
+    width: 91.666667%;
   }
 
   .md\:w-full {
@@ -39589,11 +39736,11 @@ video {
   }
 
   .lg\:w-1\/3 {
-    width: 33.33333%;
+    width: 33.333333%;
   }
 
   .lg\:w-2\/3 {
-    width: 66.66667%;
+    width: 66.666667%;
   }
 
   .lg\:w-2\/4 {
@@ -39621,11 +39768,11 @@ video {
   }
 
   .lg\:w-1\/6 {
-    width: 16.66667%;
+    width: 16.666667%;
   }
 
   .lg\:w-2\/6 {
-    width: 33.33333%;
+    width: 33.333333%;
   }
 
   .lg\:w-3\/6 {
@@ -39633,19 +39780,19 @@ video {
   }
 
   .lg\:w-4\/6 {
-    width: 66.66667%;
+    width: 66.666667%;
   }
 
   .lg\:w-5\/6 {
-    width: 83.33333%;
+    width: 83.333333%;
   }
 
   .lg\:w-1\/12 {
-    width: 8.33333%;
+    width: 8.333333%;
   }
 
   .lg\:w-2\/12 {
-    width: 16.66667%;
+    width: 16.666667%;
   }
 
   .lg\:w-3\/12 {
@@ -39653,11 +39800,11 @@ video {
   }
 
   .lg\:w-4\/12 {
-    width: 33.33333%;
+    width: 33.333333%;
   }
 
   .lg\:w-5\/12 {
-    width: 41.66667%;
+    width: 41.666667%;
   }
 
   .lg\:w-6\/12 {
@@ -39665,11 +39812,11 @@ video {
   }
 
   .lg\:w-7\/12 {
-    width: 58.33333%;
+    width: 58.333333%;
   }
 
   .lg\:w-8\/12 {
-    width: 66.66667%;
+    width: 66.666667%;
   }
 
   .lg\:w-9\/12 {
@@ -39677,11 +39824,11 @@ video {
   }
 
   .lg\:w-10\/12 {
-    width: 83.33333%;
+    width: 83.333333%;
   }
 
   .lg\:w-11\/12 {
-    width: 91.66667%;
+    width: 91.666667%;
   }
 
   .lg\:w-full {
@@ -49353,11 +49500,11 @@ video {
   }
 
   .xl\:w-1\/3 {
-    width: 33.33333%;
+    width: 33.333333%;
   }
 
   .xl\:w-2\/3 {
-    width: 66.66667%;
+    width: 66.666667%;
   }
 
   .xl\:w-2\/4 {
@@ -49385,11 +49532,11 @@ video {
   }
 
   .xl\:w-1\/6 {
-    width: 16.66667%;
+    width: 16.666667%;
   }
 
   .xl\:w-2\/6 {
-    width: 33.33333%;
+    width: 33.333333%;
   }
 
   .xl\:w-3\/6 {
@@ -49397,19 +49544,19 @@ video {
   }
 
   .xl\:w-4\/6 {
-    width: 66.66667%;
+    width: 66.666667%;
   }
 
   .xl\:w-5\/6 {
-    width: 83.33333%;
+    width: 83.333333%;
   }
 
   .xl\:w-1\/12 {
-    width: 8.33333%;
+    width: 8.333333%;
   }
 
   .xl\:w-2\/12 {
-    width: 16.66667%;
+    width: 16.666667%;
   }
 
   .xl\:w-3\/12 {
@@ -49417,11 +49564,11 @@ video {
   }
 
   .xl\:w-4\/12 {
-    width: 33.33333%;
+    width: 33.333333%;
   }
 
   .xl\:w-5\/12 {
-    width: 41.66667%;
+    width: 41.666667%;
   }
 
   .xl\:w-6\/12 {
@@ -49429,11 +49576,11 @@ video {
   }
 
   .xl\:w-7\/12 {
-    width: 58.33333%;
+    width: 58.333333%;
   }
 
   .xl\:w-8\/12 {
-    width: 66.66667%;
+    width: 66.666667%;
   }
 
   .xl\:w-9\/12 {
@@ -49441,11 +49588,11 @@ video {
   }
 
   .xl\:w-10\/12 {
-    width: 83.33333%;
+    width: 83.333333%;
   }
 
   .xl\:w-11\/12 {
-    width: 91.66667%;
+    width: 91.666667%;
   }
 
   .xl\:w-full {
