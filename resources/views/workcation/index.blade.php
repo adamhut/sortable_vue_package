@@ -17,9 +17,9 @@
 <body class="bg-gray-200">
     <div id="app" class="bg-gray-200 antialiased min-h-screen">
         <site-header></site-header>
+        
         <search-filters></search-filters>
         
-
         <main class="px-4 py-6">
             
             <h3 class="text-gray-900 text-xl">Los Angeles</h3>

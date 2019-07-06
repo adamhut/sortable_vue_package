@@ -1830,10 +1830,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      isOpen: false
+      isOpen: true
     };
   },
   methods: {
@@ -23411,7 +23416,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("section", { staticClass: "bg-gray-800 " }, [
     _c("div", { staticClass: "flex justify-between py-3 px-4" }, [
-      _c("div", { staticClass: "relative" }, [
+      _c("div", { staticClass: "relative max-w-sm w-full" }, [
         _c(
           "div",
           { staticClass: "absolute inset-y-0 left-0 flex items-center pl-3" },
@@ -23440,7 +23445,7 @@ var render = function() {
         _vm._v(" "),
         _c("input", {
           staticClass:
-            "bg-gray-900 outline-none focus:outline-none focus:bg-white focus:text-gray-900  text-white rounded pl-10 pr-4 py-2 ",
+            "w-full block bg-gray-900 outline-none focus:outline-none focus:bg-white focus:text-gray-900  text-white rounded pl-10 pr-4 py-2 ",
           attrs: { type: "text", placeholder: "Search by keywords" }
         })
       ]),
@@ -23449,7 +23454,7 @@ var render = function() {
         "button",
         {
           staticClass:
-            "inline-flex   hover:bg-gray-600 rounded-lg pr-2 pl-3 shadow focus:outline-none focus:outline-shadow ",
+            "ml-4 inline-flex hover:bg-gray-600 rounded-lg pr-2 pl-3 shadow focus:outline-none focus:outline-shadow ",
           class: { "bg-gray-600": _vm.isOpen, "bg-gray-700": !_vm.isOpen },
           attrs: { type: "button" },
           on: { click: _vm.toggle }
@@ -23503,209 +23508,285 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("form", { attrs: { action: "" } }, [
-      _c("fieldset", { staticClass: "px-4 py-4 border-t border-gray-900" }, [
-        _c("div", { staticClass: "flex -mx-2" }, [
-          _c("label", { staticClass: "block w-1/2 px-2" }, [
-            _c(
-              "span",
-              { staticClass: " text-sm font-semibold text-gray-500" },
-              [_vm._v("Bedrooms")]
-            ),
+      _c(
+        "div",
+        { staticClass: "px-4 py-4 border-t border-gray-900 sm:flex sm:-mx-2" },
+        [
+          _c("div", { staticClass: "flex -mx-2 sm:mx-0 sm:w-1/2" }, [
+            _c("label", { staticClass: "block w-1/2 px-2" }, [
+              _c(
+                "span",
+                { staticClass: " text-sm font-semibold text-gray-500" },
+                [_vm._v("Bedrooms")]
+              ),
+              _vm._v(" "),
+              _c(
+                "select",
+                {
+                  staticClass:
+                    "mt-1 form-select block w-full text-white focus:bg-gray-600",
+                  attrs: { name: "", id: "" }
+                },
+                [_c("option", { attrs: { value: "1" } }, [_vm._v("4")])]
+              )
+            ]),
             _vm._v(" "),
-            _c(
-              "select",
-              {
-                staticClass:
-                  "mt-1 form-select block w-full text-white focus:bg-gray-600",
-                attrs: { name: "", id: "" }
-              },
-              [_c("option", { attrs: { value: "1" } }, [_vm._v("4")])]
-            )
+            _c("label", { staticClass: "block w-1/2  px-2" }, [
+              _c(
+                "span",
+                { staticClass: " text-sm font-semibold text-gray-500" },
+                [_vm._v("Bathrooms")]
+              ),
+              _vm._v(" "),
+              _c(
+                "select",
+                {
+                  staticClass:
+                    "mt-1 form-select block w-full text-white  focus:bg-gray-600",
+                  attrs: { name: "", id: "" }
+                },
+                [_c("option", { attrs: { value: "1" } }, [_vm._v("4")])]
+              )
+            ])
           ]),
           _vm._v(" "),
-          _c("label", { staticClass: "block w-1/2  px-2" }, [
-            _c(
-              "span",
-              { staticClass: " text-sm font-semibold text-gray-500" },
-              [_vm._v(">Bathrooms")]
-            ),
-            _vm._v(" "),
-            _c(
-              "select",
-              {
-                staticClass:
-                  "mt-1 form-select block w-full text-white  focus:bg-gray-600",
-                attrs: { name: "", id: "" }
-              },
-              [_c("option", { attrs: { value: "1" } }, [_vm._v("4")])]
-            )
+          _c("div", { staticClass: "mt-4 sm:w-1/2 sm:mt-0" }, [
+            _c("label", {}, [
+              _c(
+                "span",
+                { staticClass: " text-sm font-semibold text-gray-500" },
+                [_vm._v("Price Range")]
+              ),
+              _vm._v(" "),
+              _c(
+                "select",
+                {
+                  staticClass:
+                    "mt-1 form-select block w-full text-white  focus:bg-gray-600",
+                  attrs: { name: "", id: "" }
+                },
+                [
+                  _c("option", { attrs: { value: "1" } }, [
+                    _vm._v("Up to $2,000/wk")
+                  ])
+                ]
+              )
+            ])
           ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "mt-4" }, [
-          _c("label", { staticClass: "block w-full" }, [
-            _c(
-              "span",
-              { staticClass: " text-sm font-semibold text-gray-500" },
-              [_vm._v("Price Range")]
-            ),
-            _vm._v(" "),
-            _c(
-              "select",
-              {
-                staticClass:
-                  "mt-1 form-select block w-full text-white  focus:bg-gray-600",
-                attrs: { name: "", id: "" }
-              },
-              [
-                _c("option", { attrs: { value: "1" } }, [
-                  _vm._v("Up to $2,000/wk")
-                ])
-              ]
-            )
-          ])
-        ])
-      ]),
+        ]
+      ),
       _vm._v(" "),
-      _c("fieldset", { staticClass: "px-4 py-4 border-t border-gray-900" }, [
+      _c("div", { staticClass: "px-4 py-4 border-t border-gray-900" }, [
         _c(
           "span",
           { staticClass: " block text-sm font-semibold text-gray-500" },
           [_vm._v("Property Type")]
         ),
         _vm._v(" "),
-        _c("label", { staticClass: "flex items-center mt-3 " }, [
-          _c("input", {
-            staticClass: "form-radio bg-gray-900  focus:bg-gray-700",
-            attrs: { type: "radio", name: "propertyType", value: "house" }
-          }),
+        _c("div", { staticClass: "sm:flex sm:-mx-2 " }, [
+          _c(
+            "label",
+            { staticClass: "flex items-center mt-3 sm:w-1/4 sm:px-2 " },
+            [
+              _c("input", {
+                staticClass: "form-radio bg-gray-900  focus:bg-gray-700",
+                attrs: { type: "radio", name: "propertyType", value: "house" }
+              }),
+              _vm._v(" "),
+              _c("span", { staticClass: "ml-2 text-white" }, [_vm._v("House")])
+            ]
+          ),
           _vm._v(" "),
-          _c("span", { staticClass: "ml-2 text-white" }, [_vm._v("House")])
-        ]),
-        _vm._v(" "),
-        _c("label", { staticClass: "flex items-center mt-3 " }, [
-          _c("input", {
-            staticClass: "form-radio bg-gray-900  focus:bg-gray-700",
-            attrs: { type: "radio", name: "propertyType", value: "apartment" }
-          }),
+          _c(
+            "label",
+            { staticClass: "flex items-center mt-3 sm:w-1/4 sm:px-2 " },
+            [
+              _c("input", {
+                staticClass: "form-radio bg-gray-900  focus:bg-gray-700",
+                attrs: {
+                  type: "radio",
+                  name: "propertyType",
+                  value: "apartment"
+                }
+              }),
+              _vm._v(" "),
+              _c("span", { staticClass: "ml-2 text-white" }, [
+                _vm._v("Apartment")
+              ])
+            ]
+          ),
           _vm._v(" "),
-          _c("span", { staticClass: "ml-2 text-white" }, [_vm._v("Apartment")])
-        ]),
-        _vm._v(" "),
-        _c("label", { staticClass: "flex items-center mt-3" }, [
-          _c("input", {
-            staticClass: "form-radio bg-gray-900  focus:bg-gray-700",
-            attrs: { type: "radio", name: "propertyType", value: "loft" }
-          }),
+          _c(
+            "label",
+            { staticClass: "flex items-center mt-3 sm:w-1/4 sm:px-2" },
+            [
+              _c("input", {
+                staticClass: "form-radio bg-gray-900  focus:bg-gray-700",
+                attrs: { type: "radio", name: "propertyType", value: "loft" }
+              }),
+              _vm._v(" "),
+              _c("span", { staticClass: "ml-2 text-white" }, [_vm._v("Loft")])
+            ]
+          ),
           _vm._v(" "),
-          _c("span", { staticClass: "ml-2 text-white" }, [_vm._v("Loft")])
-        ]),
-        _vm._v(" "),
-        _c("label", { staticClass: "flex items-center mt-3" }, [
-          _c("input", {
-            staticClass: "form-radio bg-gray-900  focus:bg-gray-700",
-            attrs: { type: "radio", name: "propertyType", value: "townhouse" }
-          }),
-          _vm._v(" "),
-          _c("span", { staticClass: "ml-2 text-white" }, [_vm._v("Townhouse")])
+          _c(
+            "label",
+            { staticClass: "flex items-center mt-3 sm:w-1/4 sm:px-2" },
+            [
+              _c("input", {
+                staticClass: "form-radio bg-gray-900  focus:bg-gray-700",
+                attrs: {
+                  type: "radio",
+                  name: "propertyType",
+                  value: "townhouse"
+                }
+              }),
+              _vm._v(" "),
+              _c("span", { staticClass: "ml-2 text-white" }, [
+                _vm._v("Townhouse")
+              ])
+            ]
+          )
         ])
       ]),
       _vm._v(" "),
-      _c("fieldset", { staticClass: "px-4 py-4 border-t border-gray-900" }, [
+      _c("div", { staticClass: "px-4 py-4 border-t border-gray-900" }, [
         _c(
           "span",
           { staticClass: " block text-sm font-semibold text-gray-500" },
           [_vm._v("Amenities")]
         ),
         _vm._v(" "),
-        _c("label", { staticClass: "flex items-center mt-3" }, [
-          _c("input", {
-            staticClass: "form-checkbox bg-gray-900  focus:bg-gray-700",
-            attrs: { type: "checkbox", name: "amenities[]", value: "balcony" }
-          }),
+        _c("div", { staticClass: "sm:flex sm:flex-wrap sm:-mx-2" }, [
+          _c(
+            "label",
+            { staticClass: "flex sm:w-1/4 sm:px-2 items-center mt-3" },
+            [
+              _c("input", {
+                staticClass: "form-checkbox bg-gray-900  focus:bg-gray-700",
+                attrs: {
+                  type: "checkbox",
+                  name: "amenities[]",
+                  value: "balcony"
+                }
+              }),
+              _vm._v(" "),
+              _c("span", { staticClass: "ml-2 text-white" }, [
+                _vm._v("Balcony")
+              ])
+            ]
+          ),
           _vm._v(" "),
-          _c("span", { staticClass: "ml-2 text-white" }, [_vm._v("Balcony")])
-        ]),
-        _vm._v(" "),
-        _c("label", { staticClass: "flex items-center mt-3" }, [
-          _c("input", {
-            staticClass: "form-checkbox bg-gray-900  focus:bg-gray-700",
-            attrs: {
-              type: "checkbox",
-              name: "amenities[]",
-              value: "airConditioning"
-            }
-          }),
+          _c(
+            "label",
+            { staticClass: "flex sm:w-1/4 sm:px-2 items-center mt-3" },
+            [
+              _c("input", {
+                staticClass: "form-checkbox bg-gray-900  focus:bg-gray-700",
+                attrs: { type: "checkbox", name: "amenities[]", value: "pool" }
+              }),
+              _vm._v(" "),
+              _c("span", { staticClass: "ml-2 text-white" }, [_vm._v("Pool")])
+            ]
+          ),
           _vm._v(" "),
-          _c("span", { staticClass: "ml-2 text-white" }, [
-            _vm._v("Air Conditioning")
-          ])
-        ]),
-        _vm._v(" "),
-        _c("label", { staticClass: "flex items-center mt-3" }, [
-          _c("input", {
-            staticClass: "form-checkbox bg-gray-900  focus:bg-gray-700",
-            attrs: { type: "checkbox", name: "amenities[]", value: "pool" }
-          }),
+          _c(
+            "label",
+            { staticClass: "flex sm:w-1/4 sm:px-2 items-center mt-3" },
+            [
+              _c("input", {
+                staticClass: "form-checkbox bg-gray-900  focus:bg-gray-700",
+                attrs: { type: "checkbox", name: "amenities[]", value: "beach" }
+              }),
+              _vm._v(" "),
+              _c("span", { staticClass: "ml-2 text-white" }, [_vm._v("Beach")])
+            ]
+          ),
           _vm._v(" "),
-          _c("span", { staticClass: "ml-2 text-white" }, [_vm._v("Pool")])
-        ]),
-        _vm._v(" "),
-        _c("label", { staticClass: "flex items-center mt-3" }, [
-          _c("input", {
-            staticClass: "form-checkbox bg-gray-900  focus:bg-gray-700",
-            attrs: { type: "checkbox", name: "amenities[]", value: "beach" }
-          }),
+          _c(
+            "label",
+            { staticClass: "flex sm:w-1/4 sm:px-2 items-center mt-3" },
+            [
+              _c("input", {
+                staticClass: "form-checkbox bg-gray-900  focus:bg-gray-700",
+                attrs: {
+                  type: "checkbox",
+                  name: "amenities[]",
+                  value: "petFriendly"
+                }
+              }),
+              _vm._v(" "),
+              _c("span", { staticClass: "ml-2 text-white" }, [
+                _vm._v("Pet Friendly")
+              ])
+            ]
+          ),
           _vm._v(" "),
-          _c("span", { staticClass: "ml-2 text-white" }, [_vm._v("Beach")])
-        ]),
-        _vm._v(" "),
-        _c("label", { staticClass: "flex items-center mt-3" }, [
-          _c("input", {
-            staticClass: "form-checkbox bg-gray-900  focus:bg-gray-700",
-            attrs: {
-              type: "checkbox",
-              name: "amenities[]",
-              value: "petFriendly"
-            }
-          }),
+          _c(
+            "label",
+            { staticClass: "flex sm:w-1/4 sm:px-2 items-center mt-3" },
+            [
+              _c("input", {
+                staticClass: "form-checkbox bg-gray-900  focus:bg-gray-700",
+                attrs: {
+                  type: "checkbox",
+                  name: "amenities[]",
+                  value: "kidFriendly"
+                }
+              }),
+              _vm._v(" "),
+              _c("span", { staticClass: "ml-2 text-white" }, [
+                _vm._v("Kid  Friendly")
+              ])
+            ]
+          ),
           _vm._v(" "),
-          _c("span", { staticClass: "ml-2 text-white" }, [
-            _vm._v("Pet Friendly")
-          ])
-        ]),
-        _vm._v(" "),
-        _c("label", { staticClass: "flex items-center mt-3" }, [
-          _c("input", {
-            staticClass: "form-checkbox bg-gray-900  focus:bg-gray-700",
-            attrs: {
-              type: "checkbox",
-              name: "amenities[]",
-              value: "kidFriendly"
-            }
-          }),
+          _c(
+            "label",
+            { staticClass: "flex sm:w-1/4 sm:px-2 items-center mt-3" },
+            [
+              _c("input", {
+                staticClass: "form-checkbox bg-gray-900  focus:bg-gray-700",
+                attrs: {
+                  type: "checkbox",
+                  name: "amenities[]",
+                  value: "parking"
+                }
+              }),
+              _vm._v(" "),
+              _c("span", { staticClass: "ml-2 text-white" }, [
+                _vm._v("parking")
+              ])
+            ]
+          ),
           _vm._v(" "),
-          _c("span", { staticClass: "ml-2 text-white" }, [
-            _vm._v("Kid  Friendly")
-          ])
-        ]),
-        _vm._v(" "),
-        _c("label", { staticClass: "flex items-center mt-3" }, [
-          _c("input", {
-            staticClass: "form-checkbox bg-gray-900  focus:bg-gray-700",
-            attrs: { type: "checkbox", name: "amenities[]", value: "parking" }
-          }),
-          _vm._v(" "),
-          _c("span", { staticClass: "ml-2 text-white" }, [_vm._v("parking")])
+          _c(
+            "label",
+            { staticClass: "flex sm:w-1/2 sm:px-2 items-center mt-3" },
+            [
+              _c("input", {
+                staticClass: "form-checkbox bg-gray-900  focus:bg-gray-700",
+                attrs: {
+                  type: "checkbox",
+                  name: "amenities[]",
+                  value: "airConditioning"
+                }
+              }),
+              _vm._v(" "),
+              _c("span", { staticClass: "ml-2 text-white" }, [
+                _vm._v("Air Conditioning")
+              ])
+            ]
+          )
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "bg-gray-900 px-4 py-4" }, [
+      _c("div", { staticClass: "bg-gray-900 px-4 py-4 sm:text-right" }, [
         _c(
           "button",
           {
             staticClass:
-              " block w-full bg-indigo-500 hover:bg-indigo-400 font-semibold rounded-lg text-white px-4 py-2"
+              "block w-full sm:w-auto sm:inline-block bg-indigo-500 hover:bg-indigo-400 font-semibold rounded-lg text-white px-4 py-2"
           },
           [_vm._v("Update Result")]
         )
@@ -23736,9 +23817,9 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "header",
-    { staticClass: "bg-gray-900" },
+    { staticClass: "bg-gray-900 sm:flex sm:items-center sm:justify-between" },
     [
-      _c("div", { staticClass: "px-5 py-3 flex justify-between" }, [
+      _c("div", { staticClass: "px-4 py-3 flex justify-between" }, [
         _c("div", [
           _c(
             "svg",
@@ -23793,7 +23874,7 @@ var render = function() {
                 "svg",
                 {
                   staticClass:
-                    "h-6 w-6 fill-current text-gray-500 hover:text-white",
+                    "h-6 w-6 fill-current text-gray-500 hover:text-white sm:hidden",
                   attrs: {
                     xmlns: "http://www.w3.org/2000/svg",
                     viewBox: "0 0 24 24"
@@ -23831,49 +23912,50 @@ var render = function() {
         _c(
           "nav",
           {
-            directives: [
-              {
-                name: "show",
-                rawName: "v-show",
-                value: _vm.isOpen,
-                expression: "isOpen"
-              }
-            ]
+            staticClass: "sm:flex sm:items-center xm:px-4",
+            class: { hidden: !_vm.isOpen, block: _vm.isOpen }
           },
           [
-            _c("div", { staticClass: "px-5 pt-2 pb-5 border-gray-800" }, [
-              _c(
-                "a",
-                {
-                  staticClass:
-                    "block px-3 py-1 leading-tight font-semibold text-white hover:bg-gray-600",
-                  attrs: { href: "#" }
-                },
-                [_vm._v("List your\n                    property")]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass:
-                    "mt-1 block px-3 py-1 leading-tight font-semibold text-white hover:bg-gray-600 ",
-                  attrs: { href: "#" }
-                },
-                [_vm._v("Trips")]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass:
-                    "mt-1 block px-3 py-1 leading-tight font-semibold text-white hover:bg-gray-600 ",
-                  attrs: { href: "#" }
-                },
-                [_vm._v("Messages")]
-              )
-            ]),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "px-5 pt-2 pb-5 broder-b border-gray-800 sm:border-b-0 sm:flex sm:py-0 sm:px-0"
+              },
+              [
+                _c(
+                  "a",
+                  {
+                    staticClass:
+                      "block px-3 py-1 leading-tight font-semibold text-white hover:bg-gray-600 sm:px-2 sm:text-sm sm:text-sm",
+                    attrs: { href: "#" }
+                  },
+                  [_vm._v("List your\n                    property")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticClass:
+                      "mt-1 block px-3 py-1 leading-tight font-semibold text-white hover:bg-gray-600 sm:px-2 sm:text-sm sm:ml-2 sm:mt-0",
+                    attrs: { href: "#" }
+                  },
+                  [_vm._v("Trips")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticClass:
+                      "mt-1 block px-3 py-1 leading-tight font-semibold text-white hover:bg-gray-600 sm:px-2 sm:text-sm sm:ml-2 sm:mt-0",
+                    attrs: { href: "#" }
+                  },
+                  [_vm._v("Messages")]
+                )
+              ]
+            ),
             _vm._v(" "),
-            _c("div", { staticClass: "px-5 py-5" }, [
+            _c("div", { staticClass: "px-5 py-5 sm:py-0 sm:px-0 sm:ml-4" }, [
               _c("div", { staticClass: "flex items-center" }, [
                 _c("img", {
                   staticClass:
@@ -23887,12 +23969,12 @@ var render = function() {
                 _vm._v(" "),
                 _c(
                   "span",
-                  { staticClass: "text-gray-200 font-semibold ml-4" },
+                  { staticClass: "text-gray-200 font-semibold ml-4 sm:hidden" },
                   [_vm._v("Isla Schoger")]
                 )
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "mt-5" }, [
+              _c("div", { staticClass: "mt-5 sm:hidden" }, [
                 _c(
                   "a",
                   {
@@ -36350,8 +36432,8 @@ var app = new Vue({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp2\htdocs\sortable_vue_package\resources\js\workcation.js */"./resources/js/workcation.js");
-module.exports = __webpack_require__(/*! C:\xampp2\htdocs\sortable_vue_package\resources\sass\workcation.scss */"./resources/sass/workcation.scss");
+__webpack_require__(/*! C:\xampp\htdocs\laravel_vue\resources\js\workcation.js */"./resources/js/workcation.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\laravel_vue\resources\sass\workcation.scss */"./resources/sass/workcation.scss");
 
 
 /***/ })
