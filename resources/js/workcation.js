@@ -20,10 +20,15 @@ Vue.use(PortalVue);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 import SiteHeader from './components/SiteHeader';
+
 import SearchFilters from './components/SearchFilters';
+import WorkcationCard from './components/WorkcationCard';
+import WorkcationCards from './components/WorkcationCards';
 
 Vue.component('SiteHeader', SiteHeader);
 Vue.component('SearchFilters', SearchFilters);
+Vue.component('WorkcationCard', WorkcationCard);
+Vue.component('WorkcationCards', WorkcationCards);
 // Vue.component("DatePicker", require("./components/advanced-vue/DatePicker.vue"));
 
 const app = new Vue({

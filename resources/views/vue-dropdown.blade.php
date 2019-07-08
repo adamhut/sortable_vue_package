@@ -69,6 +69,7 @@
         </header>
         <div class="bg-gray-100 min-h-screen pt-80 lg:pt-40 text-lg">
             <div class="container mx-auto px-8 lg:px-48">
+                <p>@{{ $t('message.hello')}}</p>
                 <div class="pb-16">
                     <div class="mb-4 text-2xl font-bold">This is a title</div>
                     <p>Lorem ipsum dolor sit amet <a href="#" class="text-blue-600 hover:text-blue-800">consectetur</a> adipisicing elit.

@@ -47,6 +47,14 @@
  * @import "tailwindcss/utilities";
  */
 
+ .aspect-6x5{
+     @apply .relative .pb-5/6;
+ }
+
+ .aspect-6x5 > *{
+     @apply .absolute .inset-0 h-full;
+ }
+
 @tailwind utilities;
 /**
  * Here you would add any custom utilities you need that don't come out of the

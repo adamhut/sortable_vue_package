@@ -815,6 +815,20 @@ video {
  * @import "tailwindcss/utilities";
  */
 
+.aspect-6x5 {
+  position: relative;
+  padding-bottom: 83.333333%;
+}
+
+.aspect-6x5 > * {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+}
+
 .appearance-none {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -6993,6 +7007,10 @@ video {
   padding: 70%;
 }
 
+.p-5\/6 {
+  padding: 83.333333%;
+}
+
 .py-0 {
   padding-top: 0;
   padding-bottom: 0;
@@ -7271,6 +7289,16 @@ video {
 .px-7\/10 {
   padding-left: 70%;
   padding-right: 70%;
+}
+
+.py-5\/6 {
+  padding-top: 83.333333%;
+  padding-bottom: 83.333333%;
+}
+
+.px-5\/6 {
+  padding-left: 83.333333%;
+  padding-right: 83.333333%;
 }
 
 .pt-0 {
@@ -7719,6 +7747,22 @@ video {
 
 .pl-7\/10 {
   padding-left: 70%;
+}
+
+.pt-5\/6 {
+  padding-top: 83.333333%;
+}
+
+.pr-5\/6 {
+  padding-right: 83.333333%;
+}
+
+.pb-5\/6 {
+  padding-bottom: 83.333333%;
+}
+
+.pl-5\/6 {
+  padding-left: 83.333333%;
 }
 
 .pointer-events-none {
@@ -16771,6 +16815,10 @@ video {
     padding: 70%;
   }
 
+  .sm\:p-5\/6 {
+    padding: 83.333333%;
+  }
+
   .sm\:py-0 {
     padding-top: 0;
     padding-bottom: 0;
@@ -17049,6 +17097,16 @@ video {
   .sm\:px-7\/10 {
     padding-left: 70%;
     padding-right: 70%;
+  }
+
+  .sm\:py-5\/6 {
+    padding-top: 83.333333%;
+    padding-bottom: 83.333333%;
+  }
+
+  .sm\:px-5\/6 {
+    padding-left: 83.333333%;
+    padding-right: 83.333333%;
   }
 
   .sm\:pt-0 {
@@ -17497,6 +17555,22 @@ video {
 
   .sm\:pl-7\/10 {
     padding-left: 70%;
+  }
+
+  .sm\:pt-5\/6 {
+    padding-top: 83.333333%;
+  }
+
+  .sm\:pr-5\/6 {
+    padding-right: 83.333333%;
+  }
+
+  .sm\:pb-5\/6 {
+    padding-bottom: 83.333333%;
+  }
+
+  .sm\:pl-5\/6 {
+    padding-left: 83.333333%;
   }
 
   .sm\:pointer-events-none {
@@ -26535,6 +26609,10 @@ video {
     padding: 70%;
   }
 
+  .md\:p-5\/6 {
+    padding: 83.333333%;
+  }
+
   .md\:py-0 {
     padding-top: 0;
     padding-bottom: 0;
@@ -26813,6 +26891,16 @@ video {
   .md\:px-7\/10 {
     padding-left: 70%;
     padding-right: 70%;
+  }
+
+  .md\:py-5\/6 {
+    padding-top: 83.333333%;
+    padding-bottom: 83.333333%;
+  }
+
+  .md\:px-5\/6 {
+    padding-left: 83.333333%;
+    padding-right: 83.333333%;
   }
 
   .md\:pt-0 {
@@ -27261,6 +27349,22 @@ video {
 
   .md\:pl-7\/10 {
     padding-left: 70%;
+  }
+
+  .md\:pt-5\/6 {
+    padding-top: 83.333333%;
+  }
+
+  .md\:pr-5\/6 {
+    padding-right: 83.333333%;
+  }
+
+  .md\:pb-5\/6 {
+    padding-bottom: 83.333333%;
+  }
+
+  .md\:pl-5\/6 {
+    padding-left: 83.333333%;
   }
 
   .md\:pointer-events-none {
@@ -36299,6 +36403,10 @@ video {
     padding: 70%;
   }
 
+  .lg\:p-5\/6 {
+    padding: 83.333333%;
+  }
+
   .lg\:py-0 {
     padding-top: 0;
     padding-bottom: 0;
@@ -36577,6 +36685,16 @@ video {
   .lg\:px-7\/10 {
     padding-left: 70%;
     padding-right: 70%;
+  }
+
+  .lg\:py-5\/6 {
+    padding-top: 83.333333%;
+    padding-bottom: 83.333333%;
+  }
+
+  .lg\:px-5\/6 {
+    padding-left: 83.333333%;
+    padding-right: 83.333333%;
   }
 
   .lg\:pt-0 {
@@ -37025,6 +37143,22 @@ video {
 
   .lg\:pl-7\/10 {
     padding-left: 70%;
+  }
+
+  .lg\:pt-5\/6 {
+    padding-top: 83.333333%;
+  }
+
+  .lg\:pr-5\/6 {
+    padding-right: 83.333333%;
+  }
+
+  .lg\:pb-5\/6 {
+    padding-bottom: 83.333333%;
+  }
+
+  .lg\:pl-5\/6 {
+    padding-left: 83.333333%;
   }
 
   .lg\:pointer-events-none {
@@ -46063,6 +46197,10 @@ video {
     padding: 70%;
   }
 
+  .xl\:p-5\/6 {
+    padding: 83.333333%;
+  }
+
   .xl\:py-0 {
     padding-top: 0;
     padding-bottom: 0;
@@ -46341,6 +46479,16 @@ video {
   .xl\:px-7\/10 {
     padding-left: 70%;
     padding-right: 70%;
+  }
+
+  .xl\:py-5\/6 {
+    padding-top: 83.333333%;
+    padding-bottom: 83.333333%;
+  }
+
+  .xl\:px-5\/6 {
+    padding-left: 83.333333%;
+    padding-right: 83.333333%;
   }
 
   .xl\:pt-0 {
@@ -46789,6 +46937,22 @@ video {
 
   .xl\:pl-7\/10 {
     padding-left: 70%;
+  }
+
+  .xl\:pt-5\/6 {
+    padding-top: 83.333333%;
+  }
+
+  .xl\:pr-5\/6 {
+    padding-right: 83.333333%;
+  }
+
+  .xl\:pb-5\/6 {
+    padding-bottom: 83.333333%;
+  }
+
+  .xl\:pl-5\/6 {
+    padding-left: 83.333333%;
   }
 
   .xl\:pointer-events-none {

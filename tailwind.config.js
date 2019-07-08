@@ -118,6 +118,9 @@ module.exports = {
                 blue: '4px 7px 9px 0px rgba(75,100,255,0.07)',
                 red: '4px 7px 9px 0px rgba(255,75,75,0.07)',
                 green: '4px 7px 9px 0px rgba(64,201,82,0.07)',
+            },
+            padding:{
+                '5/6' : '83.333333%',
             }
         },
         fontFamily: {
