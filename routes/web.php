@@ -269,6 +269,11 @@ Route::group(['prefix' => 'laracasts'], function () {
     Route::get('confirmation-dialogs', function () {
         return view('laracasts.confirmation-dialogs');
     });
+
+
+    Route::get('inline-svg-render',function(){
+        return view('laracast.inline-svg-render');
+    });
 });
 
 
