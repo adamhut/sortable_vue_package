@@ -15,26 +15,26 @@
 
 </head>
 <body class="bg-gray-200">
-    <div id="app" class="bg-gray-200 antialiased min-h-screen">
-        <site-header></site-header>
-        
-        <search-filters></search-filters>
-        
-        <main class="py-6">
-            <div class="px-4">
-                <h3 class="text-gray-900 text-xl">Los Angeles</h3>
-                
-                <p class="text-gray-600">Live like the  stars in these luxurious Southern California escapes. </p>
-            </div>
-            <div class="mt-6 sm:overflow-x-auto ">
-                <div class="px-4 sm:flex sm:-mx-2 sm:pb-8">
-                    <workcation-card></workcation-card>                
-                    <workcation-card></workcation-card>
-                    <workcation-card></workcation-card>
-                    <workcation-card></workcation-card>
+    <div id="app" class="bg-gray-200 antialiased min-h-screen xl:flex xl:flex-col ">
+        <site-header class="xl:flex-shrink-0"></site-header>
+        <div class="xl:flex xl:flex-1">
+            <search-filters></search-filters>
+            <main class="py-6 xl:flex-1 xl:overflow-x-hidden">
+                <div class="px-4">
+                    <h3 class="text-gray-900 text-xl">Los Angeles</h3>
+                    
+                    <p class="text-gray-600">Live like the  stars in these luxurious Southern California escapes. </p>
                 </div>
-            </div>
-        </main>
+                <div class="mt-6 sm:overflow-x-auto">
+                    <div class="px-4 sm:inline-flex sm:-mx-2 sm:pb-8">
+                        <workcation-card></workcation-card>                
+                        <workcation-card></workcation-card>
+                        <workcation-card></workcation-card>
+                        <workcation-card></workcation-card>
+                    </div>
+                </div>
+            </main>
+        </div>        
     </div>
    <script type="text/javascript" src="/js/workcation.js"></script>
     <!-- built fileddds will be auto injected -->

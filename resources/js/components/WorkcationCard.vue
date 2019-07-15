@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-10 sm:mt-0 sm:max-w-xs sm:w-full sm:flex-shrink-0 sm:px-2 ">
+    <div class="mt-10 sm:mt-0 sm:w-80 sm:flex-shrink-0 sm:px-2 ">
             <div class="relative pb-5/6 ">
                 <img class="rounded-lg shadow-md object-cover h-full absolute inset-0"
                     src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"
