@@ -15,9 +15,9 @@
 
 </head>
 <body class="bg-gray-200">
-    <div id="app" class="bg-gray-200 antialiased min-h-screen xl:flex xl:flex-col ">
+    <div id="app" class="bg-gray-200 antialiased min-h-screen xl:flex xl:flex-col xl:h-screen">
         <site-header class="xl:flex-shrink-0"></site-header>
-        <div class="xl:flex xl:flex-1">
+        <div class="xl:flex xl:flex-1 xl:overflow-y-hidden">
             <search-filters></search-filters>
             <main class="py-6 xl:flex-1 xl:overflow-x-hidden">
                 <div class="px-4">

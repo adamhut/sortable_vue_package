@@ -1834,6 +1834,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -1858,6 +1859,28 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -23571,23 +23594,22 @@ var render = function() {
       )
     ]),
     _vm._v(" "),
-    _c("div", [
-      _c(
-        "form",
-        {
-          directives: [
-            {
-              name: "show",
-              rawName: "v-show",
-              value: _vm.isOpen,
-              expression: "isOpen"
-            }
-          ],
-          attrs: { action: "" }
-        },
-        [_vm._m(0), _vm._v(" "), _vm._m(1)]
-      )
-    ])
+    _c(
+      "form",
+      {
+        directives: [
+          {
+            name: "show",
+            rawName: "v-show",
+            value: _vm.isOpen,
+            expression: "isOpen"
+          }
+        ],
+        staticClass: "xl:flex xl:flex-col xl:justify-between xl:h-full",
+        attrs: { action: "" }
+      },
+      [_vm._m(0), _vm._v(" "), _vm._m(1)]
+    )
   ])
 }
 var staticRenderFns = [
@@ -23595,12 +23617,12 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "lg:flex" }, [
+    return _c("div", { staticClass: "lg:flex xl:block  xl:overflow-y-auto" }, [
       _c(
         "div",
         {
           staticClass:
-            "px-4 py-4 border-t border-gray-900 lg:w-1/3 xl:border-t-0"
+            "px-4 py-4 border-t border-gray-900 lg:w-1/3 xl:w-full xl:border-t-0"
         },
         [
           _c("div", { staticClass: "flex flex-wrap -mx-2" }, [
@@ -23679,7 +23701,8 @@ var staticRenderFns = [
       _c(
         "div",
         {
-          staticClass: "px-4 py-4 border-t border-gray-900 lg:w-1/3 lg:border-l"
+          staticClass:
+            "px-4 py-4 border-t border-gray-900 lg:w-1/3 xl:w-full lg:border-l"
         },
         [
           _c(
@@ -23773,7 +23796,8 @@ var staticRenderFns = [
       _c(
         "div",
         {
-          staticClass: "px-4 py-4 border-t border-gray-900 lg:w-1/3 lg:border-l"
+          staticClass:
+            "px-4 py-4 border-t border-gray-900 lg:w-1/3 xl:w-full lg:border-l"
         },
         [
           _c(
@@ -23786,7 +23810,8 @@ var staticRenderFns = [
             _c(
               "label",
               {
-                staticClass: "flex sm:w-1/4 sm:px-2 items-center mt-3 lg:w-1/2"
+                staticClass:
+                  "flex sm:w-1/4 sm:px-2 items-center mt-3 lg:w-1/2 xl:w-full"
               },
               [
                 _c("input", {
@@ -23807,7 +23832,8 @@ var staticRenderFns = [
             _c(
               "label",
               {
-                staticClass: "flex sm:w-1/4 sm:px-2 items-center mt-3 lg:w-1/2"
+                staticClass:
+                  "flex sm:w-1/4 sm:px-2 items-center mt-3 lg:w-1/2 xl:w-full"
               },
               [
                 _c("input", {
@@ -23826,7 +23852,8 @@ var staticRenderFns = [
             _c(
               "label",
               {
-                staticClass: "flex sm:w-1/4 sm:px-2 items-center mt-3 lg:w-1/2"
+                staticClass:
+                  "flex sm:w-1/4 sm:px-2 items-center mt-3 lg:w-1/2 xl:w-full"
               },
               [
                 _c("input", {
@@ -23847,7 +23874,8 @@ var staticRenderFns = [
             _c(
               "label",
               {
-                staticClass: "flex sm:w-1/4 sm:px-2 items-center mt-3 lg:w-1/2"
+                staticClass:
+                  "flex sm:w-1/4 sm:px-2 items-center mt-3 lg:w-1/2 xl:w-full"
               },
               [
                 _c("input", {
@@ -23868,7 +23896,8 @@ var staticRenderFns = [
             _c(
               "label",
               {
-                staticClass: "flex sm:w-1/4 sm:px-2 items-center mt-3 lg:w-1/2"
+                staticClass:
+                  "flex sm:w-1/4 sm:px-2 items-center mt-3 lg:w-1/2 xl:w-full"
               },
               [
                 _c("input", {
@@ -23889,7 +23918,8 @@ var staticRenderFns = [
             _c(
               "label",
               {
-                staticClass: "flex sm:w-1/4 sm:px-2 items-center mt-3 lg:w-1/2"
+                staticClass:
+                  "flex sm:w-1/4 sm:px-2 items-center mt-3 lg:w-1/2 xl:w-full"
               },
               [
                 _c("input", {
@@ -23941,7 +23971,7 @@ var staticRenderFns = [
         "button",
         {
           staticClass:
-            "block w-full sm:w-auto sm:inline-block bg-indigo-500 hover:bg-indigo-400 font-semibold rounded-lg text-white px-4 py-2"
+            "block w-full sm:w-auto sm:inline-block bg-indigo-500 hover:bg-indigo-400 font-semibold rounded-lg text-white px-4 py-2 xl:block xl:w-full"
         },
         [_vm._v("Update Result")]
       )
@@ -23971,190 +24001,267 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "header",
-    { staticClass: "bg-gray-900 sm:flex sm:items-center sm:justify-between" },
+    {
+      staticClass:
+        "bg-gray-900 sm:flex sm:items-center sm:justify-between xl:bg-white"
+    },
     [
-      _c("div", { staticClass: "px-4 py-3 flex justify-between" }, [
-        _c("div", [
+      _c(
+        "div",
+        {
+          staticClass:
+            "px-4 py-3 flex justify-between xl:w-72 xl:bg-gray-900 xl:justify-center xl:py-5"
+        },
+        [
+          _c("div", [
+            _c(
+              "svg",
+              {
+                staticClass: "h-8 w-auto",
+                attrs: {
+                  viewBox: "0 0 185 32",
+                  fill: "none",
+                  xmlns: "http://www.w3.org/2000/svg"
+                }
+              },
+              [
+                _c("path", {
+                  attrs: {
+                    d:
+                      "M121.09 28.336c2.352 0 4.392-1.248 5.424-3.12l-2.688-1.536c-.48.984-1.512 1.584-2.76 1.584-1.848 0-3.216-1.368-3.216-3.264 0-1.92 1.368-3.288 3.216-3.288 1.224 0 2.256.624 2.736 1.608l2.664-1.56c-.984-1.848-3.024-3.096-5.376-3.096-3.648 0-6.336 2.76-6.336 6.336 0 3.576 2.688 6.336 6.336 6.336zM137.084 16v1.416c-.864-1.08-2.16-1.752-3.912-1.752-3.192 0-5.832 2.76-5.832 6.336 0 3.576 2.64 6.336 5.832 6.336 1.752 0 3.048-.672 3.912-1.752V28h3.096V16h-3.096zm-3.336 9.384c-1.896 0-3.312-1.368-3.312-3.384s1.416-3.384 3.312-3.384c1.92 0 3.336 1.368 3.336 3.384s-1.416 3.384-3.336 3.384zM149.851 18.976V16h-2.712v-3.36l-3.096.936V16h-2.088v2.976h2.088v4.992c0 3.24 1.464 4.512 5.808 4.032v-2.808c-1.776.096-2.712.072-2.712-1.224v-4.992h2.712zM153.57 14.56c1.056 0 1.92-.864 1.92-1.896s-.864-1.92-1.92-1.92c-1.032 0-1.896.888-1.896 1.92s.864 1.896 1.896 1.896zM152.034 28h3.096V16h-3.096v12zM163.676 28.336c3.528 0 6.36-2.76 6.36-6.336 0-3.576-2.832-6.336-6.36-6.336-3.528 0-6.336 2.76-6.336 6.336 0 3.576 2.808 6.336 6.336 6.336zm0-3.024c-1.824 0-3.24-1.368-3.24-3.312 0-1.944 1.416-3.312 3.24-3.312 1.848 0 3.264 1.368 3.264 3.312 0 1.944-1.416 3.312-3.264 3.312zM178.886 15.664c-1.608 0-2.856.6-3.576 1.68V16h-3.096v12h3.096v-6.48c0-2.088 1.128-2.976 2.64-2.976 1.392 0 2.376.84 2.376 2.472V28h3.096v-7.368c0-3.192-1.992-4.968-4.536-4.968z",
+                    fill: "#A3BFFA"
+                  }
+                }),
+                _vm._v(" "),
+                _c("path", {
+                  attrs: {
+                    d:
+                      "M61.063 28h3.768l3.144-11.088L71.143 28h3.768l4.704-16.8h-3.48L72.92 23.656 69.391 11.2H66.56l-3.504 12.456L59.84 11.2h-3.48L61.063 28zM85.674 28.336c3.528 0 6.36-2.76 6.36-6.336 0-3.576-2.832-6.336-6.36-6.336-3.528 0-6.336 2.76-6.336 6.336 0 3.576 2.808 6.336 6.336 6.336zm0-3.024c-1.824 0-3.24-1.368-3.24-3.312 0-1.944 1.416-3.312 3.24-3.312 1.848 0 3.264 1.368 3.264 3.312 0 1.944-1.416 3.312-3.264 3.312zM97.308 18.064V16h-3.096v12h3.096v-5.736c0-2.52 2.04-3.24 3.648-3.048V15.76c-1.512 0-3.024.672-3.648 2.304zM113.831 28l-4.968-6.072L113.687 16h-3.696l-4.128 5.28V11.2h-3.096V28h3.096v-5.448L110.231 28h3.6z",
+                    fill: "#fff"
+                  }
+                }),
+                _vm._v(" "),
+                _c("path", {
+                  attrs: {
+                    "fill-rule": "evenodd",
+                    "clip-rule": "evenodd",
+                    d:
+                      "M43.911 12.604L36.213 8.16v20.645h9v2h-44v-2h4v-12.72l-3.728.933L1 15.078l21.09-5.273h3.122a9.552 9.552 0 0 0-.68 2.559l-.483 3.975 5.164-2.982v15.448h5V8.161l-7.696 4.444a7.502 7.502 0 0 1 2.565-4.8h-4.12a7.489 7.489 0 0 1 6.646-2.973l-5.591-3.228a7.488 7.488 0 0 1 6.696.402c1.039.6 1.88 1.41 2.5 2.347a7.461 7.461 0 0 1 2.5-2.347 7.49 7.49 0 0 1 6.698-.402l-5.593 3.228a7.488 7.488 0 0 1 6.646 2.973h-4.12a7.498 7.498 0 0 1 2.567 4.8zM25.213 28.805v-10h-6v10h6zm-11-8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z",
+                    fill: "#A3BFFA"
+                  }
+                })
+              ]
+            )
+          ]),
+          _vm._v(" "),
           _c(
-            "svg",
+            "div",
             {
-              staticClass: "h-8 w-auto",
-              attrs: {
-                viewBox: "0 0 185 32",
-                fill: "none",
-                xmlns: "http://www.w3.org/2000/svg"
-              }
-            },
-            [
-              _c("path", {
-                attrs: {
-                  d:
-                    "M121.09 28.336c2.352 0 4.392-1.248 5.424-3.12l-2.688-1.536c-.48.984-1.512 1.584-2.76 1.584-1.848 0-3.216-1.368-3.216-3.264 0-1.92 1.368-3.288 3.216-3.288 1.224 0 2.256.624 2.736 1.608l2.664-1.56c-.984-1.848-3.024-3.096-5.376-3.096-3.648 0-6.336 2.76-6.336 6.336 0 3.576 2.688 6.336 6.336 6.336zM137.084 16v1.416c-.864-1.08-2.16-1.752-3.912-1.752-3.192 0-5.832 2.76-5.832 6.336 0 3.576 2.64 6.336 5.832 6.336 1.752 0 3.048-.672 3.912-1.752V28h3.096V16h-3.096zm-3.336 9.384c-1.896 0-3.312-1.368-3.312-3.384s1.416-3.384 3.312-3.384c1.92 0 3.336 1.368 3.336 3.384s-1.416 3.384-3.336 3.384zM149.851 18.976V16h-2.712v-3.36l-3.096.936V16h-2.088v2.976h2.088v4.992c0 3.24 1.464 4.512 5.808 4.032v-2.808c-1.776.096-2.712.072-2.712-1.224v-4.992h2.712zM153.57 14.56c1.056 0 1.92-.864 1.92-1.896s-.864-1.92-1.92-1.92c-1.032 0-1.896.888-1.896 1.92s.864 1.896 1.896 1.896zM152.034 28h3.096V16h-3.096v12zM163.676 28.336c3.528 0 6.36-2.76 6.36-6.336 0-3.576-2.832-6.336-6.36-6.336-3.528 0-6.336 2.76-6.336 6.336 0 3.576 2.808 6.336 6.336 6.336zm0-3.024c-1.824 0-3.24-1.368-3.24-3.312 0-1.944 1.416-3.312 3.24-3.312 1.848 0 3.264 1.368 3.264 3.312 0 1.944-1.416 3.312-3.264 3.312zM178.886 15.664c-1.608 0-2.856.6-3.576 1.68V16h-3.096v12h3.096v-6.48c0-2.088 1.128-2.976 2.64-2.976 1.392 0 2.376.84 2.376 2.472V28h3.096v-7.368c0-3.192-1.992-4.968-4.536-4.968z",
-                  fill: "#A3BFFA"
-                }
-              }),
-              _vm._v(" "),
-              _c("path", {
-                attrs: {
-                  d:
-                    "M61.063 28h3.768l3.144-11.088L71.143 28h3.768l4.704-16.8h-3.48L72.92 23.656 69.391 11.2H66.56l-3.504 12.456L59.84 11.2h-3.48L61.063 28zM85.674 28.336c3.528 0 6.36-2.76 6.36-6.336 0-3.576-2.832-6.336-6.36-6.336-3.528 0-6.336 2.76-6.336 6.336 0 3.576 2.808 6.336 6.336 6.336zm0-3.024c-1.824 0-3.24-1.368-3.24-3.312 0-1.944 1.416-3.312 3.24-3.312 1.848 0 3.264 1.368 3.264 3.312 0 1.944-1.416 3.312-3.264 3.312zM97.308 18.064V16h-3.096v12h3.096v-5.736c0-2.52 2.04-3.24 3.648-3.048V15.76c-1.512 0-3.024.672-3.648 2.304zM113.831 28l-4.968-6.072L113.687 16h-3.696l-4.128 5.28V11.2h-3.096V28h3.096v-5.448L110.231 28h3.6z",
-                  fill: "#fff"
-                }
-              }),
-              _vm._v(" "),
-              _c("path", {
-                attrs: {
-                  "fill-rule": "evenodd",
-                  "clip-rule": "evenodd",
-                  d:
-                    "M43.911 12.604L36.213 8.16v20.645h9v2h-44v-2h4v-12.72l-3.728.933L1 15.078l21.09-5.273h3.122a9.552 9.552 0 0 0-.68 2.559l-.483 3.975 5.164-2.982v15.448h5V8.161l-7.696 4.444a7.502 7.502 0 0 1 2.565-4.8h-4.12a7.489 7.489 0 0 1 6.646-2.973l-5.591-3.228a7.488 7.488 0 0 1 6.696.402c1.039.6 1.88 1.41 2.5 2.347a7.461 7.461 0 0 1 2.5-2.347 7.49 7.49 0 0 1 6.698-.402l-5.593 3.228a7.488 7.488 0 0 1 6.646 2.973h-4.12a7.498 7.498 0 0 1 2.567 4.8zM25.213 28.805v-10h-6v10h6zm-11-8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z",
-                  fill: "#A3BFFA"
-                }
-              })
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "flex", class: { antialiased: _vm.isOpen } }, [
-          _c(
-            "button",
-            {
-              staticClass: "px-2",
-              attrs: { type: "button" },
-              on: { click: _vm.toggle }
+              staticClass: "flex sm:hidden",
+              class: { antialiased: _vm.isOpen }
             },
             [
               _c(
-                "svg",
+                "button",
                 {
-                  staticClass:
-                    "h-6 w-6 fill-current text-gray-500 hover:text-white sm:hidden",
-                  attrs: {
-                    xmlns: "http://www.w3.org/2000/svg",
-                    viewBox: "0 0 24 24"
-                  }
+                  staticClass: "px-2",
+                  attrs: { type: "button" },
+                  on: { click: _vm.toggle }
                 },
                 [
-                  _vm.isOpen
-                    ? _c("path", {
-                        attrs: {
-                          "fill-rule": "evenodd",
-                          "clip-rule": "evenodd",
-                          d:
-                            "M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
-                        }
-                      })
-                    : _vm._e(),
-                  _vm._v(" "),
-                  !_vm.isOpen
-                    ? _c("path", {
-                        attrs: {
-                          "fill-rule": "evenodd",
-                          d:
-                            "M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-                        }
-                      })
-                    : _vm._e()
+                  _c(
+                    "svg",
+                    {
+                      staticClass:
+                        "h-6 w-6 fill-current text-gray-500 hover:text-white ",
+                      attrs: {
+                        xmlns: "http://www.w3.org/2000/svg",
+                        viewBox: "0 0 24 24"
+                      }
+                    },
+                    [
+                      _vm.isOpen
+                        ? _c("path", {
+                            attrs: {
+                              "fill-rule": "evenodd",
+                              "clip-rule": "evenodd",
+                              d:
+                                "M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
+                            }
+                          })
+                        : _vm._e(),
+                      _vm._v(" "),
+                      !_vm.isOpen
+                        ? _c("path", {
+                            attrs: {
+                              "fill-rule": "evenodd",
+                              d:
+                                "M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+                            }
+                          })
+                        : _vm._e()
+                    ]
+                  )
                 ]
               )
             ]
           )
-        ])
-      ]),
+        ]
+      ),
       _vm._v(" "),
       _c("transition", { attrs: { name: "nav-dropdown" } }, [
         _c(
           "nav",
           {
-            staticClass: "sm:flex sm:items-center xm:px-4",
+            staticClass:
+              "sm:flex sm:items-center sm:px-4 xl:flex-1 xl:justify-between",
             class: { hidden: !_vm.isOpen, block: _vm.isOpen }
           },
           [
             _c(
               "div",
               {
-                staticClass:
-                  "px-5 pt-2 pb-5 broder-b border-gray-800 sm:border-b-0 sm:flex sm:py-0 sm:px-0"
+                staticClass: "hidden xl:block xl:relative xl:max-w-xs xl:w-full"
               },
               [
                 _c(
-                  "a",
+                  "div",
                   {
                     staticClass:
-                      "block px-3 py-1 leading-tight font-semibold text-white hover:bg-gray-600 sm:px-2 sm:text-sm sm:text-sm",
-                    attrs: { href: "#" }
+                      "absolute inset-y-0 left-0 flex items-center pl-3"
                   },
-                  [_vm._v("List your\n                    property")]
+                  [
+                    _c(
+                      "svg",
+                      {
+                        staticClass: "h-6 w-6 fill-current text-gray-600",
+                        attrs: {
+                          viewBox: "0 0 24 24",
+                          fill: "none",
+                          xmlns: "http://www.w3.org/2000/svg"
+                        }
+                      },
+                      [
+                        _c("path", {
+                          attrs: {
+                            d:
+                              "M16.32 14.9l1.1 1.1c.4-.02.83.13 1.14.44l3 3a1.5 1.5 0 0 1-2.12 2.12l-3-3a1.5 1.5 0 0 1-.44-1.14l-1.1-1.1a8 8 0 1 1 1.41-1.41l.01-.01zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"
+                          }
+                        })
+                      ]
+                    )
+                  ]
                 ),
                 _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    staticClass:
-                      "mt-1 block px-3 py-1 leading-tight font-semibold text-white hover:bg-gray-600 sm:px-2 sm:text-sm sm:ml-2 sm:mt-0",
-                    attrs: { href: "#" }
-                  },
-                  [_vm._v("Trips")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    staticClass:
-                      "mt-1 block px-3 py-1 leading-tight font-semibold text-white hover:bg-gray-600 sm:px-2 sm:text-sm sm:ml-2 sm:mt-0",
-                    attrs: { href: "#" }
-                  },
-                  [_vm._v("Messages")]
-                )
+                _c("input", {
+                  staticClass:
+                    "w-full block border border-transparent bg-gray-200 outline-none focus:outline-none focus:bg-white focus:border-gray-300 text-gray-900  text-white rounded pl-10 pr-4 py-2 ",
+                  attrs: { type: "text", placeholder: "Search by keywords" }
+                })
               ]
             ),
             _vm._v(" "),
-            _c("div", { staticClass: "px-5 py-5 sm:py-0 sm:px-0 sm:ml-4" }, [
-              _c("div", { staticClass: "flex items-center" }, [
-                _c("img", {
+            _c("div", { staticClass: "sm:flex sm:items-center" }, [
+              _c(
+                "div",
+                {
                   staticClass:
-                    "h-10 w-10 object-cover rounded-full border-2 border-gray-600 sm:h-8 sm:w-8",
-                  attrs: {
-                    src:
-                      "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&q=80",
-                    alt: ""
-                  }
-                }),
-                _vm._v(" "),
-                _c(
-                  "span",
-                  { staticClass: "text-gray-200 font-semibold ml-4 sm:hidden" },
-                  [_vm._v("Isla Schoger")]
-                )
-              ]),
+                    "px-5 pt-2 pb-5 broder-b border-gray-800 sm:border-b-0 sm:flex sm:py-0 sm:px-0"
+                },
+                [
+                  _c(
+                    "a",
+                    {
+                      staticClass:
+                        "block px-3 py-1 leading-tight font-semibold text-white hover:bg-gray-600 sm:px-2 sm:text-sm sm:text-sm xl:text-gray-900",
+                      attrs: { href: "#" }
+                    },
+                    [
+                      _vm._v(
+                        "\n                        List your property\n                    "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      staticClass:
+                        "mt-1 block px-3 py-1 leading-tight font-semibold text-white hover:bg-gray-600 sm:px-2 sm:text-sm sm:ml-2 sm:mt-0 xl:text-gray-900",
+                      attrs: { href: "#" }
+                    },
+                    [
+                      _vm._v(
+                        "\n                        Trips\n                    "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      staticClass:
+                        "mt-1 block px-3 py-1 leading-tight font-semibold text-white hover:bg-gray-600 sm:px-2 sm:text-sm sm:ml-2 sm:mt-0 xl:text-gray-900",
+                      attrs: { href: "#" }
+                    },
+                    [
+                      _vm._v(
+                        "\n                        Messages\n                    "
+                      )
+                    ]
+                  )
+                ]
+              ),
               _vm._v(" "),
-              _c("div", { staticClass: "mt-5 sm:hidden" }, [
-                _c(
-                  "a",
-                  {
-                    staticClass: "block text-gray-400  hover:text-white",
-                    attrs: { href: "#" }
-                  },
-                  [_vm._v("Account setting")]
-                ),
+              _c("div", { staticClass: "px-5 py-5 sm:py-0 sm:px-0 sm:ml-4" }, [
+                _c("div", { staticClass: "flex items-center" }, [
+                  _c("img", {
+                    staticClass:
+                      "h-10 w-10 object-cover rounded-full border-2 border-gray-600 sm:h-8 sm:w-8 xl:border-gray-300",
+                    attrs: {
+                      src:
+                        "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&q=80",
+                      alt: ""
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c(
+                    "span",
+                    {
+                      staticClass: "text-gray-200 font-semibold ml-4 sm:hidden"
+                    },
+                    [_vm._v("Isla Schoger")]
+                  )
+                ]),
                 _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    staticClass: "mt-3 block text-gray-400  hover:text-white",
-                    attrs: { href: "#" }
-                  },
-                  [_vm._v("Support")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    staticClass: "mt-3 block text-gray-400  hover:text-white",
-                    attrs: { href: "#" }
-                  },
-                  [_vm._v("Sign Out")]
-                )
+                _c("div", { staticClass: "mt-5 sm:hidden" }, [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "block text-gray-400  hover:text-white",
+                      attrs: { href: "#" }
+                    },
+                    [_vm._v("Account setting")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      staticClass: "mt-3 block text-gray-400  hover:text-white",
+                      attrs: { href: "#" }
+                    },
+                    [_vm._v("Support")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      staticClass: "mt-3 block text-gray-400  hover:text-white",
+                      attrs: { href: "#" }
+                    },
+                    [_vm._v("Sign Out")]
+                  )
+                ])
               ])
             ])
           ]

@@ -25,10 +25,10 @@
                 <span class="text-white font-medium ml-1">Filters</span>
             </button>
         </div>
-        <div>
-            <form action="" v-show="isOpen" >
-                <div class="lg:flex">
-                    <div class="px-4 py-4 border-t border-gray-900 lg:w-1/3 xl:border-t-0">
+       
+            <form action="" v-show="isOpen" class="xl:flex xl:flex-col xl:justify-between xl:h-full" >
+                <div class="lg:flex xl:block  xl:overflow-y-auto">
+                    <div class="px-4 py-4 border-t border-gray-900 lg:w-1/3 xl:w-full xl:border-t-0">
                         <div class="flex flex-wrap -mx-2">
                             <label class="block w-1/2 px-2 sm:w-1/4 lg:w-1/2">
                                 <span class=" text-sm font-semibold text-gray-500">Bedrooms</span>
@@ -50,7 +50,7 @@
                             </label>                        
                         </div>  
                     </div>
-                    <div class="px-4 py-4 border-t border-gray-900 lg:w-1/3 lg:border-l">   
+                    <div class="px-4 py-4 border-t border-gray-900 lg:w-1/3 xl:w-full lg:border-l">   
                         <span class=" block text-sm font-semibold text-gray-500">Property Type</span>  
                         <div class="sm:flex sm:-mx-2 lg:block lg:mx-0">
                             <label class="flex items-center mt-3 sm:w-1/4 sm:px-2 lg:w-full lg:px-0 ">
@@ -71,30 +71,30 @@
                             </label>         
                         </div>
                     </div>
-                    <div class="px-4 py-4 border-t border-gray-900 lg:w-1/3 lg:border-l">   
+                    <div class="px-4 py-4 border-t border-gray-900 lg:w-1/3 xl:w-full lg:border-l">   
                         <span class=" block text-sm font-semibold text-gray-500">Amenities</span>  
                         <div class="sm:flex sm:flex-wrap sm:-mx-2">
-                            <label class="flex sm:w-1/4 sm:px-2 items-center mt-3 lg:w-1/2">
+                            <label class="flex sm:w-1/4 sm:px-2 items-center mt-3 lg:w-1/2 xl:w-full">
                                 <input class="form-checkbox bg-gray-900  focus:bg-gray-700" type="checkbox" name="amenities[]" value="balcony">
                                 <span class="ml-2 text-white">Balcony</span>
                             </label> 
-                            <label class="flex sm:w-1/4 sm:px-2 items-center mt-3 lg:w-1/2">
+                            <label class="flex sm:w-1/4 sm:px-2 items-center mt-3 lg:w-1/2 xl:w-full">
                                 <input class="form-checkbox bg-gray-900  focus:bg-gray-700" type="checkbox" name="amenities[]" value="pool">
                                 <span class="ml-2 text-white">Pool</span>
                             </label> 
-                            <label class="flex sm:w-1/4 sm:px-2 items-center mt-3 lg:w-1/2">
+                            <label class="flex sm:w-1/4 sm:px-2 items-center mt-3 lg:w-1/2 xl:w-full">
                                 <input class="form-checkbox bg-gray-900  focus:bg-gray-700" type="checkbox" name="amenities[]" value="beach">
                                 <span class="ml-2 text-white">Beach</span>
                             </label> 
-                            <label class="flex sm:w-1/4 sm:px-2 items-center mt-3 lg:w-1/2">
+                            <label class="flex sm:w-1/4 sm:px-2 items-center mt-3 lg:w-1/2 xl:w-full">
                                 <input class="form-checkbox bg-gray-900  focus:bg-gray-700" type="checkbox" name="amenities[]" value="parking">
                                 <span class="ml-2 text-white">parking</span>
                             </label>   
-                            <label class="flex sm:w-1/4 sm:px-2 items-center mt-3 lg:w-1/2">
+                            <label class="flex sm:w-1/4 sm:px-2 items-center mt-3 lg:w-1/2 xl:w-full">
                                 <input class="form-checkbox bg-gray-900  focus:bg-gray-700" type="checkbox" name="amenities[]" value="petFriendly">
                                 <span class="ml-2 text-white">Pet Friendly</span>
                             </label> 
-                            <label class="flex sm:w-1/4 sm:px-2 items-center mt-3 lg:w-1/2">
+                            <label class="flex sm:w-1/4 sm:px-2 items-center mt-3 lg:w-1/2 xl:w-full">
                                 <input class="form-checkbox bg-gray-900  focus:bg-gray-700" type="checkbox" name="amenities[]" value="kidFriendly">
                                 <span class="ml-2 text-white">Kid  Friendly</span>
                             </label>   
@@ -106,10 +106,11 @@
                     </div>
                 </div>
                 <div class="bg-gray-900 px-4 py-4 sm:text-right">
-                    <button class="block w-full sm:w-auto sm:inline-block bg-indigo-500 hover:bg-indigo-400 font-semibold rounded-lg text-white px-4 py-2">Update Result</button>
+                    <button class="block w-full sm:w-auto sm:inline-block bg-indigo-500 hover:bg-indigo-400 font-semibold rounded-lg text-white px-4 py-2 xl:block xl:w-full">Update Result</button>
                 </div>
             </form>
-        </div>
+            
+        
     </section>
 </template>
 
