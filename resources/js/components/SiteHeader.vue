@@ -56,18 +56,27 @@
                             Messages
                         </a>
                     </div>
-                    <div class="px-5 py-5 sm:py-0 sm:px-0 sm:ml-4">
-                        <div class="flex items-center">
-                            <img class="h-10 w-10 object-cover rounded-full border-2 border-gray-600 sm:h-8 sm:w-8 xl:border-gray-300"
+                    <div on class="relative px-5 py-5 sm:py-0 sm:px-0 sm:ml-4">
+                        <div class="flex items-center sm:hidden ">
+                            <img class="h-10 w-10 object-cover rounded-full border-2 border-gray-600"
                                 src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&q=80"
                                 alt="">
                             <span class="text-gray-200 font-semibold ml-4 sm:hidden">Isla Schoger</span>
                         </div>
-                        <div class="mt-5 sm:hidden">
-                            <a href="#" class="block text-gray-400  hover:text-white">Account setting</a>
-                            <a href="#" class="mt-3 block text-gray-400  hover:text-white">Support</a>
-                            <a href="#" class="mt-3 block text-gray-400  hover:text-white">Sign Out</a>
-                        </div>
+                        <button @click="toogleDropdown"  type="button" class="hiddne sm:block sm:overflow-hidden sm:rounded-full sm:border-2 sm:border-gray-600 sm:h-8 sm:w-8 sm:focus:ouline-none sm:focus:border-white">
+                            <img class="h-full w-full object-cover xl:border-gray-300"
+                                src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&q=80"
+                                alt="">
+                            <span class="text-gray-200 font-semibold ml-4 sm:hidden">Isla Schoger</span>
+                        </button>
+                        <div :class="[dropdownOpen ? 'sm:block':'sm:hidden']">
+                            <button @click="dropdownOpen=false" v-if="dropdownOpen" class="hidden sm:block sm:fixed sm:opacity-0 sm:inset-0 sm:cursor-default sm:w-full sm:h-full " type="button"></button>  
+                            <div class="mt-5 sm:bg-white sm:rounded-lg sm:absolute sm:right-0 sm:w-48 sm:mt-3 sm:py-2 sm:shadow-xl">
+                                <a href="#" class="block text-gray-400  hover:text-white sm:text-gray-800 sm:px-4 sm:py-2 sm:mt-0 sm:hover:bg-indigo-500">Account setting</a>
+                                <a href="#" class="mt-3 block text-gray-400  hover:text-white sm:text-gray-800 sm:px-4 sm:py-2 sm:mt-0 sm:hover:bg-indigo-500">Support</a>
+                                <a href="#" class="mt-3 block text-gray-400  hover:text-white sm:text-gray-800  sm:px-4 sm:py-2 sm:mt-0 sm:hover:bg-indigo-500">Sign Out</a>
+                            </div>
+                        </div>                        
                     </div>
                 </div>
             </nav>
@@ -81,11 +90,32 @@
         data() {
             return {
                 isOpen: false,
+                dropdownOpen:false,
             }
         },
+        mounted() {
+            const onEscape = (e)=>{
+                if(!this.dropdownOpen ||  e.key!=='Escape'){
+                    return;
+                }
+
+                this.dropdownOpen = false;
+            }
+
+            document.addEventListener('keydown',onEscape);
+
+            this.$on('hook:destroyed',()=>{
+                document.removeEventListener('keydown',onEscape);
+            }) ;  
+        },
+
+
         methods: {
             toggle() {
                 this.isOpen = !this.isOpen
+            },
+            toogleDropdown(){
+                this.dropdownOpen = !this.dropdownOpen;
             }
         },
     }

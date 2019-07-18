@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="mt-10 sm:mt-0 sm:w-80 sm:flex-shrink-0 sm:px-2 ">
 
     </div>
 </template>

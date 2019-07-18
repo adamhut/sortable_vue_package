@@ -20,19 +20,35 @@
         <div class="xl:flex xl:flex-1 xl:overflow-y-hidden">
             <search-filters></search-filters>
             <main class="py-6 xl:flex-1 xl:overflow-x-hidden">
-                <div class="px-4">
+                <div v-for="(location, i) in locations" :class="{'mt-6': i > 0}">
+                    <div class="px-4 xl:px-8">
+                        <h3 class="text-gray-900 text-xl">@{{ location.title }}</h3>
+                        <p class="text-gray-600">@{{ location.description }}</p>
+                    </div>
+                    <div class="mt-6 sm:overflow-x-auto">
+                        <div class="px-4 sm:inline-flex sm:pb-8 xl:px-8">
+                        <div v-for="(property, i) in location.properties" :class="{'mt-10 sm:ml-4': i > 0 }" class="sm:mt-0 sm:w-80 sm:flex-shrink-0">
+                            <property-card :property="property"/>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                {{-- <div class="px-4">
                     <h3 class="text-gray-900 text-xl">Los Angeles</h3>
                     
                     <p class="text-gray-600">Live like the  stars in these luxurious Southern California escapes. </p>
                 </div>
                 <div class="mt-6 sm:overflow-x-auto">
                     <div class="px-4 sm:inline-flex sm:-mx-2 sm:pb-8">
+                        <div v-for="(property,i) in properties" :class="{'mt-10 sm:ml-4':i > 1}" class="sm:mt-0 sm:w-80 sm:flex-shrink-0 sm:px-2 ">
+                            <property-card :property="property"></property-card>
+                        </div>
                         <workcation-card></workcation-card>                
                         <workcation-card></workcation-card>
                         <workcation-card></workcation-card>
                         <workcation-card></workcation-card>
                     </div>
-                </div>
+                </div> --}}
             </main>
         </div>        
     </div>

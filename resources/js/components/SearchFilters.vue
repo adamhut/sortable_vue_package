@@ -25,8 +25,7 @@
                 <span class="text-white font-medium ml-1">Filters</span>
             </button>
         </div>
-       
-            <form action="" v-show="isOpen" class="xl:flex xl:flex-col xl:justify-between xl:h-full" >
+             <form :class="{ 'hidden': !isOpen, 'block': isOpen }" class="xl:block xl:h-full xl:flex xl:flex-col xl:justify-between">
                 <div class="lg:flex xl:block  xl:overflow-y-auto">
                     <div class="px-4 py-4 border-t border-gray-900 lg:w-1/3 xl:w-full xl:border-t-0">
                         <div class="flex flex-wrap -mx-2">
