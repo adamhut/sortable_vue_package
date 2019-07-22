@@ -420,4 +420,4 @@ mix.js('resources/js/workcation.js', 'public/js/workcation.js')
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.config.js")]
-  }).browserSync("http://laravuepackage.test/workcation");
+  }).browserSync("http://laravuepackage.test/workcation-splash");

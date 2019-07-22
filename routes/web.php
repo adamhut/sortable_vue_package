@@ -285,6 +285,10 @@ Route::get('/workcation', function(){
     return view('workcation.index');
 });
 
+Route::get('/workcation-splash', function () {
+    return view('workcation.splash');
+});
+
 // class Anything{
 //     use Macroable;
 

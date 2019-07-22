@@ -89,8 +89,7 @@
                         </dropdown>                      
                     </div>
                 </div>
-            </nav>
-        
+            </nav>       
         </transition>
     </header>
 </template>
