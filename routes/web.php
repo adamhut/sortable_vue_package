@@ -270,10 +270,16 @@ Route::group(['prefix' => 'laracasts'], function () {
         return view('laracasts.confirmation-dialogs');
     });
 
+    Route::get('tabs', function () {
+        return view('laracasts.tabs');
+    });
+
 
     Route::get('inline-svg-render',function(){
         return view('laracast.inline-svg-render');
     });
+
+
 });
 
 
