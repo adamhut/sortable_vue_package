@@ -188,8 +188,11 @@ Route::group(['prefix' => 'advanced-vue'], function () {
     });
 });
 
-
-
+Route::group(['prefix' => 'coders-tape'], function () {
+    Route::get('pricing',function(){
+        return view('coders-tape.pricing');
+    });
+});
 
 Route::group(['prefix' => 'laracasts'], function () {
     Route::get('create-marco',function(){
