@@ -422,9 +422,16 @@ mix.js('resources/js/custom-radio-button.js', 'public/js/custom-radio-button.js'
 //     postCss: [tailwindcss("./tailwind.config.js")]
 //   }).browserSync("http://laravuepackage.test/workcation-splash");
 
-mix.js('resources/js/laracasts-tabs.js', 'public/js/laracasts-tabs.js')
-   .sass("resources/sass/laracasts-tabs.scss", "public/css/laracasts-tabs.css")
-   .options({
-     processCssUrls: false,
-     postCss: [tailwindcss("./tailwind.config.js")]
-   }).browserSync("http://laravuepackage.test/laracasts/tabs");
+// mix.js('resources/js/laracasts-tabs.js', 'public/js/laracasts-tabs.js')
+//    .sass("resources/sass/laracasts-tabs.scss", "public/css/laracasts-tabs.css")
+//    .options({
+//      processCssUrls: false,
+//      postCss: [tailwindcss("./tailwind.config.js")]
+//    }).browserSync("http://laravuepackage.test/laracasts/tabs");
+
+mix.js('resources/js/workcation.js', 'public/js/workcation.js')
+  .sass("resources/sass/workcation.scss", "public/css/workcation.css")
+  .options({
+    processCssUrls: false,
+    postCss: [tailwindcss("./tailwind.config.js")]
+  }).browserSync("http://laravuepackage.test/workcation-card");

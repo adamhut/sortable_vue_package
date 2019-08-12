@@ -25,12 +25,14 @@ import SearchFilters from './components/SearchFilters';
 import WorkcationCard from './components/WorkcationCard';
 import PropertyCard from './components/PropertyCard';
 import WorkcationCards from './components/WorkcationCards';
+import BasicCard from './components/BasicCard';
 
 Vue.component('SiteHeader', SiteHeader);
 Vue.component('SearchFilters', SearchFilters);
 Vue.component('WorkcationCard', WorkcationCard);
 Vue.component('PropertyCard', PropertyCard);
 Vue.component('WorkcationCards', WorkcationCards);
+Vue.component('BasicCard', BasicCard);
 // Vue.component("DatePicker", require("./components/advanced-vue/DatePicker.vue"));
 
 const app = new Vue({

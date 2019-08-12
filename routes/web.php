@@ -291,6 +291,10 @@ Route::get('/workcation', function(){
     return view('workcation.index');
 });
 
+Route::get('/workcation-card', function () {
+    return view('workcation.card');
+});
+
 Route::get('/workcation-splash', function () {
     return view('workcation.splash');
 });
