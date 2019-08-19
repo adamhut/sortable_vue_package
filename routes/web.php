@@ -189,7 +189,11 @@ Route::group(['prefix' => 'advanced-vue'], function () {
 });
 
 Route::group(['prefix' => 'coders-tape'], function () {
-    Route::get('pricing',function(){
+    Route::get('auto-complete',function(){
+        return view('coders-tape.auto-complete');
+    });
+
+    Route::get('pricing', function () {
         return view('coders-tape.pricing');
     });
 });

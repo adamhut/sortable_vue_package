@@ -16,8 +16,8 @@
 </head>
 
 <body class="bg-gray-200">
-    <div id="app" class="bg-gray-200 antialiased min-h-screen  mt-16 w-full">
-        <pricing></pricing>
+    <div id="app" class="bg-gray-200 antialiased min-h-screen flex justify-center mt-16">
+        <auto-complete></auto-complete>
     </div>
     <script type="text/javascript" src="/js/coders-tape.js"></script>
     <!-- built fileddds will be auto injected -->

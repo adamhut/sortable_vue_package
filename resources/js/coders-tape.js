@@ -19,8 +19,12 @@ window.Vue = require('vue');
  */
 import AutoComplete from './components/AutoComplete';
 
+import Pricing from './components/Pricing';
+
 
 Vue.component('AutoComplete', AutoComplete);
+Vue.component('Pricing', Pricing);
+
 // Vue.component("DatePicker", require("./components/advanced-vue/DatePicker.vue"));
 
 const app = new Vue({
