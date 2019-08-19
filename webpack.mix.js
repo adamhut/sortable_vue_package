@@ -441,4 +441,4 @@ mix.js('resources/js/coders-tape.js', 'public/js/coders-tape.js')
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.config.js")]
-  }).browserSync("http://laravuepackage.test/coders-tape/pricing");
+  }).browserSync("http://laravuepackage.test/coders-tape/auto-format");

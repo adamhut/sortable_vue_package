@@ -193,9 +193,14 @@ Route::group(['prefix' => 'coders-tape'], function () {
         return view('coders-tape.auto-complete');
     });
 
+    Route::get('auto-format', function () {
+        return view('coders-tape.auto-format');
+    });
+
     Route::get('pricing', function () {
         return view('coders-tape.pricing');
     });
+
 });
 
 Route::group(['prefix' => 'laracasts'], function () {
