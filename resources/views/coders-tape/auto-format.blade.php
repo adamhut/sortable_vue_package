@@ -17,8 +17,8 @@
 
 <body class="bg-gray-200">
     <div id="app" class="bg-gray-200 antialiased min-h-screen mt-16 container mx-auto text-center">
-       <h1 class=""> Formatted Telephone</h1>
-       <coder-tape-forms></coder-tape-forms>
+        <h1 class=""> Formatted Telephone</h1>
+        <coder-tape-forms></coder-tape-forms>
     </div>
     <script type="text/javascript" src="/js/coders-tape.js"></script>
     <!-- built fileddds will be auto injected -->

@@ -1791,13 +1791,19 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Telephone__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Telephone */ "./resources/js/components/Telephone.vue");
 //
 //
 //
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({});
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    Telephone: _Telephone__WEBPACK_IMPORTED_MODULE_0__["default"]
+  }
+});
 
 /***/ }),
 
@@ -1904,6 +1910,59 @@ __webpack_require__.r(__webpack_exports__);
     },
     currencyEUR: function currencyEUR(price) {
       return Math.ceil(price * 0.85) + ' EUR';
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Telephone.vue?vue&type=script&lang=js&":
+/*!********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Telephone.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: ['template'],
+  data: function data() {
+    return {
+      number: '',
+      format: '',
+      regex: '^'
+    };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    var x = 1;
+    this.format = this.template.replace(/X+/g, function () {
+      return '$' + x++;
+    });
+    this.template.match(/X+/g).forEach(function (_char, key) {
+      // console.log(char,char.length);
+      // console.log(key);
+      _this.regex += '(\\d{' + _char.length + '})?';
+    });
+  },
+  watch: {
+    number: function number() {
+      this.number = this.number.replace(/[^0-9]/g, '') //.replace(/^(\d{3})?(\d{3})?(\d{4})?/g,this.format)
+      .replace(new RegExp(this.regex, 'g'), this.format).substr(0, this.template.length);
     }
   }
 });
@@ -22220,7 +22279,11 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div")
+  return _c(
+    "div",
+    [_c("telephone", { attrs: { template: "(XXX) XXX-XXXX" } })],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -22354,6 +22417,53 @@ var render = function() {
         ])
       ]
     )
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Telephone.vue?vue&type=template&id=3e4fbc29&scoped=true&":
+/*!************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Telephone.vue?vue&type=template&id=3e4fbc29&scoped=true& ***!
+  \************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: " mt-6" }, [
+    _c("input", {
+      directives: [
+        {
+          name: "model",
+          rawName: "v-model",
+          value: _vm.number,
+          expression: "number"
+        }
+      ],
+      staticClass:
+        "w-64text-2xl bg-gray-300 py-2 px-3 rounded-lg focus:outline-none",
+      attrs: { type: "text", placeholder: _vm.template },
+      domProps: { value: _vm.number },
+      on: {
+        input: function($event) {
+          if ($event.target.composing) {
+            return
+          }
+          _vm.number = $event.target.value
+        }
+      }
+    })
   ])
 }
 var staticRenderFns = []
@@ -34592,7 +34702,7 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
 
 Vue.component('AutoComplete', _components_AutoComplete__WEBPACK_IMPORTED_MODULE_0__["default"]);
 Vue.component('Pricing', _components_Pricing__WEBPACK_IMPORTED_MODULE_1__["default"]);
-Vue.component('CoderTapeForms', AutoFormat); // Vue.component("DatePicker", require("./components/advanced-vue/DatePicker.vue"));
+Vue.component('CoderTapeForms', _components_CoderTapeForms__WEBPACK_IMPORTED_MODULE_2__["default"]); // Vue.component("DatePicker", require("./components/advanced-vue/DatePicker.vue"));
 
 var app = new Vue({
   el: '#app',
@@ -34803,6 +34913,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Pricing_vue_vue_type_template_id_345c762b_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Pricing_vue_vue_type_template_id_345c762b_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Telephone.vue":
+/*!***********************************************!*\
+  !*** ./resources/js/components/Telephone.vue ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Telephone_vue_vue_type_template_id_3e4fbc29_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Telephone.vue?vue&type=template&id=3e4fbc29&scoped=true& */ "./resources/js/components/Telephone.vue?vue&type=template&id=3e4fbc29&scoped=true&");
+/* harmony import */ var _Telephone_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Telephone.vue?vue&type=script&lang=js& */ "./resources/js/components/Telephone.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Telephone_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Telephone_vue_vue_type_template_id_3e4fbc29_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Telephone_vue_vue_type_template_id_3e4fbc29_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "3e4fbc29",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Telephone.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Telephone.vue?vue&type=script&lang=js&":
+/*!************************************************************************!*\
+  !*** ./resources/js/components/Telephone.vue?vue&type=script&lang=js& ***!
+  \************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Telephone_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Telephone.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Telephone.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Telephone_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Telephone.vue?vue&type=template&id=3e4fbc29&scoped=true&":
+/*!******************************************************************************************!*\
+  !*** ./resources/js/components/Telephone.vue?vue&type=template&id=3e4fbc29&scoped=true& ***!
+  \******************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Telephone_vue_vue_type_template_id_3e4fbc29_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Telephone.vue?vue&type=template&id=3e4fbc29&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Telephone.vue?vue&type=template&id=3e4fbc29&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Telephone_vue_vue_type_template_id_3e4fbc29_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Telephone_vue_vue_type_template_id_3e4fbc29_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

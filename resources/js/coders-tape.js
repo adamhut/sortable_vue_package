@@ -25,7 +25,7 @@ import CoderTapeForms from './components/CoderTapeForms';
 
 Vue.component('AutoComplete', AutoComplete);
 Vue.component('Pricing', Pricing);
-Vue.component('CoderTapeForms', AutoFormat);
+Vue.component('CoderTapeForms', CoderTapeForms);
 
 // Vue.component("DatePicker", require("./components/advanced-vue/DatePicker.vue"));
 
