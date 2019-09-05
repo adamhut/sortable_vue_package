@@ -103,6 +103,10 @@ Route::get('rebuild-meetup', function () {
     return view('design.rebuild-meetup');
 });
 
+Route::get('price-table', function () {
+    return view('design.price-table');
+});
+
 Route::group(['prefix' => 'advanced-vue'], function () {
 
     Route::get('controlled-component', function () {

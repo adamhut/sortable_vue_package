@@ -436,9 +436,16 @@ mix.js('resources/js/custom-radio-button.js', 'public/js/custom-radio-button.js'
 //     postCss: [tailwindcss("./tailwind.config.js")]
 //   }).browserSync("http://laravuepackage.test/workcation-card");
 
-mix.js('resources/js/coders-tape.js', 'public/js/coders-tape.js')
-  .sass("resources/sass/coders-tape.scss", "public/css/coders-tape.css")
+// mix.js('resources/js/coders-tape.js', 'public/js/coders-tape.js')
+//   .sass("resources/sass/coders-tape.scss", "public/css/coders-tape.css")
+//   .options({
+//     processCssUrls: false,
+//     postCss: [tailwindcss("./tailwind.config.js")]
+//   }).browserSync("http://laravuepackage.test/coders-tape/auto-format");
+
+mix.js('resources/js/price-table.js', 'public/js/price-table.js')
+  .sass("resources/sass/price-table.scss", "public/css/price-table.css")
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.config.js")]
-  }).browserSync("http://laravuepackage.test/coders-tape/auto-format");
+  }).browserSync("http://laravuepackage.test/price-table");
