@@ -10,6 +10,7 @@ class DomainFilter
     {
         //$builder = ;
 
+        // echo class_basename($this).'<br/>';
         [$request, $builder] = $payload;
 
         // /dd($request, $builder);

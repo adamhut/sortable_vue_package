@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\User;
 use App\Filters\NameFilter;
 use Illuminate\Http\Request;
+use App\Filters\DomainFilter;
 use App\Services\RemoveWords;
 use Illuminate\Pipeline\Pipeline;
 use App\Services\UpperFirstCharacter;
