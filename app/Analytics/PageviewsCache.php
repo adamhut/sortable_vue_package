@@ -37,7 +37,7 @@ class PageviewsCache implements Views{
             $customer
         ]));
 
-        return Cache::remember($cacheKey, $minutes, function () use ($days, $domain, $customer) {
+        return Cache::remember($cacheKey, now()->addMinutes($minutes), function () use ($days, $domain, $customer) {
             return $this->next->daysBack($days, $domain , $customer );
         });
     }
@@ -50,7 +50,7 @@ class PageviewsCache implements Views{
             'domains'
         ]));
 
-        return Cache::remember($cacheKey, $minutes, function () use ($days, $domain, $customer) {
+        return Cache::remember($cacheKey, now()->addMinutes($minutes), function () use ($days, $domain, $customer) {
             return $this->next->domains();
         });
     }
