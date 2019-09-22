@@ -315,6 +315,15 @@ Route::get('/workcation-splash', function () {
     return view('workcation.splash');
 });
 
+
+Route::group(['prefix' => 'tailwind'], function () {
+
+    Route::get('/navbar', function () {
+        return view('tailwind.navbar');
+    });
+});
+
+
 // class Anything{
 //     use Macroable;
 
