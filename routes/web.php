@@ -315,6 +315,13 @@ Route::get('/workcation-splash', function () {
     return view('workcation.splash');
 });
 
+Route::group(['prefix' => 'my-rebuild'], function () {
+
+    Route::get('/wilber', function () {
+        return view('my-rebuild.wilber');
+    });
+});
+
 
 Route::group(['prefix' => 'tailwind'], function () {
 
