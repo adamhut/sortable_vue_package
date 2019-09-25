@@ -54,8 +54,7 @@
                                             <path d="M0 10h24v4h-24z"/>
                                         </svg>
                                     </td>
-                                </tr>
-                                
+                                </tr>                                
                             </tbody>
                         </table>
                     </div>
