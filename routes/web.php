@@ -295,7 +295,6 @@ Route::group(['prefix' => 'laracasts'], function () {
         return view('laracast.inline-svg-render');
     });
 
-
 });
 
 
@@ -327,6 +326,11 @@ Route::group(['prefix' => 'tailwind'], function () {
 
     Route::get('/navbar', function () {
         return view('tailwind.navbar');
+    });
+
+
+    Route::get('price-table',function(){
+        return view('tailwind.price-table');
     });
 });
 

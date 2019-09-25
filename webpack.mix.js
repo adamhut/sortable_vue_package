@@ -457,9 +457,16 @@ mix.js('resources/js/custom-radio-button.js', 'public/js/custom-radio-button.js'
 //     postCss: [tailwindcss("./tailwind.config.js")]
 //   }).browserSync("http://laravuepackage.test/tailwind/navbar");
 
-mix.js('resources/js/my-rebuild-wilber.js', 'public/js/my-rebuild-wilber.js')
-  .sass("resources/sass/my-rebuild-wilber.scss", "public/css/my-rebuild-wilber.css")
+// mix.js('resources/js/my-rebuild-wilber.js', 'public/js/my-rebuild-wilber.js')
+//   .sass("resources/sass/my-rebuild-wilber.scss", "public/css/my-rebuild-wilber.css")
+//   .options({
+//     processCssUrls: false,
+//     postCss: [tailwindcss("./tailwind.config.js")]
+//   }).browserSync("http://laravuepackage.test/my-rebuild/wilber");
+
+mix.js('resources/js/tailwind-pricetable.js', 'public/js/tailwind-pricetable.js')
+  .sass("resources/sass/tailwind-pricetable.scss", "public/css/tailwind-pricetable.css")
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.config.js")]
-  }).browserSync("http://laravuepackage.test/my-rebuild/wilber");
+  }).browserSync("http://laravuepackage.test/tailwind/price-table");
