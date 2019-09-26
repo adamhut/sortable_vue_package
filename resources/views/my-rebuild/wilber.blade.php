@@ -79,9 +79,10 @@
             </nav>
         </header>
         <div class="bg-gray-100 min-h-screen pt-80 lg:pt-40 text-lg">
-fadsf
-            <wilber-card></wilber-card>
+            <div class="container mx-auto px-8 lg:px-48">
+            <wilber-card>
 
+            </wilber-card>
         </div>
 
     </div>

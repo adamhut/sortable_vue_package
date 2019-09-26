@@ -1725,6 +1725,23 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -21946,9 +21963,68 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_vm._v("\n   dsfasd\n")])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "bg-white h-64 shadow-md" }, [
+      _c("div", { staticClass: "px-8 py-6" }, [
+        _c("div", [
+          _c(
+            "span",
+            {
+              staticClass:
+                "uppercase text-teal-700 font-bold text-xs tracking-wide"
+            },
+            [_vm._v("News")]
+          ),
+          _vm._v(" "),
+          _c("span", { staticClass: "text-xs text-gray-500" }, [_vm._v("/")]),
+          _vm._v(" "),
+          _c(
+            "span",
+            {
+              staticClass:
+                "uppercase text-gray-500 font-semibold text-xs tracking-wide"
+            },
+            [_vm._v("September 19, 2019")]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "text-gray-700 font-bold" }, [
+          _vm._v("\n            Facecard Steaks\n        ")
+        ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass:
+              "text-sm font-semibold text-gray-600 leading-loose max-h-24 "
+          },
+          [
+            _vm._v(
+              "\n            or me I think it'd be something where the fun challenges are more on the product side and less on the technical side.\n    Something like Meetup, Patreon, or Gumroad (if fraud wasn't a thing and PayPal didn't exist 😅) ...\n        "
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticClass: "block text-xs font-semibold f mt-4 text-blue-500",
+            attrs: { href: "#" }
+          },
+          [_vm._v("Readl More...")]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", {})
+    ])
+  }
+]
 render._withStripped = true
 
 
