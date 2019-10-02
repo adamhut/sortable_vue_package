@@ -332,6 +332,10 @@ Route::group(['prefix' => 'tailwind'], function () {
     Route::get('price-table',function(){
         return view('tailwind.price-table');
     });
+
+    Route::get('dropdown', function () {
+        return view('tailwind.dropdown');
+    });
 });
 
 
