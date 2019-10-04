@@ -336,6 +336,10 @@ Route::group(['prefix' => 'tailwind'], function () {
     Route::get('dropdown', function () {
         return view('tailwind.dropdown');
     });
+
+    Route::get('tailwindui', function () {
+        return view('tailwind.tailwindui');
+    });
 });
 
 
