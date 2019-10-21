@@ -3,6 +3,7 @@
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Traits\Macroable;
+use RealRashid\SweetAlert\Facades\Alert;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +17,9 @@ use Illuminate\Support\Traits\Macroable;
 */
 
 Route::get('/', function () {
+    // Alert::alert('Title', 'Message', 'Type');
+    alert()->info('InfoAlert', 'Lorem ipsum dolor sit amet.');
+
     return view('welcome');
 });
 
