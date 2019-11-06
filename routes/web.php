@@ -344,6 +344,10 @@ Route::group(['prefix' => 'tailwind'], function () {
     Route::get('tailwindui', function () {
         return view('tailwind.tailwindui');
     });
+
+    Route::get('inbox', function () {
+        return view('tailwind.inbox');
+    });
 });
 
 

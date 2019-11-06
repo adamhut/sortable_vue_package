@@ -478,9 +478,17 @@ mix.js('resources/js/custom-radio-button.js', 'public/js/custom-radio-button.js'
 //     postCss: [tailwindcss("./tailwind.config.js")]
 //   }).browserSync("http://laravuepackage.test/tailwind/dropdown");
 
-mix.js('resources/js/tailwind-pricetable.js', 'public/js/tailwind-pricetable.js')
-  .sass("resources/sass/tailwind-pricetable.scss", "public/css/tailwind-pricetable.css")
+// mix.js('resources/js/tailwind-pricetable.js', 'public/js/tailwind-pricetable.js')
+//   .sass("resources/sass/tailwind-pricetable.scss", "public/css/tailwind-pricetable.css")
+//   .options({
+//     processCssUrls: false,
+//     postCss: [tailwindcss("./tailwind.config.js")]
+//   }).browserSync("http://laravuepackage.test/tailwind/tailwindui");
+
+
+mix.js('resources/js/tailwind-inbox.js', 'public/js/tailwind-inbox.js')
+  .sass("resources/sass/tailwind-inbox.scss", "public/css/tailwind-inbox.css")
   .options({
     processCssUrls: false,
     postCss: [tailwindcss("./tailwind.config.js")]
-  }).browserSync("http://laravuepackage.test/tailwind/tailwindui");
+  }).browserSync("http://laravuepackage.test/tailwind/inbox");
