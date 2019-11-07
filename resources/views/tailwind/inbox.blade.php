@@ -15,15 +15,15 @@
 
 </head>
 <body class="bg-gray-200">
-    <div id="app" class="">
+    <div id="app" class="h-screen flex flex-col">
         <header class="flex">
-            <div class="flex-shrink-0 px-4 py-3 bg-gray-800">
-                <button class="flex items-center">
+            <div class="w-64 flex-shrink-0 px-4 py-3 bg-gray-800">
+                <button class="block w-full flex  items-center">
                     <img src="/images/avatar.png"  class="h-10 w-10 rounded-full object-cover" alt="">
                     
-                    <span class="ml-4 text-sm font-medium text-white ">Monica White</span>
+                    <span class="ml-4 mr-2 text-sm font-medium text-white ">Monica White</span>
 
-                    <svg class="ml-10 h-6 w-6 stoke-current text-gray-400 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <svg class="ml-auto h-6 w-6 stoke-current text-gray-400 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                         <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
                     </svg>
                 </button>
@@ -31,35 +31,54 @@
             
             <div class="px-6 bg-gray-700 flex-1 flex items-center justify-between ">
                 <nav class="flex items-center ">
-                    <a href="#" class="inline-block px-3 py-2 bg-gray-800 rounded-lg leading-none text-sm font-medium text-white ">Mailbox</a>
-                    <a href="#" class="inline-block px-3 py-2 rounded-lg leading-none text-sm font-medium text-white">Customers</a>
-                    <a href="#" class="inline-block px-3 py-2 rounded-lg leading-none text-sm font-medium text-white">Reporting</a>
-                    <a href="#" class="inline-block px-3 py-2 rounded-lg leading-none text-sm font-medium text-white">Manage</a>
+                    <a href="#" class="inline-block px-3 py-2 bg-gray-800 hover:bg-gray-600 rounded-lg leading-none text-sm font-medium text-white ">Mailbox</a>
+                    <a href="#" class="ml-2 inline-block px-3 py-2 hover:bg-gray-600 rounded-lg leading-none text-sm font-medium text-white">Customers</a>
+                    <a href="#" class="ml-2 inline-block px-3 py-2 hover:bg-gray-600 rounded-lg leading-none text-sm font-medium text-white">Reporting</a>
+                    <a href="#" class="ml-2 inline-block px-3 py-2 hover:bg-gray-600 rounded-lg leading-none text-sm font-medium text-white">Manage</a>
+                </nav>
+           
+                <div class="bg-gray-700 flex items-center">
+                    <div class="relative py-1 w-64">
+                        <span class="absolute inset-y-0 left-0 pl-2 flex items-center">
+                            <svg class=" fill-current w-6 h-6 text-gray-500 " xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 3h16a2 2 0 012 2v14a2 2 0 01-2 2H4a2 2 0 01-2-2V5c0-1.1.9-2 2-2zm16 4V5H4v2h16zm0 2H4v10h16V9z"/>
+                            </svg>
+                        </span>
+                        <input 
+                            type="text" 
+                            class="w-full pr-4 pl-10 py-2 leading-tight block bg-gray-900 rounded-lg text-sm placeholder-gray-400 text-white focus:bg-white focus:text-gray-800 focus:placeholder-gray-600 focus:outline-none" 
+                            placeholder="Serach" 
+                        />
+                    </div>
+                    <button class="ml-5 text-gray-400 hover:text-gray-200 ">
+                        <svg class=" fill-current w-6 h-6" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 3h16a2 2 0 012 2v14a2 2 0 01-2 2H4a2 2 0 01-2-2V5c0-1.1.9-2 2-2zm16 4V5H4v2h16zm0 2H4v10h16V9z"/>
+                        </svg>
+                    </button>
+                    <button class="ml-4 text-gray-400 hover:text-gray-200">
+                    <svg class="ml-2 fill-current w-6 h-6" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 3h16a2 2 0 012 2v14a2 2 0 01-2 2H4a2 2 0 01-2-2V5c0-1.1.9-2 2-2zm16 4V5H4v2h16zm0 2H4v10h16V9z"/>
+                    </svg>
+                    </button>
+                </div>
+             </div>
+
+        </header>
+        <div class="flex-1 flex-shrink-0 flex">
+            <div class="w-64 bg-gray-100">
+                <nav>
+                    
                 </nav>
             </div>
-            <div class="bg-gray-700 ">
-                <input type="text">asdfadsf
-                <button>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M433.884 366.059C411.634 343.809 384 316.118 384 208c0-79.394-57.831-145.269-133.663-157.83A31.845 31.845 0 0 0 256 32c0-17.673-14.327-32-32-32s-32 14.327-32 32c0 6.75 2.095 13.008 5.663 18.17C121.831 62.731 64 128.606 64 208c0 108.118-27.643 135.809-49.893 158.059C-16.042 396.208 5.325 448 48.048 448H160c0 35.346 28.654 64 64 64s64-28.654 64-64h111.943c42.638 0 64.151-51.731 33.941-81.941zM224 472a8 8 0 0 1 0 16c-22.056 0-40-17.944-40-40h16c0 13.234 10.766 24 24 24z"/></svg>
-                </button>
-                <button>
-               <svg class="h-6 w-6 bg-gray-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm2-13c0 .28-.21.8-.42 1L10 9.58c-.57.58-1 1.6-1 2.42v1h2v-1c0-.29.21-.8.42-1L13 9.42c.57-.58 1-1.6 1-2.42a4 4 0 1 0-8 0h2a2 2 0 1 1 4 0zm-3 8v2h2v-2H9z"/></svg>
-                </button>
-            </div>
-            
-        </header>
-        <div>
+            <main class="bg-gray-200">
+                <div>
 
+                </div>
+                <div>
+
+                </div>
+            </main>
         </div>
-        <main>
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-        </main>
-      
     </div>
    <script type="text/javascript" src="/js/tailwind-inbox.js"></script>
     <!-- built fileddds will be auto injected -->
