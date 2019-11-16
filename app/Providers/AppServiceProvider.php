@@ -24,9 +24,9 @@ class AppServiceProvider extends ServiceProvider
             return new static(array_slice($this->items, 0, $take));
         });
 
-        Filesystem::macro('make',function(){
-            return $this->put($path,'');
-        });
+        // Filesystem::macro('make',function(){
+        //     return $this->put($path,'');
+        // });
 
 
     }
