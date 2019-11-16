@@ -121,39 +121,106 @@
                 <header class="px-6">
                     <!--Start Top header Top Section-->
                     <div class="flex justify-between items-center border-b border-gray-200 py-2">
-                        <div class="">
-                            <div class="relative ">
+                        <div class="flex-1">
+                            <div class="relative w-64">
                                 <span class="absolute inset-y-0 left-0 pl-3 flex items-center">
-                                    <svg class="h-5 w-5 fill-current text-gray-600" viewBox="0 0 24 24">
+                                    <svg class="h-5 w-5 fill-current text-gray-600" viewBox="0 0 24 24" fill="currentColor">
                                     <path
                                         d="M10 4a6 6 0 100 12 6 6 0 000-12zm-8 6a8 8 0 1114.32 4.906l5.387 5.387a1 1 0 01-1.414 1.414l-5.387-5.387A8 8 0 012 10z"
                                     />
+                                        {{-- <path 
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                                        /> --}}
                                     </svg>
                                 </span>
                                 <input 
                                     type="text" 
-                                    class="w-full pr-4 pl-10 py-2 block rounded  border border-gray-400 text-sm text-gray-900 placeholder-gray-600 focus:outline-none" 
+                                    class="block w-full  pr-4 pl-10 py-2 rounded border border-gray-400 text-sm text-gray-900 placeholder-gray-600 focus:outline-none" 
                                     placeholder="Serach" 
                                 />
                             </div>
                         </div>
                         <div class="flex items-center">
-                            <img
-                                        class="hidden md:block ml-5 h-8 w-8 rounded-full object-cover"
-                                        src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.5&w=144&h=144&q=80"
-                                        alt=""
-                            />
-                            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-                                    <path
-                                    d="M9.018 4.665a3 3 0 015.964 0A7 7 0 0119 11v3.159c0 .273.109.535.302.729l1.405 1.405A1 1 0 0120 18H4a1 1 0 01-.707-1.707l1.405-1.405c.193-.194.302-.456.302-.73V11a7 7 0 014.018-6.335zM12 4a1 1 0 00-1 1v1.049l-.667.235A5.002 5.002 0 007 11v3.159c0 .669-.221 1.315-.623 1.841h11.246A3.032 3.032 0 0117 14.159V11a5.002 5.002 0 00-3.333-4.716L13 6.05V5a1 1 0 00-1-1zM10 18a2 2 0 004 0h2a4 4 0 11-8 0h2z"
-                                    />
-                            </svg>
+                            <button>
+                                <svg class="h-6 w-6 fill-current text-gray-500" viewBox="0 0 24 24">
+                                        <path
+                                        d="M9.018 4.665a3 3 0 015.964 0A7 7 0 0119 11v3.159c0 .273.109.535.302.729l1.405 1.405A1 1 0 0120 18H4a1 1 0 01-.707-1.707l1.405-1.405c.193-.194.302-.456.302-.73V11a7 7 0 014.018-6.335zM12 4a1 1 0 00-1 1v1.049l-.667.235A5.002 5.002 0 007 11v3.159c0 .669-.221 1.315-.623 1.841h11.246A3.032 3.032 0 0117 14.159V11a5.002 5.002 0 00-3.333-4.716L13 6.05V5a1 1 0 00-1-1zM10 18a2 2 0 004 0h2a4 4 0 11-8 0h2z"
+                                        />
+                                </svg>
+                            </button>
+                            <img class="hidden md:block ml-6 h-8 w-8 rounded-full object-cover"
+                                src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&&auto=format&fit=facearea&facepad=2&w=144&h=144&q=80"
+                                alt="" />
                         </div>
                     </div>
                     <!--End Top header Top Section-->
                     
                     <!--Start Top header Bottom Section-->
-                    <div>
+                    <div class="py-2 flex items-center justify-between">
+                        <div class="flex items-center">
+                            <h2 class="text-2xl font-semibold text-gray-900 leading-tight">All User </h2>
+                            <div class="ml-6 flex items-center">
+                                <span class="-ml-2 rounded-full border-2 border-white">
+                                <img class="h-6 w-6 rounded-full object-cover"
+                                    src="https://images.unsplash.com/photo-1444146644393-241099c1593d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=144&h=144&q=80"
+                                    alt="" />
+                                </span>
+
+                                <span class="-ml-2 rounded-full border-2 border-white">
+                                    <img class="h-6 w-6 rounded-full object-cover"
+                                    src="https://images.unsplash.com/photo-1485203535145-9eb0f2707965?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=144&h=144&q=80"
+                                    alt="" />
+                                </span>
+                                <span class="-ml-2 rounded-full border-2 border-white">
+                                    <img class="h-6 w-6 rounded-full object-cover"
+                                    src="https://images.unsplash.com/photo-1470441623172-c47235e287ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=144&h=144&q=80"
+                                    alt="" />
+                                </span>
+                                <span class="-ml-2 rounded-full border-2 border-white">
+                                    <img class="h-6 w-6 rounded-full object-cover"
+                                    src="https://images.unsplash.com/photo-1486583474878-b16d8f2749b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=144&h=144&q=80"
+                                    alt="" />
+                                </span>
+                                <span class="-ml-2 rounded-full border-2 border-white">
+                                    <img class="h-6 w-6 rounded-full object-cover"
+                                    src="https://images.unsplash.com/photo-1541931636029-106c1a2ec056?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=144&h=144&q=80"
+                                    alt="" />
+                                </span>
+                           </div>                            
+                        </div>
+                        <div class="flex ">
+                            <span class="inline-flex p-1 bg-gray-200 border border-gray-300 rounded-lg ">
+                                <button class="px-2 py-1 rounded">
+                                    <svg class="h-6 w-6 fill-current text-gray-600" viewBox="0 0 24 24">
+                                        <path
+                                            d="M9.707 3.293a1 1 0 010 1.414L5.414 9H13a9 9 0 019 9v2a1 1 0 11-2 0v-2a7 7 0 00-7-7H5.414l4.293 4.293a1 1 0 01-1.414 1.414l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 0z" />
+                                    </svg>
+
+                                    
+                                </button>
+                                <button class="bg-white px-2 py-1 py-1 bg-white rounded shadow">
+                                    <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none">
+                                        <circle class="fill-current text-gray-600" cx="7" cy="7" r="1" />
+                                        <path class="stroke-current text-gray-600"
+                                            d="M12 3H7a4 4 0 00-4 4v5c0 .512.195 1.024.586 1.414l7 7a2 2 0 002.828 0l7-7a2 2 0 000-2.828l-7-7A1.993 1.993 0 0012 3z"
+                                            stroke-width="2" />
+                                    </svg>
+                                </button>
+                            </span>
+                            <button 
+                                class="ml-5 px-3 py-1 flex items-center py-2 text-sm font-medium text-whtie bg-gray-800 hover:bg-gray-700 rounded-lg"
+                            >
+                                <span class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="fill-current h-4 w-4 text-white " viewBox="0 0 24 24">
+                                        <path stroke="currentColor" d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z" />
+                                    </svg>
+                                </span>
+                                <span class="ml-2 text-white">New Projects</span>
+                            </button>
+                        </div>
                         
                     </div>
                     <!--End Top header bottom Section-->
@@ -161,7 +228,46 @@
             </div>
             <!--End Top header-->
             <!--Start of main Section-->
-            <div class=""></div>
+            <div class="">
+                <main class="p-3 flex">
+                    <div class="w-80 bg-gray-100 roudned-lg py-3 px-3">
+                        <h3 class="text-sm font-medium text-gray-900">Backlog</h3>
+                        <ul class="mt-2">
+                            <li class="">
+                                <a href="#" class="p-4 block bg-white rounded shadow">
+                                    <div class="flex justify-between ">
+                                        <p class="text-sm font-medium text-gray-900 leading-none">
+                                            Add discount code to chekcout page
+                                        </p>
+                                        <span>
+                                            <img class="h-5 w-5 rounded-full object-cover"
+                                                src="https://images.unsplash.com/photo-1444146644393-241099c1593d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=144&h=144&q=80"
+                                                alt="" />
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="flex justify-between items-baseline">
+                                        <div class="text-sm text-gray-600">
+                                            <time datetime="2019-09-14">Sep 14</time>
+                                        </div>
+                                        <div class="mt-2"> 
+                                            <span class="inline-flex items-center bg-teal-100 rounded px-2 py-1 leading-tight">
+                                                <svg viewBox="0 0 8 8" fill="currentColor" class="h-2 w-2 text-teal-500">
+                                                    <circle cx="4" cy="4" r=3>
+                                                    </circle>
+                                                </svg>
+                                                <span class="ml-2 text-teal-900 text-sm font-medium">Feature Request</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </main>                
+            </div>
             
             <!--End Of main Section-->
         </div>

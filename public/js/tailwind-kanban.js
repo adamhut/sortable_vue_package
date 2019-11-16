@@ -34055,8 +34055,8 @@ var app = new Vue({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp2\htdocs\sortable_vue_package\resources\js\tailwind-kanban.js */"./resources/js/tailwind-kanban.js");
-module.exports = __webpack_require__(/*! C:\xampp2\htdocs\sortable_vue_package\resources\sass\tailwind-kanban.scss */"./resources/sass/tailwind-kanban.scss");
+__webpack_require__(/*! C:\newxampp\htdocs\laravel_vue\resources\js\tailwind-kanban.js */"./resources/js/tailwind-kanban.js");
+module.exports = __webpack_require__(/*! C:\newxampp\htdocs\laravel_vue\resources\sass\tailwind-kanban.scss */"./resources/sass/tailwind-kanban.scss");
 
 
 /***/ })

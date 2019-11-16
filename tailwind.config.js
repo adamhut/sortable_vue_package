@@ -89,6 +89,7 @@ module.exports = {
             width: {
                 '1/8': '12.5%',
                 '7/8': '87.5%',
+               
                 'lg': '20rem',
                 'xl': '36rem',
                 '2xl': '42rem',
