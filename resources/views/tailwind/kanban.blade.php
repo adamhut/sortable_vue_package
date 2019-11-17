@@ -15,10 +15,19 @@
 
 </head>
 <body class="bg-white antialiased">
-    <div class="h-screen flex overflow-hidden">
+    <div class="h-screen flex overflow-hidden" id="app"> 
         <!--Start of left hand side Nav-->
-        <div class="hidden lg:block w-64 px-8 py-4 bg-gray-100 border-r border-gray-200 overflow-auto">            
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="2 2 47.06 39" class="icon h-8 w-8 fill-current text-yellow-900"><path d="M25.58,35.45c-7.75,0-14-5.64-14-12.59,0-.26,0-.51,0-.77a11.39,11.39,0,0,1,.52-2.73c1.69-5.25,7.08-9.1,13.48-9.1a15.74,15.74,0,0,1,1.79.1,15.09,15.09,0,0,1,5,1.45,10.3,10.3,0,0,0-3.78-5.89A14.49,14.49,0,0,0,20.3,3.29H1.89v19.5h0v19.5H20.15a15.73,15.73,0,0,0,2.1-.14h0l.53-.09.3-.06.13,0L24,41.8l.09,0,.44-.12.08,0a10.75,10.75,0,0,0,7.51-7c.07-.23.14-.46.2-.7a14.81,14.81,0,0,1-2.05.82A15.46,15.46,0,0,1,25.58,35.45Z" transform="translate(-1.89 -3.29)" class="cls-1"></path><path d="M28.39,27h0Z" transform="translate(-1.89 -3.29)" class="cls-2"></path><path d="M34.15,29.71a5.9,5.9,0,0,0-1.54-1.17A8.62,8.62,0,0,1,34.15,29.71Z" transform="translate(-1.89 -3.29)" class="cls-2"></path><path d="M34.79,31.18" transform="translate(-1.89 -3.29)" class="cls-1"></path><path d="M34.79,32.36v5.31a5.68,5.68,0,0,0,.4,2.16l.14.31,0,0a3.9,3.9,0,0,0,3.34,2.1h9.36V32.19a5.77,5.77,0,0,0-2.94-5.29,12.12,12.12,0,0,0-1.34-.72,9.48,9.48,0,0,0-1.95-.65.45.45,0,0,1-.42-.43.43.43,0,0,1,.26-.39l.27,0a8.81,8.81,0,0,0,5.17-3.21,11.89,11.89,0,0,0,1.1-2.17,10.1,10.1,0,0,0-2.7-11.4c-2.76-2.46-7.74-4.59-16.06-4.59,0,0,5.8,2.37,6.67,8.3a6.94,6.94,0,0,1-.38,3.57l-.1.23v0a6.56,6.56,0,0,1-5.9,3.6H25.93A4.37,4.37,0,0,0,21.4,23s0,0,0,.06a3.74,3.74,0,0,0,1.3,2.73,4.42,4.42,0,0,0,1.9,1h0a4.84,4.84,0,0,0,1.09.14h0l1.23,0a10.89,10.89,0,0,1,1.43.15h.06a12.12,12.12,0,0,1,4.15,1.48l0,0a4.09,4.09,0,0,1,2.1,3A6.11,6.11,0,0,1,34.79,32.36Z" transform="translate(-1.89 -3.29)" class="cls-1"></path><path d="M27,26.9a13.86,13.86,0,0,1,1.43.15A10.89,10.89,0,0,0,27,26.9Z" transform="translate(-1.89 -3.29)" class="cls-3"></path></svg>
+        <div class="fixed z-30 inset-y-0 left-0 lg:static lg:inset-auto lg:translate-x-0 w-64 px-8 py-4 bg-gray-100 border-r border-gray-200 overflow-auto relative" :class="[sidebarOpen ?  'translate-x-0':'-translate-x-full']">      
+            <div class="-mx-3 pl-3 pr-1 flex items-center justify-between ">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="2 2 47.06 39" class="icon h-8 w-8 fill-current text-yellow-900"><path d="M25.58,35.45c-7.75,0-14-5.64-14-12.59,0-.26,0-.51,0-.77a11.39,11.39,0,0,1,.52-2.73c1.69-5.25,7.08-9.1,13.48-9.1a15.74,15.74,0,0,1,1.79.1,15.09,15.09,0,0,1,5,1.45,10.3,10.3,0,0,0-3.78-5.89A14.49,14.49,0,0,0,20.3,3.29H1.89v19.5h0v19.5H20.15a15.73,15.73,0,0,0,2.1-.14h0l.53-.09.3-.06.13,0L24,41.8l.09,0,.44-.12.08,0a10.75,10.75,0,0,0,7.51-7c.07-.23.14-.46.2-.7a14.81,14.81,0,0,1-2.05.82A15.46,15.46,0,0,1,25.58,35.45Z" transform="translate(-1.89 -3.29)" class="cls-1"></path><path d="M28.39,27h0Z" transform="translate(-1.89 -3.29)" class="cls-2"></path><path d="M34.15,29.71a5.9,5.9,0,0,0-1.54-1.17A8.62,8.62,0,0,1,34.15,29.71Z" transform="translate(-1.89 -3.29)" class="cls-2"></path><path d="M34.79,31.18" transform="translate(-1.89 -3.29)" class="cls-1"></path><path d="M34.79,32.36v5.31a5.68,5.68,0,0,0,.4,2.16l.14.31,0,0a3.9,3.9,0,0,0,3.34,2.1h9.36V32.19a5.77,5.77,0,0,0-2.94-5.29,12.12,12.12,0,0,0-1.34-.72,9.48,9.48,0,0,0-1.95-.65.45.45,0,0,1-.42-.43.43.43,0,0,1,.26-.39l.27,0a8.81,8.81,0,0,0,5.17-3.21,11.89,11.89,0,0,0,1.1-2.17,10.1,10.1,0,0,0-2.7-11.4c-2.76-2.46-7.74-4.59-16.06-4.59,0,0,5.8,2.37,6.67,8.3a6.94,6.94,0,0,1-.38,3.57l-.1.23v0a6.56,6.56,0,0,1-5.9,3.6H25.93A4.37,4.37,0,0,0,21.4,23s0,0,0,.06a3.74,3.74,0,0,0,1.3,2.73,4.42,4.42,0,0,0,1.9,1h0a4.84,4.84,0,0,0,1.09.14h0l1.23,0a10.89,10.89,0,0,1,1.43.15h.06a12.12,12.12,0,0,1,4.15,1.48l0,0a4.09,4.09,0,0,1,2.1,3A6.11,6.11,0,0,1,34.79,32.36Z" transform="translate(-1.89 -3.29)" class="cls-1"></path><path d="M27,26.9a13.86,13.86,0,0,1,1.43.15A10.89,10.89,0,0,0,27,26.9Z" transform="translate(-1.89 -3.29)" class="cls-3"></path></svg>
+                </span>
+                <button class="lg:hidden text-gray-700" @click="sidebarOpen = false">
+                    <svg class="w-6 h-6 " fill="currentColor" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" >
+                        <polygon fill="#010101" points="77.6,21.1 49.6,49.2 21.5,21.1 19.6,23 47.6,51.1 19.6,79.2 21.5,81.1 49.6,53 77.6,81.1 79.6,79.2   51.5,51.1 79.6,23 "/>
+                    </svg>
+                </button>
+            </div>
             
             <nav class="mt-8">
                 <h2 class="text-xs text-gray-600 font-semibold uppercase tracking-wider">Issues</h2>
@@ -121,15 +130,14 @@
                 <header class="px-6">
                     <!--Start Top header Top Section-->
                     <div class="flex justify-between items-center border-b border-gray-200 py-2">
-                        <div class="flex-1">
-                            <div class="flex items-center">
-                                <button>
-                                    <svg class="h-6 w-6 fill-current text-gray-700" version="1.1" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <div class="flex-1 flex">
+                                <button class="block lg:hidden text-gray-600" @click="sidebarOpen = true">
+                                    <svg class="h-6 w-6" fill="currentColor" version="1.1" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z" />
                                     </svg>
                                 </button>
-                                <div class="relative w-64">
+                                <div class="ml-4 lg:ml-0 relative w-64">
                                     <span class="absolute inset-y-0 left-0 pl-3 flex items-center">
                                         <svg class="h-5 w-5 fill-current text-gray-600" viewBox="0 0 24 24" fill="currentColor">
                                         <path
@@ -149,7 +157,7 @@
                                         placeholder="Serach" 
                                     />
                                 </div>
-                            </div>
+                           
                         </div>
                         <div class="flex items-center">
                             <button>
@@ -920,5 +928,6 @@
         <!--End of right hand side-->
 
     </div>
+    <script type="text/javascript" src="/js/tailwind-kanban.js"></script>
 </body>
 </html>
