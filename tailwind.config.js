@@ -8,6 +8,9 @@ module.exports = {
         extend: {
             colors: {
                 'meetup-blue':'#00455D',
+                'gray-900-spotify': '#121212',
+                'gray-800-spotify': '#181818',
+                'gray-700-spotify': '#282828',
                 'bcr-blue': {
                     600: '#1e232d',
                     500: '#383d49',
@@ -126,6 +129,9 @@ module.exports = {
             },
             padding:{
                 '5/6' : '83.333333%',
+            },
+            lineHeight:{
+                'extra-loose':'2.5'
             }
         },
         fontFamily: {

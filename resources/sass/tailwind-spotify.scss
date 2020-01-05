@@ -3,3 +3,24 @@
 @import "tailwindcss/components";
 
 @import "tailwindcss/utilities";
+
+
+ .sidebar-spotify::-webkit-scrollbar {
+     width: 8px;
+     background-color: #121212;
+ }
+
+ .sidebar-spotify::-webkit-scrollbar-thumb {
+     border-radius: 8px;
+     background-color: #535353;
+ }
+
+ .content-spotify::-webkit-scrollbar {
+     width: 8px;
+     background-color: #181818;
+ }
+
+ .content-spotify::-webkit-scrollbar-thumb {
+     border-radius: 8px;
+     background-color: #535353;
+ }
