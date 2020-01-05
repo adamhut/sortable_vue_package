@@ -107,6 +107,11 @@ Route::get('rebuild-meetup', function () {
     return view('design.rebuild-meetup');
 });
 
+
+Route::get('rebuild-spotify', function () {
+    return view('design.rebuild-spotify');
+});
+
 Route::get('price-table', function () {
     return view('design.price-table');
 });

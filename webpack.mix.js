@@ -493,9 +493,17 @@ mix.js('resources/js/custom-radio-button.js', 'public/js/custom-radio-button.js'
 //     postCss: [tailwindcss("./tailwind.config.js")]
 //   }).browserSync("http://laravuepackage.test/tailwind/inbox");
 
-mix.js('resources/js/tailwind-kanban.js', 'public/js/tailwind-kanban.js')
-  .sass("resources/sass/tailwind-kanban.scss", "public/css/tailwind-kanban.css")
-  .options({
-    processCssUrls: false,
-    postCss: [tailwindcss("./tailwind.config.js")]
-  }).browserSync("http://laravuepackage.test/tailwind/kanban");
+// mix.js('resources/js/tailwind-kanban.js', 'public/js/tailwind-kanban.js')
+//   .sass("resources/sass/tailwind-kanban.scss", "public/css/tailwind-kanban.css")
+//   .options({
+//     processCssUrls: false,
+//     postCss: [tailwindcss("./tailwind.config.js")]
+//   }).browserSync("http://laravuepackage.test/tailwind/kanban");
+
+
+  mix.js('resources/js/tailwind-spotify.js', 'public/js/tailwind-spotify.js')
+    .sass("resources/sass/tailwind-spotify.scss", "public/css/tailwind-spotify.css")
+    .options({
+      processCssUrls: false,
+      postCss: [tailwindcss("./tailwind.config.js")]
+    }).browserSync("http://laravuepackage.test/rebuild-spotify");
