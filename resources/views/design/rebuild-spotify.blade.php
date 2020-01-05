@@ -106,7 +106,27 @@
             <!-- Start of Content-->
         </div>
  
-        <div class="bg-gray-700-spotify">bottom</div>
+        <div class="bg-gray-700-spotify flex-none h-24  flex items-center justify-between">
+            <div class="flex items-center">
+                <a href="#">
+                    <img src="/images/spotify/albumcover01.jpg" alt="album cover" class="w-16 h-16 object-cover">
+                </a>
+                <div class="ml-3">
+                    <div>
+                        <a href="#" class=" hover:underline">Name  of Song</a>
+                    </div>
+                    <div>
+                        <a href="#" class="text-xs text-gray-500 hover:underline hover:text-white">Artist Name</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+        </div>
 
     </div>
 </body>
