@@ -100,7 +100,7 @@
             </div>
             <!-- End of Side Bar-->
             <!-- Start of Content-->
-            <div class="content-area bg-gray-800-spotify flex-1 content-spotify flex flex-col">
+            <div class="content-area bg-gray-800-spotify flex-1  flex flex-col">
                 <!-- Start of Content top bar-->
                 <div class="top-bar py-2 px-4 flex items-center justify-between">
                     <div class="flex items-center ">
@@ -144,8 +144,124 @@
                 </div>
                 <!-- End of Content top bar-->
                 <!-- Start of Main Content-->
-                <div class="main-content overflow-y-auto">
-                    <h1 class="mt-16 text-2xl">Home</h1>
+                <div class="main-content overflow-y-auto content-spotify">
+                    <div class="container mx-auto">
+                        <h2 class="mt-24 text-5xl font-semibold text-white">Home</h2>
+                        <!-- Start of recent Added-->
+                        <div class="mt-12">
+                            <h3 class="font-semibold text-xl border-b border-gray-800 pb-2">Recently Played</h3>
+                            <div class="mt-4 flex items-center -mx-4">
+                                <div class="w-1/5 px-4">
+                                    <div>
+                                        <a href="#"><img src="/images/spotify/albumcover02.jpg" alt="albumcover"></a>
+                                    </div> 
+                                    <div>
+                                        <a href="#" class="font-semibold block hover:text-white mt-2">Acoustic Pop Covers 2019</a>
+                                        <div class="text-gray-500 mt-2">Amazing Acoustic Covers updated every week.</div>
+                                        <div class="uppercase tracking-widest text-xs text-gray-500 mt-2">6679 Followers</div>
+                                    </div>
+                                </div>
+                                <div class="w-1/5 px-4">
+                                    <div>
+                                        <a href="#"><img src="/images/spotify/albumcover03.jpg" alt="albumcover"></a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="font-semibold block hover:text-white mt-2">Acoustic Pop Covers 2019</a>
+                                        <div class="text-gray-500 mt-2">Amazing Acoustic Covers updated every week.</div>
+                                        <div class="uppercase tracking-widest text-xs text-gray-500 mt-2">6679 Followers</div>
+                                    </div>
+                                </div>
+                                <div class="w-1/5 px-4">
+                                    <div>
+                                        <a href="#"><img src="/images/spotify/albumcover04.jpg" alt="albumcover"></a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="font-semibold block hover:text-white mt-2">Acoustic Pop Covers 2019</a>
+                                        <div class="text-gray-500 mt-2">Amazing Acoustic Covers updated every week.</div>
+                                        <div class="uppercase tracking-widest text-xs text-gray-500 mt-2">6679 Followers</div>
+                                    </div>
+                                </div>
+                                <div class="w-1/5 px-4">
+                                    <div>
+                                        <a href="#"><img src="/images/spotify/albumcover05.jpg" alt="albumcover"></a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="font-semibold block hover:text-white mt-2">Acoustic Pop Covers 2019</a>
+                                        <div class="text-gray-500 mt-2">Amazing Acoustic Covers updated every week.</div>
+                                        <div class="uppercase tracking-widest text-xs text-gray-500 mt-2">6679 Followers</div>
+                                    </div>
+                                </div>
+                                <div class="w-1/5 px-4">
+                                    <div>
+                                        <a href="#"><img src="/images/spotify/albumcover06.jpg" alt="albumcover"></a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="font-semibold block hover:text-white mt-2">Acoustic Pop Covers 2019</a>
+                                        <div class="text-gray-500 mt-2">Amazing Acoustic Covers updated every week.</div>
+                                        <div class="uppercase tracking-widest text-xs text-gray-500 mt-2">6679 Followers</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of recent Added-->
+                        <!-- Start of recent Added-->
+                        <div class="mt-12">
+                            <h3 class="font-semibold text-xl border-b border-gray-800 pb-2">Your Heavy Rotation</h3>
+                            <div class="mt-4 flex items-center -mx-4">
+                                <div class="w-1/5 px-4">
+                                    <div>
+                                        <a href="#"><img src="/images/spotify/albumcover07.jpg" alt="albumcover"></a>
+                                    </div> 
+                                    <div>
+                                        <a href="#" class="font-semibold block hover:text-white mt-2">Acoustic Pop Covers 2019</a>
+                                        <div class="text-gray-500 mt-2">Amazing Acoustic Covers updated every week.</div>
+                                        <div class="uppercase tracking-widest text-xs text-gray-500 mt-2">6679 Followers</div>
+                                    </div>
+                                </div>
+                                <div class="w-1/5 px-4">
+                                    <div>
+                                        <a href="#"><img src="/images/spotify/albumcover08.jpg" alt="albumcover"></a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="font-semibold block hover:text-white mt-2">Acoustic Pop Covers 2019</a>
+                                        <div class="text-gray-500 mt-2">Amazing Acoustic Covers updated every week.</div>
+                                        <div class="uppercase tracking-widest text-xs text-gray-500 mt-2">6679 Followers</div>
+                                    </div>
+                                </div>
+                                <div class="w-1/5 px-4">
+                                    <div>
+                                        <a href="#"><img src="/images/spotify/albumcover09.jpg" alt="albumcover"></a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="font-semibold block hover:text-white mt-2">Acoustic Pop Covers 2019</a>
+                                        <div class="text-gray-500 mt-2">Amazing Acoustic Covers updated every week.</div>
+                                        <div class="uppercase tracking-widest text-xs text-gray-500 mt-2">6679 Followers</div>
+                                    </div>
+                                </div>
+                                <div class="w-1/5 px-4">
+                                    <div>
+                                        <a href="#"><img src="/images/spotify/albumcover10.jpg" alt="albumcover"></a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="font-semibold block hover:text-white mt-2">Acoustic Pop Covers 2019</a>
+                                        <div class="text-gray-500 mt-2">Amazing Acoustic Covers updated every week.</div>
+                                        <div class="uppercase tracking-widest text-xs text-gray-500 mt-2">6679 Followers</div>
+                                    </div>
+                                </div>
+                                <div class="w-1/5 px-4">
+                                    <div>
+                                        <a href="#"><img src="/images/spotify/albumcover11.jpg" alt="albumcover"></a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="font-semibold block hover:text-white mt-2">Acoustic Pop Covers 2019</a>
+                                        <div class="text-gray-500 mt-2">Amazing Acoustic Covers updated every week.</div>
+                                        <div class="uppercase tracking-widest text-xs text-gray-500 mt-2">6679 Followers</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of recent Added-->
+                    </div>
                 </div>
                 <!-- End of Main Content-->
             </div>            
