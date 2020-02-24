@@ -14,7 +14,7 @@
                         <input type="email" 
                             id="email" 
                             name="email" 
-                            class="border px-4 py-2 w-full rounded bg-gray-100"
+                            class="border px-4 py-2 w-full rounded bg-gray-100 focus:outline-none"
                             ref="email" 
                             @keydown.shift.tab.prevent=""
                         >
@@ -25,7 +25,7 @@
                             Password
                         </label>
                         <input type="password" id="password" name="password"
-                            class="border px-4 py-2 w-full rounded bg-gray-100">
+                            class="border px-4 py-2 w-full rounded bg-gray-100 focus:outline-none">
                     </div>
                     <div class="form-group mt-4">
                         <label class="text-sm font-normal">
