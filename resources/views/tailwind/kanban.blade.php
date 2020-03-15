@@ -153,7 +153,7 @@
                                             /> --}}
                                         </svg>
                                     </span>
-                                    <input 
+                                    <input
                                         type="text" 
                                         class="block w-full  pr-4 pl-10 py-2 rounded border border-gray-400 text-sm text-gray-900 placeholder-gray-600 focus:outline-none" 
                                         placeholder="Serach" 
