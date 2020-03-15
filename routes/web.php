@@ -353,10 +353,16 @@ Route::group(['prefix' => 'tailwind'], function () {
     Route::get('inbox', function () {
         return view('tailwind.inbox');
     });
+
     Route::get('kanban', function () {
         return view('tailwind.kanban');
     });
+
+    Route::get('alpine', function () {
+        return view('tailwind.alpine');
+    });
 });
+
 
 
 // class Anything{

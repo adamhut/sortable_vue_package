@@ -408,12 +408,12 @@ mix.js('resources/js/custom-radio-button.js', 'public/js/custom-radio-button.js'
 //      postCss: [tailwindcss("./tailwind.config.js")]
 //    }).browserSync("http://laravue.test/laracasts/confirmation-dialogs");
 
-mix.js('resources/js/vue-dropdown.js', 'public/js/vue-dropdown.js')
-  .sass("resources/sass/vue-dropdown.scss", "public/css/vue-dropdown.css")
-  .options({
-    processCssUrls: false,
-    postCss: [tailwindcss("./tailwind.config.js")]
-  }).browserSync("http://laravuepackage.test/vue-dropdown");
+// mix.js('resources/js/vue-dropdown.js', 'public/js/vue-dropdown.js')
+//   .sass("resources/sass/vue-dropdown.scss", "public/css/vue-dropdown.css")
+//   .options({
+//     processCssUrls: false,
+//     postCss: [tailwindcss("./tailwind.config.js")]
+//   }).browserSync("http://laravuepackage.test/vue-dropdown");
 
 // mix.js('resources/js/workcation.js', 'public/js/workcation.js')
 //   .sass("resources/sass/workcation.scss", "public/css/workcation.css")
@@ -508,4 +508,10 @@ mix.js('resources/js/vue-dropdown.js', 'public/js/vue-dropdown.js')
   //     postCss: [tailwindcss("./tailwind.config.js")]
   //   }).browserSync("http://laravuepackage.test/rebuild-spotify");
 
+  mix.js('resources/js/tailwind-alpine.js', 'public/js/tailwind-alpine.js')
+    .sass("resources/sass/tailwind-alpine.scss", "public/css/tailwind-alpine.css")
+    .options({
+      processCssUrls: false,
+      postCss: [tailwindcss("./tailwind.config.js")]
+    }).browserSync("http://laravuepackage.test/tailwind/alpine");
 // 

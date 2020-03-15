@@ -27,7 +27,7 @@
     >
       <li>
         <a 
-            href="#" 
+            href="#"1
             class="flex items-center px-3 py-3 hover:bg-gray-200"
             ref="account"
             @keydown.esc.exact="hideDropdown"
