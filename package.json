@@ -33,7 +33,7 @@
         "flickity": "^2.2.1",
         "glhd-tailwindcss-transitions": "^0.3.0",
         "in-viewport": "^3.6.0",
-        "node-sass": "^4.13.1",
+        "node-sass": "^7.0.0",
         "pikaday": "^1.8.0",
         "portal-vue": "^1.5.1",
         "sass-loader": "^7.3.1",
